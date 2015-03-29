@@ -1,0 +1,27 @@
+//colours
+$blue: #27aae1;
+$light-grey: #f1f1f2;
+$dark-grey: #231f20;
+$grey: #939598;
+
+//font face
+
+@font-face {
+    font-family: 'BebasNeueBold_gdi';
+    src: url('../fonts/BebasNeueBold_gdi.eot');
+    src: url('../fonts/BebasNeueBold_gdi.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeueBold_gdi.woff') format('woff'),
+         url('../fonts/BebasNeueBold_gdi.ttf') format('truetype'),
+         url('../fonts/BebasNeueBold_gdi.svg#BebasNeueBold_gdi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'BebasNeueBold_gdi';
+        src: url('../fonts/BebasNeueBold_gdi.svg#BebasNeueBold_gdi') format('svg');
+    }
+}
+
+//fonts
+

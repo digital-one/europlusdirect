@@ -1,0 +1,8 @@
+#main{
+	background-color: white;
+	padding-bottom: $spacing;
+	padding-top: $spacing;
+	.home &{
+		padding-top:0;
+	}
+}

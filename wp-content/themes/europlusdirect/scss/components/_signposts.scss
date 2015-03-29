@@ -1,0 +1,230 @@
+#signposts{
+	@extend .clearfix;
+	padding:0 7px 80px;
+	@media screen and (max-width: $break-small){
+		padding-bottom:50px;
+	}
+	header{
+		padding: 45px 0 35px;
+		display: block;
+		text-align: center;
+		h2{
+			margin-bottom: 0;
+			line-height: 130%;
+		}
+		@media screen and (max-width: $break-small){
+			padding: 25px 10px;
+		}
+	}
+	.posts{
+		@extend .clearfix;
+	}
+	.posts-footer{
+		width: 100%;
+		display: block;
+		padding: 20px 0;
+	}
+}
+.signpost{
+	width:25%;
+	@media screen and (max-width: $break-large){
+		width:33.33%;
+	}
+	@media screen and (min-width: $break-xsmall+1) and (max-width: $break-medium - 1){
+		width:50%;
+		&:last-child{
+			display: none;
+		}
+	}
+	@media screen and (max-width: $break-xsmall){
+		width:100%;
+	}
+	@media screen and (max-width: $break-medium - 1){
+		&.twitter{
+			width: 100%;
+			height:auto;
+			&:before{
+				padding-top:0;
+			}
+			.content{
+				position: relative;
+				top:auto;
+				right:auto;
+				bottom:auto;
+				left:auto;
+				display:block;
+				margin:5px;
+			}
+		}	
+	}
+	&.twitter{
+		.content{
+			&:before{
+				content:"";
+				height:100%;
+				display: inline-block;
+				vertical-align: middle;
+			}	
+		}
+	}
+	footer{
+			@include abs-pos(auto,auto,20px,auto);
+			display: block;
+			width:100%;
+			.button{
+				color: $dark-grey;
+				border-color:$dark-grey;
+				height:40px;
+				line-height: 38px;
+				@include font-size(14);
+				display: inline-block;
+				padding:0 15px;
+				@media screen and (max-width: $break-medium){
+					height:30px;
+					line-height: 28px;
+					padding:0 10px;
+					@include font-size(12);
+				}
+			}
+		}
+	#carousel &{
+		width:33.33%;
+		&.twitter{
+			.content{
+				&:before{
+					@media screen and (max-width: $break-small){
+						padding-top:100%;
+					}
+				}
+			}
+		}
+	}
+	figcaption{
+		@include transition(opacity 0.5s ease);
+		@include opacity(0);
+		@include abs-pos(0,0,0,0);
+		background-color:rgba(0,0,0,.6);
+		z-index: 999;
+		display: block;
+		&:before{
+			content:"";
+			height:100%;
+			vertical-align: middle;
+			display: inline-block;
+		}
+		div{
+			display: inline-block;
+			vertical-align: middle;
+			width:98%;	
+		}
+		h3,h4{
+			color: white;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			@media screen and (max-width: $break-medium){
+				margin-bottom: 15px;
+				padding-bottom: 15px;
+			}
+		}
+		.button{
+			color: white;
+			border-color: white;
+		}
+		h3{
+			position: relative;
+			&:after{
+				content:"";
+				@include abs-pos(auto,auto,0,50%);
+				display: block;
+				width:40px;
+				height: 1px;
+				background-color:white;
+				margin-left: -20px;
+			}
+		}
+		h4{
+			font-family: $freight-book-italic;
+			text-transform: none;
+			margin-bottom: 0;
+			padding-bottom: 0;
+			@include font-size(24);
+			@media screen and (max-width: $break-medium){
+				@include font-size(16);
+			}
+		}
+	}
+	a{
+		display: block;
+		cursor:pointer;
+		&:hover,&.active{
+			figcaption{
+				@include opacity(1);
+			}
+		}
+	}
+	background-color: white;
+	display: block;
+	overflow:hidden;
+	position:relative;
+	float:left;
+	&:before{
+		content: "";
+    	display: block;
+    	padding-top: 100%;
+	}
+	.content{
+		@include abs-pos(7px,7px,7px,7px);
+		@media screen and (max-width: $break-small){
+			@include abs-pos(5px,5px,5px,5px);
+		}
+		background-color: $light-grey;
+		@include transition(background-color 0.5s ease); 
+		figure{
+			@include abs-pos(0,0,0,0);
+			overflow:hidden;
+			.bg{
+				@include abs-pos(-1px,-1px,-1px,-1px);
+				@include transition(transform 0.5s ease);
+				z-index: 1;
+				@include bg-cover;
+				background-color:red;
+			}
+		}
+		&:hover{
+			background-color: darken($light-grey,5);
+			.bg{
+				@include transform(scale(1.05));
+			}
+		}
+		.logo{
+			width:100%;
+			height:100%;
+			position: relative;
+			&:before {
+            	content: "";
+            	display: inline-block;
+            	height: 100%;
+            	vertical-align: middle;
+     		}
+     		.img-wrap{
+     			width:70%;
+     			display: inline-block;
+            	vertical-align: middle;
+            	text-align: center;
+            	img{
+            		width:100%;
+            		height:auto;
+            		margin:0 auto;
+            		display: inline-block;
+            	}
+            	&.portrait{
+            		height:40%;
+            		img{
+            			width:auto;
+            			height:100%;
+            		}
+            	}
+  			}
+		}
+	}
+}

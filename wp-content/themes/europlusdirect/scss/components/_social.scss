@@ -1,0 +1,177 @@
+nav.social{
+	@include inline-menu;
+	aside &{
+		background-color:$light-grey;
+		padding:15px 0;
+		text-align: center;
+		height:67px;
+		margin-bottom: 36px;
+		@extend %clearfix;
+		div{
+			display: inline-block;
+			margin:0 auto;
+			height:34px;
+			overflow:hidden;
+		}
+	}
+	span{
+		display: inline-block;
+		height:34px;
+		line-height: 34px;
+		float:left;
+		@include font-size(16px);
+		font-family: $merriweather;
+		padding-right:20px;
+		text-transform: uppercase;
+	}
+	ul{
+		margin:0;
+		float: left;
+		li{
+			margin-right: 5px;
+			display: block;
+			&:last-child{
+				margin-right:0;
+			}
+			a{
+				display: block;
+				width:34px;
+				height:34px;
+				line-height: 100%;
+				@include border-radius(50%);
+				&:link,&:visited{
+					background-color: $grey;
+					#footer &{
+						background-color: $blue;
+					}	
+				}
+				&:hover,&:active{
+					background-color: $blue;
+					#footer &{
+						background-color: white;
+					}
+				}
+				@extend %ir;
+				background-image:url('../images/facebook-circle.png');
+				#footer &{
+					background-image:url('../images/facebook-circle-grey.png');
+				}
+				.svg &{
+					background-image:url('../images/facebook-circle.svg');
+					#footer &{
+						background-image:url('../images/facebook-circle-grey.svg');
+					}
+				}
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: 19px auto;
+				&.twitter{
+					background-image:url('../images/twitter-circle.png');
+					#footer &{
+						background-image:url('../images/twitter-circle-grey.png');
+					}
+					.svg &{
+						background-image:url('../images/twitter-circle.svg');
+						#footer &{
+							background-image:url('../images/twitter-circle-grey.svg');
+						}
+					}	
+					background-size: 23px auto;
+				}
+				&.linkedin{
+					background-image:url('../images/linkedin-circle.png');
+					#footer &{
+						background-image:url('../images/linkedin-circle-grey.png');
+					}
+					.svg &{
+						background-image:url('../images/linkedin-circle.svg');
+						#footer &{
+							background-image:url('../images/linkedin-circle-grey.svg');
+						}
+					}	
+				}
+				&.vimeo{
+					background-image:url('../images/vimeo-circle.png');
+					#footer &{
+						background-image:url('../images/vimeo-circle-grey.png');
+					}
+					.svg &{
+						background-image:url('../images/vimeo-circle.svg');
+						#footer &{
+							background-image:url('../images/vimeo-circle-grey.svg');
+						}
+					}	
+				}
+			}
+		}
+	}
+}
+@media #{$medium-only} { 
+
+	nav.social{
+		aside &{
+			height: auto;
+			span{
+				display: block;
+				width:100%;
+				text-align: center;
+				padding:0;
+			}
+			ul{
+				float: none;
+			}
+			div{
+				height: auto;
+			}
+		}
+	}
+
+}
+
+@media #{$large-only} { 
+
+	nav.social{
+		aside &{
+			height: auto;
+			span{
+				display: block;
+				width:100%;
+				text-align: center;
+				padding:0;
+			}
+			ul{
+				float: none;
+			}
+			div{
+				height: auto;
+			}
+		}
+	}
+
+}
+
+
+@media #{$xlarge-up} { 
+
+	nav.social{
+		ul{
+			float: left;
+			li{
+				margin-right: 10px;
+				a{
+					width:37px;
+					height:37px;
+				}
+			}
+		}
+		span{
+			height:37px;
+			line-height: 37px;
+		}
+		aside &{
+			div{
+				height:37px;
+			}
+		}
+	}
+}

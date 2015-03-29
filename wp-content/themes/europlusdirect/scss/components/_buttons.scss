@@ -1,0 +1,27 @@
+a.button{
+	text-align:center;
+	color: white;
+	background-color:$blue;
+	&:hover,&:active{
+		background-color: darken($blue,10%);
+	}
+	&.large{
+		padding: 6px 10px;
+		font-family: $bebas;
+		@include font-size(30px);
+		@include border-radius(5px);
+		display: inline-block;
+		line-height: 100%;
+
+	}
+}
+
+
+@media #{$xlarge-up} { 
+	a.button{
+		&.large{
+			@include font-size(32px);
+			
+		}
+	}
+}
