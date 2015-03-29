@@ -24,42 +24,25 @@
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 <?php gravity_form_enqueue_scripts(1, true); ?>
 <?php wp_head(); ?>
-
 </head>
 <body <?php body_class(); ?>>
 	<!-- header -->
 	<header id="header">
-		<div class="row">
-			<div class="small-12 large-5 columns">
-				<?php if(is_front_page()): ?>
-	<h1 id="home-link"><img src="<?php echo get_template_directory_uri(); ?>/images/master-investor.svg" alt="Master Investor" /></h1>
+		<h1 id="home-link"></h1>
 <?php else: ?>
-	<a href="<?php echo home_url() ?>" id="home-link"><img src="<?php echo get_template_directory_uri(); ?>/images/master-investor.svg" alt="Master Investor" /></a>
+	<a href="<?php echo home_url() ?>" id="home-link"></a>
 <?php endif ?>
-</div>
-<div class="small-12 large-3 columns subscribe">
-
-	<a class="subscribe-link inner"><div><span>Click Here</span> to<br />subscribe for free</div></a>
-
-</div>
-<div class="small-12 large-4 columns">
-<div class="inner">
-<div class="social-nav-wrap"><nav class="social"><span>Follow us</span><ul><li><a href="" class="twitter">Twitter</a></li><li><a href="">Facebook</a></li><li><a href="" class="linkedin">Linkedin</a></li><li><a href="" class="vimeo">Vimeo</a></li></ul></nav></div>
-<div class="search-wrap">
-	<form method="post" action="<?php echo home_url() ?>">
-			<input type="search" name="s" id="s" placeholder="Search Now" /><button type="submit">Submit</button>
-		</form>
+<div class="top row">
+			<?php if(is_front_page()): ?>
+	<div class="small-12 columns">
+		<ul><li>UK: <a href="tel:">+44 (0)113 887 8650</a></li><li><a href="tel:">USA: +1 727 2164 309</a></li><li><a href="mailto:sales@europlusdirect.co.uk">sales@europlusdirect.co.uk</a></li></ul>
 	</div>
-	</div>
-	</div>	
-
 </div>
-</header>
-<!-- /header -->
+<!--/top-->
 <!-- nav -->
 <nav id="nav">
 	<div class="row">
-		<div class="large-16 columns">
+		<div class="small-12 columns">
 			<a class="menu-toggle">Menu</a>
 	<?php wp_nav_menu( array(
 		'theme_location' => 'main-menu',
@@ -71,3 +54,5 @@
 	</div>
 </nav>
 <!-- /nav -->
+</header>
+<!-- /header -->
