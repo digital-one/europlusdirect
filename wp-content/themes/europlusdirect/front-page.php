@@ -40,9 +40,11 @@
 		</div>
 		<!--/slide-->
 	</section>
+	<nav id="anchor-nav"><ul><li><a href="">Lenovo</a></li><li><a href="">IBM support</a></li><li><a href="">Multi-country</a></li><li><a href="">Software support</a></li><li><a href="">Multi-manufacturer support</a></li><li><a href="">FAQs</li></ul></nav>
+									        													      
 </div>
 <!--/slider-->
-<main>
+<main id="main">
 <section id="intro" class="section row">
 
 		<div class="small-12 columns">
@@ -90,10 +92,11 @@
 </section>
 <!--/IBM-->
 <!--call back form-->
-<section id="callback" class="section row">
+<section id="callback" class="section row black white-sub-heads">
 	<div class="section-content section-content-inner">
 <h2 class="block-heading"><span><em>Not sure what you need?</em></span></h2>
 <h3>We'll be in touch to help</h3>
+<?php //gravity_form(1, false, false, false, '', true, 1);  ?>
 <div class="gf_browser_chrome gform_wrapper two-column_wrapper" id="gform_wrapper_2"><a id="gf_2" name="gf_2" class="gform_anchor"></a><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_2" id="gform_2" class="two-column" action="/contact-us/#gf_2">
                         
                         <div class="gform_body">
@@ -104,13 +107,10 @@
 <li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
 
 
-                            <li id="field_2_10" class="gfield gfield_html gfield_html_formatted"><script>
-$('select').selectBox();
-</script></li>
+                         
                             </ul></div>
         <div class="gform_footer top_label">
 
-<a href="" class="ribbon right yellow"><span>Find out more</span></a>
         	<input type="submit" id="gform_submit_button_2" class="gform_button button" value="Submit" tabindex="8" onclick="if(window[&quot;gf_submitting_2&quot;]){return false;}  if( !jQuery(&quot;#gform_2&quot;)[0].checkValidity || jQuery(&quot;#gform_2&quot;)[0].checkValidity()){window[&quot;gf_submitting_2&quot;]=true;} "><input type="hidden" name="gform_ajax" value="form_id=2&amp;title=1&amp;description=1&amp;tabindex=1">
          
             
@@ -130,7 +130,7 @@ $('select').selectBox();
 <a href="" class="ribbon right yellow"><span>Find out more</span></a>
 </div>
 <div class="small-8 columns">
-Map
+<img src="<?php echo get_template_directory_uri(); ?>/images/map.jpg" />
 	</div>
 </div>
 	</section>
@@ -155,9 +155,9 @@ Cons ectetuer adipiscing elit, sed diam nonummy nibh euismod. Cons ectetuer adip
 <h2 class="block-heading"><span><em>Frequently Asked Questions</em></span></h2>
 <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
 <div class="slider">
-<div class="slide">Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet?</div>
-<button class="slick-prev">Previous</button>
-<button class="slick-next">Next</button>
+<div class="slide"><p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet?</p></div>
+<div class="slide"><p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet?</p></div>
+
 </div>
 </div>
 </section>
@@ -171,17 +171,11 @@ Cons ectetuer adipiscing elit, sed diam nonummy nibh euismod. Cons ectetuer adip
 <!--/video-->
 <section id="contact" class="section yellow-white-heading yellow-btns">
 <h2 class="block-heading"><span><em>Call us today on</em></span></h2>
-<p>UK: +44 (0)113 887 8650
-USA: +1 727 2164 309</p>
+<p class="big">UK: <a href="tel:">+44 (0)113 887 8650</a><br />USA: <a href="tel:">+1 727 2164 309</a></p>
 <a href="" class="read-more"><span>Contact us</span></a>
 	</section>
 	</main>
-<footer id="footer">
-<p>Head Office: 2 Airport West, Lancaster Way, Leeds, West Yorkshire LS19 7ZA, United Kingdom
-Tel UK: +44 (0) 845 076 0061               Tel USA: +1 727 2164 309</p>
-<nav id="footer-menu"><ul><li><a href="">Lenovo</a></li><li><a href="">IBM</a></li><li><a href="">IT Services</a></li><li><a href="">FAQs</a></li><li><a href="">About</a></li><li><a href="">Contact</a></li></nav><p><small>&copy;2015 Europlus Direct Limited. All rights reserved. Terms & Conditions | Privacy Statement</small></p>
-<a href="">Follow us on Linkedin</a>
-</footer>
+
 <?php endwhile ?>
 <?php endif ?>
 <?php get_footer() ?> 

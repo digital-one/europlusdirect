@@ -3,19 +3,47 @@
 	z-index:2;
 	@include centered-menu;
 	background-color: $blue;
-	padding:40px 0;
+	height: 60px;
+	ul{
+		display: none;
+	}
 	li{
 		padding:0 30px;
+		&:first-child{
+			padding: 0 30px 0 0;
+		}
+		&:last-child{
+			padding: 0 0 0 30px;
+		}
 	}
 	a{
 		color: white;
-		@include font-size(24px);
+		@include font-size(18px);
+		height:80px;
+		line-height: 80px;
 		&:hover,&:visited{
 			color: $yellow;
 		}
 	}
 	.menu-toggle{
-		@include abs-pos(0,auto,auto,0);
+		@include abs-pos(14px,30px,auto,auto);
+		@extend %ir;
+		width:48px;
+		height:32px;
+		background:url('../images/mobile-menu.png') left top no-repeat;
+		display: block;
+	}
+}
+#anchor-nav{
+	@include abs-pos(auto,0,0,0);
+	@include centered-menu;
+	background-color: rgba(255,255,255,.7);
+	padding: 20px 0;
+	width: 100%;
+	display: block;
+	@include font-size(20px);
+	li{
+		padding: 0 20px;
 	}
 }
 
@@ -26,10 +54,58 @@
 
 @media #{$large-up} { 
 
+	#nav{
+		height: 100px;
+		padding-left: 200px;
+		ul{
+			display: block;
+		}
+		li{
+			padding:0 18px;
+			&:first-child{
+				padding: 0 18px 0 0;
+			}
+			&:last-child{
+				padding: 0 0 0 18px;
+			}
+		}
+		a{
+			height:100px;
+			line-height: 100px;
+			@include font-size(20px);
+		}
+		.menu-toggle{
+			display: none;
+		}
+	}
 
 }
 
 @media #{$xlarge-up} { 
 
+	#nav{
+		height: 120px;
+		padding-left: 230px;
+		ul{
+			//display: block;
+		}
+		li{
+			padding:0 30px;
+			&:first-child{
+				padding: 0 30px 0 0;
+			}
+			&:last-child{
+				padding: 0 0 0 30px;
+			}
+		}
+		a{
+			height:120px;
+			line-height: 120px;
+			@include font-size(24px);
+		}
+		.menu-toggle{
+			//display: none;
+		}
+	}
 
 }

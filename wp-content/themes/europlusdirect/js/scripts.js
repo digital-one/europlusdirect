@@ -37,16 +37,6 @@ var _handleShown = true,
 if($('#slider').length){
 
 
-
-/*
-$('#slider').on('afterChange', function(event, slick, currentSlide){
-	$('.page-count .page',$(this)).text(currentSlide+1);
-	
-});
-*/
-
-
-
 $('#slider').slick({
     dots: true,
     autoplay: true,
@@ -55,9 +45,22 @@ $('#slider').slick({
     pauseOnHover: true,
     arrows: false
   });
-
-
 }
+
+if($('#faqs').length){
+
+
+$('#faqs .slider').slick({
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    speed: 600,
+    pauseOnHover: true,
+    arrows: true
+  });
+}
+
+
 
 
 if($('#twitter-slider').length){ 

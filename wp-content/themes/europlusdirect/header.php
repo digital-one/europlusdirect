@@ -37,7 +37,7 @@
 <div class="top">
 		<div class="row">
 	<div class="small-12 columns">
-		<nav id="contacts"><ul><li><a href="tel:">UK: +44 (0)113 887 8650</a></li><li><a href="tel:">USA: +1 727 2164 309</a></li><li><a href="mailto:sales@europlusdirect.co.uk">sales@europlusdirect.co.uk</a></li></ul></nav>
+		<nav id="contacts"><ul><li><a href="tel:">UK: +44 (0)113 887 8650</a></li><li><a href="tel:" class="">USA: +1 727 2164 309</a></li><li class="email"><a href="mailto:sales@europlusdirect.co.uk">sales@europlusdirect.co.uk</a></li></ul></nav>
 		<nav id="controls"><ul><li>Language</li><li><a href="" class="chat">Chat</a></li></ul></nav>
 	</div>
 </div>

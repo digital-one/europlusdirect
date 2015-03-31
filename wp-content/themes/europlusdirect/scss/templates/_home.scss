@@ -2,7 +2,7 @@
 	display: block;
 	width:100%;
 	height:100%;
-	padding: 190px 0 0;
+	padding: 125px 0 0;
 }
 #slider{
 	width:100%;
@@ -37,7 +37,7 @@
 		}
 	}
 	.slick-dots{
-		@include abs-pos(auto,0,0,0);
+		@include abs-pos(auto,0,80px,0);
 	}
 }
 .section{
@@ -69,6 +69,10 @@
 	.light-yellow &{
 		background-color: $light-yellow;
 	}
+	.black &{
+		color: white;
+		background-color: black;
+	}
 	position: relative;
 	display:block;
 	width:100%;
@@ -99,6 +103,9 @@
 }
 .section-content-inner{
 	padding:80px 30px 100px;
+	#video-link &{
+		padding: 200px 30px 200px;
+	}
 }
 .section-footer{
 	display: block;
@@ -188,15 +195,34 @@
 		background-color: $grey;
 		width:100%;
 		display: block;
+		@extend %clearfix;
 	}
 	.gform_column{
 		width:50%;
 		float:left;
 	}
-	input{
+	input.medium{
 		width: 100%;
+		height: 60px;
+		background-color: rgba(255,255,255,.8);
 	}
 	.gform_footer{
+		text-align: right;
+		padding-top:60px;
+		position: relative;
+		&:before{
+			content:"";
+			z-index: 1;
+			height:58px;
+			line-height:58px;
+			background-color: $grey;
+			width:58px;
+			display: block;
+
+			@include abs-pos(29px,-87px,auto,auto);
+			@include transform(skewY(45deg));	
+			@include linear-gradient(-45deg, lighten(black,50%) 0%, $yellow 100%);
+		}
 		.gform_button{
 			display:inline-block;
 			height:58px;
@@ -206,13 +232,16 @@
 			z-index: 2;
 			background-color: $yellow;
 			border:none;
-			margin: 60px 0 0 0;
+			margin: 0 -88px 0 0;
 			color: $blue;
 			padding: 0 58px 0 20px;
 			text-align: center;
 			@include font-size(24px);
 			text-decoration:none;
 			@include transition(background-color .3s ease);
+			&:hover,&:active{
+				background-color: $light-yellow;
+			}
 			&:before{
 				content:"";
 				z-index: 1;
@@ -228,12 +257,46 @@
 		}
 	}
 }
+#faqs{
+	p{
+		@include font-size(22px);
+	}
+	.slider{ 
+		padding: 0 100px;
+		.slide{
+			p{
+				@include font-size(33px);
+				text-align: center;
+				color: $blue;
+				margin:0;
+			}
+		}
+		.slick-prev,.slick-next{
+			display: block;
+			width:68px;
+			height: 68px;
+			background-color: white;
+			@include border-radius(50%);
+			@include abs-pos(50%,auto,auto,0);
+			margin-top:-34px;
+			background-image:url('../images/slider-prev-arrow.png');
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: 20px auto;
+		}
+		.slick-next{
+			@include abs-pos(50%,0,auto,auto);
+			background-image:url('../images/slider-next-arrow.png');
+		}
+	}
+}
 
 
 
 @media #{$medium-up} { 
-
-
+	#slider-wrap{
+		padding: 135px 0 0;
+	}
 }
 
 @media #{$large-up} { 
@@ -243,7 +306,9 @@
 
 @media #{$xlarge-up} { 
 
-
+	#slider-wrap{
+		padding-top: 195px;
+	}
 }
 
 

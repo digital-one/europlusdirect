@@ -1,5 +1,63 @@
-
-
+#footer{
+	padding:20px 0;
+	text-align: center;
+	p{
+		@include font-size(14px);
+		margin-bottom: 20px;
+		&.address{
+			span{
+				display: inline-block;
+				padding: 0 25px;
+			}
+		}
+	}
+	a{
+		&:link,&:visited{
+			color: white;
+		}
+	}
+	a.linkedin{
+		height:26px;
+		line-height: 26px;
+		padding: 0 110px 0 0;
+		position: relative;
+		display: inline-block;
+		@include font-size(12px);
+		span{
+			@extend %ir;
+			display: block;
+			width: 100px;
+			height: 26px;
+			@include abs-pos(0,0,auto,auto);
+			background:url('../images/linkedin.png') center center no-repeat;
+			background-size: 100% auto;
+		}
+	}
+	nav#footer-menu{
+		@include centered-menu;
+		@include font-size(14px);
+		margin-bottom: 20px;
+		li{
+			padding: 0 25px;
+			position: relative;
+			&:after{
+				content:"";
+				width:1px;
+				height:14px;
+				background-color: white;
+				display: block;
+				@include abs-pos(50%,0,auto,auto);
+				margin-top:-7px;
+			}
+			&:last-child{
+				&:after{
+					background-color: transparent;
+				}
+			}
+		}
+	}
+	color: white;
+}
 
 
 @media #{$medium-up} { 

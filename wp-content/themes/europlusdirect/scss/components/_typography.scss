@@ -19,6 +19,7 @@ a{
 	@include transition(all .3s ease);
 	&:link,&:visited{
 		text-decoration: none;
+		color: $blue;
 	}
 	&:hover,&:hover{
 
@@ -29,6 +30,7 @@ a{
 }
 p{
 	margin-bottom:40px;
+	@include font-size(18px);
 }
 
 @media #{$medium-up} { 

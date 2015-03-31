@@ -2889,7 +2889,7 @@ button:focus, a:focus {
 .box-shadow ($string: 0px 0px 5px 0px rgba(50, 50, 50, 0.75));
 */
 /* line 9, ../scss/helpers/_placeholders.scss */
-#header #home-link, #header .top nav#controls a, .gold-partner, .section-footer .anchor-up, .slick-prev, .slick-next, ul.slick-dots li button {
+#header #home-link, #header .top nav#controls a, #footer a.linkedin span, #nav .menu-toggle, .gold-partner, .section-footer .anchor-up, .slick-prev, .slick-next, ul.slick-dots li button {
   overflow: hidden;
   text-indent: -10000px;
 }
@@ -2900,119 +2900,85 @@ figure, ul, li, p, blockquote {
   padding: 0;
 }
 
+/* line 25, ../scss/helpers/_placeholders.scss */
+#callback .gform_body {
+  overflow: hidden;
+  zoom: 1;
+}
+
 /* line 4, ../scss/_base.scss */
 body {
-  background-color: white;
+  background-color: #8d8d8d;
   color: #1d1d1d;
 }
 
 /* line 1, ../scss/components/_header.scss */
 #header {
   background-color: #054990;
+  position: fixed;
   top: 0;
-  right: auto;
-  bottom: auto;
   left: 0;
-  position: absolute;
+  z-index: 9999;
   width: 100%;
   padding: 0 0 0;
+  /*
+  &:after{
+  	content:"";
+  	display: block;
+  	width:100%;
+  	height:120px;
+  	z-index: 1;
+  	background-color:$blue;
+  	@include abs-pos(auto,auto,-40px,0);
+  	@include transform(skewY(3.5deg));
+  }
+  */
 }
-/* line 6, ../scss/components/_header.scss */
-#header:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 120px;
-  z-index: 1;
-  background-color: #054990;
-  top: auto;
-  right: auto;
-  bottom: -40px;
-  left: 0;
-  position: absolute;
-  -webkit-transform: skewY(3.5deg);
-  -moz-transform: skewY(3.5deg);
-  -ms-transform: skewY(3.5deg);
-  -o-transform: skewY(3.5deg);
-  transform: skewY(3.5deg);
-}
-/* line 16, ../scss/components/_header.scss */
+/* line 22, ../scss/components/_header.scss */
 #header #home-link {
   display: block;
-  width: 229px;
-  height: 220px;
+  width: 125.95px;
+  height: 121.0px;
   top: 0;
   right: auto;
   bottom: auto;
   left: 0;
   position: absolute;
   background: url("../images/europlus-direct.png") left top no-repeat;
+  background-size: 100% auto;
   z-index: 999;
   margin: 38px 0 0;
 }
-/* line 26, ../scss/components/_header.scss */
+/* line 33, ../scss/components/_header.scss */
 #header .top {
   background-color: #1d1d1d;
   background-image: -webkit-linear-gradient(-90deg, #1d1d1d 0%, #8d8d8d 100%);
   background-image: linear-gradient(-180deg,#1d1d1d 0%, #8d8d8d 100%);
-  padding: 38px 50px 20px;
+  padding: 10px 10px;
   color: white;
   position: relative;
   z-index: 996;
 }
-/* line 32, ../scss/components/_header.scss */
+/* line 39, ../scss/components/_header.scss */
 #header .top nav#contacts {
   width: 100%;
-  position: relative;
-  overflow: hidden;
 }
-/* line 5, ../scss/helpers/mixins/_centered-menu.scss */
-#header .top nav#contacts ul {
-  clear: left;
-  float: left;
-  position: relative;
-  left: 50%;
-  text-align: center;
-}
-/* line 11, ../scss/helpers/mixins/_centered-menu.scss */
-#header .top nav#contacts ul li {
-  display: block;
-  float: left;
-  position: relative;
-  right: 50%;
-}
-/* line 35, ../scss/components/_header.scss */
+/* line 43, ../scss/components/_header.scss */
 #header .top nav#contacts ul li {
   position: relative;
   padding: 0 25px;
-}
-/* line 38, ../scss/components/_header.scss */
-#header .top nav#contacts ul li:after {
-  content: "";
-  width: 1px;
-  height: 14px;
   display: block;
-  top: 50%;
-  right: 0;
-  bottom: auto;
-  left: auto;
-  position: absolute;
-  margin-top: -7px;
-  background-color: white;
+  text-align: center;
 }
-/* line 48, ../scss/components/_header.scss */
-#header .top nav#contacts ul li:last-child:after {
-  background-color: transparent;
-}
-/* line 53, ../scss/components/_header.scss */
+/* line 49, ../scss/components/_header.scss */
 #header .top nav#contacts ul a {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   color: white;
-  height: 35px;
-  line-height: 35px;
+  line-height: 140%;
+  display: block;
 }
-/* line 62, ../scss/components/_header.scss */
+/* line 58, ../scss/components/_header.scss */
 #header .top nav#controls {
   top: 0;
   right: 0;
@@ -3033,11 +2999,11 @@ body {
 #header .top nav#controls li a {
   display: block;
 }
-/* line 65, ../scss/components/_header.scss */
+/* line 61, ../scss/components/_header.scss */
 #header .top nav#controls li {
   margin-left: 35px;
 }
-/* line 68, ../scss/components/_header.scss */
+/* line 64, ../scss/components/_header.scss */
 #header .top nav#controls a {
   display: block;
   width: 35px;
@@ -3045,15 +3011,185 @@ body {
   background: url("../images/chat-icon.png") center center no-repeat;
 }
 
+@media only screen and (min-width: 48rem) {
+  /* line 79, ../scss/components/_header.scss */
+  #header #home-link {
+    width: 194.65px;
+    height: 187.0px;
+    margin: 18px 0 0;
+  }
+  /* line 85, ../scss/components/_header.scss */
+  #header .top nav#contacts {
+    width: 50%;
+    margin: 0 auto;
+  }
+  /* line 90, ../scss/components/_header.scss */
+  #header .top nav#contacts ul li a {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  /* line 105, ../scss/components/_header.scss */
+  #header .top {
+    padding: 20px 50px;
+  }
+  /* line 107, ../scss/components/_header.scss */
+  #header .top nav#contacts {
+    width: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  /* line 5, ../scss/helpers/mixins/_centered-menu.scss */
+  #header .top nav#contacts ul {
+    clear: left;
+    float: left;
+    position: relative;
+    left: 50%;
+    text-align: center;
+  }
+  /* line 11, ../scss/helpers/mixins/_centered-menu.scss */
+  #header .top nav#contacts ul li {
+    display: block;
+    float: left;
+    position: relative;
+    right: 50%;
+  }
+  /* line 112, ../scss/components/_header.scss */
+  #header .top nav#contacts ul li:after {
+    content: "";
+    width: 1px;
+    height: 14px;
+    display: block;
+    top: 50%;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+    margin-top: -7px;
+    background-color: white;
+  }
+  /* line 122, ../scss/components/_header.scss */
+  #header .top nav#contacts ul li:last-child:after {
+    background-color: transparent;
+  }
+  /* line 126, ../scss/components/_header.scss */
+  #header .top nav#contacts ul li a {
+    line-height: 35px;
+    height: 35px;
+  }
+}
+@media only screen and (min-width: 81.25rem) {
+  /* line 140, ../scss/components/_header.scss */
+  #header #home-link {
+    width: 229px;
+    height: 220px;
+  }
+  /* line 147, ../scss/components/_header.scss */
+  #header .top nav#contacts ul a {
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+/* line 1, ../scss/components/_footer.scss */
+#footer {
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+}
+/* line 4, ../scss/components/_footer.scss */
+#footer p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+/* line 8, ../scss/components/_footer.scss */
+#footer p.address span {
+  display: inline-block;
+  padding: 0 25px;
+}
+/* line 15, ../scss/components/_footer.scss */
+#footer a:link, #footer a:visited {
+  color: white;
+}
+/* line 19, ../scss/components/_footer.scss */
+#footer a.linkedin {
+  height: 26px;
+  line-height: 26px;
+  padding: 0 110px 0 0;
+  position: relative;
+  display: inline-block;
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+/* line 26, ../scss/components/_footer.scss */
+#footer a.linkedin span {
+  display: block;
+  width: 100px;
+  height: 26px;
+  top: 0;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  background: url("../images/linkedin.png") center center no-repeat;
+  background-size: 100% auto;
+}
+/* line 36, ../scss/components/_footer.scss */
+#footer nav#footer-menu {
+  width: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  font-size: 0.875rem;
+  margin-bottom: 20px;
+}
+/* line 5, ../scss/helpers/mixins/_centered-menu.scss */
+#footer nav#footer-menu ul {
+  clear: left;
+  float: left;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+/* line 11, ../scss/helpers/mixins/_centered-menu.scss */
+#footer nav#footer-menu ul li {
+  display: block;
+  float: left;
+  position: relative;
+  right: 50%;
+}
+/* line 40, ../scss/components/_footer.scss */
+#footer nav#footer-menu li {
+  padding: 0 25px;
+  position: relative;
+}
+/* line 43, ../scss/components/_footer.scss */
+#footer nav#footer-menu li:after {
+  content: "";
+  width: 1px;
+  height: 14px;
+  background-color: white;
+  display: block;
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  margin-top: -7px;
+}
+/* line 53, ../scss/components/_footer.scss */
+#footer nav#footer-menu li:last-child:after {
+  background-color: transparent;
+}
+
 /* line 1, ../scss/components/_navigation.scss */
 #nav {
   position: relative;
   z-index: 2;
   width: 100%;
-  position: relative;
   overflow: hidden;
   background-color: #054990;
-  padding: 40px 0;
+  height: 60px;
 }
 /* line 5, ../scss/helpers/mixins/_centered-menu.scss */
 #nav ul {
@@ -3071,28 +3207,142 @@ body {
   right: 50%;
 }
 /* line 7, ../scss/components/_navigation.scss */
+#nav ul {
+  display: none;
+}
+/* line 10, ../scss/components/_navigation.scss */
 #nav li {
   padding: 0 30px;
 }
-/* line 10, ../scss/components/_navigation.scss */
+/* line 12, ../scss/components/_navigation.scss */
+#nav li:first-child {
+  padding: 0 30px 0 0;
+}
+/* line 15, ../scss/components/_navigation.scss */
+#nav li:last-child {
+  padding: 0 0 0 30px;
+}
+/* line 19, ../scss/components/_navigation.scss */
 #nav a {
   color: white;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  height: 80px;
+  line-height: 80px;
 }
-/* line 13, ../scss/components/_navigation.scss */
+/* line 24, ../scss/components/_navigation.scss */
 #nav a:hover, #nav a:visited {
   color: #fff000;
 }
-/* line 17, ../scss/components/_navigation.scss */
+/* line 28, ../scss/components/_navigation.scss */
 #nav .menu-toggle {
-  top: 0;
-  right: auto;
+  top: 14px;
+  right: 30px;
   bottom: auto;
-  left: 0;
+  left: auto;
   position: absolute;
+  width: 48px;
+  height: 32px;
+  background: url("../images/mobile-menu.png") left top no-repeat;
+  display: block;
 }
 
+/* line 37, ../scss/components/_navigation.scss */
+#anchor-nav {
+  top: auto;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px 0;
+  width: 100%;
+  display: block;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+/* line 5, ../scss/helpers/mixins/_centered-menu.scss */
+#anchor-nav ul {
+  clear: left;
+  float: left;
+  position: relative;
+  left: 50%;
+  text-align: center;
+}
+/* line 11, ../scss/helpers/mixins/_centered-menu.scss */
+#anchor-nav ul li {
+  display: block;
+  float: left;
+  position: relative;
+  right: 50%;
+}
+/* line 45, ../scss/components/_navigation.scss */
+#anchor-nav li {
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: 64rem) {
+  /* line 57, ../scss/components/_navigation.scss */
+  #nav {
+    height: 100px;
+    padding-left: 200px;
+  }
+  /* line 60, ../scss/components/_navigation.scss */
+  #nav ul {
+    display: block;
+  }
+  /* line 63, ../scss/components/_navigation.scss */
+  #nav li {
+    padding: 0 18px;
+  }
+  /* line 65, ../scss/components/_navigation.scss */
+  #nav li:first-child {
+    padding: 0 18px 0 0;
+  }
+  /* line 68, ../scss/components/_navigation.scss */
+  #nav li:last-child {
+    padding: 0 0 0 18px;
+  }
+  /* line 72, ../scss/components/_navigation.scss */
+  #nav a {
+    height: 100px;
+    line-height: 100px;
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+  /* line 77, ../scss/components/_navigation.scss */
+  #nav .menu-toggle {
+    display: none;
+  }
+}
+@media only screen and (min-width: 81.25rem) {
+  /* line 86, ../scss/components/_navigation.scss */
+  #nav {
+    height: 120px;
+    padding-left: 230px;
+  }
+  /* line 92, ../scss/components/_navigation.scss */
+  #nav li {
+    padding: 0 30px;
+  }
+  /* line 94, ../scss/components/_navigation.scss */
+  #nav li:first-child {
+    padding: 0 30px 0 0;
+  }
+  /* line 97, ../scss/components/_navigation.scss */
+  #nav li:last-child {
+    padding: 0 0 0 30px;
+  }
+  /* line 101, ../scss/components/_navigation.scss */
+  #nav a {
+    height: 120px;
+    line-height: 120px;
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
 /* line 1, ../scss/components/_container.scss */
 #main {
   background-color: white;
@@ -3141,15 +3391,18 @@ a {
 /* line 20, ../scss/components/_typography.scss */
 a:link, a:visited {
   text-decoration: none;
+  color: #054990;
 }
-/* line 26, ../scss/components/_typography.scss */
+/* line 27, ../scss/components/_typography.scss */
 a:focus {
   outline: none;
 }
 
-/* line 30, ../scss/components/_typography.scss */
+/* line 31, ../scss/components/_typography.scss */
 p {
   margin-bottom: 40px;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 /* line 2, ../scss/components/_global.scss */
@@ -3236,14 +3489,23 @@ p {
   margin-right: 55px !important;
 }
 
-/* line 69, ../scss/components/_global.scss */
+/* line 68, ../scss/components/_global.scss */
+.big {
+  font-size: 46px;
+  font-size: 2.875rem;
+  line-height: 120%;
+  color: #054990;
+}
+
+/* line 74, ../scss/components/_global.scss */
 a.read-more {
   display: inline-block;
   height: 48px;
   position: relative;
   text-decoration: none;
+  margin-bottom: 13px;
 }
-/* line 74, ../scss/components/_global.scss */
+/* line 80, ../scss/components/_global.scss */
 a.read-more span {
   height: 48px;
   line-height: 48px;
@@ -3261,17 +3523,17 @@ a.read-more span {
   transition: background-color 0.3s ease;
   margin-bottom: 13px;
 }
-/* line 87, ../scss/components/_global.scss */
+/* line 93, ../scss/components/_global.scss */
 .red-btns a.read-more span {
   background-color: #eb222f;
   color: white;
 }
-/* line 91, ../scss/components/_global.scss */
+/* line 97, ../scss/components/_global.scss */
 .blue-btns a.read-more span {
   background-color: #054990;
   color: white;
 }
-/* line 96, ../scss/components/_global.scss */
+/* line 102, ../scss/components/_global.scss */
 a.read-more:before {
   content: "";
   z-index: 1;
@@ -3290,24 +3552,24 @@ a.read-more:before {
   -o-transform: skewY(-20deg);
   transform: skewY(-20deg);
 }
-/* line 105, ../scss/components/_global.scss */
+/* line 111, ../scss/components/_global.scss */
 .red-btns a.read-more:before, .blue-btns a.read-more:before {
   background-color: #1d1d1d;
 }
-/* line 110, ../scss/components/_global.scss */
+/* line 116, ../scss/components/_global.scss */
 a.read-more:hover span, a.read-more:active span {
   background-color: #fcf9d4;
 }
-/* line 112, ../scss/components/_global.scss */
+/* line 118, ../scss/components/_global.scss */
 .red-btns a.read-more:hover span, .red-btns a.read-more:active span {
   background-color: #ef515b;
 }
-/* line 115, ../scss/components/_global.scss */
+/* line 121, ../scss/components/_global.scss */
 .blue-btns a.read-more:hover span, .blue-btns a.read-more:active span {
   background-color: #0762c1;
 }
 
-/* line 121, ../scss/components/_global.scss */
+/* line 127, ../scss/components/_global.scss */
 a.video-btn {
   display: inline-block;
   background-color: #fff000;
@@ -3319,7 +3581,7 @@ a.video-btn {
   padding: 0 90px 0 25px;
   position: relative;
 }
-/* line 130, ../scss/components/_global.scss */
+/* line 136, ../scss/components/_global.scss */
 a.video-btn:after {
   content: "";
   top: 50%;
@@ -3333,22 +3595,22 @@ a.video-btn:after {
   margin-top: -23px;
   background: url("../images/video-play.png") center center no-repeat;
 }
-/* line 139, ../scss/components/_global.scss */
+/* line 145, ../scss/components/_global.scss */
 a.video-btn:hover, a.video-btn:active {
   background-color: #fcf9d4;
 }
 
-/* line 144, ../scss/components/_global.scss */
+/* line 150, ../scss/components/_global.scss */
 .red-sub-heads h3, .red-sub-heads h4 {
   color: #eb222f;
 }
 
-/* line 149, ../scss/components/_global.scss */
+/* line 155, ../scss/components/_global.scss */
 .white-sub-heads h3, .white-sub-heads h4 {
   color: white;
 }
 
-/* line 153, ../scss/components/_global.scss */
+/* line 159, ../scss/components/_global.scss */
 .gold-partner {
   display: block;
   width: 155px;
@@ -3357,7 +3619,7 @@ a.video-btn:hover, a.video-btn:active {
   background-size: 100% auto;
 }
 
-/* line 161, ../scss/components/_global.scss */
+/* line 167, ../scss/components/_global.scss */
 .section-footer {
   width: 100%;
   display: block;
@@ -3369,7 +3631,7 @@ a.video-btn:hover, a.video-btn:active {
   position: absolute;
   z-index: 999;
 }
-/* line 167, ../scss/components/_global.scss */
+/* line 173, ../scss/components/_global.scss */
 .section-footer .anchor-up {
   display: inline-block;
   background: white url("../images/anchor-up-arrow.jpg") center center no-repeat;
@@ -3378,7 +3640,7 @@ a.video-btn:hover, a.video-btn:active {
   height: 50px;
 }
 
-/* line 176, ../scss/components/_global.scss */
+/* line 182, ../scss/components/_global.scss */
 a.ribbon {
   display: inline-block;
   height: 58px;
@@ -3390,7 +3652,7 @@ a.ribbon {
   font-size: 1.5rem;
   text-decoration: none;
 }
-/* line 185, ../scss/components/_global.scss */
+/* line 191, ../scss/components/_global.scss */
 a.ribbon span {
   height: 58px;
   line-height: 58px;
@@ -3405,7 +3667,7 @@ a.ribbon span {
   -moz-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-/* line 197, ../scss/components/_global.scss */
+/* line 203, ../scss/components/_global.scss */
 a.ribbon:before {
   content: "";
   z-index: 1;
@@ -3428,16 +3690,16 @@ a.ribbon:before {
   background-image: -webkit-linear-gradient(-315deg, black 0%, #054990 100%);
   background-image: linear-gradient(45deg,black 0%, #054990 100%);
 }
-/* line 209, ../scss/components/_global.scss */
+/* line 215, ../scss/components/_global.scss */
 a.ribbon.right {
   margin: 60px -88px 0 0;
   float: right;
 }
-/* line 212, ../scss/components/_global.scss */
+/* line 218, ../scss/components/_global.scss */
 a.ribbon.right span {
   padding: 0 58px 0 20px;
 }
-/* line 215, ../scss/components/_global.scss */
+/* line 221, ../scss/components/_global.scss */
 a.ribbon.right:before {
   top: -29px;
   right: 0;
@@ -3453,19 +3715,19 @@ a.ribbon.right:before {
   background-image: -webkit-linear-gradient(-225deg, gray 0%, #fff000 100%);
   background-image: linear-gradient(-45deg,gray 0%, #fff000 100%);
 }
-/* line 221, ../scss/components/_global.scss */
+/* line 227, ../scss/components/_global.scss */
 a.ribbon.yellow {
   color: #054990;
 }
-/* line 223, ../scss/components/_global.scss */
+/* line 229, ../scss/components/_global.scss */
 a.ribbon.yellow span {
   background-color: #fff000;
 }
-/* line 227, ../scss/components/_global.scss */
+/* line 233, ../scss/components/_global.scss */
 a.ribbon.yellow:hover span, a.ribbon.yellow:active span {
   background-color: #fcf9d4;
 }
-/* line 233, ../scss/components/_global.scss */
+/* line 239, ../scss/components/_global.scss */
 a.ribbon:hover span, a.ribbon:active span {
   background-color: #0762c1;
 }
@@ -3596,7 +3858,7 @@ ul.slick-dots li.slick-active button {
   display: block;
   width: 100%;
   height: 100%;
-  padding: 190px 0 0;
+  padding: 125px 0 0;
 }
 
 /* line 7, ../scss/templates/_home.scss */
@@ -3649,7 +3911,7 @@ ul.slick-dots li.slick-active button {
 #slider .slick-dots {
   top: auto;
   right: 0;
-  bottom: 0;
+  bottom: 80px;
   left: 0;
   position: absolute;
 }
@@ -3701,7 +3963,12 @@ ul.slick-dots li.slick-active button {
 .light-yellow .section-content {
   background-color: #fcf9d4;
 }
-/* line 76, ../scss/templates/_home.scss */
+/* line 72, ../scss/templates/_home.scss */
+.black .section-content {
+  color: white;
+  background-color: black;
+}
+/* line 80, ../scss/templates/_home.scss */
 .section-content:before, .section-content:after {
   content: "";
   display: block;
@@ -3720,7 +3987,7 @@ ul.slick-dots li.slick-active button {
   -o-transform: skewY(3.5deg);
   transform: skewY(3.5deg);
 }
-/* line 86, ../scss/templates/_home.scss */
+/* line 90, ../scss/templates/_home.scss */
 .section-content:after {
   top: auto;
   right: auto;
@@ -3729,73 +3996,77 @@ ul.slick-dots li.slick-active button {
   position: absolute;
 }
 
-/* line 91, ../scss/templates/_home.scss */
+/* line 95, ../scss/templates/_home.scss */
 .blue .nested-section-content {
   background-color: #054990;
   color: white;
 }
-/* line 95, ../scss/templates/_home.scss */
+/* line 99, ../scss/templates/_home.scss */
 .red .nested-section-content {
   background-color: #eb222f;
   color: white;
 }
 
-/* line 100, ../scss/templates/_home.scss */
+/* line 104, ../scss/templates/_home.scss */
 .section-content-inner {
   padding: 80px 30px 100px;
 }
+/* line 106, ../scss/templates/_home.scss */
+#video-link .section-content-inner {
+  padding: 200px 30px 200px;
+}
 
-/* line 103, ../scss/templates/_home.scss */
+/* line 110, ../scss/templates/_home.scss */
 .section-footer {
   display: block;
   width: 100%;
 }
 
-/* line 108, ../scss/templates/_home.scss */
+/* line 115, ../scss/templates/_home.scss */
 #intro .inner-pad {
   padding: 50px 70px 30px;
 }
-/* line 111, ../scss/templates/_home.scss */
+/* line 118, ../scss/templates/_home.scss */
 #intro p {
   font-size: 26px;
   font-size: 1.625rem;
   color: #8d8d8d;
 }
-/* line 114, ../scss/templates/_home.scss */
+/* line 121, ../scss/templates/_home.scss */
 #intro p:last-child {
   margin: 0;
 }
 
-/* line 120, ../scss/templates/_home.scss */
+/* line 127, ../scss/templates/_home.scss */
 #lenovo header {
   height: 155px;
   display: block;
   position: relative;
   margin-bottom: 30px;
 }
-/* line 125, ../scss/templates/_home.scss */
+/* line 132, ../scss/templates/_home.scss */
 #lenovo header .columns {
   height: 100%;
   position: relative;
 }
-/* line 129, ../scss/templates/_home.scss */
+/* line 136, ../scss/templates/_home.scss */
 #lenovo header .inner {
   height: 100%;
 }
-/* line 131, ../scss/templates/_home.scss */
+/* line 138, ../scss/templates/_home.scss */
 #lenovo header .inner:before {
   content: "";
   display: inline-block;
   height: 155px;
   vertical-align: middle;
 }
-/* line 137, ../scss/templates/_home.scss */
+/* line 144, ../scss/templates/_home.scss */
 #lenovo header .inner .vcenter {
   display: inline-block;
   width: 98%;
   vertical-align: middle;
 }
-/* line 143, ../scss/templates/_home.scss */
+/* line 150, ../scss/templates/_home.scss */
 #lenovo header .gold-partner {
   top: 0;
   right: auto;
@@ -3803,21 +4074,21 @@ ul.slick-dots li.slick-active button {
   left: 30px;
   position: absolute;
 }
-/* line 146, ../scss/templates/_home.scss */
+/* line 153, ../scss/templates/_home.scss */
 #lenovo header h2 {
   position: relative;
   margin: 0;
 }
-/* line 149, ../scss/templates/_home.scss */
+/* line 156, ../scss/templates/_home.scss */
 #lenovo header h2 i {
   display: none;
 }
-/* line 152, ../scss/templates/_home.scss */
+/* line 159, ../scss/templates/_home.scss */
 #lenovo header h2 span em {
   padding: 12px 20px 12px 308px;
   position: relative;
 }
-/* line 155, ../scss/templates/_home.scss */
+/* line 162, ../scss/templates/_home.scss */
 #lenovo header h2 span em:before {
   content: "";
   width: 268px;
@@ -3832,41 +4103,72 @@ ul.slick-dots li.slick-active button {
   margin-top: -19px;
 }
 
-/* line 170, ../scss/templates/_home.scss */
+/* line 177, ../scss/templates/_home.scss */
 .pac-features .feature .icon {
   width: 126px;
   height: 115px;
   text-align: center;
   margin: 0 auto 15px;
 }
-/* line 175, ../scss/templates/_home.scss */
+/* line 182, ../scss/templates/_home.scss */
 .pac-features .feature .icon img {
   width: auto;
   height: 100%;
   margin: 0 auto;
 }
-/* line 181, ../scss/templates/_home.scss */
+/* line 188, ../scss/templates/_home.scss */
 .pac-features .feature h4 {
   font-size: 30px;
   font-size: 1.875rem;
 }
 
-/* line 187, ../scss/templates/_home.scss */
+/* line 194, ../scss/templates/_home.scss */
 #callback .gform_body {
   background-color: #8d8d8d;
   width: 100%;
   display: block;
 }
-/* line 192, ../scss/templates/_home.scss */
+/* line 200, ../scss/templates/_home.scss */
 #callback .gform_column {
   width: 50%;
   float: left;
 }
-/* line 196, ../scss/templates/_home.scss */
-#callback input {
+/* line 204, ../scss/templates/_home.scss */
+#callback input.medium {
   width: 100%;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
-/* line 200, ../scss/templates/_home.scss */
+/* line 209, ../scss/templates/_home.scss */
+#callback .gform_footer {
+  text-align: right;
+  padding-top: 60px;
+  position: relative;
+}
+/* line 213, ../scss/templates/_home.scss */
+#callback .gform_footer:before {
+  content: "";
+  z-index: 1;
+  height: 58px;
+  line-height: 58px;
+  background-color: #8d8d8d;
+  width: 58px;
+  display: block;
+  top: 29px;
+  right: -87px;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  -webkit-transform: skewY(45deg);
+  -moz-transform: skewY(45deg);
+  -ms-transform: skewY(45deg);
+  -o-transform: skewY(45deg);
+  transform: skewY(45deg);
+  background-color: gray;
+  background-image: -webkit-linear-gradient(-225deg, gray 0%, #fff000 100%);
+  background-image: linear-gradient(-45deg,gray 0%, #fff000 100%);
+}
+/* line 226, ../scss/templates/_home.scss */
 #callback .gform_footer .gform_button {
   display: inline-block;
   height: 58px;
@@ -3876,7 +4178,7 @@ ul.slick-dots li.slick-active button {
   z-index: 2;
   background-color: #fff000;
   border: none;
-  margin: 60px 0 0 0;
+  margin: 0 -88px 0 0;
   color: #054990;
   padding: 0 58px 0 20px;
   text-align: center;
@@ -3887,7 +4189,11 @@ ul.slick-dots li.slick-active button {
   -moz-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-/* line 216, ../scss/templates/_home.scss */
+/* line 242, ../scss/templates/_home.scss */
+#callback .gform_footer .gform_button:hover, #callback .gform_footer .gform_button:active {
+  background-color: #fcf9d4;
+}
+/* line 245, ../scss/templates/_home.scss */
 #callback .gform_footer .gform_button:before {
   content: "";
   z-index: 1;
@@ -3909,4 +4215,67 @@ ul.slick-dots li.slick-active button {
   background-color: black;
   background-image: -webkit-linear-gradient(-315deg, black 0%, #054990 100%);
   background-image: linear-gradient(45deg,black 0%, #054990 100%);
+}
+
+/* line 261, ../scss/templates/_home.scss */
+#faqs p {
+  font-size: 22px;
+  font-size: 1.375rem;
+}
+/* line 264, ../scss/templates/_home.scss */
+#faqs .slider {
+  padding: 0 100px;
+}
+/* line 267, ../scss/templates/_home.scss */
+#faqs .slider .slide p {
+  font-size: 33px;
+  font-size: 2.0625rem;
+  text-align: center;
+  color: #054990;
+  margin: 0;
+}
+/* line 274, ../scss/templates/_home.scss */
+#faqs .slider .slick-prev, #faqs .slider .slick-next {
+  display: block;
+  width: 68px;
+  height: 68px;
+  background-color: white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  position: absolute;
+  margin-top: -34px;
+  background-image: url("../images/slider-prev-arrow.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+}
+/* line 287, ../scss/templates/_home.scss */
+#faqs .slider .slick-next {
+  top: 50%;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  background-image: url("../images/slider-next-arrow.png");
+}
+
+@media only screen and (min-width: 48rem) {
+  /* line 297, ../scss/templates/_home.scss */
+  #slider-wrap {
+    padding: 135px 0 0;
+  }
+}
+@media only screen and (min-width: 81.25rem) {
+  /* line 309, ../scss/templates/_home.scss */
+  #slider-wrap {
+    padding-top: 195px;
+  }
 }

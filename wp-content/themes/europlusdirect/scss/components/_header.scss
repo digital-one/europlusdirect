@@ -1,8 +1,13 @@
 #header{
 	background-color: $blue;
-	@include abs-pos(0,auto,auto,0);
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:9999;
+	//@include abs-pos(0,auto,auto,0);
 	width:100%;
 	padding:0 0 0;
+	/*
 	&:after{
 		content:"";
 		display: block;
@@ -13,48 +18,39 @@
 		@include abs-pos(auto,auto,-40px,0);
 		@include transform(skewY(3.5deg));
 	}
+	*/
 	#home-link{
 		display: block;
-		width:229px;
-		height:220px;
+		width: ((229px / 100) * 55);
+		height: ((220px /100) * 55);
 		@include abs-pos(0,auto,auto,0);
 		background:url('../images/europlus-direct.png') left top no-repeat;
+		background-size:100% auto;
 		@extend %ir;
 		z-index: 999;
 		margin:38px 0 0 ;
 	}
 	.top{
 		@include linear-gradient(-180deg, $dark-grey 0%, $grey 100%);
-		padding:38px 50px 20px;	
+		padding: 10px 10px;
 		color: white;
 		position: relative;
 		z-index: 996;
 		nav#contacts{
-			@include centered-menu;
+			width: 100%;
+			//@include centered-menu;
 			ul{
 				li{
 					position: relative;
 					padding:0 25px;
-					&:after{
-						content:"";
-						width:1px;
-						height:14px;
-						display: block;
-						@include abs-pos(50%,0,auto,auto);
-						margin-top:-7px;
-						background-color:white;
-					}
-					&:last-child{
-						&:after{
-							background-color: transparent;
-						}
-					}
+					display: block;
+					text-align:center;
 				}
 				a{
-					@include font-size(18px);
+					@include font-size(12px);
 					color: white;
-					height:35px;
-					line-height: 35px;
+					line-height: 140%;
+					display: block;
 				}
 			}	
 		}
@@ -79,17 +75,82 @@
 
 @media #{$medium-up} { 
 
-
+	#header{
+		#home-link{
+			width: ((229px / 100) * 85);
+			height: ((220px /100) * 85);
+			margin:18px 0 0 ;
+		}
+		.top{
+			nav#contacts{
+				width:50%;
+				margin:0 auto;
+				ul{
+					li{
+						a{
+							@include font-size(16px);
+						}
+					}
+				}
+			}
+		}
+	}
 }
+
+
 
 @media #{$large-up} { 
 
-
+	#header{
+		.top{
+			padding:20px 50px;	
+			nav#contacts{
+				width: 100%;
+				@include centered-menu;
+				ul{
+					li{
+						&:after{
+							content:"";
+							width:1px;
+							height:14px;
+							display: block;
+							@include abs-pos(50%,0,auto,auto);
+							margin-top:-7px;
+							background-color:white;
+						}
+						&:last-child{
+							&:after{
+								background-color: transparent;
+							}
+						}
+						a{
+							line-height: 35px;
+							height: 35px;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media #{$xlarge-up} { 
 
-
+	#header{
+		#home-link{
+			width:229px;
+			height: 220px;
+		}
+		.top{
+			nav#contacts{
+				ul{
+					a{
+						@include font-size(18px);
+					}	
+				}
+			}
+		}
+	}
 }
 
 

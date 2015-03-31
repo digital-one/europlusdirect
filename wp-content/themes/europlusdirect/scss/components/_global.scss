@@ -65,12 +65,18 @@
 .shift-right-55{
 	margin-right:55px !important;
 }
+.big{
+	@include font-size(46px);
+	line-height: 120%;
+	color: $blue;
+}
 
 a.read-more{
 	display: inline-block;
 	height:48px;
 	position: relative;
 	text-decoration:none;
+	margin-bottom:13px;
 	span{
 		height:48px;
 		line-height: 48px;
