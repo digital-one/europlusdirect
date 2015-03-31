@@ -37,15 +37,7 @@ var _handleShown = true,
 if($('#slider').length){
 
 
-$('#slider').on('init', function(event, slick){
-	var _total = $('.slick-slide',$(this)).length;
-	$('#slider').prepend('<div class="page-count"><span class="page">1</span> of <span class="total">'+_total+'</span></div>');
 
-});
-
-$('#slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.page-count .page',$(this)).text(nextSlide+1);
-	})
 /*
 $('#slider').on('afterChange', function(event, slick, currentSlide){
 	$('.page-count .page',$(this)).text(currentSlide+1);
@@ -56,13 +48,12 @@ $('#slider').on('afterChange', function(event, slick, currentSlide){
 
 
 $('#slider').slick({
-    dots: false,
+    dots: true,
     autoplay: true,
-    fade: true,
     autoplaySpeed: 4000,
     speed: 600,
     pauseOnHover: true,
-    arrows: true
+    arrows: false
   });
 
 

@@ -1,3 +1,242 @@
+.block-heading{
+	span{
+		display: block;
+		width:100%;
+		margin-bottom:8px;
+		text-align: center;
+		.heading-left &{
+			text-align: left;
+		}
+		.heading-right &{
+			text-align: right;
+		}
+		em{
+			display: inline-block;
+			padding:12px 20px;
+			text-align: center;
+			margin:0 auto;
+			.heading-left &, .heading-right &{
+				margin:0;
+				text-align: left;
+			}
+			font-style:normal;
+			color: white;
+			background-color: $blue;
+			.red-blue-heading &{
+				background-color: $red;
+			}
+			.white-yellow-heading &{
+				background-color: white;
+				color: $blue;
+			}
+			.yellow-white-heading &{
+				background-color: $yellow;
+				color: $blue;
+			}	
+		}
+		&.secondary{
+			em{
+				background-color: $yellow;
+				color: $blue;
+				.blue-red-heading &{
+					background-color: $red;
+					color: white;
+				}
+				.red-blue-heading &{
+					background-color: $blue;
+					color: white;
+				}
+				.yellow-white-heading &{
+					background-color: white;
+				}
+			}
+		}
+	}
+}
+.shift-left-30{
+	margin-left:30px !important;
+}
+.shift-left-55{
+	margin-left:55px !important;
+}
+.shift-right-30{
+	margin-right:30px !important;
+}
+.shift-right-55{
+	margin-right:55px !important;
+}
+
+a.read-more{
+	display: inline-block;
+	height:48px;
+	position: relative;
+	text-decoration:none;
+	span{
+		height:48px;
+		line-height: 48px;
+		color: $blue;
+		display: block;
+		@include font-size(24px);
+		text-align: center;
+		padding: 0 20px;
+		z-index: 2;
+		position: relative;
+		background-color: $yellow;
+		@include transition(background-color .3s ease);
+		margin-bottom: 13px;
+		.red-btns &{
+			background-color: $red;
+			color: white;
+		}
+		.blue-btns &{
+			background-color: $blue;
+			color: white;
+		}
+	}
+	&:before{
+		content:"";
+		z-index: 1;
+		width: 30px;
+		height: 13px;
+		display: block;
+		@include abs-pos(auto,0,-6px,auto);
+		background-color: $grey;
+		@include transform(skewY(-20deg));
+		.red-btns &, .blue-btns &{
+			background-color: $dark-grey;
+		}
+	}
+	&:hover,&:active{
+		span{
+			background-color:$light-yellow;
+			.red-btns &{
+				background-color: lighten($red,10%);
+			}
+			.blue-btns &{
+				background-color: lighten($blue,10%);
+			}
+		}
+	}
+}
+a.video-btn{
+	display:inline-block;
+	background-color: $yellow;
+	height:67px;
+	text-decoration:none;
+	line-height: 67px;
+	@include font-size(30px);
+	padding:0 90px 0 25px;
+	position: relative;
+	&:after{
+		content:"";
+		@include abs-pos(50%,25px,auto,auto);
+		width:47px;
+		height:47px;
+		display: block;
+		margin-top:-23px;
+		background:url('../images/video-play.png') center center no-repeat;
+	}
+	&:hover,&:active{
+		background-color: $light-yellow;
+	}
+}
+.red-sub-heads{
+	h3,h4{
+		color: $red;
+	}
+}
+.white-sub-heads{
+	h3,h4{
+		color: white;
+	}
+}
+.gold-partner{
+	display: block;
+	@extend %ir;
+	width: 155px;
+	height: 155px;
+	background:url('../images/lenovo-gold-business-partner.png') center center no-repeat;
+	background-size: 100% auto;
+}
+.section-footer{
+	width:100%;
+	display:block;
+	text-align: center;
+	@include abs-pos(auto,auto,30px,0);
+	z-index:999;
+	.anchor-up{
+		display: inline-block;
+		background: white url('../images/anchor-up-arrow.jpg') center center no-repeat;
+		margin:0 auto;
+		width:50px;
+		height:50px;
+		@extend %ir;
+	}
+}
+a.ribbon{
+	display:inline-block;
+	height:58px;
+	width:320px;
+	position:relative;
+	margin: 60px 0 0 -88px;
+	color: white;
+	@include font-size(24px);
+	text-decoration:none;
+	span{
+		height:58px; 
+		line-height:58px;
+		display: block;
+		position: relative;
+		width:100%;
+		z-index: 2;
+		background-color: $blue;
+		text-align: center;
+		padding: 0 20px 0 58px;
+		@include transition(background-color .3s ease);
+	}
+	&:before{
+		content:"";
+		z-index: 1;
+		@include abs-pos(-29px,auto,auto,0);
+		height:58px;
+		@include transform(skewY(-45deg));
+		line-height:58px;
+		background-color: $grey;
+		width:58px;
+		display: block;
+		@include linear-gradient(45deg, black 0%, $blue 100%);
+	}
+	&.right{
+		margin: 60px -88px 0 0;
+		float:right;
+		span{
+			padding: 0 58px 0 20px;
+		}
+		&:before{
+			@include abs-pos(-29px,0,auto,auto);
+			@include transform(skewY(45deg));	
+			@include linear-gradient(-45deg, lighten(black,50%) 0%, $yellow 100%);
+		}
+	}
+	&.yellow{
+		color: $blue;
+		span{
+			background-color: $yellow;
+		}
+		&:hover,&:active{
+			span{
+				background-color: $light-yellow;
+			}
+		}
+	}
+	&:hover,&:active{
+		span{
+			background-color: lighten($blue,10%);
+		}	
+	}
+}
+
+
 @media #{$medium-up} { 
 
 

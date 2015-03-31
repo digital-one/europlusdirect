@@ -28,15 +28,19 @@
 <body <?php body_class(); ?>>
 	<!-- header -->
 	<header id="header">
-		<h1 id="home-link"></h1>
+		<?php if(is_front_page()): ?>
+		<h1 id="home-link">Europlus Direct</h1>
 <?php else: ?>
 	<a href="<?php echo home_url() ?>" id="home-link"></a>
 <?php endif ?>
-<div class="top row">
-			<?php if(is_front_page()): ?>
+
+<div class="top">
+		<div class="row">
 	<div class="small-12 columns">
-		<ul><li>UK: <a href="tel:">+44 (0)113 887 8650</a></li><li><a href="tel:">USA: +1 727 2164 309</a></li><li><a href="mailto:sales@europlusdirect.co.uk">sales@europlusdirect.co.uk</a></li></ul>
+		<nav id="contacts"><ul><li><a href="tel:">UK: +44 (0)113 887 8650</a></li><li><a href="tel:">USA: +1 727 2164 309</a></li><li><a href="mailto:sales@europlusdirect.co.uk">sales@europlusdirect.co.uk</a></li></ul></nav>
+		<nav id="controls"><ul><li>Language</li><li><a href="" class="chat">Chat</a></li></ul></nav>
 	</div>
+</div>
 </div>
 <!--/top-->
 <!-- nav -->
@@ -55,4 +59,16 @@
 </nav>
 <!-- /nav -->
 </header>
+<!--secondary nav-->
+<?php /*
+<nav id="secondary-nav">
+<div class="row">
+	<div class="small-12 columns">
+		Secondary nav
+	</div>
+</div>
+</nav>
+*/
+?>
+
 <!-- /header -->

@@ -1,3 +1,24 @@
+#nav{
+	position: relative;
+	z-index:2;
+	@include centered-menu;
+	background-color: $blue;
+	padding:40px 0;
+	li{
+		padding:0 30px;
+	}
+	a{
+		color: white;
+		@include font-size(24px);
+		&:hover,&:visited{
+			color: $yellow;
+		}
+	}
+	.menu-toggle{
+		@include abs-pos(0,auto,auto,0);
+	}
+}
+
 @media #{$medium-up} { 
 
 

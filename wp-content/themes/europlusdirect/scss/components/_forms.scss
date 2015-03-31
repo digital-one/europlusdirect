@@ -25,7 +25,7 @@ textarea,
   	width: 100%;
   	box-sizing: border-box;
 	@include transition (background-color .1s linear 0s);
-	font-family:$merriweather;
+	//font-family:$merriweather;
 	&:focus{
 		background-color: darken(white,10);
 		outline:none;
