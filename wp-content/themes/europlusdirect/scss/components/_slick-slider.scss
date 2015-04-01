@@ -74,13 +74,13 @@ ul.slick-dots{
 	z-index: 999;
 	text-align:center;
 	li{
-		padding: 0 8px;
+		padding: 0 4px;
 		display: inline-block;
 		button{
 			display:inline-block;
 			border:none;
-			width:20px;
-			height:20px;
+			width:10px;
+			height:10px;
 			padding:0;
 			@include border-radius(50%);
 			@extend %ir;
@@ -89,6 +89,27 @@ ul.slick-dots{
 		&.slick-active{
 			button{
 				background-color:$yellow;
+			}
+		}
+	}
+}
+
+
+
+@media #{$medium-up} { 
+
+	ul.slick-dots{
+		padding:15px 0;
+		li{
+			padding: 0 8px;
+			button{
+				width:20px;
+				height:20px;
+			}
+			&.slick-active{
+				button{
+					background-color:$yellow;
+				}
 			}
 		}
 	}

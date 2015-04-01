@@ -3016,7 +3016,7 @@ body {
   #header #home-link {
     width: 194.65px;
     height: 187.0px;
-    margin: 18px 0 0;
+    margin: 20px 0 0;
   }
   /* line 85, ../scss/components/_header.scss */
   #header .top nav#contacts {
@@ -3099,8 +3099,8 @@ body {
 }
 /* line 4, ../scss/components/_footer.scss */
 #footer p {
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   margin-bottom: 20px;
 }
 /* line 8, ../scss/components/_footer.scss */
@@ -3137,51 +3137,65 @@ body {
 }
 /* line 36, ../scss/components/_footer.scss */
 #footer nav#footer-menu {
-  width: 100%;
-  overflow: hidden;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 12px;
+  font-size: 0.75rem;
   margin-bottom: 20px;
 }
-/* line 5, ../scss/helpers/mixins/_centered-menu.scss */
-#footer nav#footer-menu ul {
-  clear: left;
-  float: left;
-  position: relative;
-  left: 50%;
-  text-align: center;
-}
-/* line 11, ../scss/helpers/mixins/_centered-menu.scss */
-#footer nav#footer-menu ul li {
-  display: block;
-  float: left;
-  position: relative;
-  right: 50%;
-}
-/* line 40, ../scss/components/_footer.scss */
+/* line 39, ../scss/components/_footer.scss */
 #footer nav#footer-menu li {
   padding: 0 25px;
+  width: 100%;
+  text-align: center;
   position: relative;
 }
-/* line 43, ../scss/components/_footer.scss */
-#footer nav#footer-menu li:after {
-  content: "";
-  width: 1px;
-  height: 14px;
-  background-color: white;
-  display: block;
-  top: 50%;
-  right: 0;
-  bottom: auto;
-  left: auto;
-  position: absolute;
-  margin-top: -7px;
-}
-/* line 53, ../scss/components/_footer.scss */
-#footer nav#footer-menu li:last-child:after {
-  background-color: transparent;
-}
 
+@media only screen and (min-width: 48rem) {
+  /* line 53, ../scss/components/_footer.scss */
+  #footer nav#footer-menu {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  /* line 5, ../scss/helpers/mixins/_centered-menu.scss */
+  #footer nav#footer-menu ul {
+    clear: left;
+    float: left;
+    position: relative;
+    left: 50%;
+    text-align: center;
+  }
+  /* line 11, ../scss/helpers/mixins/_centered-menu.scss */
+  #footer nav#footer-menu ul li {
+    display: block;
+    float: left;
+    position: relative;
+    right: 50%;
+  }
+  /* line 56, ../scss/components/_footer.scss */
+  #footer nav#footer-menu li {
+    width: auto;
+    padding: 0 25px;
+    position: relative;
+  }
+  /* line 60, ../scss/components/_footer.scss */
+  #footer nav#footer-menu li:after {
+    content: "";
+    width: 1px;
+    height: 14px;
+    background-color: white;
+    display: block;
+    top: 50%;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+    margin-top: -7px;
+  }
+  /* line 70, ../scss/components/_footer.scss */
+  #footer nav#footer-menu li:last-child:after {
+    background-color: transparent;
+  }
+}
 /* line 1, ../scss/components/_navigation.scss */
 #nav {
   position: relative;
@@ -3259,9 +3273,9 @@ body {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 20px 0;
   width: 100%;
-  display: block;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+  display: none;
 }
 /* line 5, ../scss/helpers/mixins/_centered-menu.scss */
 #anchor-nav ul {
@@ -3278,7 +3292,7 @@ body {
   position: relative;
   right: 50%;
 }
-/* line 45, ../scss/components/_navigation.scss */
+/* line 44, ../scss/components/_navigation.scss */
 #anchor-nav li {
   padding: 0 20px;
 }
@@ -3316,26 +3330,31 @@ body {
   #nav .menu-toggle {
     display: none;
   }
+
+  /* line 81, ../scss/components/_navigation.scss */
+  #anchor-nav {
+    display: block;
+  }
 }
 @media only screen and (min-width: 81.25rem) {
-  /* line 86, ../scss/components/_navigation.scss */
+  /* line 89, ../scss/components/_navigation.scss */
   #nav {
     height: 120px;
     padding-left: 230px;
   }
-  /* line 92, ../scss/components/_navigation.scss */
+  /* line 95, ../scss/components/_navigation.scss */
   #nav li {
     padding: 0 30px;
   }
-  /* line 94, ../scss/components/_navigation.scss */
+  /* line 97, ../scss/components/_navigation.scss */
   #nav li:first-child {
     padding: 0 30px 0 0;
   }
-  /* line 97, ../scss/components/_navigation.scss */
+  /* line 100, ../scss/components/_navigation.scss */
   #nav li:last-child {
     padding: 0 0 0 30px;
   }
-  /* line 101, ../scss/components/_navigation.scss */
+  /* line 104, ../scss/components/_navigation.scss */
   #nav a {
     height: 120px;
     line-height: 120px;
@@ -3357,23 +3376,23 @@ body {
 /* line 1, ../scss/components/_typography.scss */
 h1, h2, h3, h4 {
   margin: 0 0 20px;
-  line-height: 100%;
+  line-height: 120%;
   color: #054990;
   font-weight: normal;
-  font-size: 48px;
-  font-size: 3rem;
+  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 /* line 8, ../scss/components/_typography.scss */
 h3 {
-  font-size: 30px;
-  font-size: 1.875rem;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 /* line 11, ../scss/components/_typography.scss */
 h4 {
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 16px;
+  font-size: 1rem;
 }
 
 /* line 14, ../scss/components/_typography.scss */
@@ -3400,31 +3419,93 @@ a:focus {
 
 /* line 31, ../scss/components/_typography.scss */
 p {
-  margin-bottom: 40px;
-  font-size: 18px;
-  font-size: 1.125rem;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+/* line 34, ../scss/components/_typography.scss */
+p:last-child {
+  margin-bottom: 0;
 }
 
+@media only screen and (min-width: 48rem) {
+  /* line 41, ../scss/components/_typography.scss */
+  h1, h2 {
+    font-size: 28px;
+    font-size: 1.75rem;
+  }
+
+  /* line 44, ../scss/components/_typography.scss */
+  h3 {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+
+  /* line 47, ../scss/components/_typography.scss */
+  p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-size: 1.125rem;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  /* line 55, ../scss/components/_typography.scss */
+  h1, h2 {
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+
+  /* line 58, ../scss/components/_typography.scss */
+  h3 {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+
+  /* line 61, ../scss/components/_typography.scss */
+  h4 {
+    font-size: 16px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 81.25rem) {
+  /* line 69, ../scss/components/_typography.scss */
+  h1, h2 {
+    font-size: 48px;
+    font-size: 3rem;
+  }
+
+  /* line 72, ../scss/components/_typography.scss */
+  h3 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+
+  /* line 75, ../scss/components/_typography.scss */
+  h4 {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+}
 /* line 2, ../scss/components/_global.scss */
 .block-heading span {
   display: block;
   width: 100%;
-  margin-bottom: 8px;
-  text-align: center;
+  margin-bottom: 3px;
 }
-/* line 7, ../scss/components/_global.scss */
+/* line 6, ../scss/components/_global.scss */
 .heading-left .block-heading span {
   text-align: left;
 }
-/* line 10, ../scss/components/_global.scss */
+/* line 9, ../scss/components/_global.scss */
 .heading-right .block-heading span {
   text-align: right;
 }
-/* line 13, ../scss/components/_global.scss */
+/* line 12, ../scss/components/_global.scss */
 .block-heading span em {
   display: inline-block;
-  padding: 12px 20px;
+  padding: 4px 10px;
   text-align: center;
+  width: auto;
   margin: 0 auto;
   font-style: normal;
   color: white;
@@ -3433,71 +3514,55 @@ p {
 /* line 18, ../scss/components/_global.scss */
 .heading-left .block-heading span em, .heading-right .block-heading span em {
   margin: 0;
-  text-align: left;
+  text-align: right;
 }
 /* line 25, ../scss/components/_global.scss */
+.opaque-heading .block-heading span em {
+  background-color: rgba(5, 73, 144, 0.7);
+}
+/* line 28, ../scss/components/_global.scss */
 .red-blue-heading .block-heading span em {
   background-color: #eb222f;
 }
-/* line 28, ../scss/components/_global.scss */
+/* line 31, ../scss/components/_global.scss */
 .white-yellow-heading .block-heading span em {
   background-color: white;
   color: #054990;
 }
-/* line 32, ../scss/components/_global.scss */
+/* line 35, ../scss/components/_global.scss */
 .yellow-white-heading .block-heading span em {
   background-color: #fff000;
   color: #054990;
 }
-/* line 38, ../scss/components/_global.scss */
+/* line 41, ../scss/components/_global.scss */
 .block-heading span.secondary em {
   background-color: #fff000;
   color: #054990;
 }
-/* line 41, ../scss/components/_global.scss */
+/* line 44, ../scss/components/_global.scss */
 .blue-red-heading .block-heading span.secondary em {
   background-color: #eb222f;
   color: white;
 }
-/* line 45, ../scss/components/_global.scss */
+/* line 48, ../scss/components/_global.scss */
 .red-blue-heading .block-heading span.secondary em {
   background-color: #054990;
   color: white;
 }
-/* line 49, ../scss/components/_global.scss */
+/* line 52, ../scss/components/_global.scss */
 .yellow-white-heading .block-heading span.secondary em {
   background-color: white;
 }
 
-/* line 56, ../scss/components/_global.scss */
-.shift-left-30 {
-  margin-left: 30px !important;
-}
-
 /* line 59, ../scss/components/_global.scss */
-.shift-left-55 {
-  margin-left: 55px !important;
-}
-
-/* line 62, ../scss/components/_global.scss */
-.shift-right-30 {
-  margin-right: 30px !important;
-}
-
-/* line 65, ../scss/components/_global.scss */
-.shift-right-55 {
-  margin-right: 55px !important;
-}
-
-/* line 68, ../scss/components/_global.scss */
 .big {
-  font-size: 46px;
-  font-size: 2.875rem;
+  font-size: 26px;
+  font-size: 1.625rem;
   line-height: 120%;
   color: #054990;
 }
 
-/* line 74, ../scss/components/_global.scss */
+/* line 65, ../scss/components/_global.scss */
 a.read-more {
   display: inline-block;
   height: 48px;
@@ -3505,14 +3570,14 @@ a.read-more {
   text-decoration: none;
   margin-bottom: 13px;
 }
-/* line 80, ../scss/components/_global.scss */
+/* line 71, ../scss/components/_global.scss */
 a.read-more span {
-  height: 48px;
-  line-height: 48px;
+  height: 38px;
+  line-height: 38px;
   color: #054990;
   display: block;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   text-align: center;
   padding: 0 20px;
   z-index: 2;
@@ -3523,17 +3588,17 @@ a.read-more span {
   transition: background-color 0.3s ease;
   margin-bottom: 13px;
 }
-/* line 93, ../scss/components/_global.scss */
+/* line 84, ../scss/components/_global.scss */
 .red-btns a.read-more span {
   background-color: #eb222f;
   color: white;
 }
-/* line 97, ../scss/components/_global.scss */
+/* line 88, ../scss/components/_global.scss */
 .blue-btns a.read-more span {
   background-color: #054990;
   color: white;
 }
-/* line 102, ../scss/components/_global.scss */
+/* line 93, ../scss/components/_global.scss */
 a.read-more:before {
   content: "";
   z-index: 1;
@@ -3542,7 +3607,7 @@ a.read-more:before {
   display: block;
   top: auto;
   right: 0;
-  bottom: -6px;
+  bottom: 4px;
   left: auto;
   position: absolute;
   background-color: #8d8d8d;
@@ -3552,74 +3617,80 @@ a.read-more:before {
   -o-transform: skewY(-20deg);
   transform: skewY(-20deg);
 }
-/* line 111, ../scss/components/_global.scss */
+/* line 102, ../scss/components/_global.scss */
 .red-btns a.read-more:before, .blue-btns a.read-more:before {
   background-color: #1d1d1d;
 }
-/* line 116, ../scss/components/_global.scss */
+/* line 107, ../scss/components/_global.scss */
 a.read-more:hover span, a.read-more:active span {
   background-color: #fcf9d4;
 }
-/* line 118, ../scss/components/_global.scss */
+/* line 109, ../scss/components/_global.scss */
 .red-btns a.read-more:hover span, .red-btns a.read-more:active span {
   background-color: #ef515b;
 }
-/* line 121, ../scss/components/_global.scss */
+/* line 112, ../scss/components/_global.scss */
 .blue-btns a.read-more:hover span, .blue-btns a.read-more:active span {
   background-color: #0762c1;
 }
 
-/* line 127, ../scss/components/_global.scss */
+/* line 118, ../scss/components/_global.scss */
 a.video-btn {
   display: inline-block;
   background-color: #fff000;
-  height: 67px;
+  height: 40px;
   text-decoration: none;
-  line-height: 67px;
-  font-size: 30px;
-  font-size: 1.875rem;
-  padding: 0 90px 0 25px;
+  line-height: 40px;
+  font-size: 22px;
+  font-size: 1.375rem;
+  padding: 0 55px 0 15px;
   position: relative;
 }
-/* line 136, ../scss/components/_global.scss */
+/* line 127, ../scss/components/_global.scss */
 a.video-btn:after {
   content: "";
   top: 50%;
-  right: 25px;
+  right: 15px;
   bottom: auto;
   left: auto;
   position: absolute;
-  width: 47px;
-  height: 47px;
+  width: 27px;
+  height: 27px;
   display: block;
-  margin-top: -23px;
+  margin-top: -13px;
   background: url("../images/video-play.png") center center no-repeat;
+  background-size: 100% auto;
 }
-/* line 145, ../scss/components/_global.scss */
+/* line 137, ../scss/components/_global.scss */
 a.video-btn:hover, a.video-btn:active {
   background-color: #fcf9d4;
 }
 
-/* line 150, ../scss/components/_global.scss */
+/* line 142, ../scss/components/_global.scss */
 .red-sub-heads h3, .red-sub-heads h4 {
   color: #eb222f;
 }
 
-/* line 155, ../scss/components/_global.scss */
+/* line 147, ../scss/components/_global.scss */
 .white-sub-heads h3, .white-sub-heads h4 {
   color: white;
 }
 
-/* line 159, ../scss/components/_global.scss */
+/* line 151, ../scss/components/_global.scss */
 .gold-partner {
   display: block;
-  width: 155px;
-  height: 155px;
-  background: url("../images/lenovo-gold-business-partner.png") center center no-repeat;
-  background-size: 100% auto;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+/* line 157, ../scss/components/_global.scss */
+.gold-partner img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* line 167, ../scss/components/_global.scss */
+/* line 163, ../scss/components/_global.scss */
 .section-footer {
   width: 100%;
   display: block;
@@ -3631,7 +3702,7 @@ a.video-btn:hover, a.video-btn:active {
   position: absolute;
   z-index: 999;
 }
-/* line 173, ../scss/components/_global.scss */
+/* line 169, ../scss/components/_global.scss */
 .section-footer .anchor-up {
   display: inline-block;
   background: white url("../images/anchor-up-arrow.jpg") center center no-repeat;
@@ -3640,98 +3711,275 @@ a.video-btn:hover, a.video-btn:active {
   height: 50px;
 }
 
-/* line 182, ../scss/components/_global.scss */
+/* line 178, ../scss/components/_global.scss */
 a.ribbon {
   display: inline-block;
-  height: 58px;
-  width: 320px;
+  height: 40px;
+  width: auto;
   position: relative;
-  margin: 60px 0 0 -88px;
+  margin: 0 auto 10px;
   color: white;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   text-decoration: none;
 }
-/* line 191, ../scss/components/_global.scss */
+/* line 187, ../scss/components/_global.scss */
 a.ribbon span {
-  height: 58px;
-  line-height: 58px;
+  height: 40px;
+  line-height: 40px;
   display: block;
   position: relative;
   width: 100%;
   z-index: 2;
   background-color: #054990;
   text-align: center;
-  padding: 0 20px 0 58px;
+  padding: 0 20px;
   -webkit-transition: background-color 0.3s ease;
   -moz-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-/* line 203, ../scss/components/_global.scss */
+/* line 199, ../scss/components/_global.scss */
 a.ribbon:before {
   content: "";
   z-index: 1;
-  top: -29px;
-  right: auto;
-  bottom: auto;
-  left: 0;
-  position: absolute;
-  height: 58px;
-  -webkit-transform: skewY(-45deg);
-  -moz-transform: skewY(-45deg);
-  -ms-transform: skewY(-45deg);
-  -o-transform: skewY(-45deg);
-  transform: skewY(-45deg);
-  line-height: 58px;
-  background-color: #8d8d8d;
-  width: 58px;
+  width: 30px;
+  height: 13px;
   display: block;
-  background-color: black;
-  background-image: -webkit-linear-gradient(-315deg, black 0%, #054990 100%);
-  background-image: linear-gradient(45deg,black 0%, #054990 100%);
-}
-/* line 215, ../scss/components/_global.scss */
-a.ribbon.right {
-  margin: 60px -88px 0 0;
-  float: right;
-}
-/* line 218, ../scss/components/_global.scss */
-a.ribbon.right span {
-  padding: 0 58px 0 20px;
-}
-/* line 221, ../scss/components/_global.scss */
-a.ribbon.right:before {
-  top: -29px;
-  right: 0;
-  bottom: auto;
+  top: auto;
+  right: 1px;
+  bottom: -6px;
   left: auto;
   position: absolute;
-  -webkit-transform: skewY(45deg);
-  -moz-transform: skewY(45deg);
-  -ms-transform: skewY(45deg);
-  -o-transform: skewY(45deg);
-  transform: skewY(45deg);
-  background-color: gray;
-  background-image: -webkit-linear-gradient(-225deg, gray 0%, #fff000 100%);
-  background-image: linear-gradient(-45deg,gray 0%, #fff000 100%);
+  background-color: #1d1d1d;
+  -webkit-transform: skewY(-20deg);
+  -moz-transform: skewY(-20deg);
+  -ms-transform: skewY(-20deg);
+  -o-transform: skewY(-20deg);
+  transform: skewY(-20deg);
 }
-/* line 227, ../scss/components/_global.scss */
+/* line 209, ../scss/components/_global.scss */
+a.ribbon.left {
+  float: none !important;
+}
+/* line 212, ../scss/components/_global.scss */
+a.ribbon.right {
+  float: none !important;
+}
+/* line 216, ../scss/components/_global.scss */
 a.ribbon.yellow {
   color: #054990;
 }
-/* line 229, ../scss/components/_global.scss */
+/* line 218, ../scss/components/_global.scss */
 a.ribbon.yellow span {
   background-color: #fff000;
 }
-/* line 233, ../scss/components/_global.scss */
+/* line 222, ../scss/components/_global.scss */
 a.ribbon.yellow:hover span, a.ribbon.yellow:active span {
   background-color: #fcf9d4;
 }
-/* line 239, ../scss/components/_global.scss */
+/* line 228, ../scss/components/_global.scss */
 a.ribbon:hover span, a.ribbon:active span {
   background-color: #0762c1;
 }
 
+@media only screen and (min-width: 48rem) {
+  /* line 237, ../scss/components/_global.scss */
+  a.read-more {
+    height: 48px;
+  }
+  /* line 239, ../scss/components/_global.scss */
+  a.read-more span {
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+  /* line 244, ../scss/components/_global.scss */
+  a.read-more:before {
+    top: auto;
+    right: 0;
+    bottom: -6px;
+    left: auto;
+    position: absolute;
+  }
+
+  /* line 250, ../scss/components/_global.scss */
+  .block-heading span {
+    margin-bottom: 8px;
+  }
+
+  /* line 254, ../scss/components/_global.scss */
+  .gold-partner {
+    width: 155px;
+  }
+
+  /* line 257, ../scss/components/_global.scss */
+  a.ribbon {
+    display: inline-block;
+    height: 58px;
+    width: 320px;
+    position: relative;
+    margin: 0 0 0 -88px;
+    color: white;
+    font-size: 24px;
+    font-size: 1.5rem;
+    float: left !important;
+    text-decoration: none;
+  }
+  /* line 268, ../scss/components/_global.scss */
+  a.ribbon span {
+    height: 58px;
+    line-height: 58px;
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+    background-color: #054990;
+    text-align: center;
+    padding: 0 20px 0 58px;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+  }
+  /* line 280, ../scss/components/_global.scss */
+  a.ribbon:before {
+    content: "";
+    z-index: 1;
+    top: -29px;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    position: absolute;
+    height: 58px;
+    -webkit-transform: skewY(-45deg);
+    -moz-transform: skewY(-45deg);
+    -ms-transform: skewY(-45deg);
+    -o-transform: skewY(-45deg);
+    transform: skewY(-45deg);
+    line-height: 58px;
+    background-color: #8d8d8d;
+    width: 58px;
+    display: block;
+    background-color: black;
+    background-image: -webkit-linear-gradient(-315deg, black 0%, #054990 100%);
+    background-image: linear-gradient(45deg,black 0%, #054990 100%);
+  }
+  /* line 292, ../scss/components/_global.scss */
+  a.ribbon.left {
+    float: left !important;
+  }
+  /* line 295, ../scss/components/_global.scss */
+  a.ribbon.right {
+    margin: 60px -88px 0 0;
+    float: right !important;
+  }
+  /* line 298, ../scss/components/_global.scss */
+  a.ribbon.right span {
+    padding: 0 58px 0 20px;
+  }
+  /* line 301, ../scss/components/_global.scss */
+  a.ribbon.right:before {
+    top: -29px;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+    -webkit-transform: skewY(45deg);
+    -moz-transform: skewY(45deg);
+    -ms-transform: skewY(45deg);
+    -o-transform: skewY(45deg);
+    transform: skewY(45deg);
+    background-color: gray;
+    background-image: -webkit-linear-gradient(-225deg, gray 0%, #fff000 100%);
+    background-image: linear-gradient(-45deg,gray 0%, #fff000 100%);
+  }
+  /* line 307, ../scss/components/_global.scss */
+  a.ribbon.yellow {
+    color: #054990;
+  }
+  /* line 309, ../scss/components/_global.scss */
+  a.ribbon.yellow span {
+    background-color: #fff000;
+  }
+  /* line 313, ../scss/components/_global.scss */
+  a.ribbon.yellow:hover span, a.ribbon.yellow:active span {
+    background-color: #fcf9d4;
+  }
+  /* line 319, ../scss/components/_global.scss */
+  a.ribbon:hover span, a.ribbon:active span {
+    background-color: #0762c1;
+  }
+
+  /* line 324, ../scss/components/_global.scss */
+  a.video-btn {
+    display: inline-block;
+    background-color: #fff000;
+    height: 67px;
+    text-decoration: none;
+    line-height: 67px;
+    font-size: 30px;
+    font-size: 1.875rem;
+    padding: 0 90px 0 25px;
+    position: relative;
+  }
+  /* line 333, ../scss/components/_global.scss */
+  a.video-btn:after {
+    content: "";
+    top: 50%;
+    right: 25px;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    display: block;
+    margin-top: -23px;
+    background: url("../images/video-play.png") center center no-repeat;
+  }
+  /* line 342, ../scss/components/_global.scss */
+  a.video-btn:hover, a.video-btn:active {
+    background-color: #fcf9d4;
+  }
+
+  /* line 346, ../scss/components/_global.scss */
+  .shift-left-30 {
+    margin-left: 30px !important;
+  }
+
+  /* line 349, ../scss/components/_global.scss */
+  .shift-left-55 {
+    margin-left: 55px !important;
+  }
+
+  /* line 352, ../scss/components/_global.scss */
+  .shift-right-30 {
+    margin-right: 30px !important;
+  }
+
+  /* line 355, ../scss/components/_global.scss */
+  .shift-right-55 {
+    margin-right: 55px !important;
+  }
+
+  /* line 358, ../scss/components/_global.scss */
+  .big {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
+}
+@media only screen and (min-width: 81.25rem) {
+  /* line 371, ../scss/components/_global.scss */
+  .big {
+    font-size: 46px;
+    font-size: 2.875rem;
+  }
+
+  /* line 375, ../scss/components/_global.scss */
+  a.read-more span {
+    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
 /* line 1, ../scss/components/_slick-slider.scss */
 .slick-slider {
   width: 100%;
@@ -3830,15 +4078,15 @@ ul.slick-dots {
 }
 /* line 76, ../scss/components/_slick-slider.scss */
 ul.slick-dots li {
-  padding: 0 8px;
+  padding: 0 4px;
   display: inline-block;
 }
 /* line 79, ../scss/components/_slick-slider.scss */
 ul.slick-dots li button {
   display: inline-block;
   border: none;
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   padding: 0;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -3853,6 +4101,25 @@ ul.slick-dots li.slick-active button {
   background-color: #fff000;
 }
 
+@media only screen and (min-width: 48rem) {
+  /* line 101, ../scss/components/_slick-slider.scss */
+  ul.slick-dots {
+    padding: 15px 0;
+  }
+  /* line 103, ../scss/components/_slick-slider.scss */
+  ul.slick-dots li {
+    padding: 0 8px;
+  }
+  /* line 105, ../scss/components/_slick-slider.scss */
+  ul.slick-dots li button {
+    width: 20px;
+    height: 20px;
+  }
+  /* line 110, ../scss/components/_slick-slider.scss */
+  ul.slick-dots li.slick-active button {
+    background-color: #fff000;
+  }
+}
 /* line 1, ../scss/templates/_home.scss */
 #slider-wrap {
   display: block;
@@ -3903,34 +4170,39 @@ ul.slick-dots li.slick-active button {
   vertical-align: middle;
 }
 /* line 34, ../scss/templates/_home.scss */
-#slider .slide .content .secondary {
-  font-size: 30px;
-  font-size: 1.875rem;
+#slider .slide .content .block-heading {
+  font-size: 20px;
+  font-size: 1.25rem;
 }
-/* line 39, ../scss/templates/_home.scss */
+/* line 37, ../scss/templates/_home.scss */
+#slider .slide .content .secondary {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+/* line 42, ../scss/templates/_home.scss */
 #slider .slick-dots {
   top: auto;
   right: 0;
-  bottom: 80px;
+  bottom: 20px;
   left: 0;
   position: absolute;
 }
 
-/* line 43, ../scss/templates/_home.scss */
+/* line 46, ../scss/templates/_home.scss */
 .section {
   display: block;
   overflow-y: hidden;
   width: 100%;
-  padding: 0 60px;
+  padding: 0 10px;
   margin-bottom: 20px;
   text-align: center;
 }
-/* line 50, ../scss/templates/_home.scss */
+/* line 53, ../scss/templates/_home.scss */
 .section.align-left {
   text-align: left;
 }
 
-/* line 54, ../scss/templates/_home.scss */
+/* line 57, ../scss/templates/_home.scss */
 .section-content {
   background-color: #d6d9dd;
   background-position: top center;
@@ -3943,32 +4215,32 @@ ul.slick-dots li.slick-active button {
   display: block;
   width: 100%;
 }
-/* line 57, ../scss/templates/_home.scss */
+/* line 60, ../scss/templates/_home.scss */
 .blue .section-content {
   background-color: #054990;
 }
-/* line 60, ../scss/templates/_home.scss */
+/* line 63, ../scss/templates/_home.scss */
 .light-blue .section-content {
   background-color: #b4c8dd;
 }
-/* line 63, ../scss/templates/_home.scss */
+/* line 66, ../scss/templates/_home.scss */
 .red .section-content {
   background-color: #eb222f;
 }
-/* line 66, ../scss/templates/_home.scss */
+/* line 69, ../scss/templates/_home.scss */
 .xlight-grey .section-content {
   background-color: #eef0f3;
 }
-/* line 69, ../scss/templates/_home.scss */
+/* line 72, ../scss/templates/_home.scss */
 .light-yellow .section-content {
   background-color: #fcf9d4;
 }
-/* line 72, ../scss/templates/_home.scss */
+/* line 75, ../scss/templates/_home.scss */
 .black .section-content {
   color: white;
   background-color: black;
 }
-/* line 80, ../scss/templates/_home.scss */
+/* line 83, ../scss/templates/_home.scss */
 .section-content:before, .section-content:after {
   content: "";
   display: block;
@@ -3987,7 +4259,7 @@ ul.slick-dots li.slick-active button {
   -o-transform: skewY(3.5deg);
   transform: skewY(3.5deg);
 }
-/* line 90, ../scss/templates/_home.scss */
+/* line 93, ../scss/templates/_home.scss */
 .section-content:after {
   top: auto;
   right: auto;
@@ -3996,249 +4268,220 @@ ul.slick-dots li.slick-active button {
   position: absolute;
 }
 
-/* line 95, ../scss/templates/_home.scss */
+/* line 98, ../scss/templates/_home.scss */
 .blue .nested-section-content {
   background-color: #054990;
   color: white;
 }
-/* line 99, ../scss/templates/_home.scss */
+/* line 102, ../scss/templates/_home.scss */
 .red .nested-section-content {
   background-color: #eb222f;
   color: white;
 }
 
-/* line 104, ../scss/templates/_home.scss */
+/* line 107, ../scss/templates/_home.scss */
 .section-content-inner {
-  padding: 80px 30px 100px;
+  padding: 80px 10px 100px;
 }
-/* line 106, ../scss/templates/_home.scss */
+/* line 109, ../scss/templates/_home.scss */
 #video-link .section-content-inner {
-  padding: 200px 30px 200px;
+  padding: 80px 30px 80px;
 }
 
-/* line 110, ../scss/templates/_home.scss */
+/* line 114, ../scss/templates/_home.scss */
+.nested-section-content.section-content-inner {
+  padding: 80px 40px 20px;
+}
+/* line 116, ../scss/templates/_home.scss */
+.nested-section-content.section-content-inner.second {
+  padding: 40px 40px 70px;
+}
+
+/* line 121, ../scss/templates/_home.scss */
 .section-footer {
   display: block;
   width: 100%;
 }
 
-/* line 115, ../scss/templates/_home.scss */
+/* line 126, ../scss/templates/_home.scss */
 #intro .inner-pad {
-  padding: 50px 70px 30px;
+  padding: 20px 0 0;
 }
-/* line 118, ../scss/templates/_home.scss */
+/* line 129, ../scss/templates/_home.scss */
 #intro p {
-  font-size: 26px;
-  font-size: 1.625rem;
+  font-size: 18px;
+  font-size: 1.125rem;
   color: #8d8d8d;
 }
-/* line 121, ../scss/templates/_home.scss */
+/* line 132, ../scss/templates/_home.scss */
 #intro p:last-child {
   margin: 0;
 }
 
-/* line 127, ../scss/templates/_home.scss */
+/* line 138, ../scss/templates/_home.scss */
 #lenovo header {
-  height: 155px;
+  height: auto;
   display: block;
   position: relative;
   margin-bottom: 30px;
 }
-/* line 132, ../scss/templates/_home.scss */
+/* line 143, ../scss/templates/_home.scss */
 #lenovo header .columns {
   height: 100%;
   position: relative;
 }
-/* line 136, ../scss/templates/_home.scss */
+/* line 147, ../scss/templates/_home.scss */
 #lenovo header .inner {
-  height: 100%;
+  height: auto;
 }
-/* line 138, ../scss/templates/_home.scss */
-#lenovo header .inner:before {
-  content: "";
-  display: inline-block;
-  height: 155px;
-  vertical-align: middle;
-}
-/* line 144, ../scss/templates/_home.scss */
+/* line 149, ../scss/templates/_home.scss */
 #lenovo header .inner .vcenter {
   display: inline-block;
   width: 98%;
   vertical-align: middle;
 }
-/* line 150, ../scss/templates/_home.scss */
+/* line 155, ../scss/templates/_home.scss */
 #lenovo header .gold-partner {
-  top: 0;
-  right: auto;
-  bottom: auto;
-  left: 30px;
-  position: absolute;
+  position: relative;
+  width: 50%;
+  max-width: 168px;
+  margin: 0 auto 20px;
 }
-/* line 153, ../scss/templates/_home.scss */
+/* line 161, ../scss/templates/_home.scss */
 #lenovo header h2 {
   position: relative;
   margin: 0;
 }
-/* line 156, ../scss/templates/_home.scss */
+/* line 164, ../scss/templates/_home.scss */
 #lenovo header h2 i {
   display: none;
 }
-/* line 159, ../scss/templates/_home.scss */
+/* line 167, ../scss/templates/_home.scss */
 #lenovo header h2 span em {
-  padding: 12px 20px 12px 308px;
+  padding: 60px 20px 12px 20px;
   position: relative;
+  width: 100%;
 }
-/* line 162, ../scss/templates/_home.scss */
+/* line 171, ../scss/templates/_home.scss */
 #lenovo header h2 span em:before {
   content: "";
-  width: 268px;
+  width: 228px;
   height: 38px;
   display: block;
   background: url("../images/lenovo.png") left top no-repeat;
-  top: 50%;
+  background-size: 100% auto;
+  top: 15px;
   right: auto;
   bottom: auto;
-  left: 20px;
+  left: 50%;
   position: absolute;
-  margin-top: -19px;
+  margin-left: -114px;
 }
 
-/* line 177, ../scss/templates/_home.scss */
+/* line 185, ../scss/templates/_home.scss */
+.pac-intro {
+  margin-bottom: 60px;
+}
+
+/* line 189, ../scss/templates/_home.scss */
+.pac-features .feature {
+  margin-bottom: 80px;
+  padding: 0 20px;
+}
+/* line 192, ../scss/templates/_home.scss */
 .pac-features .feature .icon {
-  width: 126px;
-  height: 115px;
+  width: 100px;
+  height: 91px;
   text-align: center;
   margin: 0 auto 15px;
 }
-/* line 182, ../scss/templates/_home.scss */
+/* line 197, ../scss/templates/_home.scss */
 .pac-features .feature .icon img {
   width: auto;
   height: 100%;
   margin: 0 auto;
 }
-/* line 188, ../scss/templates/_home.scss */
-.pac-features .feature h4 {
-  font-size: 30px;
-  font-size: 1.875rem;
+/* line 203, ../scss/templates/_home.scss */
+.pac-features .feature h3, .pac-features .feature h4 {
+  font-size: 24px;
+  font-size: 1.5rem;
+}
+/* line 209, ../scss/templates/_home.scss */
+.pac-features .columns:last-child .feature {
+  margin-bottom: 0;
 }
 
-/* line 194, ../scss/templates/_home.scss */
+/* line 216, ../scss/templates/_home.scss */
 #callback .gform_body {
   background-color: #8d8d8d;
   width: 100%;
   display: block;
 }
-/* line 200, ../scss/templates/_home.scss */
+/* line 222, ../scss/templates/_home.scss */
 #callback .gform_column {
-  width: 50%;
-  float: left;
+  width: 100%;
+  float: none;
 }
-/* line 204, ../scss/templates/_home.scss */
+/* line 226, ../scss/templates/_home.scss */
 #callback input.medium {
   width: 100%;
   height: 60px;
   background-color: rgba(255, 255, 255, 0.8);
 }
-/* line 209, ../scss/templates/_home.scss */
+/* line 231, ../scss/templates/_home.scss */
 #callback .gform_footer {
-  text-align: right;
-  padding-top: 60px;
+  text-align: center;
+  padding-top: 20px;
   position: relative;
 }
-/* line 213, ../scss/templates/_home.scss */
-#callback .gform_footer:before {
-  content: "";
-  z-index: 1;
-  height: 58px;
-  line-height: 58px;
-  background-color: #8d8d8d;
-  width: 58px;
-  display: block;
-  top: 29px;
-  right: -87px;
-  bottom: auto;
-  left: auto;
-  position: absolute;
-  -webkit-transform: skewY(45deg);
-  -moz-transform: skewY(45deg);
-  -ms-transform: skewY(45deg);
-  -o-transform: skewY(45deg);
-  transform: skewY(45deg);
-  background-color: gray;
-  background-image: -webkit-linear-gradient(-225deg, gray 0%, #fff000 100%);
-  background-image: linear-gradient(-45deg,gray 0%, #fff000 100%);
-}
-/* line 226, ../scss/templates/_home.scss */
+/* line 235, ../scss/templates/_home.scss */
 #callback .gform_footer .gform_button {
   display: inline-block;
   height: 58px;
   line-height: 58px;
-  width: 320px;
+  width: auto;
   position: relative;
   z-index: 2;
   background-color: #fff000;
   border: none;
-  margin: 0 -88px 0 0;
+  margin: 0;
   color: #054990;
-  padding: 0 58px 0 20px;
+  padding: 0 30px;
   text-align: center;
-  font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   text-decoration: none;
   -webkit-transition: background-color 0.3s ease;
   -moz-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-/* line 242, ../scss/templates/_home.scss */
+/* line 251, ../scss/templates/_home.scss */
 #callback .gform_footer .gform_button:hover, #callback .gform_footer .gform_button:active {
   background-color: #fcf9d4;
 }
-/* line 245, ../scss/templates/_home.scss */
-#callback .gform_footer .gform_button:before {
-  content: "";
-  z-index: 1;
-  top: -29px;
-  right: auto;
-  bottom: auto;
-  left: 0;
-  position: absolute;
-  height: 58px;
-  -webkit-transform: skewY(-45deg);
-  -moz-transform: skewY(-45deg);
-  -ms-transform: skewY(-45deg);
-  -o-transform: skewY(-45deg);
-  transform: skewY(-45deg);
-  line-height: 58px;
-  background-color: #8d8d8d;
-  width: 58px;
-  display: block;
-  background-color: black;
-  background-image: -webkit-linear-gradient(-315deg, black 0%, #054990 100%);
-  background-image: linear-gradient(45deg,black 0%, #054990 100%);
-}
 
-/* line 261, ../scss/templates/_home.scss */
+/* line 258, ../scss/templates/_home.scss */
 #faqs p {
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 18px;
+  font-size: 1.125rem;
+}
+/* line 261, ../scss/templates/_home.scss */
+#faqs .slider {
+  padding: 0 35px;
 }
 /* line 264, ../scss/templates/_home.scss */
-#faqs .slider {
-  padding: 0 100px;
-}
-/* line 267, ../scss/templates/_home.scss */
 #faqs .slider .slide p {
-  font-size: 33px;
-  font-size: 2.0625rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   text-align: center;
   color: #054990;
   margin: 0;
 }
-/* line 274, ../scss/templates/_home.scss */
+/* line 271, ../scss/templates/_home.scss */
 #faqs .slider .slick-prev, #faqs .slider .slick-next {
   display: block;
-  width: 68px;
-  height: 68px;
+  width: 30px;
+  height: 30px;
   background-color: white;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -4251,13 +4494,14 @@ ul.slick-dots li.slick-active button {
   bottom: auto;
   left: 0;
   position: absolute;
-  margin-top: -34px;
+  margin-top: -15px;
   background-image: url("../images/slider-prev-arrow.png");
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 20px auto;
+  background-size: 10px auto;
+  z-index: 999;
 }
-/* line 287, ../scss/templates/_home.scss */
+/* line 285, ../scss/templates/_home.scss */
 #faqs .slider .slick-next {
   top: 50%;
   right: 0;
@@ -4267,15 +4511,290 @@ ul.slick-dots li.slick-active button {
   background-image: url("../images/slider-next-arrow.png");
 }
 
+/* line 292, ../scss/templates/_home.scss */
+#video-link .block-heading {
+  margin-bottom: 4px;
+}
+
 @media only screen and (min-width: 48rem) {
-  /* line 297, ../scss/templates/_home.scss */
+  /* line 300, ../scss/templates/_home.scss */
   #slider-wrap {
     padding: 135px 0 0;
   }
+
+  /* line 306, ../scss/templates/_home.scss */
+  #slider .slide .content .block-heading {
+    font-size: 34px;
+    font-size: 2.125rem;
+  }
+  /* line 309, ../scss/templates/_home.scss */
+  #slider .slide .content .secondary {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+
+  /* line 315, ../scss/templates/_home.scss */
+  .section {
+    padding: 0 60px;
+  }
+
+  /* line 318, ../scss/templates/_home.scss */
+  .section-content-inner {
+    padding: 80px 30px 100px;
+  }
+  /* line 320, ../scss/templates/_home.scss */
+  #video-link .section-content-inner {
+    padding: 200px 30px 200px;
+  }
+
+  /* line 326, ../scss/templates/_home.scss */
+  .pac-features .feature .icon {
+    width: 126px;
+    height: 115px;
+  }
+  /* line 330, ../scss/templates/_home.scss */
+  .pac-features .feature h3, .pac-features .feature h4 {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+
+  /* line 337, ../scss/templates/_home.scss */
+  #lenovo header .gold-partner {
+    width: 20%;
+  }
+  /* line 341, ../scss/templates/_home.scss */
+  #lenovo header h2 span em {
+    padding: 12px 20px 12px 308px;
+    width: auto;
+  }
+  /* line 344, ../scss/templates/_home.scss */
+  #lenovo header h2 span em:before {
+    width: 268px;
+    height: 38px;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: 20px;
+    position: absolute;
+    margin-top: -19px;
+    margin-left: 0;
+  }
+
+  /* line 356, ../scss/templates/_home.scss */
+  #callback .gform_column {
+    width: 50%;
+    float: left;
+  }
+  /* line 360, ../scss/templates/_home.scss */
+  #callback .gform_footer {
+    text-align: right;
+    padding-top: 60px;
+    position: relative;
+  }
+  /* line 364, ../scss/templates/_home.scss */
+  #callback .gform_footer:before {
+    content: "";
+    z-index: 1;
+    height: 58px;
+    line-height: 58px;
+    background-color: #8d8d8d;
+    width: 58px;
+    display: block;
+    top: 29px;
+    right: -87px;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+    -webkit-transform: skewY(45deg);
+    -moz-transform: skewY(45deg);
+    -ms-transform: skewY(45deg);
+    -o-transform: skewY(45deg);
+    transform: skewY(45deg);
+    background-color: gray;
+    background-image: -webkit-linear-gradient(-225deg, gray 0%, #fff000 100%);
+    background-image: linear-gradient(-45deg,gray 0%, #fff000 100%);
+  }
+  /* line 376, ../scss/templates/_home.scss */
+  #callback .gform_footer .gform_button {
+    display: inline-block;
+    height: 58px;
+    line-height: 58px;
+    width: 320px;
+    position: relative;
+    z-index: 2;
+    background-color: #fff000;
+    border: none;
+    margin: 0 -88px 0 0;
+    color: #054990;
+    padding: 0 58px 0 20px;
+    text-align: center;
+    font-size: 24px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+  }
+  /* line 392, ../scss/templates/_home.scss */
+  #callback .gform_footer .gform_button:hover, #callback .gform_footer .gform_button:active {
+    background-color: #fcf9d4;
+  }
+  /* line 395, ../scss/templates/_home.scss */
+  #callback .gform_footer .gform_button:before {
+    content: "";
+    z-index: 1;
+    top: -29px;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    position: absolute;
+    height: 58px;
+    -webkit-transform: skewY(-45deg);
+    -moz-transform: skewY(-45deg);
+    -ms-transform: skewY(-45deg);
+    -o-transform: skewY(-45deg);
+    transform: skewY(-45deg);
+    line-height: 58px;
+    background-color: #8d8d8d;
+    width: 58px;
+    display: block;
+    background-color: black;
+    background-image: -webkit-linear-gradient(-315deg, black 0%, #054990 100%);
+    background-image: linear-gradient(45deg,black 0%, #054990 100%);
+  }
+
+  /* line 411, ../scss/templates/_home.scss */
+  .nested-section-content.section-content-inner {
+    padding: 80px 10px 100px;
+  }
+  /* line 413, ../scss/templates/_home.scss */
+  .nested-section-content.section-content-inner.second {
+    padding: 80px 10px 100px;
+  }
+
+  /* line 419, ../scss/templates/_home.scss */
+  #video-link .block-heading {
+    margin-bottom: 8px;
+  }
+}
+@media only screen and (min-width: 64rem) {
+  /* line 430, ../scss/templates/_home.scss */
+  #slider .slide .content .block-heading {
+    font-size: 40px;
+    font-size: 2.5rem;
+  }
+  /* line 433, ../scss/templates/_home.scss */
+  #slider .slide .content .secondary {
+    font-size: 26px;
+    font-size: 1.625rem;
+  }
+  /* line 438, ../scss/templates/_home.scss */
+  #slider .slick-dots {
+    top: auto;
+    right: 0;
+    bottom: 80px;
+    left: 0;
+    position: absolute;
+  }
+
+  /* line 442, ../scss/templates/_home.scss */
+  .section-content-inner {
+    padding: 80px 30px 100px;
+  }
+
+  /* line 446, ../scss/templates/_home.scss */
+  #lenovo header {
+    height: 155px;
+  }
+  /* line 448, ../scss/templates/_home.scss */
+  #lenovo header .columns {
+    height: 100%;
+    position: relative;
+  }
+  /* line 452, ../scss/templates/_home.scss */
+  #lenovo header .inner {
+    height: 100%;
+  }
+  /* line 454, ../scss/templates/_home.scss */
+  #lenovo header .inner:before {
+    content: "";
+    display: inline-block;
+    height: 155px;
+    vertical-align: middle;
+  }
+  /* line 460, ../scss/templates/_home.scss */
+  #lenovo header .inner .vcenter {
+    display: inline-block;
+    width: 98%;
+    vertical-align: middle;
+  }
+  /* line 466, ../scss/templates/_home.scss */
+  #lenovo header .gold-partner {
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: 30px;
+    position: absolute;
+    width: 155px;
+    height: auto;
+  }
+
+  /* line 474, ../scss/templates/_home.scss */
+  .pac-features .feature {
+    margin-bottom: 0;
+  }
+
+  /* line 479, ../scss/templates/_home.scss */
+  #faqs p {
+    font-size: 22px;
+    font-size: 1.375rem;
+  }
+  /* line 482, ../scss/templates/_home.scss */
+  #faqs .slider {
+    padding: 0 100px;
+  }
+  /* line 485, ../scss/templates/_home.scss */
+  #faqs .slider .slide p {
+    font-size: 33px;
+    font-size: 2.0625rem;
+  }
+  /* line 489, ../scss/templates/_home.scss */
+  #faqs .slider .slick-prev, #faqs .slider .slick-next {
+    width: 68px;
+    height: 68px;
+    margin-top: -34px;
+    background-size: 20px auto;
+  }
 }
 @media only screen and (min-width: 81.25rem) {
-  /* line 309, ../scss/templates/_home.scss */
+  /* line 502, ../scss/templates/_home.scss */
   #slider-wrap {
     padding-top: 195px;
+  }
+
+  /* line 508, ../scss/templates/_home.scss */
+  #slider .slide .content .block-heading {
+    font-size: 48px;
+    font-size: 3rem;
+  }
+  /* line 511, ../scss/templates/_home.scss */
+  #slider .slide .content .secondary {
+    font-size: 30px;
+    font-size: 1.875rem;
+  }
+
+  /* line 517, ../scss/templates/_home.scss */
+  .section {
+    margin-bottom: 20px;
+  }
+
+  /* line 521, ../scss/templates/_home.scss */
+  #intro .inner-pad {
+    padding: 50px 70px 30px;
+  }
+  /* line 524, ../scss/templates/_home.scss */
+  #intro p {
+    font-size: 26px;
+    font-size: 1.625rem;
   }
 }

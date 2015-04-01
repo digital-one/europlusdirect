@@ -40,11 +40,11 @@
 	background-color: rgba(255,255,255,.7);
 	padding: 20px 0;
 	width: 100%;
-	display: block;
-	@include font-size(20px);
+	@include font-size(18px);
 	li{
 		padding: 0 20px;
 	}
+	display: none;
 }
 
 @media #{$medium-up} { 
@@ -77,6 +77,9 @@
 		.menu-toggle{
 			display: none;
 		}
+	}
+	#anchor-nav{
+		display: block;
 	}
 
 }

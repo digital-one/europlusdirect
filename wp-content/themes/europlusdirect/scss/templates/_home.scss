@@ -31,20 +31,23 @@
 				text-align: right;
 				vertical-align: middle;
 			}
+			.block-heading{
+				@include font-size(20px);
+			}
 			.secondary{
-				@include font-size(30px);
+				@include font-size(14px);
 			}
 		}
 	}
 	.slick-dots{
-		@include abs-pos(auto,0,80px,0);
+		@include abs-pos(auto,0,20px,0);
 	}
 }
 .section{
 	display:block;
 	overflow-y:hidden;
 	width:100%;
-	padding: 0 60px;
+	padding: 0 10px;
 	margin-bottom:20px;
 	text-align: center;
 	&.align-left{
@@ -102,9 +105,17 @@
 	}
 }
 .section-content-inner{
-	padding:80px 30px 100px;
+	padding:80px 10px 100px;
 	#video-link &{
-		padding: 200px 30px 200px;
+		padding: 80px 30px 80px;
+	}
+}
+.nested-section-content{
+	&.section-content-inner{
+		padding: 80px 40px 20px;
+		&.second{
+			padding: 40px 40px 70px;
+		}
 	}
 }
 .section-footer{
@@ -113,10 +124,10 @@
 }
 #intro{
 	.inner-pad{
-		padding: 50px 70px 30px;
+		padding: 20px 0 0;
 	}
 	p{
-		@include font-size(26px);
+		@include font-size(18px);
 		color: $grey;
 		&:last-child{
 			margin:0;
@@ -125,7 +136,7 @@
 }
 #lenovo{
 	header{
-		height:155px;
+		height:auto;
 		display: block;
 		position: relative;
 		margin-bottom: 30px;
@@ -134,13 +145,7 @@
 			position:relative;
 		}
 		.inner{
-			height:100%;
-			&:before{
-				content:"";
-				display: inline-block;
-				height:155px;
-				vertical-align: middle;
-			}
+			height:auto;
 			.vcenter{
 				display: inline-block;
 				width: 98%;
@@ -148,7 +153,10 @@
 			}
 		}
 		.gold-partner{
-			@include abs-pos(0,auto,auto,30px);
+			position: relative;
+			width: 50%;
+			max-width: 168px;
+			margin: 0 auto 20px;
 		}
 		h2{
 			position: relative;
@@ -157,26 +165,33 @@
 				display: none;
 			}
 			span em{
-				padding: 12px 20px 12px 308px;
+				padding: 60px 20px 12px 20px;
 				position: relative;
+				width:100%;
 				&:before{
 					content:"";
-					width: 268px;
+					width: 228px;
 					height: 38px;
 					display: block;
 					background:url('../images/lenovo.png') left top no-repeat;
-					@include abs-pos(50%,auto,auto,20px);
-					margin-top:-19px;
+					background-size: 100% auto;
+					@include abs-pos(15px,auto,auto,50%);
+					margin-left:-114px;
 				}	
 			}
 		}
 	}
 }
+.pac-intro{
+	margin-bottom: 60px;
+}
 .pac-features{
 	.feature{
+		margin-bottom: 80px;
+		padding: 0 20px;
 		.icon{
-			width: 126px;
-			height: 115px;
+			width: 100px;
+			height: 91px;
 			text-align: center;
 			margin:0 auto 15px;
 			img{
@@ -185,8 +200,15 @@
 				margin:0 auto;
 			}
 		}
-		h4{
-			@include font-size(30px);
+		h3,h4{
+			@include font-size(24px);
+		}
+	}
+	.columns{
+		&:last-child{
+			.feature{
+				margin-bottom: 0;
+			}
 		}
 	}
 }
@@ -198,8 +220,8 @@
 		@extend %clearfix;
 	}
 	.gform_column{
-		width:50%;
-		float:left;
+		width:100%;
+		float:none;
 	}
 	input.medium{
 		width: 100%;
@@ -207,65 +229,40 @@
 		background-color: rgba(255,255,255,.8);
 	}
 	.gform_footer{
-		text-align: right;
-		padding-top:60px;
+		text-align: center;
+		padding-top:20px;
 		position: relative;
-		&:before{
-			content:"";
-			z-index: 1;
-			height:58px;
-			line-height:58px;
-			background-color: $grey;
-			width:58px;
-			display: block;
-
-			@include abs-pos(29px,-87px,auto,auto);
-			@include transform(skewY(45deg));	
-			@include linear-gradient(-45deg, lighten(black,50%) 0%, $yellow 100%);
-		}
 		.gform_button{
 			display:inline-block;
 			height:58px;
 			line-height:58px;
-			width:320px;
+			width:auto;
 			position:relative;
 			z-index: 2;
 			background-color: $yellow;
 			border:none;
-			margin: 0 -88px 0 0;
+			margin: 0;
 			color: $blue;
-			padding: 0 58px 0 20px;
+			padding: 0 30px;
 			text-align: center;
-			@include font-size(24px);
+			@include font-size(20px);
 			text-decoration:none;
 			@include transition(background-color .3s ease);
 			&:hover,&:active{
 				background-color: $light-yellow;
-			}
-			&:before{
-				content:"";
-				z-index: 1;
-				@include abs-pos(-29px,auto,auto,0);
-				height:58px;
-				@include transform(skewY(-45deg));
-				line-height:58px;
-				background-color: $grey;
-				width:58px;
-				display: block;
-				@include linear-gradient(45deg, black 0%, $blue 100%);
 			}
 		}
 	}
 }
 #faqs{
 	p{
-		@include font-size(22px);
+		@include font-size(18px);
 	}
 	.slider{ 
-		padding: 0 100px;
+		padding: 0 35px;
 		.slide{
 			p{
-				@include font-size(33px);
+				@include font-size(20px);
 				text-align: center;
 				color: $blue;
 				margin:0;
@@ -273,21 +270,27 @@
 		}
 		.slick-prev,.slick-next{
 			display: block;
-			width:68px;
-			height: 68px;
+			width:30px;
+			height: 30px;
 			background-color: white;
 			@include border-radius(50%);
 			@include abs-pos(50%,auto,auto,0);
-			margin-top:-34px;
+			margin-top:-15px;
 			background-image:url('../images/slider-prev-arrow.png');
 			background-position: center center;
 			background-repeat: no-repeat;
-			background-size: 20px auto;
+			background-size: 10px auto;
+			z-index: 999;
 		}
 		.slick-next{
 			@include abs-pos(50%,0,auto,auto);
 			background-image:url('../images/slider-next-arrow.png');
 		}
+	}
+}
+#video-link{
+	.block-heading{
+		margin-bottom: 4px;
 	}
 }
 
@@ -297,10 +300,200 @@
 	#slider-wrap{
 		padding: 135px 0 0;
 	}
+	#slider{
+		.slide{
+			.content{
+				.block-heading{
+					@include font-size(34px);
+				}
+				.secondary{
+					@include font-size(22px);
+				}
+			}
+		}
+	}
+	.section{
+		padding: 0 60px;
+	}
+	.section-content-inner{
+		padding:80px 30px 100px;
+		#video-link &{
+			padding: 200px 30px 200px;
+		}
+	}
+	.pac-features{
+		.feature{
+			.icon{
+				width: 126px;
+				height: 115px;
+			}
+			h3,h4{
+				@include font-size(30px);
+			}
+		}
+	}
+	#lenovo{
+		header{
+			.gold-partner{
+				width: 20%;
+			}
+			h2{
+				span em{
+					padding: 12px 20px 12px 308px;
+					width:auto;
+					&:before{
+						width: 268px;
+						height: 38px;
+						@include abs-pos(50%,auto,auto,20px);
+						margin-top:-19px;
+						margin-left:0;
+					}	
+				}
+			}
+		}
+	}
+	#callback{
+		.gform_column{
+			width:50%;
+			float:left;
+		}
+		.gform_footer{
+			text-align: right;
+			padding-top:60px;
+			position: relative;
+			&:before{
+				content:"";
+				z-index: 1;
+				height:58px;
+				line-height:58px;
+				background-color: $grey;
+				width:58px;
+				display: block;
+				@include abs-pos(29px,-87px,auto,auto);
+				@include transform(skewY(45deg));	
+				@include linear-gradient(-45deg, lighten(black,50%) 0%, $yellow 100%);
+			}
+			.gform_button{
+				display:inline-block;
+				height:58px;
+				line-height:58px;
+				width:320px;
+				position:relative;
+				z-index: 2;
+				background-color: $yellow;
+				border:none;
+				margin: 0 -88px 0 0;
+				color: $blue;
+				padding: 0 58px 0 20px;
+				text-align: center;
+				@include font-size(24px);
+				text-decoration:none;
+				@include transition(background-color .3s ease);
+				&:hover,&:active{
+					background-color: $light-yellow;
+				}
+				&:before{
+					content:"";
+					z-index: 1;
+					@include abs-pos(-29px,auto,auto,0);
+					height:58px;
+					@include transform(skewY(-45deg));
+					line-height:58px;
+					background-color: $grey;
+					width:58px;
+					display: block;
+					@include linear-gradient(45deg, black 0%, $blue 100%);
+				}
+			}
+		}
+	}
+	.nested-section-content{
+		&.section-content-inner{
+			padding: 80px 10px 100px;
+			&.second{
+				padding: 80px 10px 100px;
+			}
+		}
+	}
+	#video-link{
+		.block-heading{
+			margin-bottom: 8px;
+		}
+	}
 }
 
 @media #{$large-up} { 
 
+	#slider{
+		.slide{
+			.content{
+				.block-heading{
+					@include font-size(40px);
+				}
+				.secondary{
+					@include font-size(26px);
+				}
+			}
+		}
+		.slick-dots{
+			@include abs-pos(auto,0,80px,0);
+		}
+	}
+	.section-content-inner{
+		padding:80px 30px 100px;
+	}
+	#lenovo{
+		header{
+			height:155px;
+			.columns{
+				height: 100%;
+				position:relative;
+			}
+			.inner{
+				height:100%;
+				&:before{
+					content:"";
+					display: inline-block;
+					height:155px;
+					vertical-align: middle;
+				}
+				.vcenter{
+					display: inline-block;
+					width: 98%;
+					vertical-align: middle;
+				}
+			}
+			.gold-partner{
+				@include abs-pos(0,auto,auto,30px);
+				width:155px;
+				height:auto;
+			}
+		}
+	}
+	.pac-features{
+		.feature{
+			margin-bottom: 0;
+		}
+	}
+	#faqs{
+		p{
+			@include font-size(22px);
+		}
+		.slider{ 
+			padding: 0 100px;
+			.slide{
+				p{
+					@include font-size(33px);
+				}
+			}
+			.slick-prev,.slick-next{
+				width:68px;
+				height: 68px;
+				margin-top:-34px;
+				background-size: 20px auto;
+			}
+		}
+	}
 
 }
 
@@ -309,6 +502,30 @@
 	#slider-wrap{
 		padding-top: 195px;
 	}
+	#slider{
+		.slide{
+			.content{
+				.block-heading{
+					@include font-size(48px);
+				}
+				.secondary{
+					@include font-size(30px);
+				}
+			}
+		}
+	}
+	.section{
+		margin-bottom:20px;
+	}
+	#intro{
+		.inner-pad{
+			padding: 50px 70px 30px;
+		}
+		p{
+			@include font-size(26px);
+		}
+	}
+	
 }
 
 

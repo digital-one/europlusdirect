@@ -2,7 +2,7 @@
 	padding:20px 0;
 	text-align: center;
 	p{
-		@include font-size(14px);
+		@include font-size(12px);
 		margin-bottom: 20px;
 		&.address{
 			span{
@@ -34,26 +34,13 @@
 		}
 	}
 	nav#footer-menu{
-		@include centered-menu;
-		@include font-size(14px);
+		@include font-size(12px);
 		margin-bottom: 20px;
 		li{
 			padding: 0 25px;
+			width:100%;
+			text-align: center;
 			position: relative;
-			&:after{
-				content:"";
-				width:1px;
-				height:14px;
-				background-color: white;
-				display: block;
-				@include abs-pos(50%,0,auto,auto);
-				margin-top:-7px;
-			}
-			&:last-child{
-				&:after{
-					background-color: transparent;
-				}
-			}
 		}
 	}
 	color: white;
@@ -62,12 +49,36 @@
 
 @media #{$medium-up} { 
 
-
+	#footer{
+		nav#footer-menu{
+			@include centered-menu;
+			margin-bottom: 20px;
+			li{
+				width:auto;
+				padding: 0 25px;
+				position: relative;
+				&:after{
+					content:"";
+					width:1px;
+					height:14px;
+					background-color: white;
+					display: block;
+					@include abs-pos(50%,0,auto,auto);
+					margin-top:-7px;
+				}
+				&:last-child{
+					&:after{
+						background-color: transparent;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media #{$large-up} { 
 
-
+	
 }
 
 @media #{$xlarge-up} { 

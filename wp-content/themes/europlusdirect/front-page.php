@@ -6,7 +6,7 @@
 	<!--slide-->
 		<div class="slide" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/slide-bg.jpg');">
 			<div class="row">
-				<div class="small-12 columns heading-right">
+				<div class="small-12 columns heading-right opaque-heading">
 			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>We protect your IT systems,</em></span><span><em>you protect your business</em></span><span class="secondary"><em>24 hours a day. 7 days a week</em></span></h2></div></div>
 		</div>
 		</div>
@@ -15,7 +15,7 @@
 		<!--slide-->
 		<div class="slide" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/slide-bg-2.jpg');">
 			<div class="row">
-				<div class="small-12 columns heading-right">
+				<div class="small-12 columns heading-right  opaque-heading">
 			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>An expired maintenance plan</em></span><span><em>complicates operations.</em></span><span><em>Europlus simplifies them</em></span><span class="secondary"><em>Response times of 4 hours and under</em></span></h2></div></div>
 		</div>
 		</div>
@@ -24,7 +24,7 @@
 		<!--slide-->
 		<div class="slide" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/slide-bg-3.jpg');">
 			<div class="row">
-				<div class="small-12 columns heading-right">
+				<div class="small-12 columns heading-right  opaque-heading">
 			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>Global reach.</em></span><span><em>Local support</em></span><span class="secondary"><em>230 distributors. 145 Partners.</em></span><span class="secondary"><em>One point of contact</em></span></h2></div></div>
 		</div>
 		</div>
@@ -33,8 +33,8 @@
 		<!--slide-->
 		<div class="slide" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/slide-bg-4.jpg');">
 			<div class="row">
-				<div class="small-12 columns heading-right">
-			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>Approved Lenovo warranty and</em></span><span><em>service providers</em></span><span class="secondary"><em>For any system, there’s one number</em></span><span class="secondary"><em>to call: +44 (0)113 887 8650</em></span></h2></div></div>
+				<div class="small-12 columns heading-right  opaque-heading">
+			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>Approved Lenovo warranty &amp;</em></span><span><em>service providers</em></span><span class="secondary"><em>For any system, there’s one number</em></span><span class="secondary"><em>to call: +44 (0)113 887 8650</em></span></h2></div></div>
 		</div>
 		</div>
 		</div>
@@ -55,37 +55,41 @@
 
 </section>
 <!--lenovo-->
-<section id="lenovo" class="section row red-blue-heading red-sub-heads red-btns">
+<section id="lenovo" class="section row red-blue-heading red-sub-heads red-btns pac">
 	<div class="section-content section-content-inner">
 <header class="row">
 	<div class="small-12 columns">
-		<a href="" class="gold-partner">Lenovo Gold Business Partner 2015</a>
+		<a href="" class="gold-partner"><img src="<?php echo get_template_directory_uri(); ?>/images/lenovo-gold-business-partner.png" alt="Lenovo Gold Business Partner 2015" /></a>
 <div class="inner"><div class="vcenter"><h2 class="block-heading"><span><em><i>Lenovo</i> Service Packs</em></span></h2></div></div>
 
 </div>
 </header>
+<div class="pac-intro">
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p>
+</div>
 <div class="row pac-features">
-<div class="small-4 columns feature"><h3>Extend your warranty to 3, 4 or 5yrs</h3><p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit, sed diam nmmy.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/one-year-icon-lenovo.png" /></div><h4>In-warranty upgrade</h4><a href="" class="read-more"><span>Read More</span></a></div>
-<div class="small-4 columns feature"><h3>Renew a warranty on older equipment</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/one-year-icon-lenovo.png" /></div><h4>Post - warranty renew</h4><a href="" class="read-more"><span>Read More</span></a></div>
-<div class="small-4 columns feature"><h3>Full service and repair on multiple machines</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/service-icon-lenovo.png" /></div><h4>Service Suite maintenance contract</h4><a href="" class="read-more"><span>Read More</span></a></div>
+<div class="small-12 large-4 columns"><div class="feature"><h3>Extend your warranty to 3, 4 or 5yrs</h3><p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit, sed diam nmmy.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/one-year-icon-lenovo.png" /></div><h4>In-warranty upgrade</h4><a href="" class="read-more"><span>Read More</span></a></div></div>
+<div class="small-12 large-4 columns"><div class="feature"><h3>Renew a warranty on older equipment</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/one-year-icon-lenovo.png" /></div><h4>Post - warranty renew</h4><a href="" class="read-more"><span>Read More</span></a></div></div>
+<div class="small-12 large-4 columns"><div class="feature"><h3>Full service and repair on multiple machines</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/service-icon-lenovo.png" /></div><h4>Service Suite maintenance contract</h4><a href="" class="read-more"><span>Read More</span></a></div></div>
 </div>
 </div>
 </section>
 <!--/lenovo-->
 <!--IBM-->
-<section id="ibm" class="section row light-blue">
+<section id="ibm" class="section row light-blue pac">
 	<div class="section-content section-content-inner">
 <header class="row">
 	<div class="small-12 columns">
 <h2 class="block-heading"><span><em>IBM ServicePac</em></span></h2>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p>
 </div>
 </header>
+<div class="pac-intro">
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p>
+</div>
 <div class="row pac-features">
-<div class="small-4 columns feature"><h3>Extend your warranty to 3, 4 or 5yrs</h3><p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit, sed diam nmmy.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/one-year-icon.png" /></div><h4>In-warranty upgrade</h4><a href="" class="read-more"><span>Read More</span></a></div>
-<div class="small-4 columns feature"><h3>Renew a warranty on older equipment</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/service-icon.png" /></div><h4>Post - warranty renew</h4><a href="" class="read-more"><span>Read More</span></a></div>
-<div class="small-4 columns feature"><h3>Full service and repair on multiple machines</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/support-icon.png" /></div><h4>Service Suite maintenance contract</h4><a href="" class="read-more"><span>Read More</span></a></div>
+<div class="small-12 large-4 columns"><div class="feature"><h3>Extend your warranty to 3, 4 or 5yrs</h3><p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit, sed diam nmmy.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/one-year-icon.png" /></div><h4>In-warranty upgrade</h4><a href="" class="read-more"><span>Read More</span></a></div></div>
+<div class="small-12 large-4 columns"><div class="feature"><h3>Renew a warranty on older equipment</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/service-icon.png" /></div><h4>Post - warranty renew</h4><a href="" class="read-more"><span>Read More</span></a></div></div>
+<div class="small-12 large-4 columns"><div class="feature"><h3>Full service and repair on multiple machines</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/support-icon.png" /></div><h4>Service Suite maintenance contract</h4><a href="" class="read-more"><span>Read More</span></a></div></div>
 <footer class="section-footer"><a class="anchor-up">Top</a></footer>
 </div>
 </div>
@@ -123,13 +127,13 @@
 <section id="support" class="section row">
 	<div class="section-content section-content-inner">
 		<div class="row">
-			<div class="small-4 columns">
+			<div class="small-12 large-5 columns">
 <h2 class="block-heading"><span><em>Multi-country</em></span><span class="secondary"><em> support</em></span></h2>
 <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquamt. </p>
 <a href="" class="ribbon left blue"><span>Find out more</span></a>
-<a href="" class="ribbon right yellow"><span>Find out more</span></a>
+<?php /* <a href="" class="ribbon right yellow"><span>Find out more</span></a> */ ?>
 </div>
-<div class="small-8 columns">
+<div class="small-12 large-7 columns">
 <img src="<?php echo get_template_directory_uri(); ?>/images/map.jpg" />
 	</div>
 </div>
@@ -138,9 +142,9 @@
 <section class="section white-yellow-heading row">
 	<div class="section-content">
 	<div class="row">
-		<div class="small-6 columns blue red-btns white-sub-heads"><div class="nested-section-content section-content-inner"><h2 class="block-heading"><span><em class="shift-right-55">Software</em></span><span class="secondary"><em>support</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
+		<div class="small-12 medium-6 columns blue red-btns white-sub-heads"><div class="nested-section-content section-content-inner"><h2 class="block-heading"><span><em class="shift-right-55">Software</em></span><span class="secondary"><em>support</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
 Cons ectetuer adipiscing elit, sed diam nonummy nibh euismod. Cons ectetuer adipiscing elit, sed diam </p><a href="" class="read-more"><span>Find out more</span></a></div></div>
-	<div class="small-6 columns red white-sub-heads"><div class="nested-section-content section-content-inner"><h2 class="block-heading"><span><em>Multi-manufacturer</em></span><span class="secondary"><em class="shift-right-55">support</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
+	<div class="small-12 medium-6 columns red white-sub-heads"><div class="nested-section-content section-content-inner second"><h2 class="block-heading"><span><em>Multi-manufacturer</em></span><span class="secondary"><em class="shift-right-55">support</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
 Cons ectetuer adipiscing elit, sed diam nonummy nibh euismod. Cons ectetuer adipiscing elit, sed diam </p><a href="" class="read-more"><span>IBM support</span></a></div>
 </div></div>
 
@@ -163,7 +167,7 @@ Cons ectetuer adipiscing elit, sed diam nonummy nibh euismod. Cons ectetuer adip
 </section>
 <!--/faqs-->
 <!--video-->
-<section id="video-link" class="section row heading-left align-left">
+<section id="video-link" class="section row heading-left align-left  opaque-heading">
 		<div class="section-content section-content-inner" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/video-bg.jpg');">
 <h2 class="block-heading"><span><em>We speak your</em></span><span><em class="shift-left-30">language</em></span></h2><a href="" class="video-btn shift-left-55">Watch the video</a>
 </div>
