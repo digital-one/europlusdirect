@@ -13,7 +13,6 @@ h4{
 }
 h1,h2{
 	width:100%;
-	text-align: center;
 }
 a{
 	@include transition(all .3s ease);
@@ -28,7 +27,7 @@ a{
 		outline: none;
 	}
 }
-p{
+p,ul{
 	margin-bottom:20px;
 	@include font-size(14px);
 	&:last-child{
@@ -44,16 +43,17 @@ p{
 	h3{
 		@include font-size(24px);
 	}
-	p{
-		margin-bottom:40px;
+	p,ul{
 		@include font-size(18px);
 	}
 }
 
 @media #{$large-up} { 
 
-	h1,h2{
+
+	h1,h2,h3,h4{
 		@include font-size(40px);
+		margin:0 0 30px;
 	}
 	h3{
 		@include font-size(22px);

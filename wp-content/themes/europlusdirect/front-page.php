@@ -40,23 +40,26 @@
 		</div>
 		<!--/slide-->
 	</section>
-	<nav id="anchor-nav"><ul><li><a href="">Lenovo</a></li><li><a href="">IBM support</a></li><li><a href="">Multi-country</a></li><li><a href="">Software support</a></li><li><a href="">Multi-manufacturer support</a></li><li><a href="">FAQs</li></ul></nav>
+	<nav id="anchor-nav"><ul><li><a href="">Lenovo</a></li><li><a href="">IBM support</a></li><li><a href="">Multi-country</a></li><li><a href="">Software support</a></li><li><a href="">Multi-manufacturer support</a></li><li><a href="">FAQs</a></li></ul></nav>
 									        													      
 </div>
 <!--/slider-->
 <main id="main">
-<section id="intro" class="section row">
-
-		<div class="small-12 columns">
-			<div class="inner-pad">
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+	<!--intro-->
+<section id="intro" class="section row first">
+	<div class="section-inner">
+		<div class="section-content">	
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib.  Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue. L orem ipsum dolor sit amet,  elit. Consectetuer adipiscing elit, sed diam nonummy nib.  Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue</p>
+<p>Ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib.  Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue</p>
 </div>
 </div>
-
+</div>
 </section>
+<!--/intro-->
 <!--lenovo-->
-<section id="lenovo" class="section row red-blue-heading red-sub-heads red-btns pac">
-	<div class="section-content section-content-inner">
+<section id="lenovo" class="section row red-blue-heading red-sub-heads red-btns pac skewed grey centered-text spaced">
+	<div class="section-inner">
+		<div class="section-content">
 <header class="row">
 	<div class="small-12 columns">
 		<a href="" class="gold-partner"><img src="<?php echo get_template_directory_uri(); ?>/images/lenovo-gold-business-partner.png" alt="Lenovo Gold Business Partner 2015" /></a>
@@ -73,11 +76,14 @@
 <div class="small-12 large-4 columns"><div class="feature"><h3>Full service and repair on multiple machines</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/service-icon-lenovo.png" /></div><h4>Service Suite maintenance contract</h4><a href="" class="read-more"><span>Read More</span></a></div></div>
 </div>
 </div>
+<div class="skewed-bg"></div>
+</div>
 </section>
 <!--/lenovo-->
 <!--IBM-->
-<section id="ibm" class="section row light-blue pac">
-	<div class="section-content section-content-inner">
+<section id="ibm" class="section row light-blue pac skewed centered-text spaced anchor-bottom">
+	<div class="section-inner">
+	<div class="section-content">
 <header class="row">
 	<div class="small-12 columns">
 <h2 class="block-heading"><span><em>IBM ServicePac</em></span></h2>
@@ -93,11 +99,14 @@
 <footer class="section-footer"><a class="anchor-up">Top</a></footer>
 </div>
 </div>
+<div class="skewed-bg"></div>
+</div>
 </section>
 <!--/IBM-->
 <!--call back form-->
-<section id="callback" class="section row black white-sub-heads">
-	<div class="section-content section-content-inner">
+<section id="callback" class="section row white-sub-heads skewed centered-text black spaced">
+	<div class="section-inner">
+	<div class="section-content">
 <h2 class="block-heading"><span><em>Not sure what you need?</em></span></h2>
 <h3>We'll be in touch to help</h3>
 <?php //gravity_form(1, false, false, false, '', true, 1);  ?>
@@ -120,12 +129,16 @@
             
         </div>
                         </form>
-                        </div>
+                    </div>
+             </div>
+                    <div class="skewed-bg"></div>
+                  </div>
 </section>
 <!--/call back form-->
-<!--/Multi country support-->
-<section id="support" class="section row">
-	<div class="section-content section-content-inner">
+<!--Multi country support-->
+<section id="support" class="section row skewed grey centered-text above">
+	<div class="section-inner">
+		<div class="section-content">
 		<div class="row">
 			<div class="small-12 large-5 columns">
 <h2 class="block-heading"><span><em>Multi-country</em></span><span class="secondary"><em> support</em></span></h2>
@@ -134,12 +147,16 @@
 <?php /* <a href="" class="ribbon right yellow"><span>Find out more</span></a> */ ?>
 </div>
 <div class="small-12 large-7 columns">
-<img src="<?php echo get_template_directory_uri(); ?>/images/map.jpg" />
+<figure><img src="<?php echo get_template_directory_uri(); ?>/images/map.jpg" /></figure>
 	</div>
 </div>
+</div>
+<div class="skewed-bg"></div>
+</div>
 	</section>
+	<!--/Multi country support-->
 	<!--two column split-->
-<section class="section white-yellow-heading row">
+<section class="section white-yellow-heading row two-box centered-text">
 	<div class="section-content">
 	<div class="row">
 		<div class="small-12 medium-6 columns blue red-btns white-sub-heads"><div class="nested-section-content section-content-inner"><h2 class="block-heading"><span><em class="shift-right-55">Software</em></span><span class="secondary"><em>support</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
@@ -154,8 +171,9 @@ Cons ectetuer adipiscing elit, sed diam nonummy nibh euismod. Cons ectetuer adip
 
 <!--/two column split-->
 <!--faqs-->
-<section id="faqs" class="section yellow-white-heading light-yellow row">
-	<div class="section-content section-content-inner">
+<section id="faqs" class="section yellow-white-heading light-yellow row skewed centered-text spaced">
+	<div class="section-inner">
+	<div class="section-content">
 <h2 class="block-heading"><span><em>Frequently Asked Questions</em></span></h2>
 <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
 <div class="slider">
@@ -164,19 +182,28 @@ Cons ectetuer adipiscing elit, sed diam nonummy nibh euismod. Cons ectetuer adip
 
 </div>
 </div>
+<div class="skewed-bg"></div>
+</div>
 </section>
 <!--/faqs-->
 <!--video-->
-<section id="video-link" class="section row heading-left align-left  opaque-heading">
-		<div class="section-content section-content-inner" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/video-bg.jpg');">
+<section id="video-link" class="section row heading-left align-left  opaque-heading skewed video-link">
+	<div class="section-inner">
+		<div class="section-content">
 <h2 class="block-heading"><span><em>We speak your</em></span><span><em class="shift-left-30">language</em></span></h2><a href="" class="video-btn shift-left-55">Watch the video</a>
 </div>
+ <div class="skewed-bg" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/video-bg.jpg');"></div>
+ </div>
 </section>
 <!--/video-->
-<section id="contact" class="section yellow-white-heading yellow-btns">
+<section id="contact" class="section yellow-white-heading yellow-btns centered-text">
+	<div class="section-inner">
+		<div class="section-content">
 <h2 class="block-heading"><span><em>Call us today on</em></span></h2>
 <p class="big">UK: <a href="tel:">+44 (0)113 887 8650</a><br />USA: <a href="tel:">+1 727 2164 309</a></p>
 <a href="" class="read-more"><span>Contact us</span></a>
+</div>
+</div>
 	</section>
 	</main>
 

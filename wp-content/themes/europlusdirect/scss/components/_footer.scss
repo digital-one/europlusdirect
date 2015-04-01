@@ -34,7 +34,9 @@
 		}
 	}
 	nav#footer-menu{
-		@include font-size(12px);
+		ul{
+			@include font-size(12px);	
+		}
 		margin-bottom: 20px;
 		li{
 			padding: 0 25px;
@@ -78,6 +80,17 @@
 
 @media #{$large-up} { 
 
+
+	#footer{
+		p{
+			@include font-size(14px);
+		}
+		nav#footer-menu{
+		ul{
+			@include font-size(14px);	
+		}
+	}
+	}
 	
 }
 

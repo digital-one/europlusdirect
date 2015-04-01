@@ -43,92 +43,13 @@
 		@include abs-pos(auto,0,20px,0);
 	}
 }
-.section{
-	display:block;
-	overflow-y:hidden;
-	width:100%;
-	padding: 0 10px;
-	margin-bottom:20px;
-	text-align: center;
-	&.align-left{
-		text-align: left;
-	}
-}
-.section-content{
-	background-color: $light-grey;
-	@include bg-cover;
-	.blue &{
-		background-color: $blue;
-	}
-	.light-blue &{
-		background-color: $light-blue;
-	}
-	.red &{
-		background-color: $red;
-	}
-	.xlight-grey &{
-		background-color: $xlight-grey;
-	}
-	.light-yellow &{
-		background-color: $light-yellow;
-	}
-	.black &{
-		color: white;
-		background-color: black;
-	}
-	position: relative;
-	display:block;
-	width:100%;
-	//padding:80px 0 100px;
-	&:before,&:after{
-		content:"";
-		display: block;
-		width:100%;
-		height:90px;
-		z-index: 99;
-		background-color:$grey;
-		@include abs-pos(-45px,auto,auto,0);
-		@include transform(skewY(3.5deg));
-	}
-	&:after{
-		@include abs-pos(auto,auto,-45px,0);
-	}
-}
-.nested-section-content{
-	.blue &{
-		background-color: $blue;
-		color: white
-	}
-	.red &{
-		background-color: $red;
-		color: white;
-	}
-}
-.section-content-inner{
-	padding:80px 10px 100px;
-	#video-link &{
-		padding: 80px 30px 80px;
-	}
-}
-.nested-section-content{
-	&.section-content-inner{
-		padding: 80px 40px 20px;
-		&.second{
-			padding: 40px 40px 70px;
-		}
-	}
-}
-.section-footer{
-	display: block;
-	width: 100%;
-}
 #intro{
 	.inner-pad{
-		padding: 20px 0 0;
+		padding: 0;
 	}
 	p{
-		@include font-size(18px);
-		color: $grey;
+		@include font-size(16px);
+		text-align: left;
 		&:last-child{
 			margin:0;
 		}
@@ -254,6 +175,11 @@
 		}
 	}
 }
+#support{
+	.ribbon{
+		margin-top: 100px;
+	}
+}
 #faqs{
 	p{
 		@include font-size(18px);
@@ -310,15 +236,6 @@
 					@include font-size(22px);
 				}
 			}
-		}
-	}
-	.section{
-		padding: 0 60px;
-	}
-	.section-content-inner{
-		padding:80px 30px 100px;
-		#video-link &{
-			padding: 200px 30px 200px;
 		}
 	}
 	.pac-features{
@@ -407,14 +324,7 @@
 			}
 		}
 	}
-	.nested-section-content{
-		&.section-content-inner{
-			padding: 80px 10px 100px;
-			&.second{
-				padding: 80px 10px 100px;
-			}
-		}
-	}
+	
 	#video-link{
 		.block-heading{
 			margin-bottom: 8px;
@@ -440,11 +350,13 @@
 		}
 	}
 	.section-content-inner{
-		padding:80px 30px 100px;
+		padding:0 30px;
 	}
 	#lenovo{
 		header{
-			height:155px;
+			&.gold-logo{
+				height:155px;
+			}
 			.columns{
 				height: 100%;
 				position:relative;
@@ -514,15 +426,12 @@
 			}
 		}
 	}
-	.section{
-		margin-bottom:20px;
-	}
 	#intro{
 		.inner-pad{
-			padding: 50px 70px 30px;
+			padding: 0 70px 30px;
 		}
 		p{
-			@include font-size(26px);
+			@include font-size(18px);
 		}
 	}
 	
