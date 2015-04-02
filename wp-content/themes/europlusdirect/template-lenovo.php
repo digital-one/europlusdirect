@@ -81,7 +81,7 @@
 		<div class="nested-section red">
 			 <div class="ribbon"><span>Option 1</span></div> 
 			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');">sss</div></figure>
-			<div class="content-wrap">
+			<div class="content-wrap angle">
 				<div class="content">
 		<h3>In-warranty Lenovo Service Pack</h3>
 		<h4>Upgrade or extend the warranty on new Lenovo hardware</h4>
@@ -97,7 +97,7 @@
 			<div class="nested-section white">
 				 <div class="ribbon right yellow"><span>Option 2</span></div>
 			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');"></div></figure>
-			<div class="content-wrap">
+			<div class="content-wrap angle">
 				<div class="content">
 <h3>Post-warranty Lenovo Service Pack</h3>
 <h4>Renew the warranty on your Lenovo hardware</h4>
@@ -130,7 +130,7 @@
 		<div class="nested-section white">
 		 <div class="ribbon yellow"><span>Option 3</span></div> 
 			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');">sss</div></figure>
-			<div class="content-wrap">
+			<div class="content-wrap angle">
 				<div class="content">
 		<h3>Why take out a maintenance contract today?</h3>
 		<p><strong>A Lenovo Service Suite Maintenance Contract from Europlus Direct is:</strong></p>

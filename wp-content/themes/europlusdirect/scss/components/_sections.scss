@@ -5,9 +5,6 @@
 	text-align: left;
 	position: relative;
 	z-index:100;
-	&.spaced{
-		margin-bottom:20px;
-	}
 	&.above{
 		z-index: 101;
 	}
@@ -15,8 +12,11 @@
 		z-index: 102;
 	}
 	&.two-box{
-		margin-top:-25px;
-		margin-bottom: -25px;
+		margin-top:-20px;
+		margin-bottom: -20px;
+	}
+	&.offset-up{
+		margin-top: -50px;
 	}
 	&.offset-down{
 		margin-bottom: -50px;
@@ -51,6 +51,9 @@
 	.red &{
 		background-color: $red;
 	}
+	.blue &{
+		background-color: $blue;
+	}
 	.grey &{
 		background-color: $light-grey;
 	}
@@ -62,6 +65,9 @@
 	}
 	.light-yellow &{
 		background-color: $light-yellow;
+	}
+	.yellow &{
+		background-color: $yellow;
 	}
 	z-index: 1;
 }
@@ -79,14 +85,20 @@
 	.light-grey &{
 		background-color: $xlight-grey;
 	}
+	.yellow &{
+		background-color: $yellow;
+	}
 	.skewed &{
 		background-color: transparent;
 	}
 }
 .section-content{
-	padding:80px 30px 70px;
+	padding:60px 30px 70px;
 	.overlap-top &{
 		padding:80px 30px 30px;
+	}
+	.overlap-bottom &{
+		padding:30px 30px 120px;
 	}
 	.skewed &{
 		padding-top:50px;
@@ -102,8 +114,8 @@
 		padding-right:70px;
 	}
 	.gutters &{
-		padding-left:20%;
-		padding-right:20%;
+		padding-left:10%;
+		padding-right:10%;
 	}
 	.anchor-bottom &{
 		padding-bottom: 90px;
@@ -196,7 +208,7 @@
 }
 
 .nested-section{
-	padding: 0 10px;
+//	padding: 0 10px;
 	width:100%;
 	display: block;
 	figure{
@@ -227,16 +239,19 @@
 		h4{
 			@include font-size(24px);
 		}
-		&:before{
-			content:"";
-			display: block;
-			width:100%;
-			height:50px;
-			z-index: 2;
-			background-color:$red;
-			@include abs-pos(-25px,auto,auto,0);
-			@include transform(skewY(-3.5deg));
+		&.angle{
+			&:before{
+				content:"";
+				display: block;
+				width:100%;
+				height:50px;
+				z-index: 2;
+				background-color:$red;
+				@include abs-pos(-25px,auto,auto,0);
+				@include transform(skewY(-3.5deg));
+			}
 		}
+		
 		.content{
 			width:100%;
 			display: block;
@@ -253,8 +268,52 @@
 			h3,h4{
 				color: $red;
 			}
-			&:before{
-				background-color: white;
+			&.angle{
+				&:before{
+					background-color: white;
+				}
+			}	
+		}
+	}
+	&.blue{
+		.content-wrap{
+			background-color: $blue;
+			color: white;
+			h3,h4{
+				color: white;
+			}
+			&.angle{
+				&:before{
+					background-color: $blue;
+				}
+			}
+		}
+	}
+	&.grey{
+		.content-wrap{
+			background-color: $light-grey;
+			color: $dark-grey;
+			h3,h4{
+				color: $blue;
+			}
+			&.angle{
+				&:before{
+					background-color: $light-grey;
+				}
+			}
+		}
+	}
+	&.light-grey{
+		.content-wrap{
+			background-color: $xlight-grey;
+			color: $dark-grey;
+			h3,h4{
+				color: $blue;
+			}
+			&.angle{
+				&:before{
+					background-color: $xlight-grey;
+				}
 			}
 		}
 	}
