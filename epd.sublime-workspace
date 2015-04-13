@@ -4,12 +4,28 @@
 		"selected_items":
 		[
 			[
-				"pa",
-				"padding-top"
+				"ma",
+				"margin-top"
 			],
 			[
 				"ba",
-				"background-image"
+				"background-size"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"marg",
+				"margin-bottom"
 			],
 			[
 				"te",
@@ -20,20 +36,8 @@
 				"padding-top"
 			],
 			[
-				"mar",
-				"margin-top"
-			],
-			[
-				"pad",
-				"padding-bottom"
-			],
-			[
 				"fo",
 				"font-weight"
-			],
-			[
-				"ma",
-				"margin-bottom"
 			],
 			[
 				"fot",
@@ -66,10 +70,6 @@
 			[
 				"trans",
 				"transition"
-			],
-			[
-				"marg",
-				"margin-left"
 			],
 			[
 				"bran",
@@ -519,6 +519,119 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "wp-content/themes/europlusdirect/scss/components/_typography.scss",
+			"settings":
+			{
+				"buffer_size": 925,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/europlusdirect/scss/components/_sections.scss",
+			"settings":
+			{
+				"buffer_size": 5458,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/europlusdirect/scss/components/_all.scss",
+			"settings":
+			{
+				"buffer_size": 335,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/europlusdirect/front-page.php",
+			"settings":
+			{
+				"buffer_size": 15910,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/europlusdirect/scss/components/_container.scss",
+			"settings":
+			{
+				"buffer_size": 149,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/europlusdirect/template-lenovo.php",
+			"settings":
+			{
+				"buffer_size": 16020,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/europlusdirect/scss/components/_gravity-forms.scss",
+			"settings":
+			{
+				"buffer_size": 144,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/europlusdirect/scss/templates/_home.scss",
+			"settings":
+			{
+				"buffer_size": 8428,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/europlusdirect/template-about.php",
+			"settings":
+			{
+				"buffer_size": 11659,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/europlusdirect/scss/components/_global.scss",
+			"settings":
+			{
+				"buffer_size": 9880,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "epd.sql",
+			"settings":
+			{
+				"buffer_size": 347897,
+				"line_ending": "Unix",
+				"name": "-- phpMyAdmin SQL Dump"
+			}
+		},
+		{
+			"file": "wp-content/themes/europlusdirect/includes/custom-functions.php",
+			"settings":
+			{
+				"buffer_size": 3054,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/europlusdirect/scss/_base.scss",
+			"settings":
+			{
+				"buffer_size": 170,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/europlusdirect/scss/_variables.scss",
+			"settings":
+			{
+				"buffer_size": 899,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -548,6 +661,14 @@
 	},
 	"file_history":
 	[
+		"/Applications/MAMP/htdocs/jump/epd/wp-content/themes/europlusdirect/scss/templates/_home.scss",
+		"/Applications/MAMP/htdocs/jump/epd/wp-content/themes/europlusdirect/scss/components/_global.scss",
+		"/Applications/MAMP/htdocs/jump/epd/wp-content/themes/europlusdirect/scss/components/_slick-slider.scss",
+		"/Applications/MAMP/htdocs/jump/epd/wp-content/themes/europlusdirect/scss/components/_header.scss",
+		"/Applications/MAMP/htdocs/jump/epd/wp-content/themes/europlusdirect/scss/components/_footer.scss",
+		"/Applications/MAMP/htdocs/jump/epd/wp-content/themes/europlusdirect/template-about.php",
+		"/Applications/MAMP/htdocs/jump/epd/wp-content/themes/europlusdirect/scss/components/_navigation.scss",
+		"/Applications/MAMP/htdocs/jump/epd/wp-content/themes/europlusdirect/scss/components/_sections.php",
 		"/Applications/MAMP/htdocs/coyote/master_investor/wp-content/themes/masterinvestor/sidebar-contact.php",
 		"/Applications/MAMP/htdocs/coyote/master_investor/wp-content/themes/masterinvestor/partials/content-article-loop.php",
 		"/Applications/MAMP/htdocs/coyote/master_investor/wp-content/themes/masterinvestor/partials/content-archive-article-loop.php",
@@ -667,15 +788,7 @@
 		"/Applications/MAMP/htdocs/giselle/wp-content/themes/giselle/template-about.php",
 		"/Applications/MAMP/htdocs/giselle/wp-content/themes/giselle/sass/templates/_about.scss",
 		"/Applications/MAMP/htdocs/giselle/wp-content/themes/giselle/functions.php",
-		"/Applications/MAMP/htdocs/giselle/wp-content/themes/giselle/sass/components/_global.scss",
-		"/Applications/MAMP/htdocs/giselle/wp-content/themes/giselle/sass/components/_gravity-forms.scss",
-		"/Applications/MAMP/htdocs/giselle/wp-content/themes/giselle/archive-cpt_collection.php",
-		"/Applications/MAMP/htdocs/giselle/wp-content/themes/giselle/css/post-edit.css",
-		"/Applications/MAMP/htdocs/giselle/wp-content/themes/giselle/sass/components/_twitter.scss",
-		"/Applications/MAMP/htdocs/giselle/wp-content/themes/giselle/sass/components/_navigation.scss",
-		"/Applications/MAMP/htdocs/giselle/wp-content/themes/giselle/css/editor-style.css",
-		"/Applications/MAMP/htdocs/giselle/wp-content/themes/giselle/sass/components/_signposts.scss",
-		"/Applications/MAMP/htdocs/giselle/wp-content/plugins/gravityforms/css/formsmain.css"
+		"/Applications/MAMP/htdocs/giselle/wp-content/themes/giselle/sass/components/_global.scss"
 	],
 	"find":
 	{
@@ -696,6 +809,33 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"http://europlusdirect.localhost",
+			"callback",
+			"ribbon",
+			"video",
+			"support",
+			"intro",
+			"pac",
+			"callback",
+			"gform",
+			"nested-section",
+			"yellow",
+			"spaced",
+			"spacing",
+			"sub-",
+			"support",
+			"ribbon",
+			"anchor",
+			"ribbon",
+			"intro",
+			"read-more",
+			"video",
+			"read",
+			"ribbon",
+			"read-more",
+			"pac",
+			"gold",
+			"block-heading",
 			"author",
 			"count",
 			"flash",
@@ -796,34 +936,7 @@
 			"home",
 			"banner-image",
 			"120%",
-			"slick",
-			"fancybox",
-			"hover",
-			"http://njoy.localhost",
-			"http://livingwood.localhost",
-			"breadcrumb",
-			"banner-image",
-			".load-more",
-			"banner-image",
-			"#intro",
-			"ultimate",
-			"dl ",
-			"treatments-accordion",
-			"accordion",
-			"child-page-list",
-			"child",
-			"accordion",
-			"video",
-			"article-accordion",
-			"wp_mail",
-			"title",
-			"sendmail.php",
-			"#mobile-contact-panel",
-			"filters",
-			"240px",
-			".slick-dots",
-			"logo",
-			"#featured-list"
+			"slick"
 		],
 		"highlight": false,
 		"in_selection": false,
@@ -971,6 +1084,516 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "wp-content/themes/europlusdirect/scss/components/_typography.scss",
+					"settings":
+					{
+						"buffer_size": 925,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								537,
+								537
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wp-content/themes/europlusdirect/scss/components/_sections.scss",
+					"settings":
+					{
+						"buffer_size": 5458,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5085,
+								5085
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4650.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/europlusdirect/scss/components/_all.scss",
+					"settings":
+					{
+						"buffer_size": 335,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								273,
+								273
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/europlusdirect/front-page.php",
+					"settings":
+					{
+						"buffer_size": 15910,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13649,
+								13649
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2425.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/europlusdirect/scss/components/_container.scss",
+					"settings":
+					{
+						"buffer_size": 149,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "wp-content/themes/europlusdirect/template-lenovo.php",
+					"settings":
+					{
+						"buffer_size": 16020,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15546,
+								15546
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2907.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "wp-content/themes/europlusdirect/scss/components/_gravity-forms.scss",
+					"settings":
+					{
+						"buffer_size": 144,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								109
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "wp-content/themes/europlusdirect/scss/templates/_home.scss",
+					"settings":
+					{
+						"buffer_size": 8428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4770,
+								4770
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3753.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "wp-content/themes/europlusdirect/template-about.php",
+					"settings":
+					{
+						"buffer_size": 11659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6419,
+								11186
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1872.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "wp-content/themes/europlusdirect/scss/components/_global.scss",
+					"settings":
+					{
+						"buffer_size": 9880,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "epd.sql",
+					"settings":
+					{
+						"buffer_size": 347897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3640,
+								3640
+							],
+							[
+								3700,
+								3700
+							],
+							[
+								324540,
+								324540
+							],
+							[
+								324780,
+								324780
+							],
+							[
+								325024,
+								325024
+							],
+							[
+								325266,
+								325266
+							],
+							[
+								325507,
+								325507
+							],
+							[
+								325757,
+								325757
+							],
+							[
+								325992,
+								325992
+							],
+							[
+								326239,
+								326239
+							],
+							[
+								326510,
+								326510
+							],
+							[
+								326776,
+								326776
+							],
+							[
+								327015,
+								327015
+							],
+							[
+								327267,
+								327267
+							],
+							[
+								327508,
+								327508
+							],
+							[
+								327761,
+								327761
+							],
+							[
+								328000,
+								328000
+							],
+							[
+								328252,
+								328252
+							],
+							[
+								328503,
+								328503
+							],
+							[
+								328761,
+								328761
+							],
+							[
+								328995,
+								328995
+							],
+							[
+								329234,
+								329234
+							],
+							[
+								329473,
+								329473
+							],
+							[
+								329712,
+								329712
+							],
+							[
+								329951,
+								329951
+							],
+							[
+								330190,
+								330190
+							],
+							[
+								330429,
+								330429
+							],
+							[
+								330668,
+								330668
+							],
+							[
+								330907,
+								330907
+							],
+							[
+								331146,
+								331146
+							],
+							[
+								331385,
+								331385
+							],
+							[
+								331624,
+								331624
+							],
+							[
+								331863,
+								331863
+							],
+							[
+								332102,
+								332102
+							]
+						],
+						"settings":
+						{
+							"auto_name": "-- phpMyAdmin SQL Dump",
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 868.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "wp-content/themes/europlusdirect/includes/custom-functions.php",
+					"settings":
+					{
+						"buffer_size": 3054,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2669,
+								2669
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 273.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "wp-content/themes/europlusdirect/scss/_base.scss",
+					"settings":
+					{
+						"buffer_size": 170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								125,
+								125
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "wp-content/themes/europlusdirect/scss/_variables.scss",
+					"settings":
+					{
+						"buffer_size": 899,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								872,
+								872
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],

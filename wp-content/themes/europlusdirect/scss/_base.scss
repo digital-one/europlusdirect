@@ -4,5 +4,7 @@ html{
 body{
 	background-color: $grey;
 	color: $dark-grey;
+	font-family: $open_sans;
+	font-weight: 400;
 	// /-webkit-font-smoothing: antialiased;
 }

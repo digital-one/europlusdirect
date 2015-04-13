@@ -11,9 +11,10 @@
 		}
 		em{
 			display: inline-block;
-			padding:4px 10px;
+			padding:6px 10px 10px;
 			text-align: center;
 			width:auto;
+			line-height: 100%;
 			margin:0 auto;
 			.heading-left &, .heading-right &{
 				margin:0;
@@ -111,7 +112,7 @@
 .quote-outer{
 	display: block;
 	width: 100%;
-	padding: 0 10%;
+	padding: 0;
 }
 blockquote{
 	padding: 0 40px;
@@ -244,8 +245,7 @@ a.video-btn{
 	z-index:999;
 }
 .spaced{
-	//margin-bottom:20px;
-	margin-bottom: 1.8752em;
+	margin-bottom: 10px;
 }
 .anchor-up{
 	@include abs-pos(-15px,auto,auto,50%);
@@ -336,6 +336,12 @@ figure{
 
 @media #{$medium-up} { 
 
+	.spaced{
+		margin-bottom: 1.8752em;
+	}
+	.quote-outer{
+		padding: 0 10%;
+	}
 	a.read-more{
 		height:48px;
 		span{
@@ -356,6 +362,142 @@ figure{
 	.gold-partner{
 		width: 155px;
 	}
+	.ribbon{
+		display:inline-block;
+		height:48px;
+		width:320px;
+		position:relative;
+		
+		margin: 0 0 0 -78px;
+		.nested-section &{
+			margin: -20px 0 0 -118px;
+		}
+		color: white;
+		@include font-size(24px);
+		float: left !important;
+		text-decoration:none;
+		span{
+			height:48px; 
+			line-height:48px;
+			display: block;
+			position: relative;
+			width:100%;
+			z-index: 2;
+			background-color: $blue;
+			text-align: center;
+			padding: 0 20px 0 48px;
+			@include transition(background-color .3s ease);
+		}
+		&:before{
+			content:"";
+			z-index: 1;
+			@include abs-pos(-24px,auto,auto,0);
+			height:48px;
+			@include transform(skewY(-45deg));
+			line-height:48px;
+			background-color: $grey;
+			width:48px;
+			display: block;
+			@include linear-gradient(45deg, black 0%, $blue 100%);
+		}
+		&.left{
+			float: left !important;
+		}
+		&.right{
+			margin: 0 -88px 0 0;
+			.nested-section &{
+				margin: -20px -128px 0 0;
+			}
+			float:right !important;
+			span{
+				padding: 0 48px 0 20px;
+			}
+			&:before{
+				@include abs-pos(-29px,0,auto,auto);
+				@include transform(skewY(45deg));	
+			}
+			&.yellow{
+				&:before{
+					@include linear-gradient(-45deg, lighten(black,50%) 0%, $yellow 100%);
+				}
+			}
+		}
+		&.yellow{
+			color: $blue;
+			span{
+				background-color: $yellow;
+			}
+			&:hover,&:active{
+				span{
+					background-color: $light-yellow;
+				}
+			}
+			&:before{
+				@include linear-gradient(45deg, lighten(black,50%) 0%, $yellow 100%);
+			}
+		}
+		&:hover,&:active{
+			span{
+				background-color: lighten($blue,10%);
+			}	
+		}
+	}
+	.shift-left-30{
+		margin-left:30px !important;
+	}
+	.shift-left-55{
+		margin-left:55px !important;
+	}
+	.shift-right-30{
+		margin-right:30px !important;
+	}
+	.shift-right-55{
+		margin-right:55px !important;
+	}
+	.big{
+		@include font-size(36px);
+	}
+
+}
+
+@media #{$large-up} { 
+
+
+}
+
+@media #{$xlarge-up} { 
+
+	a.video-btn{
+		display:inline-block;
+		background-color: $yellow;
+		height:67px;
+		text-decoration:none;
+		line-height: 67px;
+		@include font-size(30px);
+		padding:0 90px 0 25px;
+		position: relative;
+		&:after{
+			content:"";
+			@include abs-pos(50%,25px,auto,auto);
+			width:47px;
+			height:47px;
+			display: block;
+			margin-top:-23px;
+			background:url('../images/video-play.png') center center no-repeat;
+		}
+		&:hover,&:active{
+			background-color: $light-yellow;
+		}
+	}
+	.big{
+		@include font-size(46px);
+	}
+	a.read-more{
+		span{
+			@include font-size(24px);
+		}
+	}
+
 	.ribbon{
 		display:inline-block;
 		height:58px;
@@ -434,61 +576,6 @@ figure{
 			span{
 				background-color: lighten($blue,10%);
 			}	
-		}
-	}
-	a.video-btn{
-		display:inline-block;
-		background-color: $yellow;
-		height:67px;
-		text-decoration:none;
-		line-height: 67px;
-		@include font-size(30px);
-		padding:0 90px 0 25px;
-		position: relative;
-		&:after{
-			content:"";
-			@include abs-pos(50%,25px,auto,auto);
-			width:47px;
-			height:47px;
-			display: block;
-			margin-top:-23px;
-			background:url('../images/video-play.png') center center no-repeat;
-		}
-		&:hover,&:active{
-			background-color: $light-yellow;
-		}
-	}
-	.shift-left-30{
-		margin-left:30px !important;
-	}
-	.shift-left-55{
-		margin-left:55px !important;
-	}
-	.shift-right-30{
-		margin-right:30px !important;
-	}
-	.shift-right-55{
-		margin-right:55px !important;
-	}
-	.big{
-		@include font-size(36px);
-	}
-
-}
-
-@media #{$large-up} { 
-
-
-}
-
-@media #{$xlarge-up} { 
-
-	.big{
-		@include font-size(46px);
-	}
-	a.read-more{
-		span{
-			@include font-size(24px);
 		}
 	}
 }

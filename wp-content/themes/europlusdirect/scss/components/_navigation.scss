@@ -21,16 +21,17 @@
 		@include font-size(18px);
 		height:80px;
 		line-height: 80px;
-		&:hover,&:visited{
+		&:hover,&:active{
 			color: $yellow;
 		}
 	}
 	.menu-toggle{
-		@include abs-pos(14px,30px,auto,auto);
+		@include abs-pos(18px,30px,auto,auto);
 		@extend %ir;
-		width:48px;
+		width:38px;
 		height:32px;
 		background:url('../images/mobile-menu.png') left top no-repeat;
+		background-size: 100% auto;
 		display: block;
 	}
 }
@@ -40,9 +41,11 @@
 	background-color: rgba(255,255,255,.7);
 	padding: 20px 0;
 	width: 100%;
-	@include font-size(18px);
 	li{
-		padding: 0 20px;
+		padding: 0 20px; 
+	}
+	a{
+		@include font-size(18px);
 	}
 	display: none;
 }
@@ -55,24 +58,33 @@
 @media #{$large-up} { 
 
 	#nav{
-		height: 100px;
-		padding-left: 200px;
+		height: 80px;
+		padding-left: (200px/100)*85;
+		.minimise &{
+			height: 50px;
+			padding-left:0;
+		}
 		ul{
 			display: block;
 		}
 		li{
-			padding:0 18px;
+			padding: 0 20px; padding:0 2.2vw;
 			&:first-child{
-				padding: 0 18px 0 0;
+				padding: 0 20px 0 0;
 			}
 			&:last-child{
-				padding: 0 0 0 18px;
+				padding: 0 0 0 20px;
 			}
 		}
 		a{
-			height:100px;
-			line-height: 100px;
-			@include font-size(20px);
+			height:80px;
+			line-height: 80px;
+			@include font-size(18px);
+			.minimise &{
+				height: 50px;
+				line-height: 50px;
+				@include font-size(16px);
+			}
 		}
 		.menu-toggle{
 			display: none;
@@ -80,6 +92,19 @@
 	}
 	#anchor-nav{
 		display: block;
+		.minimise &{
+			position: fixed;
+			z-index: 999;
+			padding: 10px 0;
+			top:90px;
+			left:0;
+			bottom:auto;
+			right:auto;
+			background-color: $light-grey;
+			a{
+				@include font-size(14px);
+			}
+		}
 	}
 
 }

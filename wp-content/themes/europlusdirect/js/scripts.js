@@ -63,73 +63,29 @@ $('#faqs .slider').slick({
 
 
 
-if($('#twitter-slider').length){ 
 
-
-initTwitterFeedSlick = function(){
-	$('#twitter-slider').slick({
-    dots: false,
-    autoplay: true,
-    fade: true,
-    autoplaySpeed: 4000,
-    speed: 600,
-    pauseOnHover: true,
-    arrows: true
-  });
-}
-
-
-	handleTweets = function(_tweets){
-		var x = _tweets.length,
-			n = 0,
-			element = document.getElementById('twitter-slider');
-var html = '';
-while(n < x) {
-html += '<div class="slide"><div class="vcenter">' + _tweets[n] + '</div></div>';
-n++;
-}
-//html += '</ul>';
-element.innerHTML = html;
-	initTwitterFeedSlick();
-}
-
-
-var mi_feed = {
-	"id": '581190015948058624',
-    "domId": '',
-	"maxTweets": 3,
-	"enableLinks": true,
-	"showUser": false,
-	"showTime": false,
-	"dateFunction": '',
-	"showRetweet": false,
-	"customCallback": handleTweets,
-	"showInteraction": false
-    };
- twitterFetcher.fetch(mi_feed);
-}
-
-
-if(!isTouchDevice.any()){
+//if(!isTouchDevice.any()){
 
   //var stickyHeaderTop= $('#breadcrumb').offset().top ;
-  if($('#nav').length){
-  var _stickyHeaderTop = $('#nav').offset().top;
+  //var _anchorNavTop = $('#anchor-nav').offset().top;
+  //var _stickyHeaderTop = $('#header').offset().top;
+  var _stickyHeaderTop = $(window).height() - $('#header').outerHeight() - $('#anchor-nav').outerHeight();
 //var animating = false;
     $(window).scroll(function(){
       var _scrollTop = $(window).scrollTop();
+      console.log(_scrollTop);
     if( _scrollTop > _stickyHeaderTop ) {
-      //alert('top')
-      $('body').addClass('fixed');
+     // alert('top')
+      $('body').addClass('minimise');
       
                 } else {
-            $('body').removeClass('fixed');       
+          $('body').removeClass('minimise');       
                 }
        
   })
-}
+//}
 
-}
+
 
 
 load_posts = function(){

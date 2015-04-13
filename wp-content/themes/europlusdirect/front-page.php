@@ -113,11 +113,18 @@
 <div class="gf_browser_chrome gform_wrapper two-column_wrapper" id="gform_wrapper_2"><a id="gf_2" name="gf_2" class="gform_anchor"></a><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_2" id="gform_2" class="two-column" action="/contact-us/#gf_2">
                         
                         <div class="gform_body">
-                            <ul id="gform_fields_2" class="gform_fields top_label description_below"><li id="field_2_6" class="gfield gsection gform_column"></li></ul><ul class="gform_fields top_label description_below gform_column"><li class="gfield gsection empty"></li><li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li><li id="field_2_3" class="gfield gfield_label_hidden"><label class="gfield_label" for="input_2_3" style="display:none;">Company</label><div class="ginput_container"><input name="input_3" id="input_2_3" type="text" value="" class="medium" tabindex="3" placeholder="Company"></div></li><li id="field_2_4" class="gfield gfield_label_hidden"><label class="gfield_label" for="input_2_4" style="display:none;">Telephone</label><div class="ginput_container"><input name="input_4" id="input_2_4" type="text" value="" class="medium" tabindex="4" placeholder="Telephone"></div></li><li id="field_2_5" class="gfield gfield_label_hidden"><label class="gfield_label" for="input_2_5" style="display:none;">Email Address</label><div class="ginput_container"><input name="input_5" id="input_2_5" type="email" value="" class="medium" tabindex="5" placeholder="Email Address"></div></li><li id="field_2_11" class="gfield gsection gform_column"></li></ul><ul class="gform_fields top_label description_below gform_column"><li class="gfield gsection empty"></li>
-<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
-<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
-<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
-<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
+                            <ul id="gform_fields_2" class="gform_fields top_label description_below">
+                            	<li id="field_2_6" class="gfield gsection gform_column"></li></ul><ul class="gform_fields top_label description_below gform_column">
+                            	<li class="gfield gsection empty"></li>
+                            	<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
+                            	<li id="field_2_3" class="gfield gfield_label_hidden"><label class="gfield_label" for="input_2_3" style="display:none;">Company</label><div class="ginput_container"><input name="input_3" id="input_2_3" type="text" value="" class="medium" tabindex="3" placeholder="Company"></div></li>
+                            	<li id="field_2_4" class="gfield gfield_label_hidden"><label class="gfield_label" for="input_2_4" style="display:none;">Telephone</label><div class="ginput_container"><input name="input_4" id="input_2_4" type="text" value="" class="medium" tabindex="4" placeholder="Telephone"></div></li>
+                            	<li id="field_2_5" class="gfield gfield_label_hidden"><label class="gfield_label" for="input_2_5" style="display:none;">Email Address</label><div class="ginput_container"><input name="input_5" id="input_2_5" type="email" value="" class="medium" tabindex="5" placeholder="Email Address"></div></li><li id="field_2_11" class="gfield gsection gform_column"></li></ul>
+                            	<ul class="gform_fields top_label description_below gform_column"><li class="gfield gsection empty"></li>
+<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden right"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
+<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden right"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
+<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden right"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
+<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden right"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
 
 
                          
@@ -135,6 +142,7 @@
                   </div>
 </section>
 <!--/call back form-->
+
 <!--Multi country support-->
 <section id="support" class="section row skewed grey centered-text above">
 	<div class="section-inner">
@@ -159,9 +167,9 @@
 <section class="section white-yellow-heading row two-box centered-text">
 	<div class="section-content">
 	<div class="row">
-		<div class="small-12 medium-6 columns blue red-btns white-sub-heads"><div class="nested-section-content section-content-inner"><h2 class="block-heading"><span><em class="shift-right-55">Software</em></span><span class="secondary"><em>support</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
+		<div class="small-12 large-6 columns blue red-btns white-sub-heads"><div class="nested-section-content section-content-inner"><h2 class="block-heading"><span><em class="shift-right-55">Software</em></span><span class="secondary"><em>support</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
 Cons ectetuer adipiscing elit, sed diam nonummy nibh euismod. Cons ectetuer adipiscing elit, sed diam </p><a href="" class="read-more"><span>Find out more</span></a></div></div>
-	<div class="small-12 medium-6 columns red white-sub-heads"><div class="nested-section-content section-content-inner second"><h2 class="block-heading"><span><em>Multi-manufacturer</em></span><span class="secondary"><em class="shift-right-55">support</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
+	<div class="small-12 large-6 columns red white-sub-heads"><div class="nested-section-content section-content-inner second"><h2 class="block-heading"><span><em>Multi-manufacturer</em></span><span class="secondary"><em class="shift-right-55">support</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
 Cons ectetuer adipiscing elit, sed diam nonummy nibh euismod. Cons ectetuer adipiscing elit, sed diam </p><a href="" class="read-more"><span>IBM support</span></a></div>
 </div></div>
 
@@ -200,7 +208,7 @@ Cons ectetuer adipiscing elit, sed diam nonummy nibh euismod. Cons ectetuer adip
 	<div class="section-inner">
 		<div class="section-content">
 <h2 class="block-heading"><span><em>Call us today on</em></span></h2>
-<p class="big">UK: <a href="tel:">+44 (0)113 887 8650</a><br />USA: <a href="tel:">+1 727 2164 309</a></p>
+<p class="big"><a href="tel:">+44 (0)113 887 8650</a></p>
 <a href="" class="read-more"><span>Contact us</span></a>
 </div>
 </div>

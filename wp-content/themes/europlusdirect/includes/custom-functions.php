@@ -70,7 +70,7 @@ add_action('wp_enqueue_scripts', 'scripts_and_styles', 999);
 
 // enqueue google fonts
 function google_fonts() {
-  wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Merriweather:400,500,700');
+  wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700');
   wp_enqueue_style( 'googleFonts');
 }
 

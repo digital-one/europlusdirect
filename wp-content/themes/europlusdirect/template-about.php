@@ -126,7 +126,7 @@
 
 
 <!--lenovo-->
-<section id="lenovo" class="section row red-blue-heading white-sub-heads red-btns pac skewed centered-text blue offset-up spaced straight-top">
+<section  class="section row red-blue-heading white-sub-heads red-btns pac skewed centered-text blue offset-up spaced behind straight-top">
 	<div class="section-inner">
 		<div class="section-content">
 <h3>Testimonials</h3>

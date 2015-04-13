@@ -24,11 +24,12 @@
 		width: ((229px / 100) * 55);
 		height: ((220px /100) * 55);
 		@include abs-pos(0,auto,auto,0);
+		@include transition(all .3s ease);
 		background:url('../images/europlus-direct.png') left top no-repeat;
 		background-size:100% auto;
 		@extend %ir;
 		z-index: 999;
-		margin:38px 0 0 ;
+		margin:18px 0 0 ;
 	}
 	.top{
 		@include linear-gradient(-180deg, $dark-grey 0%, $grey 100%);
@@ -63,10 +64,11 @@
 			}
 			a{
 				display: block;
-				width:35px;
-				height:35px;
+				width:25px;
+				height:25px;
 				@extend %ir;
 				background:url('../images/chat-icon.png') center center no-repeat;
+				background-size:100% auto;
 			}
 		}
 	}
@@ -77,9 +79,9 @@
 
 	#header{
 		#home-link{
-			width: ((229px / 100) * 85);
-			height: ((220px /100) * 85);
-			margin:20px 0 0 ;
+			width: ((229px / 100) * 75);
+			height: ((220px /100) * 75);
+			margin:4px 0 0 ;
 		}
 		.top{
 			nav#contacts{
@@ -88,7 +90,7 @@
 				ul{
 					li{
 						a{
-							@include font-size(16px);
+							@include font-size(14px);
 						}
 					}
 				}
@@ -102,8 +104,13 @@
 @media #{$large-up} { 
 
 	#header{
+		.minimise &{
+			#home-link{
+				width:120px;
+			}
+		}
 		.top{
-			padding:20px 50px;	
+			padding:10px 50px;	
 			nav#contacts{
 				width: 100%;
 				@include centered-menu;
@@ -124,8 +131,11 @@
 							}
 						}
 						a{
-							line-height: 35px;
-							height: 35px;
+							line-height: 25px;
+							height: 25px;
+							.minimise &{
+								@include font-size(12px);
+							}
 						}
 					}
 				}
