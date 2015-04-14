@@ -1,7 +1,8 @@
 @mixin centered-menu{
 	width: 100%;
 	//position: relative;
-	overflow: hidden;
+	//overflow-x: hidden;
+	//overflow-y:visible;
 	ul{
 		clear: left;
 		float: left;

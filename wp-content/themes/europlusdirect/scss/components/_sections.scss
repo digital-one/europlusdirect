@@ -54,6 +54,9 @@
 	.blue &{
 		background-color: $blue;
 	}
+	.light-grey &{
+		background-color: $xlight-grey;
+	}
 	.grey &{
 		background-color: $light-grey;
 	}
@@ -171,6 +174,12 @@
 	.black &{
 		background-color: black;
 		color: white;
+		a:link,a:visited{
+			color: $yellow;
+		}
+		a:hover,a:active{
+			color: white;
+		}
 	}
 	.grey &{
 		background-color: $light-grey;
@@ -264,9 +273,6 @@
 		.content-wrap{
 			background-color: white;
 			color: $dark-grey;
-			h3,h4{
-				color: $red;
-			}
 			&.angle{
 				&:before{
 					background-color: white;
@@ -279,6 +285,12 @@
 			background-color: $blue;
 			color: white;
 			h3,h4{
+				color: white;
+			}
+			a:link,a:visited{
+				color: $yellow;
+			}
+			a:hover,a:active{
 				color: white;
 			}
 			&.angle{
@@ -317,7 +329,7 @@
 		}
 	}
 	footer{
-		text-align: center;
+		text-align: right;
 		img{
 			margin:0 auto;
 			display: inline-block;
@@ -336,9 +348,9 @@
 		}
 	}
 	.section-content{
-		padding:60px 30px;
+		padding:50px 30px 60px;
 		.first &{
-			padding-top:50px;
+			padding-top:50px !important;
 		}
 		.gutters &{
 			padding-left:10%;
@@ -346,7 +358,7 @@
 		}
 		.overlap-bottom &{
 			padding-top:30px;
-			padding-bottom: 120px;
+			padding-bottom: 110px;
 		}
 		.insets &{
 			padding: 50px 70px;
@@ -354,13 +366,13 @@
 			//padding-right:70px;
 		}
 		.skewed &{
-			padding-top:50px;
+			padding-top:60px;
 		}
 		.skewed.behind &{
 			padding-top: 100px;
 		}
 		.straight-top &{
-			padding-top:120px;
+			padding-top:110px;
 		}
 		#video-link &{
 			padding: 200px 30px 200px !important;
@@ -373,10 +385,10 @@
 	.nested-section{
 		.content-wrap{
 			h3,h4{
-				@include font-size(40px);
+				@include font-size(26px);
 			}
 			h4{
-				@include font-size(24px);
+				@include font-size(18px);
 			}
 			.content{
 				padding: 20px 30px 30px;
@@ -387,7 +399,7 @@
 		&.section-content-inner{
 			padding: 100px 50px 60px;
 			&.second{
-				padding: 60px 50px 100px;
+				padding: 60px 50px 180px;
 			}
 		}
 	}
@@ -411,7 +423,7 @@
 		&.section-content-inner{
 			padding: 100px 50px 120px;
 			&.second{
-				padding: 120px 50px 100px;
+				padding: 120px 50px 180px;
 			}
 		}
 	}

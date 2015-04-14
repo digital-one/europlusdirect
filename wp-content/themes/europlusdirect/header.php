@@ -53,7 +53,7 @@
 		'menu_id'=> 'main-menu',
 		'container' => 'nav',
 		'container_class' => '',
-		'after' => '<div class="mobile-dropdown-trigger"></div>' ) ); ?>
+		'after' => '' ) ); ?>
 	</div>
 	</div>
 </nav>

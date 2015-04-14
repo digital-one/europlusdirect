@@ -4,17 +4,16 @@
 	@include centered-menu;
 	background-color: $blue;
 	height: 60px;
+	@include wp-current-page-links{
+		color: $yellow;
+		background-color: darken($blue,10%);
+	}
 	ul{
 		display: none;
 	}
 	li{
-		padding:0 30px;
-		&:first-child{
-			padding: 0 30px 0 0;
-		}
-		&:last-child{
-			padding: 0 0 0 30px;
-		}
+		//padding:0 30px;
+		position: relative;
 	}
 	a{
 		color: white;
@@ -23,6 +22,7 @@
 		line-height: 80px;
 		&:hover,&:active{
 			color: $yellow;
+			background-color:darken($blue,5%);
 		}
 	}
 	.menu-toggle{
@@ -58,8 +58,9 @@
 @media #{$large-up} { 
 
 	#nav{
-		height: 80px;
-		padding-left: (200px/100)*85;
+		height: 70px;
+		//padding-left: (200px/100)*85;
+		padding-left:0;
 		.minimise &{
 			height: 50px;
 			padding-left:0;
@@ -68,22 +69,56 @@
 			display: block;
 		}
 		li{
-			padding: 0 20px; padding:0 2.2vw;
-			&:first-child{
-				padding: 0 20px 0 0;
-			}
-			&:last-child{
-				padding: 0 0 0 20px;
-			}
+			//padding: 0 20px; padding:0 2.2vw;
+
 		}
 		a{
-			height:80px;
-			line-height: 80px;
+			height:70px;
+			line-height: 70px;
+			display: block;
 			@include font-size(18px);
+			padding: 0 20px; padding:0 2.2vw;
 			.minimise &{
 				height: 50px;
 				line-height: 50px;
 				@include font-size(16px);
+			}
+		}
+		.sub-menu{
+			@include abs-pos(70px,auto,auto,0);
+			.minimise &{
+				top:50px;
+			}
+			background-color: $blue;
+			width:auto;
+			border-bottom:2px solid $yellow;
+			li{
+				right:auto;
+				width:auto;
+				padding:0 !important;
+				display: inline-block;
+			}
+			a{
+				height:auto !important;
+				border-top:1px solid darken($blue,5%);
+				line-height: 100% !important;
+				background-color: transparent !important;
+				color: white !important;
+				display: block;
+				@include font-size(16px);
+				width:240px;
+				text-align: left;
+				padding: 15px 20px; padding:15px 2.2vw;
+				white-space: nowrap;
+				&:before{
+					content:"+";
+					color: $yellow;
+					@include abs-pos(15px,auto,auto,12px);
+				}
+				&:hover,&:active{
+					background-color: darken($blue,5%) !important;
+					color: $yellow !important;
+				}
 			}
 		}
 		.menu-toggle{
@@ -117,15 +152,7 @@
 		ul{
 			//display: block;
 		}
-		li{
-			padding:0 30px;
-			&:first-child{
-				padding: 0 30px 0 0;
-			}
-			&:last-child{
-				padding: 0 0 0 30px;
-			}
-		}
+		
 		a{
 			height:120px;
 			line-height: 120px;

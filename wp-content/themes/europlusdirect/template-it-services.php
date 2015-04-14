@@ -1,4 +1,4 @@
-<?php /* Template Name: About */ ?>
+<?php /* Template Name: IT Services */ ?>
 <?php get_header() ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -9,9 +9,11 @@
 		<div class="section-content">
 			<div class="row">
 <div class="small-12 large-6 columns">
+		
+
 </div>
 <div class="small-12 large-6 columns heading-right">
-<h2 class="block-heading"><span><em>Working together</em></span><span><em>to protect</em></span><span class="secondary"><em>your business</em></span></h2>
+<h2 class="block-heading"><span><em>When it comes to</em></span><span><em>worldwide IT support</em></span><span class="secondary"><em>Europlus Direct can help</em></span></h2>
 	</div>
 </div>
 </div>
@@ -19,29 +21,43 @@
 </div>
 </div>
 </section>
+<!--section-->
 <section class="section row  yellow above skewed offset-up gutters overlap-bottom">
 	<div class="section-inner">
 <div class="section-content">
-<h3 class="centered-text">Working together to protect your business</h3>
-<p>As specialists in supplying Lenovo and IBM IT support, Software Services and Maintenance Contracts since 2004, we know how integral your IT system is to your business. That’s why a commitment to protect your hardware and software assets is at the heart of ours. Our commitment to supporting our customers’ businesses has seen us become certified Lenovo specialists and a market-leading outsourced sales and marketing operation for IBM Global Services, supplying IBM ServicePacs and ServiceSuite to IBM business partners, distributors and end-users across the globe.</p>
+<h3>It doesn’t matter where you are based in the world or how many different locations you operate in, when it comes to worldwide IT support, Europlus Direct can help.</h3>
+<div class="row">
+	<div class="small-12 columns">
+<p>The worldwide hardware and software support that Europlus offers includes:</p>
+<ul class="bullet-list blue">
+<li>Hardware maintenance agreements</li>
+<li>Software maintenance agreements</li>
+<li>Hardware Service Pack In-warranty upgrades</li>
+<li>Software Service Pack In-warranty upgrades</li>
+<li>Hardware Service Pack Post-warranties</li>
+<li>Software Service Pack Post-warranties</li>
+<li>Hardware Multivendor Post-warranties</li>
+</ul>
+<p>Our Worldwide IT Services are ideal for distributors, business partners and companies individual consumers needing IBM or Lenovo services or indeed, those with hardware from other manufacturers. 
+</p>
+</div>
 
-
+</div>
 </div>
 <div class="skewed-bg"></div>
-
-
 </div>
 </section>
+<!--/section-->
 <!--section-->
 <section class="section row  light-grey above offset-up gutters">
 	<div class="section-inner">
 <div class="section-content">
-<h3 class="centered-text">Our experience... delivers you the right solution</h3>
-<p>We take the time to understand how your business works, so we can help you find the right hardware and software services, for the right term, with the right response time at the right price.</p>
+<h3 class="centered-text">Europlus Direct ensures your services meet your needs wherever you are</h3>
+<p>Please note, to make sure you can take advantage of IBM and Lenovo services, they must be bought in the country in which your hardware is located otherwise you won’t be able to redeem your services should you experience hardware problems or failure. Europlus Direct can help you ensure you’re buying the right services for the right equipment in the right country so <a href="#">contact us today</a>. </p>
 </div>
+
 </div>
 </section>
-
 <!--/section-->
 <!-- options -->
 <section class="section row light-grey insets above offset-up">
@@ -55,23 +71,34 @@
 			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');">sss</div></figure>
 			<div class="content-wrap">
 				<div class="content">
-		<h3>Our global connections... plug you into speedy support</h3>
-<p>We have over 40 dedicated account managers on the ground, right across the globe. Through their local knowledge and established contacts, you get the fast support you need, when you need it. Serving both domestic and international clients since 2004, we have built strong relationships with over <strong>230 Distributors</strong> and <strong>145 Business Partners</strong>. This number continues to grow as our company expands to cover even more countries. As sole providers of Lenovo and IBM services, we have won multiple trade awards.</p>
+		<h3>Why choose Europlus Direct?</h3>
+		<p>Europlus Direct are approved maintenance and service providers for Lenovo and IBM systems, offering:</p>
+<ul class="bullet-list blue"><li>In-warranty extensions</li>
+<li>Service Maintenance Contracts</li>
+<li>Remote and On-site Servicing and Repair</li>
+<li>IT services to cover a variety of manufacturers </li>
+<li>Advice on the best services</li>
+<li>A range of call-out options</li>
+<li>Under 4hr call-out options for on-site repair</li>
+<li>Easy registration and set-up</li>
+<li>Hassle-free admin with notification reminders</li>
+</ul>
 </div>
 </div></div>
 </div>
 <!--/column-->
 	<!--column-->
 	<div class="small-12 large-6 columns">
-			<div class="nested-section  white blue-sub-heads">
+			<div class="nested-section white blue-sub-heads">
 				
 			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');"></div></figure>
 			<div class="content-wrap">
 				<div class="content">
-<h3>Our focussed vision... puts you first</h3>
-<p>We specialise in what we know, which means our expert Lenovo and IBM systems knowledge is hard to beat. And it’s all at your fingertips through one dedicated point of contact.</p>
-<p>At Europlus Direct, we pride ourselves on our innovative, fresh approach to supporting businesses worldwide, employing more than 40 multilingual staff from 11 different countries.
-</p>
+<h3>Service Locations</h3>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+<footer class="clearfix"><a href="" class="read-more"><span>View all locations</span></a></footer>
+
 </div>
 </div>
 </div>
@@ -83,19 +110,7 @@
 </div>
 	</section>
 	<!--/options-->
-<section class="section row yellow blue-btns gutters above centered-text">
-	<div class="section-inner">
-<div class="section-content">
-<h3 class="centered-text">Global Offices</h3>
-<p>Besides our Head Office in United Kingdom, we have offices in Australia, Spain, Senegal, Nambia, Mozambique and Las Vegas. </p>
-<footer class="clearfix"><a href="" class="read-more"><span>View all our locations</span></a></footer>
 
-
-</div>
-
-
-</div>
-</section>
 
 
 

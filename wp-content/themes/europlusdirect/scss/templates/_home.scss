@@ -35,8 +35,11 @@
 				@include font-size(20px);
 			}
 			.secondary{
-				@include font-size(14px);
+				@include font-size(20px);
 				line-height: 100%;
+				&.small{
+					@include font-size(14px);
+				}
 			}
 		}
 	}
@@ -105,7 +108,7 @@
 	}
 }
 .pac-intro{
-	margin-bottom: 60px;
+	padding: 0 10%;
 }
 .pac-features{
 	.feature{
@@ -245,7 +248,11 @@
 					@include font-size(34px);
 				}
 				.secondary{
-					@include font-size(22px);
+					@include font-size(34px);
+					&.small{
+						@include font-size(22px);
+					}
+					
 				}
 			}
 		}
@@ -323,16 +330,16 @@
 				display:inline-block;
 				height:48px;
 				line-height:48px;
-				width:320px;
+				width:250px;
 				position:relative;
 				z-index: 2;
 				background-color: $yellow;
 				border:none;
 				margin: 0 -78px 0 0;
 				color: $blue;
-				padding: 0 58px 0 20px;
+				padding: 0 20px 0 20px;
 				text-align: center;
-				@include font-size(24px);
+				@include font-size(20px);
 				text-decoration:none;
 				@include transition(background-color .3s ease);
 				&:hover,&:active{
@@ -372,7 +379,10 @@
 					@include font-size(40px);
 				}
 				.secondary{
-					@include font-size(26px);
+					@include font-size(40px);
+					&.small{
+						@include font-size(26px);
+					}
 				}
 			}
 		}
@@ -441,7 +451,7 @@
 			padding: 0 70px 30px;
 		}
 		p{
-			@include font-size(18px);
+			@include font-size(16px);
 		}
 	}
 	
@@ -462,7 +472,10 @@
 					@include font-size(48px);
 				}
 				.secondary{
-					@include font-size(30px);
+					@include font-size(48px);
+					&.small{
+						@include font-size(30px);
+					}
 				}
 			}
 		}

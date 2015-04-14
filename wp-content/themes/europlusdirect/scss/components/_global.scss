@@ -94,11 +94,14 @@
 	li{
 		padding:0 0 0 15px;
 		position: relative;
-		margin-bottom: 4px;
+		margin-bottom: 8px;
 		&:before{
 			content:"•";
 			@include abs-pos(0,auto,auto,0);
-			color: $red;
+			color: $blue;
+			.red &{
+				color: $red;
+			}
 		}
 	}
 	&.white{
@@ -161,6 +164,10 @@ a.read-more{
 			background-color: $blue;
 			color: white;
 		}
+		.yellow-btns &{
+			background-color: $yellow;
+			color: $blue;
+		}
 	}
 	&:before{
 		content:"";
@@ -183,6 +190,9 @@ a.read-more{
 			}
 			.blue-btns &{
 				background-color: lighten($blue,10%);
+			}
+			.yellow-btns &{
+				background-color: white;
 			}
 		}
 	}
@@ -365,7 +375,7 @@ figure{
 	.ribbon{
 		display:inline-block;
 		height:48px;
-		width:320px;
+		width:250px;
 		position:relative;
 		
 		margin: 0 0 0 -78px;
@@ -373,7 +383,7 @@ figure{
 			margin: -20px 0 0 -118px;
 		}
 		color: white;
-		@include font-size(24px);
+		@include font-size(20px);
 		float: left !important;
 		text-decoration:none;
 		span{
@@ -385,7 +395,7 @@ figure{
 			z-index: 2;
 			background-color: $blue;
 			text-align: center;
-			padding: 0 20px 0 48px;
+			padding: 0 20px 0 20px;
 			@include transition(background-color .3s ease);
 		}
 		&:before{
@@ -404,16 +414,16 @@ figure{
 			float: left !important;
 		}
 		&.right{
-			margin: 0 -88px 0 0;
+			margin: 0 -78px 0 0;
 			.nested-section &{
-				margin: -20px -128px 0 0;
+				margin: -20px -118px 0 0;
 			}
 			float:right !important;
 			span{
-				padding: 0 48px 0 20px;
+				padding: 0 20px 0 20px;
 			}
 			&:before{
-				@include abs-pos(-29px,0,auto,auto);
+				@include abs-pos(-24px,0,auto,auto);
 				@include transform(skewY(45deg));	
 			}
 			&.yellow{
@@ -521,7 +531,7 @@ figure{
 			z-index: 2;
 			background-color: $blue;
 			text-align: center;
-			padding: 0 20px 0 58px;
+			padding: 0 20px 0 20px;
 			@include transition(background-color .3s ease);
 		}
 		&:before{
@@ -542,11 +552,11 @@ figure{
 		&.right{
 			margin: 0 -88px 0 0;
 			.nested-section &{
-				margin: -20px -128px 0 0;
+				margin: -20px -118px 0 0;
 			}
 			float:right !important;
 			span{
-				padding: 0 58px 0 20px;
+				padding: 0 20px 0 20px;
 			}
 			&:before{
 				@include abs-pos(-29px,0,auto,auto);
