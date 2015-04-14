@@ -116,16 +116,16 @@
 <h3 class="centered-text">Careers</h3>
 <ul class="row">
 	<li class="small-12 large-6 columns">
-		<span><h4><a href="">Job title</a></h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p></span>
+		<span><h4><a href="">Job title</a></h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p><p><a href="">Read more</a></p></span>
 	</li>
 	<li class="small-12 large-6 columns">
-		<span><h4>Job title</h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p></span>
+		<span><h4><a href="">Job title</a></h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p><p><a href="">Read more</a></p></span>
 	</li>
 	<li class="small-12 large-6 columns">
-		<span><h4>Job title</h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p></span>
+		<span><h4><a href="">Job title</a></h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p><p><a href="">Read more</a></p></span>
 	</li>
 	<li class="small-12 large-6 columns">
-		<span><h4>Job title</h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p></span>
+		<span><h4><a href="">Job title</a></h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p><p><a href="">Read more</a></p></span>
 	</li>
 </ul>
 
