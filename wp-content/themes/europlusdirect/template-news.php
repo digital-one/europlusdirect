@@ -1,4 +1,4 @@
-<?php /* Template Name: Team */ ?>
+<?php /* Template Name: News */ ?>
 <?php get_header() ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -10,7 +10,7 @@
 			<div class="row">
 
 <div class="small-12  columns heading-right">
-<h2 class="block-heading"><span><em>Some of the</em></span><span><em>friendly faces behind</em></span><span class="secondary"><em>the business</em></span></h2>
+<h2 class="block-heading"><span><em>See what's been</em></span><span class="secondary"><em>happening in our world</em></span></h2>
 	</div>
 </div>
 </div>
@@ -21,85 +21,72 @@
 <section id="team" class="section row  grey above skewed offset-up insets overlap-bottom spaced">
 	<div class="section-inner">
 <div class="section-content">
-<h2 class="centered-text">Meet the team</h2>
-<div class="row">
+<h2 class="centered-text">Latest News</h2>
+<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+<li>
+	<div class="nested-section white blue-sub-heads">
+			<figure><div class="image" style="background-image:url('http://europlusdirect.localhost/wp-content/themes/europlusdirect/images/inset-img-1.jpg');">sss</div></figure>
+			<div class="content-wrap">
+				<div class="content">
+		<h3>Article Headline</h3><p><small><time datetime="">21st November 2014</time></small></p>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.  sed diam nonumy eirmod tempor invidun</p>
+</div>
+</div></div>
+</li>
+<li>
+	<div class="nested-section white blue-sub-heads">
+			<figure><div class="image" style="background-image:url('http://europlusdirect.localhost/wp-content/themes/europlusdirect/images/inset-img-1.jpg');">sss</div></figure>
+			<div class="content-wrap">
+				<div class="content">
+		<h3>Article Headline</h3><p><small><time datetime="">21st November 2014</time></small></p>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+</div>
+</div></div>
+</li>
+<li>
+	<div class="nested-section white blue-sub-heads">
+			<figure><div class="image" style="background-image:url('http://europlusdirect.localhost/wp-content/themes/europlusdirect/images/inset-img-1.jpg');">sss</div></figure>
+			<div class="content-wrap">
+				<div class="content">
+		<h3>Article Headline</h3><p><small><time datetime="">21st November 2014</time></small></p>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+</div>
+</div></div>
+</li>
+<li>
+	<div class="nested-section white blue-sub-heads">
+			<figure><div class="image" style="background-image:url('http://europlusdirect.localhost/wp-content/themes/europlusdirect/images/inset-img-1.jpg');">sss</div></figure>
+			<div class="content-wrap">
+				<div class="content">
+		<h3>Article Headline</h3><p><small><time datetime="">21st November 2014</time></small></p>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+</div>
+</div></div>
+</li>
+<li>
+	<div class="nested-section white blue-sub-heads">
+			<figure><div class="image" style="background-image:url('http://europlusdirect.localhost/wp-content/themes/europlusdirect/images/inset-img-1.jpg');">sss</div></figure>
+			<div class="content-wrap">
+				<div class="content">
+		<h3>Article Headline</h3><p><small><time datetime="">21st November 2014</time></small></p>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+</div>
+</div></div>
+</li>
+<li>
+	<div class="nested-section white blue-sub-heads">
+			<figure><div class="image" style="background-image:url('http://europlusdirect.localhost/wp-content/themes/europlusdirect/images/inset-img-1.jpg');">sss</div></figure>
+			<div class="content-wrap">
+				<div class="content">
+		<h3>Article Headline</h3><p><small><time datetime="">21st November 2014</time></small></p>
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+</div>
+</div></div>
+</li>
+</ul>
 
-	<ul class="small-block-grid-3">
 
-	<!--person-->
-	<li>
-<div class="nested-section white blue-sub-heads">
-			<figure><div class="image" style="background-image:url('http://europlusdirect.localhost/wp-content/themes/europlusdirect/images/inset-img-1.jpg');">sss</div></figure>
-			<div class="content-wrap">
-				<div class="content">
-		<h3>John Smith</h3><h4>Managing Director</h4>
-<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-</div>
-</div></div>
-</li>
-<!--/person-->
-	<!--person-->
-	<li>
-<div class="nested-section white blue-sub-heads">
-			<figure><div class="image" style="background-image:url('http://europlusdirect.localhost/wp-content/themes/europlusdirect/images/inset-img-1.jpg');">sss</div></figure>
-			<div class="content-wrap">
-				<div class="content">
-		<h3>John Smith</h3><h4>Managing Director</h4>
-<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-</div>
-</div></div>
-</li>
-<!--/person-->
-	<!--person-->
-	<li>
-<div class="nested-section white blue-sub-heads">
-			<figure><div class="image" style="background-image:url('http://europlusdirect.localhost/wp-content/themes/europlusdirect/images/inset-img-1.jpg');">sss</div></figure>
-			<div class="content-wrap">
-				<div class="content">
-		<h3>John Smith</h3><h4>Managing Director</h4>
-<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-</div>
-</div></div>
-</li>
-<!--/person-->
-	<!--person-->
-	<li>
-<div class="nested-section white blue-sub-heads">
-			<figure><div class="image" style="background-image:url('http://europlusdirect.localhost/wp-content/themes/europlusdirect/images/inset-img-1.jpg');">sss</div></figure>
-			<div class="content-wrap">
-				<div class="content">
-		<h3>John Smith</h3><h4>Managing Director</h4>
-<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-</div>
-</div></div>
-</li>
-<!--/person-->
-	<!--person-->
-	<li>
-<div class="nested-section white blue-sub-heads">
-			<figure><div class="image" style="background-image:url('http://europlusdirect.localhost/wp-content/themes/europlusdirect/images/inset-img-1.jpg');">sss</div></figure>
-			<div class="content-wrap">
-				<div class="content">
-		<h3>John Smith</h3><h4>Managing Director</h4>
-<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-</div>
-</div></div>
-</li>
-<!--/person-->
-	<!--person-->
-	<li>
-<div class="nested-section white blue-sub-heads">
-			<figure><div class="image" style="background-image:url('http://europlusdirect.localhost/wp-content/themes/europlusdirect/images/inset-img-1.jpg');">sss</div></figure>
-			<div class="content-wrap">
-				<div class="content">
-		<h3>John Smith</h3><h4>Managing Director</h4>
-<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
-</div>
-</div></div>
-</li>
-<!--/person-->
-	</ul>
-</div>
+
 
 
 </div>
