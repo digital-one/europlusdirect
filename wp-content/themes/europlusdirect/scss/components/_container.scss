@@ -1,10 +1,15 @@
+#wrap{
+	width:100%;
+	display:block;
+	position:relative;
+}
 #main{
 	background-color: white;
 	//padding-top: $spacing;
-	.home &{
-		padding-top:0;
-	}
 	.page &{
 		padding-top: 115px;
+	}
+	.home &, .page-template-template-lenovo &, .page-template-template-ibm &{
+		padding-top:0;
 	}
 }

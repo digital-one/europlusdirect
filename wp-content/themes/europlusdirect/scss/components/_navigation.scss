@@ -70,7 +70,12 @@
 		}
 		li{
 			//padding: 0 20px; padding:0 2.2vw;
-
+			&.rollover{
+				a{
+					background-color: darken($blue,5%);
+					color: $yellow;
+				}
+			}
 		}
 		a{
 			height:70px;
@@ -86,6 +91,7 @@
 		}
 		.sub-menu{
 			@include abs-pos(70px,auto,auto,0);
+			display:none;
 			.minimise &{
 				top:50px;
 			}

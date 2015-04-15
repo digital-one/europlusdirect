@@ -60,9 +60,49 @@ $('#faqs .slider').slick({
   });
 }
 
+// Menu dropdown
 
+if(!isTouchDevice.any()){
 
+$('li.menu-item-has-children').on('mouseenter',function(){
+  $(this).addClass('rollover');
+  $('.sub-menu',$(this)).show();
+})
+$('li.menu-item-has-children').on('mouseleave',function(){
+   $(this).removeClass('rollover');
+  $('.sub-menu',$(this)).hide();
+})
 
+}
+
+if(isTouchDevice.any()){
+
+$('li.menu-item-has-children').on('click',function(e){
+  e.preventDefault();
+  if($(this).hasClass('rollover')){
+     $(this).removeClass('rollover');
+      $('.sub-menu',$(this)).hide();
+  } else {
+   $(this).addClass('rollover');
+  $('.sub-menu',$(this)).show();
+}
+})
+
+}
+
+// match heights of side by side skewed boxes
+
+var _elms = $('.two-box .columns'),
+    _nestedElms = $('.two-box .nested-section-content'),
+    _maxHeight = 0;
+_elms.each(function(){
+  if($(this).height() > _maxHeight){
+   _maxHeight =  $(this).height();
+  }
+})
+console.log(_maxHeight);
+_elms.css({ height: _maxHeight+'px'});
+_nestedElms.css({ height: _maxHeight+'px'});
 
 //if(!isTouchDevice.any()){
 
@@ -73,7 +113,7 @@ $('#faqs .slider').slick({
 //var animating = false;
     $(window).scroll(function(){
       var _scrollTop = $(window).scrollTop();
-      console.log(_scrollTop);
+     // console.log(_scrollTop);
     if( _scrollTop > _stickyHeaderTop ) {
      // alert('top')
       $('body').addClass('minimise');

@@ -8,7 +8,7 @@
 		<div class="slide" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/lenovo-slide-bg.jpg');">
 			<div class="row">
 				<div class="small-12 columns heading-right opaque-heading blue-yellow-heading">
-			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>IBM equipment?</em></span><span class="secondary"><em>Europlus Direct has got it coverered</em></span></h2></div></div>
+			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>IBM equipment?</em></span><span class="secondary small"><em>Europlus Direct has got it coverered</em></span></h2></div></div>
 		</div>
 		</div>
 		</div>
@@ -84,7 +84,7 @@
 	<div class="row">
 	<!--column-->
 	<div class="small-12 large-6 columns">
-		<div class="nested-section blue">
+		<div class="nested-section blue spacing">
 			 <div class="ribbon yellow"><span>Option 1</span></div> 
 			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');">sss</div></figure>
 			<div class="content-wrap angle">
@@ -128,7 +128,7 @@
 <div class="row">
 	<!--column-->
 	<div class="small-12 large-6 columns">
-		<div class="nested-section white blue-sub-heads">
+		<div class="nested-section white blue-sub-heads spacing">
 		 <div class="ribbon yellow"><span>Option 2</span></div> 
 			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');">sss</div></figure>
 			<div class="content-wrap angle">
@@ -202,7 +202,7 @@
 	<div class="section-content">
 	<div class="row">
 <!--column-->
-	<div class="small-12 medium-6 columns blue-yellow-heading grey blue-sub-heads red-btns"><div class="nested-section-content section-content-inner"><h2 class="block-heading"><span><em>IBM Software</em></span><span class="secondary"><em class="shift-right-55">Services</em></span></h2><h4>Remote support keeps software performing</h4><p>
+	<div class="small-12 large-6 columns blue-yellow-heading grey blue-sub-heads red-btns"><div class="nested-section-content section-content-inner"><h2 class="block-heading"><span><em>IBM Software</em></span><span class="secondary"><em class="shift-right-55">Services</em></span></h2><h4>Remote support keeps software performing</h4><p>
 Don’t let software problems let your business down. With a Software Services Upgrade or Software Services Post Warranty, you’ll get remote technical support, which means there’s a virtual IT expert by your side whenever you need one. </p>
 <p>Keep your software–and your business–running smoothly with problem determination, problem resolution, performance and capacity management, preventative care and much more.
 </p>
@@ -222,7 +222,7 @@ Don’t let software problems let your business down. With a Software Services U
 </div>
 <!--/column-->
 		<!--column-->
-		<div class="small-12 medium-6 columns black yellow-blue-heading red-btns white-sub-heads"><div class="nested-section-content section-content-inner second"><h2 class="block-heading"><span><em class="shift-right-55">IBM Multi-Manufacturer</em></span><span class="secondary"><em>Services</em></span></h2><h4>Comprehensive support for IT systems that include non-IBM equipment</h4><p>
+		<div class="small-12 large-6 columns black yellow-blue-heading red-btns white-sub-heads"><div class="nested-section-content section-content-inner second"><h2 class="block-heading"><span><em class="shift-right-55">IBM Multi-Manufacturer</em></span><span class="secondary"><em>Services</em></span></h2><h4>Comprehensive support for IT systems that include non-IBM equipment</h4><p>
 <p>At Europlus Direct, we understand that as a growing, evolving business, you may have IT equipment from a variety of manufacturers which requires the same level of service and maintenance you’d expect form our ServicePac or Service Suite options.</p>
 <p>With a range of response options and an easy registration process, it’s a simple, one-plan way of protecting your IT System.
 </p>

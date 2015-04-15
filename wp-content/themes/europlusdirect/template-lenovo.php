@@ -19,7 +19,7 @@
 </div>
 	<!--/slider-->
 <main id="main">
-<section id="intro" class="section row first">
+<section id="intro" class="section row first gutters">
 	<div class="section-inner">
 		<div class="section-content">
 
@@ -38,7 +38,7 @@
 <header class="row">
 	<div class="small-12 columns">
 	
-<h2 class="block-heading"><span><em><i>Lenovo</i> Service Pack Options</em></span></h2>
+<h2 class="block-heading"><div><span class="start">Your</span><span class="logo">Lenovo</span><span class="end">Service Pack Options</span></div></h2>
 </div>
 </header>
 <div class="pac-intro">
@@ -49,12 +49,12 @@
 <div class="skewed-bg"></div>
 </div>
 </section>
-<section class="section row  light-grey above offset-down straight-top gutters">
+<section class="section row  light-grey above offset-down straight-top gutters logo">
 	<div class="section-inner">
 <div class="section-content">
 <h3 class="centered-text">Why choose a Lenovo Service Pack from Europlus Direct?</h3>
 <div class="row" style="position:relative;">
-<div class="small-12 large-8 columns end"><h4>Every service pack we supply at Europlus Direct:</h4>
+<div class="small-12 medium-9 large-8 columns end"><h4>Every service pack we supply at Europlus Direct:</h4>
 <ul class="bullet-list red"><li>Sed diam nonummy nib</li>
 <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
 <li>Sed diam nonummy nib</li>
@@ -78,8 +78,8 @@
 	<div class="row">
 	<!--column-->
 	<div class="small-12 large-6 columns">
-		<div class="nested-section red">
-			 <div class="ribbon"><span>Option 1</span></div> 
+		<div class="nested-section red spacing">
+			 <header class="ribbon-header"><div class="ribbon"><span>Option 1</span></div></header>
 			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');">sss</div></figure>
 			<div class="content-wrap angle">
 				<div class="content">
@@ -93,9 +93,9 @@
 </div>
 <!--/column-->
 	<!--column-->
-	<div class="small-12 large-6 columns">
-			<div class="nested-section white">
-				 <div class="ribbon right yellow"><span>Option 2</span></div>
+	<div class="small-12 large-6 columns ">
+			<div class="nested-section white red-sub-heads right">
+				  <header class="ribbon-header"><div class="ribbon right yellow"><span>Option 2</span></div></header>
 			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');"></div></figure>
 			<div class="content-wrap angle">
 				<div class="content">
@@ -103,7 +103,7 @@
 <h4>Renew the warranty on your Lenovo hardware</h4>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
 <p>Want to know more about our Lenovo Post-warranty option? Read our FAQs.</p>
-<footer class="insets-footer"><img src="<?php echo get_template_directory_uri(); ?>/images/one-year-icon-lenovo.png" /></footer>
+<footer><img src="<?php echo get_template_directory_uri(); ?>/images/one-year-icon-lenovo.png" /></footer>
 </div>
 </div>
 </div>
@@ -127,13 +127,13 @@
 <div class="row">
 	<!--column-->
 	<div class="small-12 large-6 columns">
-		<div class="nested-section white">
-		 <div class="ribbon yellow"><span>Option 3</span></div> 
+		<div class="nested-section white red-sub-heads spacing ">
+		 <header class="ribbon-header"> <div class="ribbon yellow"><span>Option 3</span></div> </header>
 			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');">sss</div></figure>
 			<div class="content-wrap angle">
 				<div class="content">
 		<h3>Why take out a maintenance contract today?</h3>
-		<p><strong>A Lenovo Service Suite Maintenance Contract from Europlus Direct is:</strong></p>
+		<p><strong>A Lenovo Service Suite Maintenance Contract from Europlus Direct is:</strong></p>
 		<ul class="bullet-list red">
 			<li>Sed diam nonummy nib</li>
 <li>Lorem ipsum dolor sit amet, consectetuer adipiscing</li>
@@ -182,7 +182,7 @@ Maintenance Contract</h2></header>
 <section class="section row two-box">
 	<div class="section-content">
 	<div class="row">
-		<div class="small-12 medium-6 columns black blue-red-heading red-btns white-sub-heads"><div class="nested-section-content section-content-inner"><h2 class="block-heading"><span><em class="shift-right-55">Multi-country</em></span><span class="secondary"><em>support</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
+		<div class="small-12 large-6 columns black blue-red-heading red-btns white-sub-heads"><div class="nested-section-content section-content-inner"><h2 class="block-heading"><span><em class="shift-right-55">Multi-country</em></span><span class="secondary"><em>support</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect.</p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect.</p>
 <ul class="bullet-list white">
@@ -194,7 +194,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscin
 <p><strong>Like more advice?<br />Call us on XXXX XXXXXXXX or email us now.</strong></p>
 
 <footer class="text-right"><a href="" class="read-more"><span>Webchat now?</span></a></footer></div></div>
-	<div class="small-12 medium-6 columns red-blue-heading grey red-sub-heads red-btns"><div class="nested-section-content section-content-inner second"><h2 class="block-heading"><span><em>Lenovo Software</em></span><span class="secondary"><em class="shift-right-55">services</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
+	<div class="small-12 large-6 columns red-blue-heading grey red-sub-heads red-btns"><div class="nested-section-content section-content-inner second"><h2 class="block-heading"><span><em>Lenovo Software</em></span><span class="secondary"><em class="shift-right-55">services</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect.</p>
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect.</p>
 <p><strong>Europlus Direct’s Lenovo Software support features</strong></p>

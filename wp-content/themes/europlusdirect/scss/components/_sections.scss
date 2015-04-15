@@ -12,11 +12,11 @@
 		z-index: 102;
 	}
 	&.two-box{
-		margin-top:-20px;
-		margin-bottom: -20px;
+		margin-top:-16px;
+		margin-bottom: -16px;
 	}
 	&.offset-up{
-		margin-top: -100px;
+		margin-top: -50px;
 	}
 	&.offset-down{
 		margin-bottom: -50px;
@@ -96,7 +96,7 @@
 	}
 }
 .section-content{
-	padding:30px;
+	padding:30px 30px 40px;
 	.overlap-top &{
 		padding:80px 30px 30px;
 	}
@@ -108,12 +108,14 @@
 	}
 	.two-box &{
 		padding:0;
+		margin-top:-20px;
+		margin-bottom: -20px;
 	}
 	.first &{
 		padding-top:20px;
 	}
 	.insets &{
-		padding:10px;
+		padding:20px 10px;
 	}
 	.gutters &{
 		padding-left:15px;
@@ -131,7 +133,7 @@
 	z-index: 2;
 	position: relative;
 	.straight-top &{
-		padding-top:130px;
+		padding-top:90px;
 	}
 	.straight-top.anchor &{
 		padding-top: 140px;
@@ -200,9 +202,9 @@
 }
 .nested-section-content{
 	&.section-content-inner{
-		padding: 100px 40px 50px;
+		padding: 80px 30px 50px;
 		&.second{
-			padding: 120px 40px 70px;
+			padding: 40px 30px 70px;
 		}
 	}
 }
@@ -217,6 +219,12 @@
 
 .nested-section{
 //	padding: 0 10px;
+	&.spacing{
+		margin-bottom: 20px;	
+	}
+	&.right{
+		margin-bottom: 0;
+	}
 	width:100%;
 	display: block;
 	figure{
@@ -242,10 +250,10 @@
 		position: relative;
 		h3,h4{
 			color: white;
-			@include font-size(28px);
+			@include font-size(24px);
 		}
 		h4{
-			@include font-size(20px);
+			@include font-size(16px);
 		}
 		&.angle{
 			&:before{
@@ -263,7 +271,7 @@
 		.content{
 			width:100%;
 			display: block;
-			padding: 15px 15px 20px;
+			padding: 10px 15px 20px;
 			position: relative;
 			z-index: 3;
 
@@ -329,9 +337,10 @@
 		}
 	}
 	footer{
-		text-align: right;
+		text-align: center;
 		img{
 			margin:0 auto;
+			max-width: 80px;
 			display: inline-block;
 		}
 	}
@@ -353,20 +362,18 @@
 			padding-top:50px !important;
 		}
 		.gutters &{
-			padding-left:10%;
-			padding-right:10%;
+			padding-left:5%;
+			padding-right:5%;
 		}
 		.overlap-bottom &{
 			padding-top:30px;
 			padding-bottom: 110px;
 		}
 		.insets &{
-			padding: 50px 70px;
-			//padding-left:70px;
-			//padding-right:70px;
+			padding: 50px 30px;
 		}
 		.skewed &{
-			padding-top:60px;
+			padding-top:50px;
 		}
 		.skewed.behind &{
 			padding-top: 100px;
@@ -383,9 +390,12 @@
 		
 	}
 	.nested-section{
+		&.spacing{
+			margin-bottom: 60px;	
+		}
 		.content-wrap{
 			h3,h4{
-				@include font-size(26px);
+				@include font-size(24px);
 			}
 			h4{
 				@include font-size(18px);
@@ -394,12 +404,17 @@
 				padding: 20px 30px 30px;
 			}
 		}
+		footer{
+		img{
+			max-width: 100%;
+		}
+	}
 	}
 	.nested-section-content{
 		&.section-content-inner{
 			padding: 100px 50px 60px;
 			&.second{
-				padding: 60px 50px 180px;
+				padding: 60px 50px 80px;
 			}
 		}
 	}
@@ -412,6 +427,19 @@
 
 	.section{
 		padding: 0 70px;
+		&.two-box{
+			margin-top:0;
+			margin-bottom: 0;
+		}
+	}
+	.section-content{
+		.insets &{
+			padding: 50px 30px 30px;
+		}
+		.gutters &{
+			padding-left:10%;
+			padding-right:10%;
+		}
 	}
 	.section-content-inner{
 		padding:0 30px;
@@ -423,11 +451,20 @@
 		&.section-content-inner{
 			padding: 100px 50px 120px;
 			&.second{
-				padding: 120px 50px 180px;
+				padding: 140px 50px 80px;
 			}
 		}
 	}
-
+	.nested-section{
+		&.spacing{
+			margin-bottom: 0;	
+		}
+		.content-wrap{
+			.content{
+				padding: 20px 30px 30px;
+			}
+		}
+	}
 }
 
 /* XLarge Breakpoint */
@@ -438,9 +475,19 @@
 		padding: 0 70px;
 	}
 	.section-content{
+		.insets &{
+			padding: 50px 70px;
+		}
 		.video-link &{
 			padding-top:200px;
 			padding-bottom:200px;
+		}
+	}
+	.nested-section{
+		.content-wrap{
+			.content{
+				padding: 20px 30px 30px;
+			}
 		}
 	}
 

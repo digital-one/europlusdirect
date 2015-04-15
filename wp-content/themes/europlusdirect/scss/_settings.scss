@@ -1,7 +1,7 @@
 $small-range: (0em,rem-calc(767)); /* 0, 640px */
 $medium-range: (rem-calc(768), rem-calc(1023)); /* 641px, 1024px */
-$large-range: (rem-calc(1024), rem-calc(1599)); /* 1025px, 1300px */
-$xlarge-range: (rem-calc(1600), 120em); /* 1301px, 1920px */
+$large-range: (rem-calc(1024), rem-calc(1999)); /* 1025px, 1300px */
+$xlarge-range: (rem-calc(2000), 120em); /* 1301px, 1920px */
 $xxlarge-range: (120.063em); /* 1921px */ 
 $total-columns: 12;
 $row-width: rem-calc(1530);

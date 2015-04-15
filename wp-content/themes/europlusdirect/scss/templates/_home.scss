@@ -86,29 +86,44 @@
 		h2{
 			position: relative;
 			margin:0;
-			i{
-				display: none;
+			div{
+				display: inline-block;
+				width: auto;
+				margin: 0 auto;
+				background-color: $red;
+				padding:10px 0;
 			}
-			span em{
-				padding: 60px 20px 12px 20px;
-				position: relative;
-				width:100%;
-				&:before{
-					content:"";
-					width: 228px;
-					height: 38px;
-					display: block;
-					background:url('../images/lenovo.png') left top no-repeat;
-					background-size: 100% auto;
-					@include abs-pos(15px,auto,auto,50%);
-					margin-left:-114px;
-				}	
+			span{
+				display: inline-block;
+				height:38px;
+				line-height: 38px;
+				margin:0;
+				width: 100%;
+				@include font-size(24px);
+				white-space: nowrap;
+				float:left;
+				padding:0 8px;
+				color: white;
+				&.logo{
+					@extend %ir;
+					margin:0 auto;
+					background: $red url('../images/lenovo.png') center center no-repeat;
+					background-size: auto 90%;
+					margin-top:-8px;
+				}
 			}
 		}
 	}
 }
 .pac-intro{
-	padding: 0 10%;
+	padding: 0;
+	&.spaced{
+		margin-bottom: 60px;
+	}
+	p{
+		@include font-size(18px);
+	}
+	//margin-bottom: 60px;
 }
 .pac-features{
 	.feature{
@@ -257,6 +272,9 @@
 			}
 		}
 	}
+	.pac-intro{
+		padding: 0 10%;
+	}
 	.pac-features{
 		.feature{
 			.icon{
@@ -274,16 +292,35 @@
 				width: 20%;
 			}
 			h2{
-				span em{
-					padding: 12px 20px 12px 308px;
-					width:auto;
-					&:before{
-						width: 268px;
-						height: 38px;
-						@include abs-pos(50%,auto,auto,20px);
-						margin-top:-19px;
-						margin-left:0;
-					}	
+				position: relative;
+				margin:0;
+				i{
+					display: none;
+				}
+				div{
+					display: inline-block;
+					width: auto;
+					margin: 0 auto;
+					background-color: $red;
+					padding:0 10px;
+				}
+				span{
+					display: inline-block;
+					height:58px;
+					line-height: 58px;
+					margin:0;
+					width: auto;
+					@include font-size(30px);
+					white-space: nowrap;
+					float:left;
+					padding:0 8px;
+					color: white;
+					&.logo{
+						width:190px;
+						margin:0;
+						background: $red url('../images/lenovo.png') left center no-repeat;
+						background-size: 100% auto;
+					}
 				}
 			}
 		}

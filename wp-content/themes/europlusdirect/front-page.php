@@ -7,7 +7,7 @@
 		<div class="slide" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/slide-bg.jpg');">
 			<div class="row">
 				<div class="small-12 columns heading-right opaque-heading">
-			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>We protect your IT systems,</em></span><span><em>you protect your business</em></span><span class="secondary"><em>24 hours a day. 7 days a week</em></span></h2></div></div>
+			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>We protect your IT systems,</em></span><span><em>you protect your business</em></span><span class="secondary small"><em>24 hours a day. 7 days a week</em></span></h2></div></div>
 		</div>
 		</div>
 		</div>
@@ -16,7 +16,7 @@
 		<div class="slide" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/slide-bg-2.jpg');">
 			<div class="row">
 				<div class="small-12 columns heading-right  opaque-heading">
-			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>An expired maintenance plan</em></span><span><em>complicates operations.</em></span><span><em>Europlus simplifies them</em></span><span class="secondary"><em>Response times of 4 hours and under</em></span></h2></div></div>
+			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>An expired maintenance plan</em></span><span><em>complicates operations.</em></span><span><em>Europlus simplifies them</em></span><span class="secondary small"><em>Response times of 4 hours and under</em></span></h2></div></div>
 		</div>
 		</div>
 		</div>
@@ -25,7 +25,7 @@
 		<div class="slide" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/slide-bg-3.jpg');">
 			<div class="row">
 				<div class="small-12 columns heading-right  opaque-heading">
-			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>Global reach.</em></span><span><em>Local support</em></span><span class="secondary"><em>230 distributors. 145 Partners.</em></span><span class="secondary"><em>One point of contact</em></span></h2></div></div>
+			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>Global reach.</em></span><span><em>Local support</em></span><span class="secondary small"><em>230 distributors. 145 Partners.</em></span><span class="secondary small"><em>One point of contact</em></span></h2></div></div>
 		</div>
 		</div>
 		</div>
@@ -46,7 +46,7 @@
 <!--/slider-->
 <main id="main">
 	<!--intro-->
-<section id="intro" class="section row first">
+<section id="intro" class="section row first gutters">
 	<div class="section-inner">
 		<div class="section-content">	
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib.  Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue. L orem ipsum dolor sit amet,  elit. Consectetuer adipiscing elit, sed diam nonummy nib.  Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue</p>
@@ -67,7 +67,7 @@
 
 </div>
 </header>
-<div class="pac-intro">
+<div class="pac-intro spaced">
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p>
 </div>
 <div class="row pac-features">
@@ -89,7 +89,7 @@
 <h2 class="block-heading"><span><em>IBM ServicePac</em></span></h2>
 </div>
 </header>
-<div class="pac-intro">
+<div class="pac-intro spaced">
 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p>
 </div>
 <div class="row pac-features">

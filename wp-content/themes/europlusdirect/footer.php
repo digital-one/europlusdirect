@@ -16,8 +16,9 @@
     ?></nav>
 <p><a href="" class="linkedin" title="Follow us on Linkedin">Follow us on <span>Linkedin</span></a></p>
     <p><small>&copy;<?php echo date('Y') ?> Europlus Direct Limited. All rights reserved. <a href="">Terms &amp; Conditions</a> | <a href="">Privacy Statement</a></small></p>
-
 </div>
 </div>
 </footer>
 <?php wp_footer() ?>
+</body>
+</html>
