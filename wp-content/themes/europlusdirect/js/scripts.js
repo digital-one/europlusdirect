@@ -32,8 +32,39 @@ var _handleShown = true,
 	_scrollDirection,
 	_currentPathName;
 
-//Homepage slider
 
+//Map
+
+redraw_location_map = function(){
+
+if($('#map').length){
+ $('#map').html('');
+   // var _lat = Map.lat,
+   //   _lng = Map.lng,
+   //   _marker = Map.marker;
+$('#map').gmap({
+     //   markers: [{'latitude': _lat,'longitude': _lng}],
+    //    markerFile: _marker,
+        markerWidth:44,
+        markerHeight:67,
+        markerAnchorX:22,
+        markerAnchorY:67,
+        zoom:2
+    });
+}
+
+}
+redraw_location_map();
+$(window).on('resize',redraw_location_map);
+
+
+//Selectbox
+
+if($('select').length){
+$('select').selectBox({ hideOnWindowScroll: false });
+}
+
+//Homepage slider
 if($('#slider').length){
 
 
@@ -125,6 +156,25 @@ _nestedElms.css({ height: _maxHeight+'px'});
   })
 //}
 
+
+if($('.accordion').length){
+  $('.accordion').each(function(){
+      $('dt.tab-handle',$(this)).eq(0).addClass('active');
+      $('dd.tab-content',$(this)).eq(0).show();
+  })
+  $('dt.tab-handle').on('click',function(e){
+    e.preventDefault();
+    var _tabcontent = $(this).next('.tab-content');
+    if($(this).hasClass('active')){
+      $(this).removeClass('active');
+       _tabcontent.slideUp(100);
+    } else {
+      $(this).addClass('active');
+       _tabcontent.slideDown(100);
+    }
+  })
+
+}
 
 
 

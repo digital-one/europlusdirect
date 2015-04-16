@@ -18,7 +18,7 @@
 </div>
 </div>
 </section>
-<section id="team" class="section row  grey above skewed offset-up insets overlap-bottom spaced">
+<section id="posts" class="section row  grey above skewed offset-up insets overlap-bottom spaced">
 	<div class="section-inner">
 <div class="section-content">
 <h2 class="centered-text">Latest News</h2>
@@ -85,7 +85,7 @@
 </li>
 </ul>
 
-
+<footer class="posts-footer"><a href="" class="more-posts">Load more</a></footer>
 
 
 
@@ -99,61 +99,43 @@
 
 
 
-<section class="section row  yellow above skewed  gutters overlap-bottom">
-	<div class="section-inner">
-<div class="section-content">
-<h3 class="centered-text">Culture</h3>
-<p>With all major European languages spoken in one office at our UK headquarters, we work in a diverse and inspiring environment – not least when we’re testing our taste buds with regular lunchtime buffets based on the latest country of choice. It’s busy too, and with monthly prizes such as holidays up for grabs for our best salespeople, it’s exciting with a competitive, but supportive edge.</p>
-<p>And if all that fun and excitement gets too much for staff, there’s always our stress-busting monthly massage days to fall back on–and enjoy!</p>
-<p>We’re a very ambitious, young company and with that, we greatly appreciate the efforts of all our colleagues who all benefit from clearly defined career paths and yearly salary increases, based on performance.</p>
-<p>Oh, and if any of our team is lucky enough to win a company holiday, our lovely modern offices are based right by the airport, which is handy for a quick getaway. 
-</p>
-</div>
-<div class="skewed-bg"></div>
-</div>
-</section>
-<section id="careers" class="section row  light-grey above offset-up gutters">
-	<div class="section-inner">
-<div class="section-content">
-<h3 class="centered-text">Careers</h3>
-<ul class="row">
-	<li class="small-12 large-6 columns">
-		<span><h4><a href="">Job title</a></h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p><p><a href="">Read more +</a></p></span>
-	</li>
-	<li class="small-12 large-6 columns">
-		<span><h4><a href="">Job title</a></h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p><p><a href="">Read more +</a></p></span>
-	</li>
-	<li class="small-12 large-6 columns">
-		<span><h4><a href="">Job title</a></h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p><p><a href="">Read more +</a></p></span>
-	</li>
-	<li class="small-12 large-6 columns">
-		<span><h4><a href="">Job title</a></h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p><p><a href="">Read more +</a></p></span>
-	</li>
-</ul>
 
-</div>
-</section>
-<!--section-->
-<section id="awards" class="section row red-blue-heading white-sub-heads red-btns pac skewed centered-text blue offset-up spaced behind straight-top">
+<!--call back form-->
+<section id="callback" class="section row white-sub-heads skewed centered-text black">
 	<div class="section-inner">
-		<div class="section-content">
-<h3>Our Awards</h3>
-<div class="row">
-	<div class="small-12 large-10 large-offset-1 columns">
-		<div class="row">
-			<div class="small-12 medium-4 columns"><div class="award"><figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/uk-trade-investment.jpg" /></figure><h4>Best Multilingual<br /> Website 2004</h4><p><a href="">Read more +</a></p></div></div>
-<div class="small-12 medium-4 columns"><div class="award"><figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/queens-awards-2008.jpg" /></figure><h4>Queens Award for<br />International Trade 2008</h4><p><a href="">Read more +</a></p></div></div>
-<div class="small-12 medium-4 columns"><div class="award"><figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/queens-awards-2013.jpg" /></figure><h4>Queen’s Award for<br />Enterprise 2013</h4><p><a href="">Read more +</a></p></div></div>
-</div>
-</div>
-</div>
+	<div class="section-content">
+<h2 class="block-heading"><span><em>Not sure what you need?</em></span></h2>
+<h3>We'll be in touch to help</h3>
+<?php //gravity_form(1, false, false, false, '', true, 1);  ?>
+<div class="gf_browser_chrome gform_wrapper two-column_wrapper" id="gform_wrapper_2"><a id="gf_2" name="gf_2" class="gform_anchor"></a><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_2" id="gform_2" class="two-column" action="/contact-us/#gf_2">
+                        
+                        <div class="gform_body">
+                            <ul id="gform_fields_2" class="gform_fields top_label description_below">
+                            	<li id="field_2_6" class="gfield gsection gform_column"></li></ul><ul class="gform_fields top_label description_below gform_column">
+                            	<li class="gfield gsection empty"></li>
+                            	<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
+                            	<li id="field_2_3" class="gfield gfield_label_hidden"><label class="gfield_label" for="input_2_3" style="display:none;">Company</label><div class="ginput_container"><input name="input_3" id="input_2_3" type="text" value="" class="medium" tabindex="3" placeholder="Company"></div></li>
+                            	<li id="field_2_4" class="gfield gfield_label_hidden"><label class="gfield_label" for="input_2_4" style="display:none;">Telephone</label><div class="ginput_container"><input name="input_4" id="input_2_4" type="text" value="" class="medium" tabindex="4" placeholder="Telephone"></div></li>
+                            	<li id="field_2_5" class="gfield gfield_label_hidden"><label class="gfield_label" for="input_2_5" style="display:none;">Email Address</label><div class="ginput_container"><input name="input_5" id="input_2_5" type="email" value="" class="medium" tabindex="5" placeholder="Email Address"></div></li><li id="field_2_11" class="gfield gsection gform_column"></li></ul>
+                            	<ul class="gform_fields top_label description_below gform_column"><li class="gfield gsection empty"></li>
+<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden right"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
+<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden right"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
+<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden right"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
+<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden right"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
+</ul></div>
+        <div class="gform_footer top_label">
 
-</div>
-<div class="skewed-bg"></div>
-</div>
+        	<input type="submit" id="gform_submit_button_2" class="gform_button button" value="Submit" tabindex="8" onclick="if(window[&quot;gf_submitting_2&quot;]){return false;}  if( !jQuery(&quot;#gform_2&quot;)[0].checkValidity || jQuery(&quot;#gform_2&quot;)[0].checkValidity()){window[&quot;gf_submitting_2&quot;]=true;} "><input type="hidden" name="gform_ajax" value="form_id=2&amp;title=1&amp;description=1&amp;tabindex=1">
+         
+            
+        </div>
+                        </form>
+                    </div>
+             </div>
+                    <div class="skewed-bg"></div>
+                  </div>
 </section>
-
-<!--/section-->
+<!--/call back form-->
 
 <section id="contact" class="section yellow-white-heading yellow-btns centered-text">
 	<div class="section-inner">

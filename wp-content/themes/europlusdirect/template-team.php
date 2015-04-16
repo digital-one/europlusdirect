@@ -18,13 +18,13 @@
 </div>
 </div>
 </section>
-<section id="team" class="section row  grey above skewed offset-up insets overlap-bottom spaced">
+<section id="posts" class="section row  grey above skewed offset-up insets overlap-bottom spaced">
 	<div class="section-inner">
 <div class="section-content">
 <h2 class="centered-text">Meet the team</h2>
-<div class="row">
 
-	<ul class="small-block-grid-3">
+
+	<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
 
 	<!--person-->
 	<li>
@@ -99,7 +99,7 @@
 </li>
 <!--/person-->
 	</ul>
-</div>
+
 
 
 </div>
@@ -129,17 +129,17 @@
 	<div class="section-inner">
 <div class="section-content">
 <h3 class="centered-text">Careers</h3>
-<ul class="row">
-	<li class="small-12 large-6 columns">
+<ul class="small-block-grid-1 medium-block-grid-2">
+	<li>
 		<span><h4><a href="">Job title</a></h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p><p><a href="">Read more +</a></p></span>
 	</li>
-	<li class="small-12 large-6 columns">
+	<li>
 		<span><h4><a href="">Job title</a></h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p><p><a href="">Read more +</a></p></span>
 	</li>
-	<li class="small-12 large-6 columns">
+	<li>
 		<span><h4><a href="">Job title</a></h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p><p><a href="">Read more +</a></p></span>
 	</li>
-	<li class="small-12 large-6 columns">
+	<li>
 		<span><h4><a href="">Job title</a></h4><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit</p><p><a href="">Read more +</a></p></span>
 	</li>
 </ul>

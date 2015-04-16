@@ -1,4 +1,4 @@
-<?php /* Template Name: IT Services */ ?>
+<?php /* Template Name: Locations */ ?>
 <?php get_header() ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -8,12 +8,9 @@
 	<div class="section-inner">
 		<div class="section-content">
 			<div class="row">
-<div class="small-12 large-6 columns">
-		
 
-</div>
-<div class="small-12 large-6 columns heading-right">
-<h2 class="block-heading"><span><em>When it comes to</em></span><span><em>worldwide IT support</em></span><span class="secondary"><em>Europlus Direct can help</em></span></h2>
+<div class="small-12  columns heading-right">
+<h2 class="block-heading"><span><em>Wherever your</em></span><span><em>business is located...</em></span><span class="secondary"><em>were worldwide.</em></span></h2>
 	</div>
 </div>
 </div>
@@ -21,107 +18,55 @@
 </div>
 </div>
 </section>
-<!--section-->
-<section class="section row  yellow above skewed offset-up gutters overlap-bottom">
+<section  id="locations" class="section row light-grey above skewed offset-up gutters overlap-bottom">
 	<div class="section-inner">
 <div class="section-content">
-<h3>It doesn’t matter where you are based in the world or how many different locations you operate in, when it comes to worldwide IT support, Europlus Direct can help.</h3>
-<div class="row">
-	<div class="small-12 columns">
-<p>The worldwide hardware and software support that Europlus offers includes:</p>
-<ul class="bullet-list blue">
-<li>Hardware maintenance agreements</li>
-<li>Software maintenance agreements</li>
-<li>Hardware Service Pack In-warranty upgrades</li>
-<li>Software Service Pack In-warranty upgrades</li>
-<li>Hardware Service Pack Post-warranties</li>
-<li>Software Service Pack Post-warranties</li>
-<li>Hardware Multivendor Post-warranties</li>
-</ul>
-<p>Our Worldwide IT Services are ideal for distributors, business partners and companies individual consumers needing IBM or Lenovo services or indeed, those with hardware from other manufacturers. 
-</p>
-</div>
 
+<div class="row">
+<div class="small-12 columns">
+<form id="filter" method="post" action="/">
+	<div class="row">
+	<div class="small-12 medium-6 large-4 large-offset-2 columns">
+<select name="service" id="service"><option value="">All Services</option><option value="">Hardware maintenance agreements</option></select>
 </div>
+<div class="small-12 medium-6 large-4 columns end">
+<select name="country" id="country"><option value="">All Countries</option><option value="">United Kingdom</option></select>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!--/end-->
+
 </div>
 <div class="skewed-bg"></div>
-</div>
-</section>
-<!--/section-->
-<!--section-->
-<section class="section row  light-grey above offset-up gutters">
-	<div class="section-inner">
-<div class="section-content">
-<h3 class="centered-text">Europlus Direct ensures your services meet your needs wherever you are</h3>
-<p>Please note, to make sure you can take advantage of IBM and Lenovo services, they must be bought in the country in which your hardware is located otherwise you won’t be able to redeem your services should you experience hardware problems or failure. Europlus Direct can help you ensure you’re buying the right services for the right equipment in the right country so <a href="#">contact us today</a>. </p>
-</div>
+
 
 </div>
+
 </section>
-<!--/section-->
-<!-- options -->
-<section class="section row light-grey insets above offset-up">
+
+<section class="section row  light-grey above offset-up">
 	<div class="section-inner">
-<div class="section-content">
 
 <div class="row">
-	<!--column-->
-	<div class="small-12 large-6 columns">
-		<div class="nested-section white blue-sub-heads">
-			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');">sss</div></figure>
-			<div class="content-wrap">
-				<div class="content">
-		<h3>Why choose Europlus Direct?</h3>
-		<p>Europlus Direct are approved maintenance and service providers for Lenovo and IBM systems, offering:</p>
-<ul class="bullet-list blue"><li>In-warranty extensions</li>
-<li>Service Maintenance Contracts</li>
-<li>Remote and On-site Servicing and Repair</li>
-<li>IT services to cover a variety of manufacturers </li>
-<li>Advice on the best services</li>
-<li>A range of call-out options</li>
-<li>Under 4hr call-out options for on-site repair</li>
-<li>Easy registration and set-up</li>
-<li>Hassle-free admin with notification reminders</li>
-</ul>
-</div>
-</div></div>
-</div>
-<!--/column-->
-	<!--column-->
-	<div class="small-12 large-6 columns">
-			<div class="nested-section white blue-sub-heads">
-				
-			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');"></div></figure>
-			<div class="content-wrap">
-				<div class="content">
-<h3>Service Locations</h3>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-<footer class="clearfix"><a href="" class="read-more"><span>View all locations</span></a></footer>
-
-</div>
-</div>
-</div>
-</div>
-<!--/column-->
+	<div class="small-12 columns">
+		<div id="map" class="map">map</div>
+	</div>
 </div>
 
 
 </div>
-	</section>
-	<!--/options-->
-
-
-
+</section>
 
 <!--testimonials-->
-<section  class="section row red-blue-heading white-sub-heads red-btns pac skewed centered-text blue offset-up spaced behind straight-top">
+<section  class="section row red-blue-heading blue-sub-heads blue-btns pac skewed centered-text yellow offset-up spaced behind straight-top">
 	<div class="section-inner">
-		<div class="section-content">
-<h3>Testimonials</h3>
-<div class="quote-outer">
-<blockquote><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue. L orem ipsum dolor sit amet, elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue</p><footer><small>A Customer, Leeds.</small></footer></blockquote></div>
-<a href="" class="ribbon right yellow"><span>Read more</span></a>
+	<div class="section-content">
+<h3 class="centered-text">Global Offices</h3>
+<p>Besides our Head Office in United Kingdom, we have offices in Australia, Spain, Senegal, Nambia, Mozambique and Las Vegas. </p>
+<footer class="clearfix"><a href="" class="read-more"><span>View all our locations</span></a></footer>
+
 
 </div>
 <div class="skewed-bg"></div>
@@ -164,6 +109,9 @@
                   </div>
 </section>
 <!--/call back form-->
+
+
+
 
 <section id="contact" class="section yellow-white-heading yellow-btns centered-text">
 	<div class="section-inner">

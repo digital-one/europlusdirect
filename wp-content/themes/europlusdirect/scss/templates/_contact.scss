@@ -1,0 +1,33 @@
+.map{
+	display:block;
+	width:100%;
+	background-color: $light-grey;
+	&:before{
+		content:"";
+		padding-top:60%;
+		display: inline-block;
+	}
+}
+.location{
+	margin-bottom:1.25rem;
+}
+
+@media #{$medium-up} { 
+
+	.map{
+		&:before{
+			padding-top:80%;
+		}
+	}
+
+}
+
+@media #{$large-up} { 
+
+	.map{
+		&:before{
+			padding-top:60%;
+		}
+	}
+
+}

@@ -1,19 +1,16 @@
-<?php /* Template Name: IT Services */ ?>
+<?php /* Template Name: Contact */ ?>
 <?php get_header() ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 	
 <main id="main">
-<section id="intro" class="section row first grey overlap-bottom gutters">
+<section id="intro" class="section row first light-grey overlap-bottom gutters">
 	<div class="section-inner">
 		<div class="section-content">
 			<div class="row">
-<div class="small-12 large-6 columns">
-		
 
-</div>
-<div class="small-12 large-6 columns heading-right">
-<h2 class="block-heading"><span><em>When it comes to</em></span><span><em>worldwide IT support</em></span><span class="secondary"><em>Europlus Direct can help</em></span></h2>
+<div class="small-12  columns heading-right">
+<h2 class="block-heading"><span><em>We're just a call</em></span><span class="secondary"><em>or click away</em></span></h2>
 	</div>
 </div>
 </div>
@@ -21,113 +18,64 @@
 </div>
 </div>
 </section>
-<!--section-->
-<section class="section row  yellow above skewed offset-up gutters overlap-bottom">
-	<div class="section-inner">
-<div class="section-content">
-<h3>It doesn’t matter where you are based in the world or how many different locations you operate in, when it comes to worldwide IT support, Europlus Direct can help.</h3>
-<div class="row">
-	<div class="small-12 columns">
-<p>The worldwide hardware and software support that Europlus offers includes:</p>
-<ul class="bullet-list blue">
-<li>Hardware maintenance agreements</li>
-<li>Software maintenance agreements</li>
-<li>Hardware Service Pack In-warranty upgrades</li>
-<li>Software Service Pack In-warranty upgrades</li>
-<li>Hardware Service Pack Post-warranties</li>
-<li>Software Service Pack Post-warranties</li>
-<li>Hardware Multivendor Post-warranties</li>
-</ul>
-<p>Our Worldwide IT Services are ideal for distributors, business partners and companies individual consumers needing IBM or Lenovo services or indeed, those with hardware from other manufacturers. 
-</p>
-</div>
-
-</div>
-</div>
-<div class="skewed-bg"></div>
-</div>
-</section>
-<!--/section-->
-<!--section-->
-<section class="section row  light-grey above offset-up gutters">
-	<div class="section-inner">
-<div class="section-content">
-<h3 class="centered-text">Europlus Direct ensures your services meet your needs wherever you are</h3>
-<p>Please note, to make sure you can take advantage of IBM and Lenovo services, they must be bought in the country in which your hardware is located otherwise you won’t be able to redeem your services should you experience hardware problems or failure. Europlus Direct can help you ensure you’re buying the right services for the right equipment in the right country so <a href="#">contact us today</a>. </p>
-</div>
-
-</div>
-</section>
-<!--/section-->
-<!-- options -->
-<section class="section row light-grey insets above offset-up">
+<section  class="section row grey above skewed offset-up insets overlap-bottom location spaced">
 	<div class="section-inner">
 <div class="section-content">
 
 <div class="row">
-	<!--column-->
-	<div class="small-12 large-6 columns">
-		<div class="nested-section white blue-sub-heads">
-			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');">sss</div></figure>
-			<div class="content-wrap">
+<div class="small-12 columns">
+
+<div class="nested-section white blue-sub-heads location">
+<div class="content-wrap">
 				<div class="content">
-		<h3>Why choose Europlus Direct?</h3>
-		<p>Europlus Direct are approved maintenance and service providers for Lenovo and IBM systems, offering:</p>
-<ul class="bullet-list blue"><li>In-warranty extensions</li>
-<li>Service Maintenance Contracts</li>
-<li>Remote and On-site Servicing and Repair</li>
-<li>IT services to cover a variety of manufacturers </li>
-<li>Advice on the best services</li>
-<li>A range of call-out options</li>
-<li>Under 4hr call-out options for on-site repair</li>
-<li>Easy registration and set-up</li>
-<li>Hassle-free admin with notification reminders</li>
-</ul>
+					<div class="row">
+						<div class="small-12 medium-6 columns">
+					<h3>UK Head Office</h3>
+<h4>Europlus Direct</h4>
+<p>2 Airport West<br />
+Lancaster Way<br />
+Leeds, LS19 7ZA<br />
+United Kingdom</p>
+<p>Tel: <a href="tel:+441138878650">+44 (0)113 887 8650</a><br />
+Email: <a href="mailto:info@europlusdirect.com">info@europlusdirect.com</a></p>
+</div>
+<div class="small-12 medium-6 columns"><div class="map">map</div></div>
 </div>
 </div></div>
 </div>
-<!--/column-->
-	<!--column-->
-	<div class="small-12 large-6 columns">
-			<div class="nested-section white blue-sub-heads">
-				
-			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');"></div></figure>
-			<div class="content-wrap">
+</div>
+</div>
+<!--/end-->
+<div class="row">
+<div class="small-12 columns">
+	
+<div class="nested-section white blue-sub-heads location">
+<div class="content-wrap">
 				<div class="content">
-<h3>Service Locations</h3>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-<footer class="clearfix"><a href="" class="read-more"><span>View all locations</span></a></footer>
-
+					<div class="row">
+						<div class="small-12 medium-6 columns">
+					<h3>Australia</h3>
+<h4>EPD Asia Pacific</h4>
+<p>Suite 7.04, Level 7<br />
+80 Mount Street<br />
+North Sydney NSW 2060</p>
+<p>Tel: <a href="tel:+441138878650">+44 (0)113 887 8650</a><br />
+Email: <a href="mailto:info@europlusdirect.com">info@europlusdirect.com</a></p>
+</div>
+<div class="small-12 medium-6 columns"><div class="map">map</div></div>
+</div>
+</div></div>
 </div>
 </div>
 </div>
-</div>
-<!--/column-->
-</div>
-
-
-</div>
-	</section>
-	<!--/options-->
-
-
-
-
-<!--testimonials-->
-<section  class="section row red-blue-heading white-sub-heads red-btns pac skewed centered-text blue offset-up spaced behind straight-top">
-	<div class="section-inner">
-		<div class="section-content">
-<h3>Testimonials</h3>
-<div class="quote-outer">
-<blockquote><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue. L orem ipsum dolor sit amet, elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue</p><footer><small>A Customer, Leeds.</small></footer></blockquote></div>
-<a href="" class="ribbon right yellow"><span>Read more</span></a>
-
+<!--/end-->
 </div>
 <div class="skewed-bg"></div>
+
+
 </div>
+
 </section>
-<!--/testimonials-->
 <!--call back form-->
 <section id="callback" class="section row white-sub-heads skewed centered-text black">
 	<div class="section-inner">
@@ -164,6 +112,9 @@
                   </div>
 </section>
 <!--/call back form-->
+
+
+
 
 <section id="contact" class="section yellow-white-heading yellow-btns centered-text">
 	<div class="section-inner">

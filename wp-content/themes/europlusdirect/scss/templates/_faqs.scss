@@ -1,0 +1,68 @@
+.lenovo,.ibm{
+	margin-bottom: 40px !important;
+}
+dl{
+	margin:0;
+}
+dt{
+	margin-bottom: 5px;
+	h4,h5{
+		margin:0;
+	}
+	h5{
+		font-weight: 700;
+		@include font-size(16px);
+		color: $red;
+		.ibm &{
+			color: $blue;
+		}
+	}
+	&.tab-handle{
+		padding:10px;
+		margin-bottom: 2px;
+		background-color: white;
+		position: relative;
+		background-color: $red;
+		cursor:pointer;
+		&:after{
+			content:"";
+			display: block;
+			width:32px;
+			height:32px;
+			background-image:url('../images/accordion-arrow.png');
+			background-position: right top;
+			background-repeat:no-repeat;
+			@include abs-pos(50%,10px,auto,auto);
+			margin-top: -16px;
+		}
+		h4{
+			color: white !important;
+		}
+		.ibm &{
+			background-color: $blue
+		}
+		&.active{
+			background-color: darken($red,10%);
+			.ibm &{
+				background-color: darken($blue,10%);
+			}
+			&:after{
+				background-position: left top;
+			}
+		}
+	}
+}
+dd{
+	margin:0 0 20px;
+	&:last-child{
+		margin-bottom: 0;
+	}
+	&.tab-content{
+		padding:20px 10px 25px;
+		margin:0;
+		display: none;
+	}
+	p{
+		@include font-size(14px);
+	}
+}

@@ -1,12 +1,14 @@
 .selectBox-dropdown{
 	position: relative;
 	cursor: pointer;
+    background-color: white;
+    width:100% !important;
 	&:hover, &:active, &:focus{
 		border-style: none;
-		background-color: darken(white,10);
+		//background-color: darken(white,10);
 	}
 	&.selectBox-menuShowing{
-    	background-color: darken(white,10);
+    	//background-color: darken(white,10);
     }
     &.selectBox-menuShowing-bottom{
 
@@ -17,16 +19,17 @@
 	.selectBox-label{
 		height: 46px;
 		line-height: 46px;
-		@include font-size(14);
+		@include font-size(14px);
+        padding:0 15px;
 		display: block;
-		font-family: $varela;
-		color: black;
+		//font-family: $varela;
+		color: $dark-grey;
 	}
 	.selectBox-arrow{
-		height: 17px;
-    	width: 27px;
+		height: 32px;
+    	width: 32px;
     	background: url('../images/selectbox-arrow.png') center center no-repeat;
-    	@include abs-pos(15px,15px,auto,auto);
+    	@include abs-pos(7px,15px,auto,auto);
     	display: block;
 	}
 }
@@ -50,15 +53,14 @@
 		}
 		li{
 			&.selectBox-hover a {
-    			background-color: darken(black,10);
+    			background-color: $xlight-grey;
     		}
     		&.selectBox-selected a{
     			//background-color: $green;
     		}
 		}
 		a{
-			font-family: $helvetica;
-			@include font-size(12);
+			@include font-size(14px);
 			padding: 4px 10px;
 		}
 		&.selectBox-options-top{

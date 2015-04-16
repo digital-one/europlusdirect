@@ -1,6 +1,6 @@
-#team{
+#posts{
 	h2{
-		@include font-size(24px);
+		margin-bottom:40px;
 	}
 	h3{
 		margin-bottom: 5px;
@@ -29,18 +29,15 @@
 			@include font-size(14px);
 		}
 	}
-	li{
-		margin-bottom: 0.9375rem;
-		&:last-child{
-			margin-bottom: 0;
-		}
-	}
 }
 #awards{
-	color: white;
 	text-align:center;
 	.award{
+		color: white;
 		padding: 0;
+		p{
+			@include font-size(14px);
+		}
 	}
 	.columns{
 		margin-bottom: 60px;
@@ -51,14 +48,15 @@
 	figure{
 		margin: 0 auto 30px;
 		max-width: 200px;
+		&.large{
+			max-width: 300px;
+			margin-bottom: 40px;
+		}
 		img{
 			width: 100%;
 			height: auto;
 		}
 
-	}
-	p{
-		@include font-size(14px);
 	}
 	h3{
 		margin-bottom: 40px;
@@ -79,14 +77,6 @@
 
 @media #{$medium-up} { 
 
-	#team{
-	}
-
-	#careers{
-		li{
-			margin-bottom: 0.9375rem*2;
-		}
-	}
 	#awards{
 		.columns{
 			margin-bottom: 0;

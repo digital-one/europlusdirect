@@ -63,7 +63,7 @@
 <header class="row">
 	<div class="small-12 columns">
 		<a href="" class="gold-partner"><img src="<?php echo get_template_directory_uri(); ?>/images/lenovo-gold-business-partner.png" alt="Lenovo Gold Business Partner 2015" /></a>
-<div class="inner"><div class="vcenter"><h2 class="block-heading"><span><em><i>Lenovo</i> Service Packs</em></span></h2></div></div>
+<div class="inner"><div class="vcenter"><h2 class="block-heading"><div><span class="logo">Lenovo</span><span class="end">Service Packs</span></div></h2></div></div>
 
 </div>
 </header>

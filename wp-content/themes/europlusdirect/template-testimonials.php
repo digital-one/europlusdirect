@@ -1,4 +1,4 @@
-<?php /* Template Name: IT Services */ ?>
+<?php /* Template Name: Testimonials */ ?>
 <?php get_header() ?>
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -8,12 +8,9 @@
 	<div class="section-inner">
 		<div class="section-content">
 			<div class="row">
-<div class="small-12 large-6 columns">
-		
 
-</div>
-<div class="small-12 large-6 columns heading-right">
-<h2 class="block-heading"><span><em>When it comes to</em></span><span><em>worldwide IT support</em></span><span class="secondary"><em>Europlus Direct can help</em></span></h2>
+<div class="small-12  columns heading-right">
+<h2 class="block-heading"><span><em>Don't just take</em></span><span class="secondary"><em>our word for it</em></span></h2>
 	</div>
 </div>
 </div>
@@ -21,113 +18,45 @@
 </div>
 </div>
 </section>
-<!--section-->
-<section class="section row  yellow above skewed offset-up gutters overlap-bottom">
-	<div class="section-inner">
-<div class="section-content">
-<h3>It doesn’t matter where you are based in the world or how many different locations you operate in, when it comes to worldwide IT support, Europlus Direct can help.</h3>
-<div class="row">
-	<div class="small-12 columns">
-<p>The worldwide hardware and software support that Europlus offers includes:</p>
-<ul class="bullet-list blue">
-<li>Hardware maintenance agreements</li>
-<li>Software maintenance agreements</li>
-<li>Hardware Service Pack In-warranty upgrades</li>
-<li>Software Service Pack In-warranty upgrades</li>
-<li>Hardware Service Pack Post-warranties</li>
-<li>Software Service Pack Post-warranties</li>
-<li>Hardware Multivendor Post-warranties</li>
-</ul>
-<p>Our Worldwide IT Services are ideal for distributors, business partners and companies individual consumers needing IBM or Lenovo services or indeed, those with hardware from other manufacturers. 
-</p>
-</div>
-
-</div>
-</div>
-<div class="skewed-bg"></div>
-</div>
-</section>
-<!--/section-->
-<!--section-->
-<section class="section row  light-grey above offset-up gutters">
-	<div class="section-inner">
-<div class="section-content">
-<h3 class="centered-text">Europlus Direct ensures your services meet your needs wherever you are</h3>
-<p>Please note, to make sure you can take advantage of IBM and Lenovo services, they must be bought in the country in which your hardware is located otherwise you won’t be able to redeem your services should you experience hardware problems or failure. Europlus Direct can help you ensure you’re buying the right services for the right equipment in the right country so <a href="#">contact us today</a>. </p>
-</div>
-
-</div>
-</section>
-<!--/section-->
-<!-- options -->
-<section class="section row light-grey insets above offset-up">
-	<div class="section-inner">
-<div class="section-content">
-
-<div class="row">
-	<!--column-->
-	<div class="small-12 large-6 columns">
-		<div class="nested-section white blue-sub-heads">
-			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');">sss</div></figure>
-			<div class="content-wrap">
-				<div class="content">
-		<h3>Why choose Europlus Direct?</h3>
-		<p>Europlus Direct are approved maintenance and service providers for Lenovo and IBM systems, offering:</p>
-<ul class="bullet-list blue"><li>In-warranty extensions</li>
-<li>Service Maintenance Contracts</li>
-<li>Remote and On-site Servicing and Repair</li>
-<li>IT services to cover a variety of manufacturers </li>
-<li>Advice on the best services</li>
-<li>A range of call-out options</li>
-<li>Under 4hr call-out options for on-site repair</li>
-<li>Easy registration and set-up</li>
-<li>Hassle-free admin with notification reminders</li>
-</ul>
-</div>
-</div></div>
-</div>
-<!--/column-->
-	<!--column-->
-	<div class="small-12 large-6 columns">
-			<div class="nested-section white blue-sub-heads">
-				
-			<figure><div class="image" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/inset-img-1.jpg');"></div></figure>
-			<div class="content-wrap">
-				<div class="content">
-<h3>Service Locations</h3>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-<footer class="clearfix"><a href="" class="read-more"><span>View all locations</span></a></footer>
-
-</div>
-</div>
-</div>
-</div>
-<!--/column-->
-</div>
-
-
-</div>
-	</section>
-	<!--/options-->
-
-
-
-
 <!--testimonials-->
-<section  class="section row red-blue-heading white-sub-heads red-btns pac skewed centered-text blue offset-up spaced behind straight-top">
+<section id="testimonials" class="section row red-blue-heading blue-sub-heads red-btns pac skewed centered-text light-grey offset-up spaced">
 	<div class="section-inner">
 		<div class="section-content">
-<h3>Testimonials</h3>
+<h3>What our customers say...</h3>
 <div class="quote-outer">
 <blockquote><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue. L orem ipsum dolor sit amet, elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue</p><footer><small>A Customer, Leeds.</small></footer></blockquote></div>
-<a href="" class="ribbon right yellow"><span>Read more</span></a>
 
+<div class="quote-outer">
+<blockquote><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue. L orem ipsum dolor sit amet, elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue</p><footer><small>A Customer, Leeds.</small></footer></blockquote></div>
+<div class="quote-outer">
+<blockquote><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue. L orem ipsum dolor sit amet, elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue</p><footer><small>A Customer, Leeds.</small></footer></blockquote></div>
+<div class="quote-outer">
+<blockquote><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue. L orem ipsum dolor sit amet, elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue</p><footer><small>A Customer, Leeds.</small></footer></blockquote></div>
 </div>
 <div class="skewed-bg"></div>
 </div>
 </section>
 <!--/testimonials-->
+<!--awards-->
+<section id="awards" class="section row red-blue-heading white-sub-heads red-btns pac skewed centered-text blue offset-up spaced">
+	<div class="section-inner">
+		<div class="section-content">
+<h3>What the industry says...</h3>
+<div class="row">
+	<div class="small-12 large-10 large-offset-1 columns">
+		<div class="row">
+			<div class="small-12 medium-4 columns"><div class="award"><figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/uk-trade-investment.jpg" /></figure><h4>Best Multilingual<br /> Website 2004</h4><p><a href="">Read more +</a></p></div></div>
+<div class="small-12 medium-4 columns"><div class="award"><figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/queens-awards-2008.jpg" /></figure><h4>Queens Award for<br />International Trade 2008</h4><p><a href="">Read more +</a></p></div></div>
+<div class="small-12 medium-4 columns"><div class="award"><figure><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/queens-awards-2013.jpg" /></figure><h4>Queen’s Award for<br />Enterprise 2013</h4><p><a href="">Read more +</a></p></div></div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="skewed-bg"></div>
+</div>
+</section>
+<!--/awards-->
 <!--call back form-->
 <section id="callback" class="section row white-sub-heads skewed centered-text black">
 	<div class="section-inner">
@@ -164,6 +93,9 @@
                   </div>
 </section>
 <!--/call back form-->
+
+
+
 
 <section id="contact" class="section yellow-white-heading yellow-btns centered-text">
 	<div class="section-inner">
