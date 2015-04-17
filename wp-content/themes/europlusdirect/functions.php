@@ -15,6 +15,8 @@ add_theme_support( 'menus' );
 add_image_size( 'thumbnail', 320, 190, true );
 add_image_size( 'image', 800, 475, true );
 
+add_editor_style('css/style.css');
+add_editor_style('css/editor-style.css');
 
 // Change default excerpt
 function new_excerpt_more( $more ) {

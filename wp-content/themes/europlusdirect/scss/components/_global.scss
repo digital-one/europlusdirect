@@ -1,15 +1,17 @@
 .block-heading{
 	span{
-		display: block;
-		width:100%;
-		margin-bottom:3px;
-		.heading-left &{
-			text-align: left;
+		&.line{
+			display: block;
+			width:100%;
+			margin-bottom:3px;
+			.heading-left &{
+				text-align: left;
+			}
+			.heading-right &{
+				text-align: right;
+			}
 		}
-		.heading-right &{
-			text-align: right;
-		}
-		em{
+		&.block, em{
 			display: inline-block;
 			padding:10px;
 			text-align: center;
@@ -36,10 +38,12 @@
 			.yellow-white-heading &{
 				background-color: $yellow;
 				color: $blue;
+			}
+			.blue-white-heading &{
+				background-color: $blue;
+				color: white;
 			}	
-		}
-		&.secondary{
-			em{
+			&.secondary{
 				background-color: $yellow;
 				color: $blue;
 				.blue-red-heading &{
@@ -150,8 +154,9 @@ a.read-more{
 	position: relative;
 	text-decoration:none;
 	margin-bottom:13px;
-	span{
+	span,em{ 
 		height:38px;
+		font-style: normal;
 		line-height: 38px;
 		color: $blue;
 		display: block;
@@ -363,7 +368,7 @@ figure{
 	}
 	a.read-more{
 		height:48px;
-		span{
+		span,em{
 			height:48px;
 			line-height: 48px;
 			@include font-size(20px);

@@ -39,6 +39,12 @@
 		h1,h2,h3,h4{
 			color: white;
 		}
+		a:link,a:visited{
+			color: $yellow;
+		}
+		a:hover,a:active{
+			color: white;
+		}
 	}
 }
 .skewed-bg{
@@ -167,11 +173,23 @@
 .nested-section-content{
 	.blue &{
 		background-color: $blue;
-		color: white
+		color: white;
+		a:link,a:visited{
+			color: $yellow;
+		}
+		a:hover,a:active{
+			color: white;
+		}
 	}
 	.red &{
 		background-color: $red;
 		color: white;
+		a:link,a:visited{
+			color: $yellow;
+		}
+		a:hover,a:active{
+			color: white;
+		}
 	}
 	.black &{
 		background-color: black;
@@ -255,6 +273,12 @@
 		h4{
 			@include font-size(16px);
 		}
+		a:link,a:visited{
+			color: $yellow;
+		}
+		a:hover,a:active{
+			color: white;
+		}
 		&.angle{
 			&:before{
 				content:"";
@@ -285,7 +309,13 @@
 				&:before{
 					background-color: white;
 				}
+			}
+			a:link,a:visited{
+				color: $red;
 			}	
+			a:hover,a:active{
+				color: $dark-grey;
+			}
 		}
 	}
 	&.blue{

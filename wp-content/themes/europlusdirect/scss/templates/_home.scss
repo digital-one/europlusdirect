@@ -86,6 +86,9 @@
 		h2{
 			position: relative;
 			margin:0;
+			display: block;
+			width: 100%;
+			text-align: center;
 			div{
 				display: inline-block;
 				width: auto;
@@ -104,6 +107,16 @@
 				float:left;
 				//padding:0 8px;
 				color: white;
+				&.outer{
+					width: auto;
+					height:auto;
+					line-height:auto;
+					margin: 0 auto;
+					background-color: $red;
+					padding:0 10px;
+					display: inline-block;
+					float: none;
+				}
 				&.logo{
 					@extend %ir;
 					margin:0 auto;

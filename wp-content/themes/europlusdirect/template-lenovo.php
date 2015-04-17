@@ -24,8 +24,11 @@
 		<div class="section-content">
 
 		
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib.  Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue. L orem ipsum dolor sit amet,  elit. Consectetuer adipiscing elit, sed diam nonummy nib.  Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue</p>
-<p>Ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib.  Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue</p>
+<p>From Lenovo servers to Lenovo desktop computers and laptops, you can protect your IT hardware on a company-wide basis or a one-to-one level with Europlus Direct. And from specialist remote support to certified engineers arriving within 4 hours of a call-out, it pays to have the peace of mind of Europlus Direct on your side.</p>
+<p>Want to protect your business long-term by extending the current time on your warranty or increasing Service level to suit your business with a <a href="#">Warranty Uplift</a> on a newly bought Lenovo machine that’s still in its base warranty?  Or do you need our <a href="#">Post-Warranty option</a>  where you renew the expiring warranty on older Lenovo hardware? Or if you have multiple machines, want to add more and need the reassurance of one simple agreement that covers everything with robust predictive maintenance and repair support, our <a href="#">ServiceSuite Maintenance Contract</a>  might be the ideal choice.</p>
+<p>Need Lenovo software support? <a href="#">Find out more</a>.</p>
+<p>Whatever your reasons for protecting your commercial interests, Europlus Direct can help. If you’re unsure what your exact Lenovo needs are, we are more than happy to help, so why not <a href="#">contact us</a> today.
+</p>
 </div>
 
 </div>
@@ -42,7 +45,7 @@
 </div>
 </header>
 <div class="pac-intro">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam nonummy nib.  Ipsum dolor sit amet, adipiscing elit, sed diam nonummy nib.  </p>
+<p>As certified Lenovo specialists, Europlus Direct offer a wide range of pre-packaged services, available in a variety of configurations to suit your needs and your budget. </p>
 </div>
 
 </div>
@@ -55,13 +58,14 @@
 <h3 class="centered-text">Why choose a Lenovo Service Pack from Europlus Direct?</h3>
 <div class="row" style="position:relative;">
 <div class="small-12 medium-9 large-8 columns end"><h4>Every service pack we supply at Europlus Direct:</h4>
-<ul class="bullet-list red"><li>Sed diam nonummy nib</li>
-<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
-<li>Sed diam nonummy nib</li>
-<li>Consectetuer adipiscing elit sed diam nonummy nib</li>
-<li>Diam nonummy nib adipiscing elit sed diam nonummy nib</li>
-<li>Consectetuer adipiscing elit sed diam nonummy nib. </li>
+<ul class="bullet-list red"><li>is a self-contained contract – with transparent service levels and costs</li>
+<li>is registered free of charge with Lenovo</li>
+<li>comes in a variety of options from small businesses to large corporations</li>
+<li>has software and hardware support options</li>
+<li>includes software, skills training and implementation options</li>
+<li>uses only support, provided direct by the manufacturer with their engineers using only genuine parts.</li>
 </ul>
+<p>If you have multiple volumes of hardware, specifically configured hardware or need additional features to our Lenovo Service Pack options, then Europlus Direct’s Lenovo <a href="#">ServiceSuite</a> Maintenance Contract could be the best option for you.</p>
 </div>
 <a href="" class="gold-partner bottom-right"><img src="<?php echo get_template_directory_uri(); ?>/images/lenovo-gold-business-partner.png" alt="Lenovo Gold Business Partner 2015" /></a>
 
@@ -84,9 +88,9 @@
 			<div class="content-wrap angle">
 				<div class="content">
 		<h3>In-warranty Lenovo Service Pack</h3>
-		<h4>Upgrade or extend the warranty on new Lenovo hardware</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect. Lorem ipsum dolor sit amet.</p>
-<p>Want to know more about our Lenovo Post-warranty option? Read our FAQs.</p>
+		<h4>Upgrade or extend your current warranty on new Lenovo hardware</h4>
+<p>With Europlus Direct, you can upgrade or extend the warranty of your new Lenovo hardware, anytime within 12 months of purchasing your equipment. You can choose to extend your warranty to a 3, 4 or 5 year upgrade to your original base warranty.</p>
+<p>Want to know more about our Lenovo Post-warranty option? <a href="#">Read our FAQs</a>.</p>
 <footer><img src="<?php echo get_template_directory_uri(); ?>/images/warranty-icon-white.png" /></footer>
 </div>
 </div></div>
@@ -101,8 +105,8 @@
 				<div class="content">
 <h3>Post-warranty Lenovo Service Pack</h3>
 <h4>Renew the warranty on your Lenovo hardware</h4>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
-<p>Want to know more about our Lenovo Post-warranty option? Read our FAQs.</p>
+<p>You can choose Europlus Direct’s Post-warranty option, either when your existing manufacturer warranty is coming to an end or when you’ve come to the end of an In-warranty <a href="#">Upgrade</a> term with us. You can also choose between our 1 year or 2 year options, depending on your needs.</p>
+<p>Want to know more about our Lenovo Post-warranty option? <a href="#">Read our FAQs</a>.</p>
 <footer><img src="<?php echo get_template_directory_uri(); ?>/images/one-year-icon-lenovo.png" /></footer>
 </div>
 </div>
@@ -111,8 +115,8 @@
 <!--/column-->
 </div>
 <div class="row red-btns">
-<div class="small-12 columns"><footer class="insets-footer"><p>Want to know more? Lorem ipsum amet, consectetuer adipiscing elit olor sit amet consectetue.<br />
-<strong>Like more advice? Call us on XXXX XXXXXXXX or email us now.</strong></p><a href="" class="read-more"><span>Webchat now?</span></a></footer></div>
+<div class="small-12 columns"><footer class="insets-footer"><p>
+<strong>Like more advice? Call us on <a href="tel:">XXXX XXXXXXXX</a> or <a href="mailto:">email us now</a>.</strong></p><a href="" class="read-more"><span>Webchat now?</span></a></footer></div>
 </div>
 </div>
 <div class="skewed-bg"></div>
@@ -133,13 +137,14 @@
 			<div class="content-wrap angle">
 				<div class="content">
 		<h3>Why take out a maintenance contract today?</h3>
-		<p><strong>A Lenovo Service Suite Maintenance Contract from Europlus Direct is:</strong></p>
+		<p><strong>A Lenovo ServiceSuite Maintenance Contract from Europlus Direct is:</strong></p>
 		<ul class="bullet-list red">
-			<li>Sed diam nonummy nib</li>
-<li>Lorem ipsum dolor sit amet, consectetuer adipiscing</li>
-<li>Sed diam nonummy nib</li>
-<li>Consectetuer adipiscing elit sed diam nonummy nib</li>
-<li>Diam nonummy nib adipiscing elit sed diam</li></ul>
+			<li>easy to buy and maintain</li>
+<li>one simple contract between you and Lenovo</li>
+<li>straightforward with annual prepaid invoicing</li>
+<li>delivered with a renewal reminder </li>
+<li>delivered with the option to buy a Committed Fix – where engineers are guaranteed to answer call-outs within 4 hours
+</li></ul>
 		
 </div>
 </div></div>
@@ -149,16 +154,21 @@
 	<div class="small-12 large-6 columns">
 			<div class="nested-section white">
 				<header class="icon-header"><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/service-icon-white.png" /></div><h2>Lenovo Service Suite
-Maintenance Contract</h2></header>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect.</p>
-<h4>Enhanced technical support for your hardware and software  </h4>
-<p>Our Lenovo Service Suite Maintenance Contract could be the ideal option if you:</p>
-<ul class="bullet-list white"><li>Sed diam nonummy nib</li>
-<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</li>
-<li>Sed diam nonummy nib</li>
-<li>Consectetuer adipiscing elit sed diam nonummy nib</li>
-<li>Diam nonummy nib adipiscing elit sed diam nonummy nib</li>
-<li>Consectetuer adipiscing elit sed diam nonummy nib</li>
+Maintenance Contract</h2><h4>Enhanced technical support for your hardware and software</h4></header>
+<p>Have multiple machines or want to add and cover more machines. Need one simple solution for an IT system that’s evolved with your business over time? Then the Lenovo ServiceSuite Maintenance Contract from Europlus Direct could be the option for you.</p>
+<p>The smart way to keep all of your IT system running smoothly and reduce the need for repairs, it can offer machine repair, preventative and predictive maintenance, error analysis and remote support, problem and engineering change management and system defect voice support.
+</p>
+
+<p><strong>Our Lenovo ServiceSuite Maintenance Contract suits organisations that:</strong></p>
+<ul class="bullet-list white">
+<li>have older hardware</li>
+<li>own hardware not supported by the Service Pack</li>
+<li>run high-end servers</li>
+<li>have multiple hardware systems</li>
+<li>maintain a custom-built system</li>
+<li>require a customised level of service</li>
+<li>need an easier way to manage expiry dates and add new machines and new configurations on</li>
+<li>have a large number of machines </li>
 </ul>
 </div>
 </div>
@@ -167,8 +177,8 @@ Maintenance Contract</h2></header>
 <!--footer-->
 <div class="row blue-btns">
 <div class="small-12 columns">
-	<footer class="insets-footer"><p>Want to know more? Lorem ipsum amet, consectetuer adipiscing elit olor sit amet consectetue.<br />
-<strong>Like more advice? Call us on XXXX XXXXXXXX or email us now.</strong></p><a href="" class="read-more"><span>Webchat now?</span></a></footer>
+	<footer class="insets-footer"><p>Want to know more? <a href="">Read our FAQs</a>.<br />
+<strong>Like more advice? Call us on <a href="tel:">XXXX XXXXXXXX</a> or <a href="mailto:">email us now</a>.</strong></p><a href="" class="read-more"><span>Webchat now?</span></a></footer>
 </div>
 </div>
 <!--/footer-->
@@ -194,18 +204,20 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscin
 <p><strong>Like more advice?<br />Call us on XXXX XXXXXXXX or email us now.</strong></p>
 
 <footer class="text-right"><a href="" class="read-more"><span>Webchat now?</span></a></footer></div></div>
-	<div class="small-12 large-6 columns red-blue-heading grey red-sub-heads red-btns"><div class="nested-section-content section-content-inner second"><h2 class="block-heading"><span><em>Lenovo Software</em></span><span class="secondary"><em class="shift-right-55">services</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect.</p>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit. Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consect.</p>
+	<div class="small-12 large-6 columns red-blue-heading grey red-sub-heads red-btns"><div class="nested-section-content section-content-inner second"><h2 class="block-heading"><span><em>Lenovo Software</em></span><span class="secondary"><em class="shift-right-55">services</em></span></h2><h4>Remote support keeps software performing</h4><p>
+<p>There’s an easy way to prevent software problems letting your business down - take out Software Services Upgrade or Software Services Post Warranty today. You’ll get remote technical support, which means there’s a virtual IT expert by your side whenever you need one.</p>
+<p>Keep your software running smoothly with features including problem determination, problem resolution, performance and capacity management, and preventative care.
+</p>
 <p><strong>Europlus Direct’s Lenovo Software support features</strong></p>
 <ul class="bullet-list red">
-<li>Sed diam nonummy nib</li>
-<li>Lorem ipsum dolor sit amet, consectetuer </li>
-<li>Sed diam nonummy nib</li>
-<li>Consectetuer adipiscing elit sed diam nonummy </li>
+<li>Remote technical support for System x and Storage (1 or 3 year options)</li>
+<li>Support line for MS Windows or Linux on System x (1 or 3 year options)</li>
+<li>Support line for VMware (1 or 3 year options)</li>
+<li>Support line for Linux
+</li>
 </ul>
-<p>Want to know more? Lorem ipsum amet, consectetuer adipiscing elit olor sit.</p>
-<p><strong>Like more advice?<br />Call us on XXXX XXXXXXXX or email us now.</strong></p>
+<p>Want to know more about Europlus Direct’s Lenovo Software support? <a href="">Read our FAQs</a></p>
+<p><strong>Like more software advice? Call us on <a href="tel:">XXXX XXXXXXXX</a> or <a href="mailto:">email us now</a></strong></p>
 
 <footer class="text-right"><a href="" class="read-more"><span>Webchat now?</span></a></footer></div>
 </div></div>

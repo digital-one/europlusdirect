@@ -7,7 +7,7 @@
 		<div class="slide" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/slide-bg.jpg');">
 			<div class="row">
 				<div class="small-12 columns heading-right opaque-heading">
-			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>We protect your IT systems,</em></span><span><em>you protect your business</em></span><span class="secondary small"><em>24 hours a day. 7 days a week</em></span></h2></div></div>
+			<div class="content"><div class="vcenter"><h2 class="block-heading"><span class="line"><span class="block">We protect your IT systems,</span></span><span class="line"><span class="block">you protect your business</span></span><span class="line"><span class="block secondary small">24 hours a day. 7 days a week</span></span></h2></div></div>
 		</div>
 		</div>
 		</div>
@@ -34,7 +34,7 @@
 		<div class="slide" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/slide-bg-4.jpg');">
 			<div class="row">
 				<div class="small-12 columns heading-right  opaque-heading">
-			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>Approved Lenovo warranty &amp;</em></span><span><em>service providers</em></span><span class="secondary"><em>For any system, there’s one number</em></span><span class="secondary"><em>to call: +44 (0)113 887 8650</em></span></h2></div></div>
+			<div class="content"><div class="vcenter"><h2 class="block-heading"><span><em>Approved Lenovo warranty &amp;</em></span><span><em>service providers</em></span><span class="secondary small"><em>For any system, there’s one number</em></span><span class="secondary small"><em>to call: +44 (0)113 887 8650</em></span></h2></div></div>
 		</div>
 		</div>
 		</div>
@@ -49,66 +49,30 @@
 <section id="intro" class="section row first gutters">
 	<div class="section-inner">
 		<div class="section-content">	
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib.  Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue. L orem ipsum dolor sit amet,  elit. Consectetuer adipiscing elit, sed diam nonummy nib.  Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue</p>
-<p>Ipsum dolor sit amet, consectetuer adipiscing elit. Consectetuer adipiscing elit, sed diam nonummy nib.  Lorem ipsum amet, consectetuer adipiscing elit olor sit amet, consectetue</p>
+<p>From servers to desktop computers and laptops, you can protect your IT hardware and software on a company-wide basis or a one-to-one level with Europlus Direct. And with specialist remote support or certified engineers arriving on-site within 4 hours, it pays to have the peace of mind of Europlus Direct on your side.</p>
 </div>
 </div>
 </div>
 </section>
 <!--/intro-->
 <!--lenovo-->
-<section id="lenovo" class="section row red-blue-heading red-sub-heads red-btns pac skewed grey centered-text spaced">
-	<div class="section-inner">
-		<div class="section-content">
-<header class="row">
-	<div class="small-12 columns">
-		<a href="" class="gold-partner"><img src="<?php echo get_template_directory_uri(); ?>/images/lenovo-gold-business-partner.png" alt="Lenovo Gold Business Partner 2015" /></a>
-<div class="inner"><div class="vcenter"><h2 class="block-heading"><div><span class="logo">Lenovo</span><span class="end">Service Packs</span></div></h2></div></div>
-
-</div>
-</header>
-<div class="pac-intro spaced">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p>
-</div>
-<div class="row pac-features">
-<div class="small-12 large-4 columns"><div class="feature"><h3>Extend your warranty to 3, 4 or 5yrs</h3><p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit, sed diam nmmy.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/one-year-icon-lenovo.png" /></div><h4>In-warranty upgrade</h4><a href="" class="read-more"><span>Read More</span></a></div></div>
-<div class="small-12 large-4 columns"><div class="feature"><h3>Renew a warranty on older equipment</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/one-year-icon-lenovo.png" /></div><h4>Post - warranty renew</h4><a href="" class="read-more"><span>Read More</span></a></div></div>
-<div class="small-12 large-4 columns"><div class="feature"><h3>Full service and repair on multiple machines</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/service-icon-lenovo.png" /></div><h4>Service Suite maintenance contract</h4><a href="" class="read-more"><span>Read More</span></a></div></div>
-</div>
-</div>
-<div class="skewed-bg"></div>
-</div>
-</section>
+<?php
+$page = get_post(65);
+echo $page->post_content;
+?>
 <!--/lenovo-->
 <!--IBM-->
-<section id="ibm" class="section row light-blue pac skewed centered-text spaced anchor-bottom">
-	<div class="section-inner">
-	<div class="section-content">
-<header class="row">
-	<div class="small-12 columns">
-<h2 class="block-heading"><span><em>IBM ServicePac</em></span></h2>
-</div>
-</header>
-<div class="pac-intro spaced">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p>
-</div>
-<div class="row pac-features">
-<div class="small-12 large-4 columns"><div class="feature"><h3>Extend your warranty to 3, 4 or 5yrs</h3><p>Lorem ipsum dolor sit amet, consecte tuer adipiscing elit, sed diam nmmy.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/one-year-icon.png" /></div><h4>In-warranty upgrade</h4><a href="" class="read-more"><span>Read More</span></a></div></div>
-<div class="small-12 large-4 columns"><div class="feature"><h3>Renew a warranty on older equipment</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/service-icon.png" /></div><h4>Post - warranty renew</h4><a href="" class="read-more"><span>Read More</span></a></div></div>
-<div class="small-12 large-4 columns"><div class="feature"><h3>Full service and repair on multiple machines</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nib.</p><div class="icon"><img src="<?php echo get_template_directory_uri(); ?>/images/support-icon.png" /></div><h4>Service Suite maintenance contract</h4><a href="" class="read-more"><span>Read More</span></a></div></div>
-<footer class="section-footer"><a class="anchor-up">Top</a></footer>
-</div>
-</div>
-<div class="skewed-bg"></div>
-</div>
-</section>
+<?php
+$page = get_post(67);
+echo $page->post_content;
+?>
 <!--/IBM-->
 <!--call back form-->
 <section id="callback" class="section row white-sub-heads skewed centered-text black spaced">
 	<div class="section-inner">
 	<div class="section-content">
 <h2 class="block-heading"><span><em>Not sure what you need?</em></span></h2>
-<h3>We'll be in touch to help</h3>
+<h4>Here at Europlus Direct, we understand that trying to protect your IT Equipment can be daunting.<br />But don’t worry, we’re here to help, so just let us know how we can help you.</h4>
 <?php //gravity_form(1, false, false, false, '', true, 1);  ?>
 <div class="gf_browser_chrome gform_wrapper two-column_wrapper" id="gform_wrapper_2"><a id="gf_2" name="gf_2" class="gform_anchor"></a><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_2" id="gform_2" class="two-column" action="/contact-us/#gf_2">
                         
@@ -144,38 +108,16 @@
 <!--/call back form-->
 
 <!--Multi country support-->
-<section id="support" class="section row skewed grey centered-text above">
-	<div class="section-inner">
-		<div class="section-content">
-		<div class="row">
-			<div class="small-12 large-5 columns">
-<h2 class="block-heading"><span><em>Multi-country</em></span><span class="secondary"><em> support</em></span></h2>
-<p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquamt. </p>
-<a href="" class="ribbon left blue"><span>Find out more</span></a>
-<?php /* <a href="" class="ribbon right yellow"><span>Find out more</span></a> */ ?>
-</div>
-<div class="small-12 large-7 columns">
-<figure><img src="<?php echo get_template_directory_uri(); ?>/images/map.jpg" /></figure>
-	</div>
-</div>
-</div>
-<div class="skewed-bg"></div>
-</div>
-	</section>
+<?php
+$page = get_post(69);
+echo $page->post_content;
+?>
 	<!--/Multi country support-->
 	<!--two column split-->
-<section class="section white-yellow-heading row two-box centered-text">
-	<div class="section-content">
-	<div class="row">
-		<div class="small-12 large-6 columns blue red-btns white-sub-heads"><div class="nested-section-content section-content-inner"><h2 class="block-heading"><span><em class="shift-right-55">Software</em></span><span class="secondary"><em>support</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
-Cons ectetuer adipiscing elit, sed diam nonummy nibh euismod. Cons ectetuer adipiscing elit, sed diam </p><a href="" class="read-more"><span>Find out more</span></a></div></div>
-	<div class="small-12 large-6 columns red white-sub-heads"><div class="nested-section-content section-content-inner second"><h2 class="block-heading"><span><em>Multi-manufacturer</em></span><span class="secondary"><em class="shift-right-55">support</em></span></h2><h4>Lorem ipsum dolor sit amet</h4><p>
-Cons ectetuer adipiscing elit, sed diam nonummy nibh euismod. Cons ectetuer adipiscing elit, sed diam </p><a href="" class="read-more"><span>IBM support</span></a></div>
-</div></div>
-
-
-	</div>
-</section>
+<?php
+$page = get_post(71);
+echo $page->post_content;
+?>
 
 <!--/two column split-->
 <!--faqs-->
@@ -183,7 +125,7 @@ Cons ectetuer adipiscing elit, sed diam nonummy nibh euismod. Cons ectetuer adip
 	<div class="section-inner">
 	<div class="section-content">
 <h2 class="block-heading"><span><em>Frequently Asked Questions</em></span></h2>
-<p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+<p>At Europlus Direct, we’re more than happy to answer any of your IT queries, but should you need a quick answer, why not take a look at our <a href="">FAQs</a>, now</p>
 <div class="slider">
 <div class="slide"><p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet?</p></div>
 <div class="slide"><p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet?</p></div>
@@ -195,19 +137,15 @@ Cons ectetuer adipiscing elit, sed diam nonummy nibh euismod. Cons ectetuer adip
 </section>
 <!--/faqs-->
 <!--video-->
-<section id="video-link" class="section row heading-left align-left  opaque-heading skewed video-link">
-	<div class="section-inner">
-		<div class="section-content">
-<h2 class="block-heading"><span><em>We speak your</em></span><span><em class="shift-left-30">language</em></span></h2><a href="" class="video-btn shift-left-55">Watch the video</a>
-</div>
- <div class="skewed-bg" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/video-bg.jpg');"></div>
- </div>
-</section>
+<?php
+$page = get_post(73);
+echo $page->post_content;
+?>
 <!--/video-->
 <section id="contact" class="section yellow-white-heading yellow-btns centered-text">
 	<div class="section-inner">
 		<div class="section-content">
-<h2 class="block-heading"><span><em>Call us today on</em></span></h2>
+<h2 class="block-heading"><span class="line"><span class="block">Want to protect your IT system in one easy step?</span></span><span class="line"><span class="block">Then call us today on</span></span></h2>
 <p class="big"><a href="tel:">+44 (0)113 887 8650</a></p>
 <a href="" class="read-more"><span>Contact us</span></a>
 </div>
