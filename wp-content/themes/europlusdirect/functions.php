@@ -12,8 +12,10 @@ add_theme_support( 'menus' );
 
 
 // Add image sizes
-add_image_size( 'thumbnail', 320, 190, true );
-add_image_size( 'image', 800, 475, true );
+add_image_size( 'slide', 1920, 1200, true );
+add_image_size( 'large-image', 620, 370, true );
+add_image_size( 'medium-image', 410, 246, true );
+set_post_thumbnail_size( 150, 150,false); 
 
 add_editor_style('css/style.css');
 add_editor_style('css/editor-style.css');

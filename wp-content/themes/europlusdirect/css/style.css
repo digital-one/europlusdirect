@@ -4130,17 +4130,18 @@ p:last-child {
 .block-heading span.line {
   display: block;
   width: 100%;
+  line-height: 100%;
   margin-bottom: 3px;
 }
-/* line 7, ../scss/components/_global.scss */
+/* line 8, ../scss/components/_global.scss */
 .heading-left .block-heading span.line {
   text-align: left;
 }
-/* line 10, ../scss/components/_global.scss */
+/* line 11, ../scss/components/_global.scss */
 .heading-right .block-heading span.line {
   text-align: right;
 }
-/* line 14, ../scss/components/_global.scss */
+/* line 15, ../scss/components/_global.scss */
 .block-heading span.block, .block-heading span em {
   display: inline-block;
   padding: 10px;
@@ -4152,55 +4153,55 @@ p:last-child {
   color: white;
   background-color: #054990;
 }
-/* line 21, ../scss/components/_global.scss */
+/* line 22, ../scss/components/_global.scss */
 .heading-left .block-heading span.block, .heading-right .block-heading span.block, .heading-left .block-heading span em, .heading-right .block-heading span em {
   margin: 0;
   text-align: right;
 }
-/* line 28, ../scss/components/_global.scss */
+/* line 29, ../scss/components/_global.scss */
 .opaque-heading .block-heading span.block, .opaque-heading .block-heading span em {
   background-color: rgba(5, 73, 144, 0.7);
 }
-/* line 31, ../scss/components/_global.scss */
+/* line 32, ../scss/components/_global.scss */
 .red-blue-heading .block-heading span.block, .red-blue-heading .block-heading span em {
   background-color: #eb222f;
 }
-/* line 34, ../scss/components/_global.scss */
+/* line 35, ../scss/components/_global.scss */
 .white-yellow-heading .block-heading span.block, .white-yellow-heading .block-heading span em {
   background-color: white;
   color: #054990;
 }
-/* line 38, ../scss/components/_global.scss */
+/* line 39, ../scss/components/_global.scss */
 .yellow-white-heading .block-heading span.block, .yellow-white-heading .block-heading span em {
   background-color: #fff000;
   color: #054990;
 }
-/* line 42, ../scss/components/_global.scss */
+/* line 43, ../scss/components/_global.scss */
 .blue-white-heading .block-heading span.block, .blue-white-heading .block-heading span em {
   background-color: #054990;
   color: white;
 }
-/* line 46, ../scss/components/_global.scss */
+/* line 47, ../scss/components/_global.scss */
 .block-heading span.block.secondary, .block-heading span em.secondary {
   background-color: #fff000;
   color: #054990;
 }
-/* line 49, ../scss/components/_global.scss */
+/* line 50, ../scss/components/_global.scss */
 .blue-red-heading .block-heading span.block.secondary, .blue-red-heading .block-heading span em.secondary {
   background-color: #eb222f;
   color: white;
 }
-/* line 53, ../scss/components/_global.scss */
+/* line 54, ../scss/components/_global.scss */
 .red-blue-heading .block-heading span.block.secondary, .red-blue-heading .block-heading span em.secondary {
   background-color: #054990;
   color: white;
 }
-/* line 57, ../scss/components/_global.scss */
+/* line 58, ../scss/components/_global.scss */
 .yellow-white-heading .block-heading span.block.secondary, .yellow-white-heading .block-heading span em.secondary {
   background-color: white;
 }
 
-/* line 64, ../scss/components/_global.scss */
+/* line 65, ../scss/components/_global.scss */
 .big {
   font-size: 26px;
   font-size: 1.625rem;
@@ -4208,22 +4209,22 @@ p:last-child {
   color: #054990;
 }
 
-/* line 69, ../scss/components/_global.scss */
+/* line 70, ../scss/components/_global.scss */
 .centered-text {
   text-align: center;
 }
 
-/* line 72, ../scss/components/_global.scss */
+/* line 73, ../scss/components/_global.scss */
 .inner-padding {
   padding: 0 50px;
 }
 
-/* line 75, ../scss/components/_global.scss */
+/* line 76, ../scss/components/_global.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 78, ../scss/components/_global.scss */
+/* line 79, ../scss/components/_global.scss */
 .bottom-right {
   top: auto;
   right: 0.9375rem;
@@ -4232,14 +4233,14 @@ p:last-child {
   position: absolute;
 }
 
-/* line 81, ../scss/components/_global.scss */
+/* line 82, ../scss/components/_global.scss */
 .icon-header {
   padding-top: 100px;
   position: relative;
   width: 100%;
   display: block;
 }
-/* line 86, ../scss/components/_global.scss */
+/* line 87, ../scss/components/_global.scss */
 .icon-header .icon {
   width: 80px;
   height: 80px;
@@ -4249,20 +4250,20 @@ p:last-child {
   left: auto;
   position: absolute;
 }
-/* line 91, ../scss/components/_global.scss */
+/* line 92, ../scss/components/_global.scss */
 .icon-header .icon img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 99, ../scss/components/_global.scss */
+/* line 100, ../scss/components/_global.scss */
 .bullet-list li {
   padding: 0 0 0 15px;
   position: relative;
   margin-bottom: 8px;
 }
-/* line 103, ../scss/components/_global.scss */
+/* line 104, ../scss/components/_global.scss */
 .bullet-list li:before {
   content: "•";
   top: 0;
@@ -4272,30 +4273,30 @@ p:last-child {
   position: absolute;
   color: #054990;
 }
-/* line 107, ../scss/components/_global.scss */
+/* line 108, ../scss/components/_global.scss */
 .red .bullet-list li:before {
   color: #eb222f;
 }
-/* line 114, ../scss/components/_global.scss */
+/* line 115, ../scss/components/_global.scss */
 .bullet-list.white li:before {
   color: white;
 }
 
-/* line 120, ../scss/components/_global.scss */
+/* line 121, ../scss/components/_global.scss */
 .quote-outer {
   display: block;
   width: 100%;
   padding: 0;
 }
 
-/* line 125, ../scss/components/_global.scss */
+/* line 126, ../scss/components/_global.scss */
 blockquote {
   padding: 0 40px;
   margin-bottom: 30px;
   color: white;
   position: relative;
 }
-/* line 130, ../scss/components/_global.scss */
+/* line 131, ../scss/components/_global.scss */
 blockquote:before, blockquote:after {
   content: "";
   width: 30px;
@@ -4310,7 +4311,7 @@ blockquote:before, blockquote:after {
   left: 0;
   position: absolute;
 }
-/* line 140, ../scss/components/_global.scss */
+/* line 141, ../scss/components/_global.scss */
 blockquote:after {
   top: auto;
   right: 0;
@@ -4319,16 +4320,16 @@ blockquote:after {
   position: absolute;
   background-image: url("../images/close-quote.png");
 }
-/* line 144, ../scss/components/_global.scss */
+/* line 145, ../scss/components/_global.scss */
 blockquote p {
   margin-bottom: 10px;
 }
-/* line 147, ../scss/components/_global.scss */
+/* line 148, ../scss/components/_global.scss */
 blockquote footer {
   color: #fff000;
 }
 
-/* line 151, ../scss/components/_global.scss */
+/* line 152, ../scss/components/_global.scss */
 a.read-more {
   display: inline-block;
   height: 48px;
@@ -4336,7 +4337,7 @@ a.read-more {
   text-decoration: none;
   margin-bottom: 13px;
 }
-/* line 157, ../scss/components/_global.scss */
+/* line 158, ../scss/components/_global.scss */
 a.read-more span, a.read-more em {
   height: 38px;
   font-style: normal;
@@ -4355,22 +4356,22 @@ a.read-more span, a.read-more em {
   transition: background-color 0.3s ease;
   margin-bottom: 13px;
 }
-/* line 171, ../scss/components/_global.scss */
+/* line 172, ../scss/components/_global.scss */
 .red-btns a.read-more span, .red-btns a.read-more em {
   background-color: #eb222f;
   color: white;
 }
-/* line 175, ../scss/components/_global.scss */
+/* line 176, ../scss/components/_global.scss */
 .blue-btns a.read-more span, .blue-btns a.read-more em {
   background-color: #054990;
   color: white;
 }
-/* line 179, ../scss/components/_global.scss */
+/* line 180, ../scss/components/_global.scss */
 .yellow-btns a.read-more span, .yellow-btns a.read-more em {
   background-color: #fff000;
   color: #054990;
 }
-/* line 184, ../scss/components/_global.scss */
+/* line 185, ../scss/components/_global.scss */
 a.read-more:before {
   content: "";
   z-index: 1;
@@ -4389,24 +4390,24 @@ a.read-more:before {
   -o-transform: skewY(-20deg);
   transform: skewY(-20deg);
 }
-/* line 195, ../scss/components/_global.scss */
+/* line 196, ../scss/components/_global.scss */
 a.read-more:hover span, a.read-more:active span {
   background-color: #fcf9d4;
 }
-/* line 197, ../scss/components/_global.scss */
+/* line 198, ../scss/components/_global.scss */
 .red-btns a.read-more:hover span, .red-btns a.read-more:active span {
   background-color: #ef515b;
 }
-/* line 200, ../scss/components/_global.scss */
+/* line 201, ../scss/components/_global.scss */
 .blue-btns a.read-more:hover span, .blue-btns a.read-more:active span {
   background-color: #0762c1;
 }
-/* line 203, ../scss/components/_global.scss */
+/* line 204, ../scss/components/_global.scss */
 .yellow-btns a.read-more:hover span, .yellow-btns a.read-more:active span {
   background-color: white;
 }
 
-/* line 209, ../scss/components/_global.scss */
+/* line 210, ../scss/components/_global.scss */
 a.video-btn {
   display: inline-block;
   background-color: #fff000;
@@ -4418,7 +4419,7 @@ a.video-btn {
   padding: 0 55px 0 15px;
   position: relative;
 }
-/* line 218, ../scss/components/_global.scss */
+/* line 219, ../scss/components/_global.scss */
 a.video-btn:after {
   content: "";
   top: 50%;
@@ -4433,41 +4434,41 @@ a.video-btn:after {
   background: url("../images/video-play.png") center center no-repeat;
   background-size: 100% auto;
 }
-/* line 228, ../scss/components/_global.scss */
+/* line 229, ../scss/components/_global.scss */
 a.video-btn:hover, a.video-btn:active {
   background-color: #fcf9d4;
 }
 
-/* line 233, ../scss/components/_global.scss */
+/* line 234, ../scss/components/_global.scss */
 .blue-sub-heads h3, .blue-sub-heads h4 {
   color: #054990 !important;
 }
 
-/* line 238, ../scss/components/_global.scss */
+/* line 239, ../scss/components/_global.scss */
 .red-sub-heads h3, .red-sub-heads h4 {
   color: #eb222f !important;
 }
 
-/* line 243, ../scss/components/_global.scss */
+/* line 244, ../scss/components/_global.scss */
 .white-sub-heads h3, .white-sub-heads h4 {
   color: white;
 }
 
-/* line 247, ../scss/components/_global.scss */
+/* line 248, ../scss/components/_global.scss */
 .gold-partner {
   display: none;
   width: 50%;
   height: auto;
   margin: 0 auto;
 }
-/* line 253, ../scss/components/_global.scss */
+/* line 254, ../scss/components/_global.scss */
 .gold-partner img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 259, ../scss/components/_global.scss */
+/* line 260, ../scss/components/_global.scss */
 .section-footer {
   width: 100%;
   display: block;
@@ -4480,12 +4481,12 @@ a.video-btn:hover, a.video-btn:active {
   z-index: 999;
 }
 
-/* line 266, ../scss/components/_global.scss */
+/* line 267, ../scss/components/_global.scss */
 .spaced {
   margin-bottom: 10px;
 }
 
-/* line 269, ../scss/components/_global.scss */
+/* line 270, ../scss/components/_global.scss */
 .anchor-up {
   top: -15px;
   right: auto;
@@ -4499,30 +4500,30 @@ a.video-btn:hover, a.video-btn:active {
   height: 50px;
   z-index: 998;
 }
-/* line 277, ../scss/components/_global.scss */
+/* line 278, ../scss/components/_global.scss */
 .straight-top .anchor-up {
   top: 50px;
 }
 
-/* line 282, ../scss/components/_global.scss */
+/* line 283, ../scss/components/_global.scss */
 figure {
   display: block;
   width: 100%;
 }
-/* line 285, ../scss/components/_global.scss */
+/* line 286, ../scss/components/_global.scss */
 figure img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* line 291, ../scss/components/_global.scss */
+/* line 292, ../scss/components/_global.scss */
 .ribbon-header {
   text-align: center;
   margin-bottom: 30px;
 }
 
-/* line 295, ../scss/components/_global.scss */
+/* line 296, ../scss/components/_global.scss */
 .ribbon {
   display: inline-block;
   height: 40px;
@@ -4535,7 +4536,7 @@ figure img {
   font-size: 1.125rem;
   text-decoration: none;
 }
-/* line 305, ../scss/components/_global.scss */
+/* line 306, ../scss/components/_global.scss */
 .ribbon span {
   height: 40px;
   line-height: 40px;
@@ -4550,7 +4551,7 @@ figure img {
   -moz-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-/* line 317, ../scss/components/_global.scss */
+/* line 318, ../scss/components/_global.scss */
 .ribbon:before {
   content: "";
   z-index: 1;
@@ -4569,39 +4570,39 @@ figure img {
   -o-transform: skewY(-20deg);
   transform: skewY(-20deg);
 }
-/* line 327, ../scss/components/_global.scss */
+/* line 328, ../scss/components/_global.scss */
 .ribbon.left {
   float: none !important;
 }
-/* line 330, ../scss/components/_global.scss */
+/* line 331, ../scss/components/_global.scss */
 .ribbon.right {
   float: none !important;
 }
-/* line 334, ../scss/components/_global.scss */
+/* line 335, ../scss/components/_global.scss */
 .ribbon.yellow {
   color: #054990 !important;
 }
-/* line 336, ../scss/components/_global.scss */
+/* line 337, ../scss/components/_global.scss */
 .ribbon.yellow span {
   background-color: #fff000;
 }
-/* line 340, ../scss/components/_global.scss */
+/* line 341, ../scss/components/_global.scss */
 .ribbon.yellow:hover span, .ribbon.yellow:active span {
   background-color: #fcf9d4;
 }
-/* line 346, ../scss/components/_global.scss */
+/* line 347, ../scss/components/_global.scss */
 .ribbon:hover span, .ribbon:active span {
   background-color: #0762c1;
 }
 
-/* line 351, ../scss/components/_global.scss */
+/* line 352, ../scss/components/_global.scss */
 .insets-footer {
   display: block;
   position: relative;
   width: 100%;
   padding: 50px 10px 80px;
 }
-/* line 356, ../scss/components/_global.scss */
+/* line 357, ../scss/components/_global.scss */
 .insets-footer a.read-more {
   top: auto;
   right: 10px;
@@ -4611,28 +4612,28 @@ figure img {
 }
 
 @media only screen and (min-width: 48rem) {
-  /* line 363, ../scss/components/_global.scss */
+  /* line 364, ../scss/components/_global.scss */
   .spaced {
     margin-bottom: 1.8752em;
   }
 
-  /* line 366, ../scss/components/_global.scss */
+  /* line 367, ../scss/components/_global.scss */
   .quote-outer {
     padding: 0 10%;
   }
 
-  /* line 369, ../scss/components/_global.scss */
+  /* line 370, ../scss/components/_global.scss */
   a.read-more {
     height: 48px;
   }
-  /* line 371, ../scss/components/_global.scss */
+  /* line 372, ../scss/components/_global.scss */
   a.read-more span, a.read-more em {
     height: 48px;
     line-height: 48px;
     font-size: 20px;
     font-size: 1.25rem;
   }
-  /* line 376, ../scss/components/_global.scss */
+  /* line 377, ../scss/components/_global.scss */
   a.read-more:before {
     top: auto;
     right: 0;
@@ -4641,34 +4642,34 @@ figure img {
     position: absolute;
   }
 
-  /* line 380, ../scss/components/_global.scss */
+  /* line 381, ../scss/components/_global.scss */
   .icon-header {
     padding-top: 150px;
   }
-  /* line 382, ../scss/components/_global.scss */
+  /* line 383, ../scss/components/_global.scss */
   .icon-header .icon {
     width: 122px;
     height: 122px;
   }
 
-  /* line 388, ../scss/components/_global.scss */
+  /* line 389, ../scss/components/_global.scss */
   .block-heading span {
     margin-bottom: 8px;
   }
 
-  /* line 392, ../scss/components/_global.scss */
+  /* line 393, ../scss/components/_global.scss */
   .gold-partner {
     width: 155px;
     display: block;
   }
 
-  /* line 396, ../scss/components/_global.scss */
+  /* line 397, ../scss/components/_global.scss */
   .ribbon-header {
     text-align: left;
     margin-bottom: 0;
   }
 
-  /* line 400, ../scss/components/_global.scss */
+  /* line 401, ../scss/components/_global.scss */
   .ribbon {
     display: inline-block;
     height: 48px;
@@ -4681,11 +4682,11 @@ figure img {
     float: left !important;
     text-decoration: none;
   }
-  /* line 407, ../scss/components/_global.scss */
+  /* line 408, ../scss/components/_global.scss */
   .nested-section .ribbon {
     margin: -20px 0 0 -78px;
   }
-  /* line 414, ../scss/components/_global.scss */
+  /* line 415, ../scss/components/_global.scss */
   .ribbon span {
     height: 48px;
     line-height: 48px;
@@ -4700,7 +4701,7 @@ figure img {
     -moz-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
   }
-  /* line 426, ../scss/components/_global.scss */
+  /* line 427, ../scss/components/_global.scss */
   .ribbon:before {
     content: "";
     z-index: 1;
@@ -4723,24 +4724,24 @@ figure img {
     background-image: -webkit-linear-gradient(-315deg, black 0%, #054990 100%);
     background-image: linear-gradient(45deg,black 0%, #054990 100%);
   }
-  /* line 438, ../scss/components/_global.scss */
+  /* line 439, ../scss/components/_global.scss */
   .ribbon.left {
     float: left !important;
   }
-  /* line 441, ../scss/components/_global.scss */
+  /* line 442, ../scss/components/_global.scss */
   .ribbon.right {
     margin: 0 -78px 0 0;
     float: right !important;
   }
-  /* line 443, ../scss/components/_global.scss */
+  /* line 444, ../scss/components/_global.scss */
   .nested-section .ribbon.right {
     margin: -20px -78px 0 0;
   }
-  /* line 447, ../scss/components/_global.scss */
+  /* line 448, ../scss/components/_global.scss */
   .ribbon.right span {
     padding: 0 20px 0 20px;
   }
-  /* line 450, ../scss/components/_global.scss */
+  /* line 451, ../scss/components/_global.scss */
   .ribbon.right:before {
     top: -24px;
     right: 0;
@@ -4753,73 +4754,73 @@ figure img {
     -o-transform: skewY(45deg);
     transform: skewY(45deg);
   }
-  /* line 455, ../scss/components/_global.scss */
+  /* line 456, ../scss/components/_global.scss */
   .ribbon.right.yellow:before {
     background-color: gray;
     background-image: -webkit-linear-gradient(-225deg, gray 0%, #fff000 100%);
     background-image: linear-gradient(-45deg,gray 0%, #fff000 100%);
   }
-  /* line 460, ../scss/components/_global.scss */
+  /* line 461, ../scss/components/_global.scss */
   .ribbon.yellow {
     color: #054990;
   }
-  /* line 462, ../scss/components/_global.scss */
+  /* line 463, ../scss/components/_global.scss */
   .ribbon.yellow span {
     background-color: #fff000;
   }
-  /* line 466, ../scss/components/_global.scss */
+  /* line 467, ../scss/components/_global.scss */
   .ribbon.yellow:hover span, .ribbon.yellow:active span {
     background-color: #fcf9d4;
   }
-  /* line 470, ../scss/components/_global.scss */
+  /* line 471, ../scss/components/_global.scss */
   .ribbon.yellow:before {
     background-color: gray;
     background-image: -webkit-linear-gradient(-315deg, gray 0%, #fff000 100%);
     background-image: linear-gradient(45deg,gray 0%, #fff000 100%);
   }
-  /* line 475, ../scss/components/_global.scss */
+  /* line 476, ../scss/components/_global.scss */
   .ribbon:hover span, .ribbon:active span {
     background-color: #0762c1;
   }
 
-  /* line 480, ../scss/components/_global.scss */
+  /* line 481, ../scss/components/_global.scss */
   .shift-left-30 {
     margin-left: 30px !important;
   }
 
-  /* line 483, ../scss/components/_global.scss */
+  /* line 484, ../scss/components/_global.scss */
   .shift-left-55 {
     margin-left: 55px !important;
   }
 
-  /* line 486, ../scss/components/_global.scss */
+  /* line 487, ../scss/components/_global.scss */
   .shift-right-30 {
     margin-right: 30px !important;
   }
 
-  /* line 489, ../scss/components/_global.scss */
+  /* line 490, ../scss/components/_global.scss */
   .shift-right-55 {
     margin-right: 55px !important;
   }
 
-  /* line 492, ../scss/components/_global.scss */
+  /* line 493, ../scss/components/_global.scss */
   .big {
     font-size: 36px;
     font-size: 2.25rem;
   }
 }
 @media only screen and (min-width: 64rem) {
-  /* line 501, ../scss/components/_global.scss */
+  /* line 502, ../scss/components/_global.scss */
   .nested-section .ribbon {
     margin: -20px 0 0 -108px;
   }
-  /* line 505, ../scss/components/_global.scss */
+  /* line 506, ../scss/components/_global.scss */
   .nested-section .ribbon.right {
     margin: -20px -108px 0 0;
   }
 }
 @media only screen and (min-width: 125rem) {
-  /* line 515, ../scss/components/_global.scss */
+  /* line 516, ../scss/components/_global.scss */
   a.video-btn {
     display: inline-block;
     background-color: #fff000;
@@ -4831,7 +4832,7 @@ figure img {
     padding: 0 90px 0 25px;
     position: relative;
   }
-  /* line 524, ../scss/components/_global.scss */
+  /* line 525, ../scss/components/_global.scss */
   a.video-btn:after {
     content: "";
     top: 50%;
@@ -4845,24 +4846,24 @@ figure img {
     margin-top: -23px;
     background: url("../images/video-play.png") center center no-repeat;
   }
-  /* line 533, ../scss/components/_global.scss */
+  /* line 534, ../scss/components/_global.scss */
   a.video-btn:hover, a.video-btn:active {
     background-color: #fcf9d4;
   }
 
-  /* line 537, ../scss/components/_global.scss */
+  /* line 538, ../scss/components/_global.scss */
   .big {
     font-size: 46px;
     font-size: 2.875rem;
   }
 
-  /* line 541, ../scss/components/_global.scss */
+  /* line 542, ../scss/components/_global.scss */
   a.read-more span {
     font-size: 24px;
     font-size: 1.5rem;
   }
 
-  /* line 546, ../scss/components/_global.scss */
+  /* line 547, ../scss/components/_global.scss */
   .ribbon {
     display: inline-block;
     height: 58px;
@@ -4875,11 +4876,11 @@ figure img {
     float: left !important;
     text-decoration: none;
   }
-  /* line 553, ../scss/components/_global.scss */
+  /* line 554, ../scss/components/_global.scss */
   .nested-section .ribbon {
     margin: -20px 0 0 -128px;
   }
-  /* line 560, ../scss/components/_global.scss */
+  /* line 561, ../scss/components/_global.scss */
   .ribbon span {
     height: 58px;
     line-height: 58px;
@@ -4894,7 +4895,7 @@ figure img {
     -moz-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
   }
-  /* line 572, ../scss/components/_global.scss */
+  /* line 573, ../scss/components/_global.scss */
   .ribbon:before {
     content: "";
     z-index: 1;
@@ -4917,24 +4918,24 @@ figure img {
     background-image: -webkit-linear-gradient(-315deg, black 0%, #054990 100%);
     background-image: linear-gradient(45deg,black 0%, #054990 100%);
   }
-  /* line 584, ../scss/components/_global.scss */
+  /* line 585, ../scss/components/_global.scss */
   .ribbon.left {
     float: left !important;
   }
-  /* line 587, ../scss/components/_global.scss */
+  /* line 588, ../scss/components/_global.scss */
   .ribbon.right {
     margin: 0 -88px 0 0;
     float: right !important;
   }
-  /* line 589, ../scss/components/_global.scss */
+  /* line 590, ../scss/components/_global.scss */
   .nested-section .ribbon.right {
     margin: -20px -118px 0 0;
   }
-  /* line 593, ../scss/components/_global.scss */
+  /* line 594, ../scss/components/_global.scss */
   .ribbon.right span {
     padding: 0 20px 0 20px;
   }
-  /* line 596, ../scss/components/_global.scss */
+  /* line 597, ../scss/components/_global.scss */
   .ribbon.right:before {
     top: -29px;
     right: 0;
@@ -4947,31 +4948,31 @@ figure img {
     -o-transform: skewY(45deg);
     transform: skewY(45deg);
   }
-  /* line 601, ../scss/components/_global.scss */
+  /* line 602, ../scss/components/_global.scss */
   .ribbon.right.yellow:before {
     background-color: gray;
     background-image: -webkit-linear-gradient(-225deg, gray 0%, #fff000 100%);
     background-image: linear-gradient(-45deg,gray 0%, #fff000 100%);
   }
-  /* line 606, ../scss/components/_global.scss */
+  /* line 607, ../scss/components/_global.scss */
   .ribbon.yellow {
     color: #054990;
   }
-  /* line 608, ../scss/components/_global.scss */
+  /* line 609, ../scss/components/_global.scss */
   .ribbon.yellow span {
     background-color: #fff000;
   }
-  /* line 612, ../scss/components/_global.scss */
+  /* line 613, ../scss/components/_global.scss */
   .ribbon.yellow:hover span, .ribbon.yellow:active span {
     background-color: #fcf9d4;
   }
-  /* line 616, ../scss/components/_global.scss */
+  /* line 617, ../scss/components/_global.scss */
   .ribbon.yellow:before {
     background-color: gray;
     background-image: -webkit-linear-gradient(-315deg, gray 0%, #fff000 100%);
     background-image: linear-gradient(45deg,gray 0%, #fff000 100%);
   }
-  /* line 621, ../scss/components/_global.scss */
+  /* line 622, ../scss/components/_global.scss */
   .ribbon:hover span, .ribbon:active span {
     background-color: #0762c1;
   }

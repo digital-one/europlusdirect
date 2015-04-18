@@ -38,7 +38,7 @@
 		<div class="row">
 	<div class="small-12 columns">
 		<nav id="contacts"><ul><li><a href="tel:">TEL: +44 (0)113 887 8650</a></li><li class="email"><a href="mailto:sales@europlusdirect.co.uk">sales@europlusdirect.co.uk</a></li></ul></nav>
-		<nav id="controls"><ul><li>Language</li><li><a href="" class="chat">Chat</a></li></ul></nav>
+		<nav id="controls"><ul><li><?php do_action('icl_language_selector'); ?></li><li><a href="" class="chat">Chat</a></li></ul></nav>
 	</div>
 </div>
 </div>
