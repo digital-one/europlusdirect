@@ -10,7 +10,7 @@
 			<div class="row">
 
 <div class="small-12  columns heading-right">
-<h2 class="block-heading"><span><em>Some of the</em></span><span><em>friendly faces behind</em></span><span class="secondary"><em>the business</em></span></h2>
+<h2 class="block-heading"><span class="line"><span class="block">Some of the</span></span><span class="line"><span class="block">friendly faces behind</span></span><span class="line"><span class="block secondary">the business</span></span></h2>
 	</div>
 </div>
 </div>

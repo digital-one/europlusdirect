@@ -250,15 +250,17 @@
 		position: relative;
 		width:100%;
 		display: block;
-		&:before{
-			content:"";
-			display: block;
-			padding-top:60%;
-		}
-		.image{
-			background-color: $grey;
-			@include abs-pos(0,0,0,0);
-			@include bg-cover;
+		&.bg-image{
+			&:before{
+				content:"";
+				display: block;
+				padding-top:60%;
+			}
+			.image{
+				background-color: $grey;
+				@include abs-pos(0,0,0,0);
+				@include bg-cover; 
+			}
 		}
 		
 	}

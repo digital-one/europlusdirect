@@ -1,0 +1,382 @@
+<?php
+
+/**
+ * Plugin Name: Europlus Direct
+ * Plugin URI: http://www.jumpresponse.co.uk
+ * Description: Europlus Direct Theme
+ * Version: 0.1
+ * Author: Jump Response
+ * Author URI: http://www.jumpresponse.co.uk
+ * License: Private. Only Jump Response customers are allowed to use this plugin
+ */
+
+    class europlusdirect {
+
+        function __construct() {
+
+        	//register custom post types
+        	add_action( 'init', array($this,'register_cpt_news'), 0 );
+            add_action( 'init', array($this,'register_cpt_testimonial'), 0 );
+            add_action( 'init', array($this,'register_cpt_award'), 0 );
+             add_action( 'init', array($this,'register_cpt_team'), 0 );
+             add_action( 'init', array($this,'register_cpt_question'), 0 );
+            //register custom taxonomies
+             add_action('init',array($this,'register_cptax_question_category'),0);
+            //columns
+            add_filter('manage_edit-cpt_team_columns', array($this,'add_cpt_team_columns'));   
+            add_action('manage_cpt_team_posts_custom_column',  array($this,'add_cpt_team_custom_columns'),10,2); 
+
+            add_filter('manage_edit-cpt_testimonial_columns', array($this,'add_cpt_testimonial_columns'));   
+            add_action('manage_cpt_testimonial_posts_custom_column',  array($this,'add_cpt_testimonial_custom_columns'),10,2); 
+
+
+//add_filter("manage_edit-enlightenment_columns", "add_cpt_enlightenment_columns");   
+//add_action("manage_enlightenment_posts_custom_column",  "add_cpt_enlightenment_custom_columns",10,2); 
+
+
+            //rewrites
+            add_action('init', array($this,'add_cpt_news_rewrite_rules'),0);
+			add_filter('query_vars',array($this, 'add_cpt_news_query_vars'),0);
+
+			//image sizes
+            add_action( 'init', array($this,'image_sizes'), 0 );
+			add_filter('image_size_names_choose', array($this,'custom_image_sizes'),0);
+
+
+			// Image sizes
+
+			
+
+            if( is_admin() ) {
+
+
+
+            }
+
+    }
+
+     // Register Custom Post Type
+
+    function register_cpt_news() {
+
+        $labels = array(
+           	'name'                => _x( 'News', 'Post Type General Name', 'text_domain' ),
+            'singular_name'       => _x( 'News', 'Post Type Singular Name', 'text_domain' ),
+            'menu_name'           => __( 'News', 'text_domain' ),
+            'parent_item_colon'   => __( 'Parent Article:', 'text_domain' ),
+            'all_items'           => __( 'All News', 'text_domain' ),
+            'view_item'           => __( 'View News', 'text_domain' ),
+            'add_new_item'        => __( 'Add New Article', 'text_domain' ),
+            'add_new'             => __( 'Add New Article', 'text_domain' ),
+            'edit_item'           => __( 'Edit Article', 'text_domain' ),
+            'update_item'         => __( 'Update Article', 'text_domain' ),
+            'search_items'        => __( 'Search News', 'text_domain' ),
+            'not_found'           => __( 'Not found', 'text_domain' ),
+            'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+        );
+        $args = array(
+            'label'               => __( 'cpt_news', 'text_domain' ),
+            'description'         => __( 'News', 'text_domain' ),
+            'labels'              => $labels,
+            'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail','page-attributes' ),
+            //'taxonomies'          => array( 'ciet_cuisine','ciet_allergen','ciet_diet' ),
+            'hierarchical'        => true,
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'show_in_nav_menus'   => true,
+            'show_in_admin_bar'   => true,
+            'menu_position'       => 5,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'rewrite'             => array('slug' => 'news/archive'),
+            'exclude_from_search' => false,
+            'publicly_queryable'  => true,
+            'capability_type'     => 'page',
+        );
+        register_post_type( 'cpt_news', $args );
+    }
+
+
+        function register_cpt_testimonial() {
+
+        $labels = array(
+           	'name'                => _x( 'Testimonials', 'Post Type General Name', 'text_domain' ),
+            'singular_name'       => _x( 'Testimonial', 'Post Type Singular Name', 'text_domain' ),
+            'menu_name'           => __( 'Testimonials', 'text_domain' ),
+            'parent_item_colon'   => __( 'Parent Testimonial:', 'text_domain' ),
+            'all_items'           => __( 'All Testimonials', 'text_domain' ),
+            'view_item'           => __( 'View Testimonial', 'text_domain' ),
+            'add_new_item'        => __( 'Add New Testimonial', 'text_domain' ),
+            'add_new'             => __( 'Add New', 'text_domain' ),
+            'edit_item'           => __( 'Edit Testimonial', 'text_domain' ),
+            'update_item'         => __( 'Update Testimonial', 'text_domain' ),
+            'search_items'        => __( 'Search Testimonials', 'text_domain' ),
+            'not_found'           => __( 'Not found', 'text_domain' ),
+            'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+        );
+        $args = array(
+            'label'               => __( 'cpt_testimonial', 'text_domain' ),
+            'description'         => __( 'Testimonials', 'text_domain' ),
+            'labels'              => $labels,
+            'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail','page-attributes' ),
+            //'taxonomies'          => array( 'ciet_cuisine','ciet_allergen','ciet_diet' ),
+            'hierarchical'        => true,
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'show_in_nav_menus'   => true,
+            'show_in_admin_bar'   => true,
+            'menu_position'       => 10,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'rewrite'             => array('slug' => 'testimonials/archive'),
+            'exclude_from_search' => false,
+            'publicly_queryable'  => true,
+            'capability_type'     => 'page',
+        );
+        register_post_type( 'cpt_testimonial', $args );
+    }
+
+     function register_cpt_award() {
+
+        $labels = array(
+            'name'                => _x( 'Awards', 'Post Type General Name', 'text_domain' ),
+            'singular_name'       => _x( 'Award', 'Post Type Singular Name', 'text_domain' ),
+            'menu_name'           => __( 'Awards', 'text_domain' ),
+            'parent_item_colon'   => __( 'Parent Award:', 'text_domain' ),
+            'all_items'           => __( 'All Awards', 'text_domain' ),
+            'view_item'           => __( 'View Award', 'text_domain' ),
+            'add_new_item'        => __( 'Add New Award', 'text_domain' ),
+            'add_new'             => __( 'Add New', 'text_domain' ),
+            'edit_item'           => __( 'Edit Award', 'text_domain' ),
+            'update_item'         => __( 'Update Award', 'text_domain' ),
+            'search_items'        => __( 'Search Awards', 'text_domain' ),
+            'not_found'           => __( 'Not found', 'text_domain' ),
+            'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+        );
+        $args = array(
+            'label'               => __( 'cpt_award', 'text_domain' ),
+            'description'         => __( 'Awards', 'text_domain' ),
+            'labels'              => $labels,
+            'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail','page-attributes' ),
+            //'taxonomies'          => array( 'ciet_cuisine','ciet_allergen','ciet_diet' ),
+            'hierarchical'        => true,
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'show_in_nav_menus'   => true,
+            'show_in_admin_bar'   => true,
+            'menu_position'       => 15,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'rewrite'             => array('slug' => 'awards/archive'),
+            'exclude_from_search' => false,
+            'publicly_queryable'  => true,
+            'capability_type'     => 'page',
+        );
+        register_post_type( 'cpt_award', $args );
+    }
+
+
+       function register_cpt_team() {
+
+        $labels = array(
+            'name'                => _x( 'Team', 'Post Type General Name', 'text_domain' ),
+            'singular_name'       => _x( 'Team Member', 'Post Type Singular Name', 'text_domain' ),
+            'menu_name'           => __( 'Team', 'text_domain' ),
+            'parent_item_colon'   => __( 'Parent Team Member:', 'text_domain' ),
+            'all_items'           => __( 'All Team Members', 'text_domain' ),
+            'view_item'           => __( 'View Team Member', 'text_domain' ),
+            'add_new_item'        => __( 'Add New Team Member', 'text_domain' ),
+            'add_new'             => __( 'Add New', 'text_domain' ),
+            'edit_item'           => __( 'Edit Team Member', 'text_domain' ),
+            'update_item'         => __( 'Update Team Member', 'text_domain' ),
+            'search_items'        => __( 'Search Team Members', 'text_domain' ),
+            'not_found'           => __( 'Not found', 'text_domain' ),
+            'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+        );
+        $args = array(
+            'label'               => __( 'cpt_team', 'text_domain' ),
+            'description'         => __( 'Team Members', 'text_domain' ),
+            'labels'              => $labels,
+            'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail','page-attributes' ),
+            //'taxonomies'          => array( 'ciet_cuisine','ciet_allergen','ciet_diet' ),
+            'hierarchical'        => true,
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'show_in_nav_menus'   => true,
+            'show_in_admin_bar'   => true,
+            'menu_position'       => 15,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'rewrite'             => array('slug' => 'team/archive'),
+            'exclude_from_search' => false,
+            'publicly_queryable'  => true,
+            'capability_type'     => 'page',
+        );
+        register_post_type( 'cpt_team', $args );
+    }
+
+        function register_cpt_question() {
+
+        $labels = array(
+            'name'                => _x( 'Questions', 'Post Type General Name', 'text_domain' ),
+            'singular_name'       => _x( 'Question', 'Post Type Singular Name', 'text_domain' ),
+            'menu_name'           => __( 'Questions', 'text_domain' ),
+            'parent_item_colon'   => __( 'Parent Question:', 'text_domain' ),
+            'all_items'           => __( 'All Questions', 'text_domain' ),
+            'view_item'           => __( 'View Question', 'text_domain' ),
+            'add_new_item'        => __( 'Add New Question', 'text_domain' ),
+            'add_new'             => __( 'Add New', 'text_domain' ),
+            'edit_item'           => __( 'Edit Question', 'text_domain' ),
+            'update_item'         => __( 'Update Question', 'text_domain' ),
+            'search_items'        => __( 'Search Questions', 'text_domain' ),
+            'not_found'           => __( 'Not found', 'text_domain' ),
+            'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+        );
+        $args = array(
+            'label'               => __( 'cpt_question', 'text_domain' ),
+            'description'         => __( 'Questions', 'text_domain' ),
+            'labels'              => $labels,
+            'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail','page-attributes' ),
+            //'taxonomies'          => array( 'ciet_cuisine','ciet_allergen','ciet_diet' ),
+            'hierarchical'        => true,
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'show_in_nav_menus'   => true,
+            'show_in_admin_bar'   => true,
+            'menu_position'       => 15,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'rewrite'             => array('slug' => 'questions/archive'),
+            'exclude_from_search' => false,
+            'publicly_queryable'  => true,
+            'capability_type'     => 'page',
+        );
+        register_post_type( 'cpt_question', $args );
+    }
+
+// Register Custom Taxonomies
+
+
+        function register_cptax_question_category() {
+
+            $labels = array(
+                'name'                       => _x( 'Question Category', 'Taxonomy General Name', 'text_domain' ),
+                'singular_name'              => _x( 'Question Category', 'Taxonomy Singular Name', 'text_domain' ),
+                'menu_name'                  => __( 'Question Category', 'text_domain' ),
+                'all_items'                  => __( 'All Categories', 'text_domain' ),
+                'parent_item'                => __( 'Parent Category', 'text_domain' ),
+                'parent_item_colon'          => __( 'Parent Category:', 'text_domain' ),
+                'new_item_name'              => __( 'New ategory', 'text_domain' ),
+                'add_new_item'               => __( 'Add Category', 'text_domain' ),
+                'edit_item'                  => __( 'Edit Category', 'text_domain' ),
+                'update_item'                => __( 'Update Category', 'text_domain' ),
+                'separate_items_with_commas' => __( 'Separate Categories with commas', 'text_domain' ),
+                'search_items'               => __( 'Search Categores', 'text_domain' ),
+                'add_or_remove_items'        => __( 'Add or remove Categories', 'text_domain' ),
+                'choose_from_most_used'      => __( 'Choose from the most used Categories', 'text_domain' ),
+                'not_found'                  => __( 'Not Found', 'text_domain' ),
+            );
+            $rewrite = array(
+                'slug'                       => '',
+                'with_front'                 => true,
+                'hierarchical'               => true,
+            );
+            $args = array(
+                'labels'                     => $labels,
+                'hierarchical'               => false,
+                'public'                     => true,
+                'show_ui'                    => true,
+                'show_admin_column'          => true,
+                'show_in_nav_menus'          => true,
+                'show_tagcloud'              => true,
+                'rewrite'                    => $rewrite,
+            );
+            register_taxonomy( 'cptax_question_category', array( 'cpt_question' ), $args );
+
+        }
+
+
+        function add_cpt_team_columns($columns){
+        $columns = array(
+           "cb" => "<input type=\"checkbox\" />",
+           "title" => "Name",
+           "job_title" => "Job Title",
+           "date" => "Publish Date"
+        );  
+         return $columns;
+        }
+
+function add_cpt_team_custom_columns($column,$id){
+        global $post;
+        switch ($column){
+            case "job_title":
+           // $post = get_field('collection_brand',$id);
+            echo get_field('job_title',$id);
+            break;
+               }
+            } 
+
+
+              function add_cpt_testimonial_columns($columns){
+        $columns = array(
+           "cb" => "<input type=\"checkbox\" />",
+           "title" => "Reference",
+           "quote" => "Quote",
+           "company" => "Company",
+           "date" => "Publish Date"
+        );  
+         return $columns;
+        }
+
+function add_cpt_testimonial_custom_columns($column,$id){
+        global $post;
+        switch ($column){
+            case "quote":
+            echo get_field('testimonial_quote',$id);
+            break;
+            case "company":
+            echo get_field('testimonial_company',$id);
+            break;
+               }
+            } 
+
+        function add_cpt_news_rewrite_rules(){ 
+            add_rewrite_rule('^news/archive/pge/([^/]*)/?', 'index.php?pagename=news&pge=$matches[1]','top');
+		}
+
+
+
+function add_cpt_news_query_vars($public_query_vars) {
+	  $public_query_vars[] = "pge";
+	return $public_query_vars; 
+}
+
+function image_sizes(){
+    add_image_size( 'slide', 1920, 1200, true );
+    add_image_size( 'large-image', 620, 370, true );
+    add_image_size( 'medium-image', 410, 246, true );
+    set_post_thumbnail_size( 150, 150,false); 
+}
+
+function custom_image_sizes($sizes) {
+	
+  unset( $sizes['medium']);
+    unset( $sizes['large']);
+  $myimgsizes = array(
+  "slide" => __("Slide"),
+    "large-image" => __("Large Image"),
+    "medium-image" => __("Medium Image")
+  );
+     
+       $newimgsizes = array_merge($sizes, $myimgsizes);
+      return $newimgsizes;
+}
+
+//
+}
+     $epd = new europlusdirect();

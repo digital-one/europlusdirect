@@ -167,13 +167,28 @@
 	}
 }
 #callback{
+	header{
+		padding: 0 10%;
+	}
 	.gform_body{
 		width:100%;
 		display: block;
 		@extend %clearfix;
 	}
+	.gfield_label{
+		display: none;
+	}
+	.validation_error{
+		background-color: $yellow;
+		color: $dark-grey;
+		padding:10px;
+		display: block;
+	}
+	.validation_message{
+		display: none;
+	}
 	li{
-		margin-bottom: 4px;
+		margin-bottom: 8px;
 		&.right{
 			float:left !important;
 			width: 100%;
@@ -190,6 +205,13 @@
 		background-color: rgba(255,255,255,.3);
 		border: none;
 		padding:0 10px;
+		color: white;
+	}
+	.gform_ajax_spinner{
+		@include abs-pos(60px,auto,auto,0);
+	}
+	.gfield_error input.medium{
+		border-bottom:1px solid $yellow;
 	}
 	.gform_footer{
 		text-align: center;
@@ -206,13 +228,16 @@
 			border:none;
 			margin: 0;
 			color: $blue;
-			padding: 0 30px;
+			padding: 0 20px;
 			text-align: center;
 			@include font-size(20px);
 			text-decoration:none;
 			@include transition(background-color .3s ease);
 			&:hover,&:active{
 				background-color: $light-yellow;
+			}
+			&:focus{
+				outline:none;
 			}
 		}
 	}
@@ -349,7 +374,7 @@
 		}
 		li{
 			width:100%;
-			margin-bottom: 4px;
+			margin-bottom: 8px;
 			display: block;
 			&.right{
 				.ginput_container{
@@ -563,13 +588,13 @@
 				border:none;
 				margin: 0 -89px 0 0;
 				color: $blue;
-				padding: 0 58px 0 20px;
+				padding: 0 20px 0 20px;
 				text-align: center;
 				@include font-size(24px);
 				text-decoration:none;
 				@include transition(background-color .3s ease);
 				&:hover,&:active{
-					background-color: $light-yellow;
+					background-color: $light-yellow; 
 				}
 				&:before{
 					content:"";

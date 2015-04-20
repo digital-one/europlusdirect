@@ -283,6 +283,7 @@ a.video-btn{
 figure{
 	display: block;
 	width:100%;
+	height:auto;
 	img{
 		display: block;
 		width:100%;
@@ -406,7 +407,7 @@ figure{
 		
 		margin: 0 0 0 -78px;
 		.nested-section &{
-			margin: -20px 0 0 -78px;
+			margin: -20px 0 -24px -78px;
 		}
 		color: white;
 		@include font-size(20px);
@@ -442,7 +443,7 @@ figure{
 		&.right{
 			margin: 0 -78px 0 0;
 			.nested-section &{
-				margin: -20px -78px 0 0;
+				margin: -20px -78px -24px 0;
 			}
 			float:right !important;
 			span{
@@ -500,11 +501,11 @@ figure{
 
 	.ribbon{
 		.nested-section &{
-			margin: -20px 0 0 -108px;
+			margin: -20px 0 -24px -108px;
 		}
 		&.right{
 			.nested-section &{
-				margin: -20px -108px 0 0;
+				margin: -20px -108px -24px 0;
 			}
 		}
 	}
