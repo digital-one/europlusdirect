@@ -825,7 +825,6 @@ class Gravity_Forms_Multilingual{
      * @return array
      */
     function gform_pre_render( $form, $ajax ) {
-
         global $sitepress;
 
         // Cache
@@ -844,12 +843,14 @@ class Gravity_Forms_Multilingual{
                     $form[$key] = icl_t( 'gravity_form',
                             "{$form['id']}_{$key}",
                             $form[$key] );
+                  
                 }
             } else {
                 if ( isset( $form[$parts[0]][$parts[1]] ) && $form[$parts[0]][$parts[1]] != '' ) {
                     $form[$parts[0]][$parts[1]] = icl_t( 'gravity_form',
                             "{$form['id']}_{$key}",
                             $form[$parts[0]][$parts[1]] );
+                    
                 }
             }
         }
