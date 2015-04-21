@@ -37,7 +37,7 @@
             add_filter('manage_edit-cpt_career_columns', array($this,'add_cpt_career_columns'));   
             add_action('manage_cpt_career_posts_custom_column',  array($this,'add_cpt_career_custom_columns'),10,2);
 
-            add_filter( 'admin_post_thumbnail_html', array($this,'add_featured_image_instruction'));
+            //add_filter( 'admin_post_thumbnail_html', array($this,'add_featured_image_instruction'));
 
 
 

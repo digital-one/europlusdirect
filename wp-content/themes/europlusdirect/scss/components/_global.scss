@@ -79,6 +79,12 @@
 .bottom-right{
 	@include abs-pos(auto,0.9375rem,0,auto);
 }
+img{
+	&.aligncenter{
+		margin:0 auto;
+		display: block;
+	}
+}
 .icon-header{
 	padding-top:100px;
 	position: relative;

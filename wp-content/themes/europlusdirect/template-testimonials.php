@@ -24,6 +24,7 @@ $args = array(
  get_template_part('partials/content','testimonial-loop' ); 
  endwhile;
  endif;
+ wp_reset_query();
  ?>
 </div>
 <div class="skewed-bg"></div>

@@ -51,20 +51,21 @@
     						)
   						)
 					);
-					if($questions = get_posts($args)):
-						?>
-				<dl>
-					<?php
-						foreach($questions as $question):
-							?>
-					<dt><h5><?php echo $question->post_title ?></h5></dt>
-				<dd><?php echo $question->post_content ?></dd>	
-				<?php
-				endforeach;
-				?>
-			</dl>
-		<?php endif ?>
-			</dd>
+					query_posts($args);
+	if(have_posts()) :
+		?>
+		<dl>
+			<?php
+		while (have_posts() ) : the_post(); 
+			 get_template_part('partials/content','question-loop' ); 
+endwhile;
+?>
+</dl>
+<?php
+endif;
+wp_reset_query();
+?>
+</dd>
 		<?php endforeach ?>
 	<?php endif ?>
 		</dl>
