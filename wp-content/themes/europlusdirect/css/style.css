@@ -3421,7 +3421,7 @@ button:focus, a:focus {
 .box-shadow ($string: 0px 0px 5px 0px rgba(50, 50, 50, 0.75));
 */
 /* line 9, ../scss/helpers/_placeholders.scss */
-#header #home-link, #header .top nav#controls a, #footer a.linkedin span, #nav .menu-toggle, .gold-partner, .anchor-up, .slick-prev, .slick-next, ul.slick-dots li button, #lenovo header h2 span.logo {
+#header #home-link, #header .top nav#controls a, #footer a.linkedin span, #nav .menu-toggle, .gold-partner, .anchor-up, .slick-prev, .slick-next, ul.slick-dots li button, #lenovo header h2 span.logo, .person footer a:link, .person footer a:visited {
   overflow: hidden;
   text-indent: -10000px;
 }
@@ -3433,7 +3433,7 @@ figure, ul, li, p, blockquote {
 }
 
 /* line 25, ../scss/helpers/_placeholders.scss */
-#callback .gform_body {
+#callback .gform_body, .person footer {
   overflow: hidden;
   zoom: 1;
 }
@@ -4002,7 +4002,7 @@ body {
   background-color: white;
 }
 /* line 9, ../scss/components/_container.scss */
-.page #main {
+.page #main, .single #main {
   padding-top: 115px;
 }
 /* line 12, ../scss/components/_container.scss */
@@ -5266,8 +5266,17 @@ ul.slick-dots li.slick-active button {
 .skewed .section-inner {
   background-color: transparent;
 }
+/* line 103, ../scss/components/_sections.scss */
+.header-banner .section-inner {
+  background-position: top center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
-/* line 104, ../scss/components/_sections.scss */
+/* line 107, ../scss/components/_sections.scss */
 .section-content {
   padding: 30px 30px 40px;
   background-color: transparent;
@@ -5283,55 +5292,60 @@ ul.slick-dots li.slick-active button {
   display: block;
   width: 100%;
 }
-/* line 106, ../scss/components/_sections.scss */
+/* line 109, ../scss/components/_sections.scss */
 .overlap-top .section-content {
   padding: 80px 30px 30px;
 }
-/* line 109, ../scss/components/_sections.scss */
+/* line 112, ../scss/components/_sections.scss */
 .overlap-bottom .section-content {
   padding: 30px 30px 120px;
 }
-/* line 112, ../scss/components/_sections.scss */
+/* line 115, ../scss/components/_sections.scss */
 .skewed .section-content {
   padding-top: 30px;
 }
-/* line 115, ../scss/components/_sections.scss */
+/* line 118, ../scss/components/_sections.scss */
 .two-box .section-content {
   padding: 0;
   margin-top: -20px;
   margin-bottom: -20px;
 }
-/* line 120, ../scss/components/_sections.scss */
+/* line 123, ../scss/components/_sections.scss */
 .first .section-content {
   padding-top: 20px;
 }
-/* line 123, ../scss/components/_sections.scss */
+/* line 126, ../scss/components/_sections.scss */
 .insets .section-content {
   padding: 20px 10px;
 }
-/* line 126, ../scss/components/_sections.scss */
+/* line 129, ../scss/components/_sections.scss */
 .gutters .section-content {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 130, ../scss/components/_sections.scss */
+/* line 133, ../scss/components/_sections.scss */
 .anchor-bottom .section-content {
   padding-bottom: 90px;
 }
-/* line 133, ../scss/components/_sections.scss */
+/* line 136, ../scss/components/_sections.scss */
 .video-link .section-content {
   padding-top: 150px;
   padding-bottom: 150px;
 }
-/* line 141, ../scss/components/_sections.scss */
+/* line 140, ../scss/components/_sections.scss */
+.header-banner .section-content {
+  padding-top: 150px !important;
+  padding-bottom: 150px !important;
+}
+/* line 148, ../scss/components/_sections.scss */
 .straight-top .section-content {
   padding-top: 90px;
 }
-/* line 144, ../scss/components/_sections.scss */
+/* line 151, ../scss/components/_sections.scss */
 .straight-top.anchor .section-content {
   padding-top: 140px;
 }
-/* line 152, ../scss/components/_sections.scss */
+/* line 159, ../scss/components/_sections.scss */
 .two-box .section-content:before, .two-box .section-content:after {
   content: "";
   display: block;
@@ -5350,11 +5364,11 @@ ul.slick-dots li.slick-active button {
   -o-transform: skewY(3.5deg);
   transform: skewY(3.5deg);
 }
-/* line 161, ../scss/components/_sections.scss */
+/* line 168, ../scss/components/_sections.scss */
 .bg-image .two-box .section-content:before, .bg-image .two-box .section-content:after {
   background-color: white;
 }
-/* line 165, ../scss/components/_sections.scss */
+/* line 172, ../scss/components/_sections.scss */
 .two-box .section-content:after {
   top: auto;
   right: auto;
@@ -5362,121 +5376,121 @@ ul.slick-dots li.slick-active button {
   left: 0;
   position: absolute;
 }
-/* line 167, ../scss/components/_sections.scss */
+/* line 174, ../scss/components/_sections.scss */
 .no-bottom-angle .two-box .section-content:after, .skewed .two-box .section-content:after {
   display: none;
 }
 
-/* line 174, ../scss/components/_sections.scss */
+/* line 181, ../scss/components/_sections.scss */
 .blue .nested-section-content {
   background-color: #054990;
   color: white;
 }
-/* line 177, ../scss/components/_sections.scss */
+/* line 184, ../scss/components/_sections.scss */
 .blue .nested-section-content a:link, .blue .nested-section-content a:visited {
   color: #fff000;
 }
-/* line 180, ../scss/components/_sections.scss */
+/* line 187, ../scss/components/_sections.scss */
 .blue .nested-section-content a:hover, .blue .nested-section-content a:active {
   color: white;
 }
-/* line 184, ../scss/components/_sections.scss */
+/* line 191, ../scss/components/_sections.scss */
 .red .nested-section-content {
   background-color: #eb222f;
   color: white;
 }
-/* line 187, ../scss/components/_sections.scss */
+/* line 194, ../scss/components/_sections.scss */
 .red .nested-section-content a:link, .red .nested-section-content a:visited {
   color: #fff000;
 }
-/* line 190, ../scss/components/_sections.scss */
+/* line 197, ../scss/components/_sections.scss */
 .red .nested-section-content a:hover, .red .nested-section-content a:active {
   color: white;
 }
-/* line 194, ../scss/components/_sections.scss */
+/* line 201, ../scss/components/_sections.scss */
 .black .nested-section-content {
   background-color: black;
   color: white;
 }
-/* line 197, ../scss/components/_sections.scss */
+/* line 204, ../scss/components/_sections.scss */
 .black .nested-section-content a:link, .black .nested-section-content a:visited {
   color: #fff000;
 }
-/* line 200, ../scss/components/_sections.scss */
+/* line 207, ../scss/components/_sections.scss */
 .black .nested-section-content a:hover, .black .nested-section-content a:active {
   color: white;
 }
-/* line 204, ../scss/components/_sections.scss */
+/* line 211, ../scss/components/_sections.scss */
 .grey .nested-section-content {
   background-color: #d6d9dd;
   color: #1d1d1d;
 }
 
-/* line 209, ../scss/components/_sections.scss */
+/* line 216, ../scss/components/_sections.scss */
 .section-content-inner {
   padding: 0 10px;
 }
-/* line 211, ../scss/components/_sections.scss */
+/* line 218, ../scss/components/_sections.scss */
 #video-link .section-content-inner {
   padding: 80px 30px 80px;
 }
-/* line 214, ../scss/components/_sections.scss */
+/* line 221, ../scss/components/_sections.scss */
 .no-bottom-angle .section-content-inner {
   padding-bottom: 80px;
 }
-/* line 217, ../scss/components/_sections.scss */
+/* line 224, ../scss/components/_sections.scss */
 .bg-image .section-content-inner {
   padding: 90px 30px 80px;
 }
 
-/* line 222, ../scss/components/_sections.scss */
+/* line 229, ../scss/components/_sections.scss */
 .nested-section-content.section-content-inner {
   padding: 80px 30px 50px;
 }
-/* line 224, ../scss/components/_sections.scss */
+/* line 231, ../scss/components/_sections.scss */
 .nested-section-content.section-content-inner.second {
   padding: 40px 30px 70px;
 }
 
-/* line 229, ../scss/components/_sections.scss */
+/* line 236, ../scss/components/_sections.scss */
 .section-content-wrap {
   position: relative;
   z-index: 4;
 }
 
-/* line 233, ../scss/components/_sections.scss */
+/* line 240, ../scss/components/_sections.scss */
 .section-footer {
   display: block;
   width: 100%;
 }
 
-/* line 238, ../scss/components/_sections.scss */
+/* line 245, ../scss/components/_sections.scss */
 .nested-section {
   width: 100%;
   display: block;
 }
-/* line 240, ../scss/components/_sections.scss */
+/* line 247, ../scss/components/_sections.scss */
 .nested-section.spacing {
   margin-bottom: 20px;
 }
-/* line 243, ../scss/components/_sections.scss */
+/* line 250, ../scss/components/_sections.scss */
 .nested-section.right {
   margin-bottom: 0;
 }
-/* line 248, ../scss/components/_sections.scss */
+/* line 255, ../scss/components/_sections.scss */
 .nested-section figure {
   z-index: 1;
   position: relative;
   width: 100%;
   display: block;
 }
-/* line 254, ../scss/components/_sections.scss */
+/* line 261, ../scss/components/_sections.scss */
 .nested-section figure.bg-image:before {
   content: "";
   display: block;
   padding-top: 60%;
 }
-/* line 259, ../scss/components/_sections.scss */
+/* line 266, ../scss/components/_sections.scss */
 .nested-section figure.bg-image .image {
   background-color: #8d8d8d;
   top: 0;
@@ -5491,32 +5505,32 @@ ul.slick-dots li.slick-active button {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 267, ../scss/components/_sections.scss */
+/* line 274, ../scss/components/_sections.scss */
 .nested-section .content-wrap {
   background-color: #eb222f;
   color: white;
   position: relative;
 }
-/* line 271, ../scss/components/_sections.scss */
+/* line 278, ../scss/components/_sections.scss */
 .nested-section .content-wrap h3, .nested-section .content-wrap h4 {
   color: white;
   font-size: 24px;
   font-size: 1.5rem;
 }
-/* line 275, ../scss/components/_sections.scss */
+/* line 282, ../scss/components/_sections.scss */
 .nested-section .content-wrap h4 {
   font-size: 16px;
   font-size: 1rem;
 }
-/* line 278, ../scss/components/_sections.scss */
+/* line 285, ../scss/components/_sections.scss */
 .nested-section .content-wrap a:link, .nested-section .content-wrap a:visited {
   color: #fff000;
 }
-/* line 281, ../scss/components/_sections.scss */
+/* line 288, ../scss/components/_sections.scss */
 .nested-section .content-wrap a:hover, .nested-section .content-wrap a:active {
   color: white;
 }
-/* line 285, ../scss/components/_sections.scss */
+/* line 292, ../scss/components/_sections.scss */
 .nested-section .content-wrap.angle:before {
   content: "";
   display: block;
@@ -5535,7 +5549,7 @@ ul.slick-dots li.slick-active button {
   -o-transform: skewY(-3.5deg);
   transform: skewY(-3.5deg);
 }
-/* line 297, ../scss/components/_sections.scss */
+/* line 304, ../scss/components/_sections.scss */
 .nested-section .content-wrap .content {
   width: 100%;
   display: block;
@@ -5543,75 +5557,75 @@ ul.slick-dots li.slick-active button {
   position: relative;
   z-index: 3;
 }
-/* line 307, ../scss/components/_sections.scss */
+/* line 314, ../scss/components/_sections.scss */
 .nested-section.white .content-wrap {
   background-color: white;
   color: #1d1d1d;
 }
-/* line 311, ../scss/components/_sections.scss */
+/* line 318, ../scss/components/_sections.scss */
 .nested-section.white .content-wrap.angle:before {
   background-color: white;
 }
-/* line 315, ../scss/components/_sections.scss */
+/* line 322, ../scss/components/_sections.scss */
 .nested-section.white .content-wrap a:link, .nested-section.white .content-wrap a:visited {
   color: #eb222f;
 }
-/* line 318, ../scss/components/_sections.scss */
+/* line 325, ../scss/components/_sections.scss */
 .nested-section.white .content-wrap a:hover, .nested-section.white .content-wrap a:active {
   color: #1d1d1d;
 }
-/* line 324, ../scss/components/_sections.scss */
+/* line 331, ../scss/components/_sections.scss */
 .nested-section.blue .content-wrap {
   background-color: #054990;
   color: white;
 }
-/* line 327, ../scss/components/_sections.scss */
+/* line 334, ../scss/components/_sections.scss */
 .nested-section.blue .content-wrap h3, .nested-section.blue .content-wrap h4 {
   color: white;
 }
-/* line 330, ../scss/components/_sections.scss */
+/* line 337, ../scss/components/_sections.scss */
 .nested-section.blue .content-wrap a:link, .nested-section.blue .content-wrap a:visited {
   color: #fff000;
 }
-/* line 333, ../scss/components/_sections.scss */
+/* line 340, ../scss/components/_sections.scss */
 .nested-section.blue .content-wrap a:hover, .nested-section.blue .content-wrap a:active {
   color: white;
 }
-/* line 337, ../scss/components/_sections.scss */
+/* line 344, ../scss/components/_sections.scss */
 .nested-section.blue .content-wrap.angle:before {
   background-color: #054990;
 }
-/* line 344, ../scss/components/_sections.scss */
+/* line 351, ../scss/components/_sections.scss */
 .nested-section.grey .content-wrap {
   background-color: #d6d9dd;
   color: #1d1d1d;
 }
-/* line 347, ../scss/components/_sections.scss */
+/* line 354, ../scss/components/_sections.scss */
 .nested-section.grey .content-wrap h3, .nested-section.grey .content-wrap h4 {
   color: #054990;
 }
-/* line 351, ../scss/components/_sections.scss */
+/* line 358, ../scss/components/_sections.scss */
 .nested-section.grey .content-wrap.angle:before {
   background-color: #d6d9dd;
 }
-/* line 358, ../scss/components/_sections.scss */
+/* line 365, ../scss/components/_sections.scss */
 .nested-section.light-grey .content-wrap {
   background-color: #eef0f3;
   color: #1d1d1d;
 }
-/* line 361, ../scss/components/_sections.scss */
+/* line 368, ../scss/components/_sections.scss */
 .nested-section.light-grey .content-wrap h3, .nested-section.light-grey .content-wrap h4 {
   color: #054990;
 }
-/* line 365, ../scss/components/_sections.scss */
+/* line 372, ../scss/components/_sections.scss */
 .nested-section.light-grey .content-wrap.angle:before {
   background-color: #eef0f3;
 }
-/* line 371, ../scss/components/_sections.scss */
+/* line 378, ../scss/components/_sections.scss */
 .nested-section footer {
   text-align: center;
 }
-/* line 373, ../scss/components/_sections.scss */
+/* line 380, ../scss/components/_sections.scss */
 .nested-section footer img {
   margin: 0 auto;
   max-width: 80px;
@@ -5620,158 +5634,163 @@ ul.slick-dots li.slick-active button {
 
 /* Medium Breakpoint */
 @media only screen and (min-width: 48rem) {
-  /* line 385, ../scss/components/_sections.scss */
+  /* line 392, ../scss/components/_sections.scss */
   .section {
     padding: 0 50px;
   }
-  /* line 387, ../scss/components/_sections.scss */
+  /* line 394, ../scss/components/_sections.scss */
   .section.offset-up {
     margin-top: -50px;
   }
 
-  /* line 391, ../scss/components/_sections.scss */
+  /* line 398, ../scss/components/_sections.scss */
   .section-content {
     padding: 50px 30px 70px;
   }
-  /* line 393, ../scss/components/_sections.scss */
+  /* line 400, ../scss/components/_sections.scss */
   .first .section-content {
     padding-top: 50px !important;
   }
-  /* line 396, ../scss/components/_sections.scss */
+  /* line 403, ../scss/components/_sections.scss */
+  .header-banner .section-content {
+    padding-top: 150px !important;
+    padding-bottom: 150px !important;
+  }
+  /* line 407, ../scss/components/_sections.scss */
   .gutters .section-content {
     padding-left: 5%;
     padding-right: 5%;
   }
-  /* line 400, ../scss/components/_sections.scss */
+  /* line 411, ../scss/components/_sections.scss */
   .overlap-bottom .section-content {
     padding-top: 30px;
     padding-bottom: 100px;
   }
-  /* line 404, ../scss/components/_sections.scss */
+  /* line 415, ../scss/components/_sections.scss */
   .insets .section-content {
     padding: 50px 30px;
   }
-  /* line 407, ../scss/components/_sections.scss */
+  /* line 418, ../scss/components/_sections.scss */
   .skewed .section-content {
     padding-top: 50px;
   }
-  /* line 410, ../scss/components/_sections.scss */
+  /* line 421, ../scss/components/_sections.scss */
   .skewed.behind .section-content {
     padding-top: 100px;
   }
-  /* line 413, ../scss/components/_sections.scss */
+  /* line 424, ../scss/components/_sections.scss */
   .straight-top .section-content {
     padding-top: 110px;
   }
-  /* line 416, ../scss/components/_sections.scss */
+  /* line 427, ../scss/components/_sections.scss */
   #video-link .section-content {
     padding: 200px 30px 200px !important;
   }
 
-  /* line 420, ../scss/components/_sections.scss */
+  /* line 431, ../scss/components/_sections.scss */
   .section-content-inner {
     padding: 80px 30px 100px;
   }
 
-  /* line 425, ../scss/components/_sections.scss */
+  /* line 436, ../scss/components/_sections.scss */
   .nested-section.spacing {
     margin-bottom: 60px;
   }
-  /* line 429, ../scss/components/_sections.scss */
+  /* line 440, ../scss/components/_sections.scss */
   .nested-section .content-wrap h3, .nested-section .content-wrap h4 {
     font-size: 24px;
     font-size: 1.5rem;
   }
-  /* line 432, ../scss/components/_sections.scss */
+  /* line 443, ../scss/components/_sections.scss */
   .nested-section .content-wrap h4 {
     font-size: 18px;
     font-size: 1.125rem;
   }
-  /* line 435, ../scss/components/_sections.scss */
+  /* line 446, ../scss/components/_sections.scss */
   .nested-section .content-wrap .content {
     padding: 20px 30px 30px;
   }
-  /* line 440, ../scss/components/_sections.scss */
+  /* line 451, ../scss/components/_sections.scss */
   .nested-section footer img {
     max-width: 100%;
   }
 
-  /* line 446, ../scss/components/_sections.scss */
+  /* line 457, ../scss/components/_sections.scss */
   .nested-section-content.section-content-inner {
     padding: 100px 50px 60px;
   }
-  /* line 448, ../scss/components/_sections.scss */
+  /* line 459, ../scss/components/_sections.scss */
   .nested-section-content.section-content-inner.second {
     padding: 60px 50px 80px;
   }
 }
 /* Large Breakpoint */
 @media only screen and (min-width: 64rem) {
-  /* line 460, ../scss/components/_sections.scss */
+  /* line 471, ../scss/components/_sections.scss */
   .section {
     padding: 0 70px;
   }
-  /* line 462, ../scss/components/_sections.scss */
+  /* line 473, ../scss/components/_sections.scss */
   .section.two-box {
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  /* line 468, ../scss/components/_sections.scss */
+  /* line 479, ../scss/components/_sections.scss */
   .insets .section-content {
     padding: 50px 60px;
   }
-  /* line 471, ../scss/components/_sections.scss */
+  /* line 482, ../scss/components/_sections.scss */
   .gutters .section-content {
     padding-left: 10%;
     padding-right: 10%;
   }
 
-  /* line 476, ../scss/components/_sections.scss */
+  /* line 487, ../scss/components/_sections.scss */
   .section-content-inner {
     padding: 0 30px;
   }
-  /* line 478, ../scss/components/_sections.scss */
+  /* line 489, ../scss/components/_sections.scss */
   .insets .section-content-inner {
     padding: 80px;
   }
 
-  /* line 483, ../scss/components/_sections.scss */
+  /* line 494, ../scss/components/_sections.scss */
   .nested-section-content.section-content-inner {
     padding: 100px 50px 120px;
   }
-  /* line 485, ../scss/components/_sections.scss */
+  /* line 496, ../scss/components/_sections.scss */
   .nested-section-content.section-content-inner.second {
     padding: 140px 50px 80px;
   }
 
-  /* line 491, ../scss/components/_sections.scss */
+  /* line 502, ../scss/components/_sections.scss */
   .nested-section.spacing {
     margin-bottom: 0;
   }
-  /* line 495, ../scss/components/_sections.scss */
+  /* line 506, ../scss/components/_sections.scss */
   .nested-section .content-wrap .content {
     padding: 25px;
   }
 }
 /* XLarge Breakpoint */
 @media only screen and (min-width: 125rem) {
-  /* line 506, ../scss/components/_sections.scss */
+  /* line 517, ../scss/components/_sections.scss */
   .section {
     padding: 0 70px;
   }
 
-  /* line 510, ../scss/components/_sections.scss */
+  /* line 521, ../scss/components/_sections.scss */
   .insets .section-content {
     padding: 50px 70px;
   }
-  /* line 513, ../scss/components/_sections.scss */
+  /* line 524, ../scss/components/_sections.scss */
   .video-link .section-content {
     padding-top: 200px;
     padding-bottom: 200px;
   }
 
-  /* line 520, ../scss/components/_sections.scss */
+  /* line 531, ../scss/components/_sections.scss */
   .nested-section .content-wrap .content {
     padding: 20px 30px 30px;
   }
@@ -6645,94 +6664,133 @@ ul.slick-dots li.slick-active button {
 }
 
 /* line 20, ../scss/templates/_about.scss */
+#careers p {
+  font-size: 14px;
+  font-size: 0.875rem;
+}
+/* line 23, ../scss/templates/_about.scss */
 #careers h4 {
   margin-bottom: 10px;
 }
-/* line 23, ../scss/templates/_about.scss */
-#careers span {
+/* line 26, ../scss/templates/_about.scss */
+#careers header {
+  margin-bottom: 15px;
+}
+/* line 29, ../scss/templates/_about.scss */
+#careers article {
   display: block;
   width: 100%;
   padding: 15px;
   background-color: white;
 }
-/* line 28, ../scss/templates/_about.scss */
-#careers span p {
-  font-size: 14px;
-  font-size: 0.875rem;
-}
 
-/* line 33, ../scss/templates/_about.scss */
+/* line 37, ../scss/templates/_about.scss */
 #awards {
   text-align: center;
 }
-/* line 35, ../scss/templates/_about.scss */
+/* line 39, ../scss/templates/_about.scss */
 #awards .award {
   color: white;
   padding: 0;
 }
-/* line 38, ../scss/templates/_about.scss */
+/* line 42, ../scss/templates/_about.scss */
 #awards .award p {
   font-size: 14px;
   font-size: 0.875rem;
 }
-/* line 42, ../scss/templates/_about.scss */
+/* line 46, ../scss/templates/_about.scss */
 #awards .columns {
   margin-bottom: 60px;
 }
-/* line 44, ../scss/templates/_about.scss */
+/* line 48, ../scss/templates/_about.scss */
 #awards .columns:last-child {
   margin-bottom: 0;
 }
-/* line 48, ../scss/templates/_about.scss */
+/* line 52, ../scss/templates/_about.scss */
 #awards figure {
   margin: 0 auto 30px;
   max-width: 200px;
 }
-/* line 51, ../scss/templates/_about.scss */
+/* line 55, ../scss/templates/_about.scss */
 #awards figure.large {
   max-width: 300px;
   margin-bottom: 40px;
 }
-/* line 55, ../scss/templates/_about.scss */
+/* line 59, ../scss/templates/_about.scss */
 #awards figure img {
   width: 100%;
   height: auto;
 }
-/* line 61, ../scss/templates/_about.scss */
+/* line 65, ../scss/templates/_about.scss */
 #awards h3 {
   margin-bottom: 40px;
 }
-/* line 64, ../scss/templates/_about.scss */
+/* line 68, ../scss/templates/_about.scss */
 #awards h4 {
   margin-bottom: 10px;
 }
-/* line 68, ../scss/templates/_about.scss */
+/* line 72, ../scss/templates/_about.scss */
 #awards a:link, #awards a:visited {
   color: #fff000;
 }
-/* line 71, ../scss/templates/_about.scss */
+/* line 75, ../scss/templates/_about.scss */
 #awards a:hover, #awards a:active {
   color: white;
 }
 
+/* line 83, ../scss/templates/_about.scss */
+.person footer li {
+  float: left;
+  padding-right: 10px;
+}
+/* line 88, ../scss/templates/_about.scss */
+.person footer a:link, .person footer a:visited {
+  width: 32px;
+  height: 32px;
+  display: block;
+  background-color: #8d8d8d;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  color: white;
+  background-image: url("../images/mail.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+/* line 102, ../scss/templates/_about.scss */
+.person footer a.linkedin {
+  background-image: url("../images/linkedin-icon.png");
+}
+/* line 105, ../scss/templates/_about.scss */
+.person footer a:hover, .person footer a:active {
+  background-color: #054990;
+}
+
 @media only screen and (min-width: 48rem) {
-  /* line 81, ../scss/templates/_about.scss */
+  /* line 115, ../scss/templates/_about.scss */
   #awards .columns {
     margin-bottom: 0;
   }
-  /* line 84, ../scss/templates/_about.scss */
+  /* line 118, ../scss/templates/_about.scss */
   #awards .award {
     padding: 0 20px;
     margin: 0;
   }
-  /* line 88, ../scss/templates/_about.scss */
+  /* line 122, ../scss/templates/_about.scss */
   #awards h4 {
     font-size: 16px;
     font-size: 1rem;
   }
 }
 @media only screen and (min-width: 64rem) {
-  /* line 98, ../scss/templates/_about.scss */
+  /* line 132, ../scss/templates/_about.scss */
   #awards .award {
     padding: 0 20px;
   }

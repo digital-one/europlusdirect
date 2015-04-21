@@ -17,17 +17,21 @@
 	}
 }
 #careers{
+	p{
+		@include font-size(14px);
+	}
 	h4{
 		margin-bottom: 10px;
 	}
-	span{
+	header{
+		margin-bottom: 15px;
+	}
+	article{
 		display: block;
 		width: 100%;
 		padding:15px;
 		background-color: white;
-		p{
-			@include font-size(14px);
-		}
+		
 	}
 }
 #awards{
@@ -73,7 +77,37 @@
 		}
 	}
 }
-
+.person{
+	footer{
+		@extend %clearfix;
+		li{
+			float:left;
+			padding-right:10px;
+		}
+		a{
+			&:link,&:visited{
+				width:32px;
+				height:32px;
+				display: block;
+				background-color: $grey;
+				@include border-radius(50%);
+				color: white;
+				@extend %ir;
+				background-image:url('../images/mail.png');
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: 20px 20px;
+				@include transition(background-color .3s ease);
+			}
+			&.linkedin{
+				background-image:url('../images/linkedin-icon.png');
+			}
+			&:hover,&:active{
+				background-color: $blue;
+			}
+		}
+	}
+}
 
 @media #{$medium-up} { 
 

@@ -25,7 +25,7 @@
     );
     ?></nav>
 <p><a href="" class="linkedin" title="Follow us on Linkedin"><?php _e('Follow us on','epd_theme'); ?> <span>Linkedin</span></a></p>
-    <p><small>&copy;<?php echo date('Y') ?> Europlus Direct Limited. All rights reserved. <a href=""><?php _e('Terms &amp; Conditions','epd_theme'); ?></a> | <a href=""><?php _e('Privacy Statement','epd_theme'); ?></a></small></p>
+    <p><small>&copy;<?php echo date('Y') ?> <?php _e('Europlus Direct Limited. All rights reserved.','epd_theme'); ?> <a href=""><?php _e('Terms &amp; Conditions','epd_theme'); ?></a> | <a href=""><?php _e('Privacy Statement','epd_theme'); ?></a></small></p>
 </div>
 </div>
 </footer>

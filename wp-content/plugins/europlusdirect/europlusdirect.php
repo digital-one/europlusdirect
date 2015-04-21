@@ -20,6 +20,8 @@
             add_action( 'init', array($this,'register_cpt_award'), 0 );
              add_action( 'init', array($this,'register_cpt_team'), 0 );
              add_action( 'init', array($this,'register_cpt_question'), 0 );
+             add_action( 'init', array($this,'register_cpt_career'), 0 );
+             add_action( 'init', array($this,'register_cpt_download'), 0 );
             //register custom taxonomies
              add_action('init',array($this,'register_cptax_question_category'),0);
             //columns
@@ -29,9 +31,14 @@
             add_filter('manage_edit-cpt_testimonial_columns', array($this,'add_cpt_testimonial_columns'));   
             add_action('manage_cpt_testimonial_posts_custom_column',  array($this,'add_cpt_testimonial_custom_columns'),10,2); 
 
+            add_filter('manage_edit-cpt_award_columns', array($this,'add_cpt_award_columns'));   
+            add_action('manage_cpt_award_posts_custom_column',  array($this,'add_cpt_award_custom_columns'),10,2); 
 
-//add_filter("manage_edit-enlightenment_columns", "add_cpt_enlightenment_columns");   
-//add_action("manage_enlightenment_posts_custom_column",  "add_cpt_enlightenment_custom_columns",10,2); 
+            add_filter('manage_edit-cpt_career_columns', array($this,'add_cpt_career_columns'));   
+            add_action('manage_cpt_career_posts_custom_column',  array($this,'add_cpt_career_custom_columns'),10,2);
+
+            add_filter( 'admin_post_thumbnail_html', array($this,'add_featured_image_instruction'));
+
 
 
             //rewrites
@@ -56,6 +63,88 @@
     }
 
      // Register Custom Post Type
+
+
+    function register_cpt_career() {
+
+        $labels = array(
+            'name'                => _x( 'Careers', 'Post Type General Name', 'text_domain' ),
+            'singular_name'       => _x( 'Vacancy', 'Post Type Singular Name', 'text_domain' ),
+            'menu_name'           => __( 'Careers', 'text_domain' ),
+            'parent_item_colon'   => __( 'Parent Vacancy:', 'text_domain' ),
+            'all_items'           => __( 'All Vacancies', 'text_domain' ),
+            'view_item'           => __( 'View Vacancy', 'text_domain' ),
+            'add_new_item'        => __( 'Add New Vacancy', 'text_domain' ),
+            'add_new'             => __( 'Add New Vacancy', 'text_domain' ),
+            'edit_item'           => __( 'Edit Vacancy', 'text_domain' ),
+            'update_item'         => __( 'Update Vacancy', 'text_domain' ),
+            'search_items'        => __( 'Search Vacancies', 'text_domain' ),
+            'not_found'           => __( 'Not found', 'text_domain' ),
+            'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+        );
+        $args = array(
+            'label'               => __( 'cpt_career', 'text_domain' ),
+            'description'         => __( 'Careers', 'text_domain' ),
+            'labels'              => $labels,
+            'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail','page-attributes' ),
+            //'taxonomies'          => array( 'ciet_cuisine','ciet_allergen','ciet_diet' ),
+            'hierarchical'        => true,
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'show_in_nav_menus'   => true,
+            'show_in_admin_bar'   => true,
+            'menu_position'       => 5,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'rewrite'             => array('slug' => 'careers/archive'),
+            'exclude_from_search' => false,
+            'publicly_queryable'  => true,
+            'capability_type'     => 'page',
+        );
+        register_post_type( 'cpt_career', $args );
+    }
+
+      function register_cpt_download() {
+
+        $labels = array(
+            'name'                => _x( 'Downloads', 'Post Type General Name', 'text_domain' ),
+            'singular_name'       => _x( 'Download', 'Post Type Singular Name', 'text_domain' ),
+            'menu_name'           => __( 'Downloads', 'text_domain' ),
+            'parent_item_colon'   => __( 'Parent Download:', 'text_domain' ),
+            'all_items'           => __( 'All Downloads', 'text_domain' ),
+            'view_item'           => __( 'View Download', 'text_domain' ),
+            'add_new_item'        => __( 'Add New Download', 'text_domain' ),
+            'add_new'             => __( 'Add New Download', 'text_domain' ),
+            'edit_item'           => __( 'Edit Download', 'text_domain' ),
+            'update_item'         => __( 'Update Download', 'text_domain' ),
+            'search_items'        => __( 'Search Downloads', 'text_domain' ),
+            'not_found'           => __( 'Not found', 'text_domain' ),
+            'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+        );
+        $args = array(
+            'label'               => __( 'cpt_download', 'text_domain' ),
+            'description'         => __( 'Downloads', 'text_domain' ),
+            'labels'              => $labels,
+            'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail','page-attributes' ),
+            //'taxonomies'          => array( 'ciet_cuisine','ciet_allergen','ciet_diet' ),
+            'hierarchical'        => true,
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'show_in_nav_menus'   => true,
+            'show_in_admin_bar'   => true,
+            'menu_position'       => 5,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'rewrite'             => array('slug' => 'downloads/archive'),
+            'exclude_from_search' => false,
+            'publicly_queryable'  => true,
+            'capability_type'     => 'page',
+        );
+        register_post_type( 'cpt_download', $args );
+    }
+
 
     function register_cpt_news() {
 
@@ -219,6 +308,10 @@
         register_post_type( 'cpt_team', $args );
     }
 
+
+  
+
+
         function register_cpt_question() {
 
         $labels = array(
@@ -241,7 +334,7 @@
             'description'         => __( 'Questions', 'text_domain' ),
             'labels'              => $labels,
             'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail','page-attributes' ),
-            //'taxonomies'          => array( 'ciet_cuisine','ciet_allergen','ciet_diet' ),
+            'taxonomies'          => array( 'cptax_question_category','post_tag' ),
             'hierarchical'        => true,
             'public'              => true,
             'show_ui'             => true,
@@ -254,7 +347,7 @@
             'rewrite'             => array('slug' => 'questions/archive'),
             'exclude_from_search' => false,
             'publicly_queryable'  => true,
-            'capability_type'     => 'page',
+            'capability_type'     => 'post'
         );
         register_post_type( 'cpt_question', $args );
     }
@@ -288,13 +381,13 @@
             );
             $args = array(
                 'labels'                     => $labels,
-                'hierarchical'               => false,
+                'hierarchical'               => true,
                 'public'                     => true,
                 'show_ui'                    => true,
                 'show_admin_column'          => true,
                 'show_in_nav_menus'          => true,
                 'show_tagcloud'              => true,
-                'rewrite'                    => $rewrite,
+                'rewrite'                    => $rewrite
             );
             register_taxonomy( 'cptax_question_category', array( 'cpt_question' ), $args );
 
@@ -322,7 +415,7 @@ function add_cpt_team_custom_columns($column,$id){
             } 
 
 
-              function add_cpt_testimonial_columns($columns){
+  function add_cpt_testimonial_columns($columns){
         $columns = array(
            "cb" => "<input type=\"checkbox\" />",
            "title" => "Reference",
@@ -345,6 +438,50 @@ function add_cpt_testimonial_custom_columns($column,$id){
                }
             } 
 
+  function add_cpt_award_columns($columns){
+        $columns = array(
+           "cb" => "<input type=\"checkbox\" />",
+           "title" => "Title",
+           "awards" => "Awards",
+           "date" => "Publish Date"
+        );  
+         return $columns;
+        }
+
+function add_cpt_award_custom_columns($column,$id){
+        global $post;
+        switch ($column){
+            case "awards":
+            echo get_field('awards',$id);
+            break;
+               }
+            } 
+
+  function add_cpt_career_columns($columns){
+        $columns = array(
+           "cb" => "<input type=\"checkbox\" />",
+           "title" => "Vacancy",
+           "location" => "Location",
+           "salary" => "Salary",
+           "date" => "Publish Date"
+        );  
+         return $columns;
+        }
+
+function add_cpt_career_custom_columns($column,$id){
+        global $post;
+        switch ($column){
+            case "location":
+            echo get_field('career_location',$id);
+            break;
+            case "salary":
+            echo get_field('career_salary',$id);
+            break;
+               }
+            } 
+
+
+
         function add_cpt_news_rewrite_rules(){ 
             add_rewrite_rule('^news/archive/pge/([^/]*)/?', 'index.php?pagename=news&pge=$matches[1]','top');
 		}
@@ -360,6 +497,7 @@ function image_sizes(){
     add_image_size( 'slide', 1920, 1200, true );
     add_image_size( 'large-image', 620, 370, true );
     add_image_size( 'medium-image', 410, 246, true );
+    add_image_size( 'award-logo', 497, 324, true );
     set_post_thumbnail_size( 150, 150,false); 
 }
 
@@ -370,11 +508,25 @@ function custom_image_sizes($sizes) {
   $myimgsizes = array(
   "slide" => __("Slide"),
     "large-image" => __("Large Image"),
-    "medium-image" => __("Medium Image")
+    "medium-image" => __("Medium Image"),
+    "award-logo" => __("Award Logo")
   );
      
        $newimgsizes = array_merge($sizes, $myimgsizes);
       return $newimgsizes;
+}
+
+
+function add_featured_image_instruction( $content ) {
+ global $post;
+ $post_type = $post->post_type;
+ if(is_admin()):
+ if($post_type=='cpt_award'):
+     return $content .= '<p>JPG, 497px width by 324px height</p>';
+ endif;
+
+ return $content;
+ endif;
 }
 
 //

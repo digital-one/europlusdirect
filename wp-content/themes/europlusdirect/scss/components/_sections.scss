@@ -100,6 +100,9 @@
 	.skewed &{
 		background-color: transparent;
 	}
+	.header-banner &{
+		@include bg-cover;
+	}
 }
 .section-content{
 	padding:30px 30px 40px;
@@ -133,6 +136,10 @@
 	.video-link &{
 		padding-top:150px;
 		padding-bottom:150px;
+	}
+	.header-banner &{
+		padding-top:150px !important;
+		padding-bottom:150px !important;
 	}
 	background-color: transparent;
 	@include bg-cover;
@@ -392,6 +399,10 @@
 		padding:50px 30px 70px;
 		.first &{
 			padding-top:50px !important;
+		}
+		.header-banner &{
+			padding-top:150px !important;
+			padding-bottom:150px !important;
 		}
 		.gutters &{
 			padding-left:5%;

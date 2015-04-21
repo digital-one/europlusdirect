@@ -6,7 +6,7 @@
 #main{
 	background-color: white;
 	//padding-top: $spacing;
-	.page &{
+	.page &,.single &{
 		padding-top: 115px;
 	}
 	.home &, .page-template-template-lenovo &, .page-template-template-ibm &{
