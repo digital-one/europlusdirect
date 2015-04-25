@@ -3421,7 +3421,7 @@ button:focus, a:focus {
 .box-shadow ($string: 0px 0px 5px 0px rgba(50, 50, 50, 0.75));
 */
 /* line 9, ../scss/helpers/_placeholders.scss */
-#header #home-link, #header .top nav#controls a, #footer a.linkedin span, #nav .menu-toggle, .gold-partner, .anchor-up, .slick-prev, .slick-next, ul.slick-dots li button, #lenovo header h2 span.logo, .person footer a:link, .person footer a:visited {
+#header #home-link, #footer a.linkedin span, #nav .menu-toggle, .gold-partner, .anchor-up, .slick-prev, .slick-next, ul.slick-dots li button, #lenovo header h2 span.logo, .person footer a:link, .person footer a:visited {
   overflow: hidden;
   text-indent: -10000px;
 }
@@ -3524,6 +3524,19 @@ body {
   bottom: auto;
   left: auto;
   position: absolute;
+  /*
+  li{
+  	margin-left: 35px;
+  }
+  a{
+  	display: block;
+  	width:25px;
+  	height:25px;
+  	@extend %ir;
+  	background:url('../images/chat-icon.png') center center no-repeat;
+  	background-size:100% auto;
+  }
+  */
 }
 /* line 2, ../scss/helpers/mixins/_inline-menu.scss */
 #header .top nav#controls li, #header .top nav#controls a {
@@ -3538,47 +3551,90 @@ body {
 #header .top nav#controls li a {
   display: block;
 }
-/* line 62, ../scss/components/_header.scss */
-#header .top nav#controls li {
-  margin-left: 35px;
+
+/* line 80, ../scss/components/_header.scss */
+#lang_sel_click ul ul {
+  width: auto;
+  display: inline-block;
+  left: -5px;
+  border: none;
 }
-/* line 65, ../scss/components/_header.scss */
-#header .top nav#controls a {
-  display: block;
-  width: 25px;
-  height: 25px;
-  background: url("../images/chat-icon.png") center center no-repeat;
-  background-size: 100% auto;
+/* line 85, ../scss/components/_header.scss */
+#lang_sel_click ul ul a, #lang_sel_click ul ul a:visited {
+  height: 24px;
+  line-height: 24px;
+  padding: 0 25px;
+  background-color: #03305f;
+  color: white !important;
+  border: none;
+}
+/* line 92, ../scss/components/_header.scss */
+#lang_sel_click ul ul a img.iclflag, #lang_sel_click ul ul a:visited img.iclflag {
+  left: 5px;
+}
+/* line 96, ../scss/components/_header.scss */
+#lang_sel_click ul ul a:hover, #lang_sel_click ul ul a:active {
+  color: #fff000 !important;
+}
+/* line 101, ../scss/components/_header.scss */
+#lang_sel_click li {
+  display: inline-block;
+  width: auto;
+}
+/* line 105, ../scss/components/_header.scss */
+#lang_sel_click a.lang_sel_sel {
+  background-color: transparent !important;
+  border: none;
+  color: white;
+  font-size: 11px;
+  font-size: 0.6875rem;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  padding: 0 25px;
+}
+/* line 114, ../scss/components/_header.scss */
+#lang_sel_click a.lang_sel_sel:hover, #lang_sel_click a.lang_sel_sel:active {
+  color: white;
+}
+/* line 118, ../scss/components/_header.scss */
+#lang_sel_click img.iclflag {
+  margin: 6px 0;
+  top: 0;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  position: absolute;
 }
 
 @media only screen and (min-width: 48rem) {
-  /* line 81, ../scss/components/_header.scss */
+  /* line 130, ../scss/components/_header.scss */
   #header #home-link {
-    width: 148.85px;
-    height: 143px;
+    width: 171.75px;
+    height: 165px;
     margin: 4px 0 0;
   }
-  /* line 87, ../scss/components/_header.scss */
+  /* line 136, ../scss/components/_header.scss */
   #header .top nav#contacts {
     width: 50%;
     margin: 0 auto;
   }
-  /* line 92, ../scss/components/_header.scss */
+  /* line 141, ../scss/components/_header.scss */
   #header .top nav#contacts ul li a {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 64rem) {
-  /* line 108, ../scss/components/_header.scss */
+  /* line 156, ../scss/components/_header.scss */
   .minimise #header #home-link {
     width: 120px;
   }
-  /* line 112, ../scss/components/_header.scss */
+  /* line 160, ../scss/components/_header.scss */
   #header .top {
     padding: 10px 50px;
   }
-  /* line 114, ../scss/components/_header.scss */
+  /* line 162, ../scss/components/_header.scss */
   #header .top nav#contacts {
     width: 100%;
     width: 100%;
@@ -3598,7 +3654,7 @@ body {
     position: relative;
     right: 50%;
   }
-  /* line 119, ../scss/components/_header.scss */
+  /* line 167, ../scss/components/_header.scss */
   #header .top nav#contacts ul li:after {
     content: "";
     width: 1px;
@@ -3612,28 +3668,28 @@ body {
     margin-top: -7px;
     background-color: white;
   }
-  /* line 129, ../scss/components/_header.scss */
+  /* line 177, ../scss/components/_header.scss */
   #header .top nav#contacts ul li:last-child:after {
     background-color: transparent;
   }
-  /* line 133, ../scss/components/_header.scss */
+  /* line 181, ../scss/components/_header.scss */
   #header .top nav#contacts ul li a {
     line-height: 25px;
     height: 25px;
   }
-  /* line 136, ../scss/components/_header.scss */
+  /* line 184, ../scss/components/_header.scss */
   .minimise #header .top nav#contacts ul li a {
     font-size: 12px;
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 125rem) {
-  /* line 150, ../scss/components/_header.scss */
+  /* line 198, ../scss/components/_header.scss */
   #header #home-link {
     width: 229px;
     height: 220px;
   }
-  /* line 157, ../scss/components/_header.scss */
+  /* line 205, ../scss/components/_header.scss */
   #header .top nav#contacts ul a {
     font-size: 18px;
     font-size: 1.125rem;
@@ -3884,10 +3940,10 @@ body {
     height: 70px;
     line-height: 70px;
     display: block;
-    font-size: 18px;
-    font-size: 1.125rem;
-    padding: 0 20px;
-    padding: 0 2.2vw;
+    font-size: 16px;
+    font-size: 1rem;
+    padding: 0 10px;
+    padding: 0 1.5vw;
   }
   /* line 86, ../scss/components/_navigation.scss */
   .minimise #nav a {

@@ -46,8 +46,7 @@ endwhile;
 endif;
 ?>
 </section>
-	<nav id="anchor-nav"><ul><li><a href="">Lenovo</a></li><li><a href="">IBM support</a></li><li><a href="">Multi-country</a></li><li><a href="">Software support</a></li><li><a href="">Multi-manufacturer support</a></li><li><a href="">FAQs</a></li></ul></nav>
-									        													      
+<?php get_template_part('inc.anchor-nav'); ?>									        													      
 </div>
 <!--/slider-->
 <main id="main">
@@ -64,16 +63,17 @@ endif;
 </div>
 </section>
 <!--/intro-->
-<!--lenovo-->
+<!--lenovo service packs-->
 <?php
+global $page;
 $page = get_post(65);
-echo $page->post_content;
+include( locate_template( 'partials/content-home-lenovo-service-packs.php' ));
 ?>
-<!--/lenovo-->
+<!--/lenovo service packs-->
 <!--IBM-->
 <?php
 $page = get_post(67);
-echo $page->post_content;
+include( locate_template( 'partials/content-home-ibm-service-packs.php' ));
 ?>
 <!--/IBM-->
 <?php get_template_part('callback-form') ?>
@@ -81,38 +81,40 @@ echo $page->post_content;
 <!--Multi country support-->
 <?php
 $page = get_post(69);
-echo $page->post_content;
+include( locate_template( 'partials/content-home-multi-country-maintenance.php' ));
 ?>
-	<!--/Multi country support-->
-	<!--two column split-->
-<?php
+
+	<section class="section white-yellow-heading row two-box centered-text">
+<div class="section-content">
+<div class="row">
+<!--/Software support-->
+<?php 
 $page = get_post(71);
-echo $page->post_content;
+include( locate_template( 'partials/content-home-software-support.php' ));
 ?>
-
-<!--/two column split-->
-<!--faqs-->
-<section id="faqs" class="section yellow-white-heading light-yellow row skewed centered-text spaced">
-	<div class="section-inner">
-	<div class="section-content">
-		<?php
-$page = get_post(75);
-echo $page->post_content;
+<!--/Software support-->
+<!--Just ask-->
+<?php 
+$page = get_post(431);
+include( locate_template( 'partials/content-home-just-ask.php' ));
 ?>
-<div class="slider">
-<div class="slide"><p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet?</p></div>
-<div class="slide"><p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet?</p></div>
-
+<!--/Just ask-->
 </div>
-</div>
-<div class="skewed-bg"></div>
 </div>
 </section>
+<!--/two column split-->
+
+<!--faqs-->
+<?php
+$page = get_post(75);
+include( locate_template( 'partials/content-home-faqs.php' ));
+?>
+
 <!--/faqs-->
 <!--video-->
 <?php
 $page = get_post(73);
-echo $page->post_content;
+include( locate_template( 'partials/content-home-speak-language.php' ));
 ?>
 <!--/video-->
 

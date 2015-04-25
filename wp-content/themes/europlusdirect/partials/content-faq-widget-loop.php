@@ -1,0 +1,1 @@
+<div class="slide"><p><a href="<?php echo get_permalink(11) ?>/?q=<?php the_ID() ?>"><?php the_title() ?></a></p></div>

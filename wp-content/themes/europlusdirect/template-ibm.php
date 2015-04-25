@@ -48,48 +48,160 @@ endwhile;
 endif;
 ?>
 </section>
-	<nav id="anchor-nav"><ul><li><a href="">Lenovo</a></li><li><a href="">IBM support</a></li><li><a href="">Multi-country</a></li><li><a href="">Software support</a></li><li><a href="">Multi-manufacturer support</a></li><li><a href="">FAQs</a></li></ul></nav>
-									        													      
+<?php get_template_part('inc.anchor-nav'); ?>									        													      
 </div>
 <!--/slider-->
 <main id="main">
 <section id="intro" class="section row first gutters">
 	<div class="section-inner">
 		<div class="section-content">
-
-		
-<p>You’ve invested time and money in choosing and deciding on your IBM equipment, whether that’s servers, desktop computers, laptops or a combination. Therefore, it makes sense to cover that kit–and your business–with a quality warranty, service or maintenance product from Europlus Direct.</p>
-<p>You can protect your business by extending the current warranty on a newly bought IBM machine with our <a href="#">In-warranty upgrade</a>.  Or, if you have older IBM equipment or you’re looking for more robust predictive maintenance and repair support, you might need our IBM <a href="#">Service Suite Maintenance Contract</a>, which can also cover non-IBM kit. </p>
-<p>Need IBM software support? <a href="#">Find out more</a>. </p>
-<p>Using machines from different manufacturers? Then our IBM <a href="#">Multi-Manufacturer Services</a>  could be the option for you.</p>
-<p>Whatever your reasons for protecting your IBM equipment and of course, your commercial interests, Europlus Direct can help. Not sure what your exact IBM needs are? We are more than happy to help, so why not <a href="#">contact us</a> today.</p>
+<?php the_content() ?>
 </div>
-
 </div>
 </div>
 </section>
 <!--service pack options-->
-<?php echo get_translation_content(array('en'=>212,'de'=>198)); ?>
+<?php  $page = get_post(212);  ?>
+<section id="ibm" class="section row blue-yellow-heading red-sub-heads red-btns pac skewed centered-text grey top offset-down">
+<div class="section-inner">
+<div class="section-content"><header class="row">
+<div class="small-12 columns">
+<h2 class="block-heading"><span class="line"><span class="block"><?php echo $page->post_title ?></span></span></h2>
+</div>
+</header>
+<div class="pac-intro">
+<?php echo $page->post_content ?>
+</div>
+</div>
+<div class="skewed-bg"> </div>
+</div>
+</section>
+<?php  $page = get_post(529);  ?>
+<section class="section row  light-grey above offset-down straight-top gutters">
+<div class="section-inner">
+<div class="section-content">
+<h3 class="centered-text"><?php echo $page->post_title ?></h3>
+<div class="row" style="position: relative;">
+<div class="small-12 large-8 large-offset-2 columns end">
+<?php echo $page->post_content ?>
+</div>
+</div>
+</div>
+</div>
+</section>
 <!--/service pack options-->
 <!-- IBM ServicePac -->
-<?php echo get_translation_content(array('en'=>214,'de'=>198)); ?>
-	<!--/IBM ServicePac-->
+<?php  $page = get_post(214);  ?>
+<section class="section row grey insets skewed straight-top spaced anchor"><a class="anchor-up">Top</a>
+<div class="section-inner">
+<div class="section-content">
+<div class="row">
+<div class="small-12 large-6 columns">
+<div class="nested-section blue spacing">
+<div class="ribbon yellow"><span class="inner"><?php echo get_field('ribbon_label',$page->ID) ?></span></div>
+<?php list($src,$w,$h) = wp_get_attachment_image_src(get_post_thumbnail_id($page->ID),'large-image'); ?>
+<figure><img class="alignnone size-full wp-image-184" src="<?php echo $src; ?>" alt="" /></figure>
+<div class="content-wrap angle">
+<div class="content">
+<h3><?php echo $page->post_content ?></h3>
+
+</div>
+</div>
+</div>
+</div>
+<?php  $page = get_post(532);  ?>
+<div class="small-12 large-6 columns">
+<div class="nested-section white blue-sub-heads">
+<header class="icon-header">
+<?php list($src,$w,$h) = wp_get_attachment_image_src(get_field('icon',$page->ID),'full'); ?>
+<div class="icon"><img class="alignnone size-full wp-image-104" src="<?php echo $src ?>" alt="" /></div>
+</header>
+<h3><?php echo $page->post_content ?></h3>
+</div>
+</div>
+</div>
+<?php  $page = get_post(214);  ?>
+<div class="row blue-btns">
+<div class="small-12 columns"><footer class="insets-footer">
+<p><a class="read-more" href="<?php echo get_button_link($page->ID)?>"><span class="inner"><?php echo get_field('button_label',$page->ID) ?></span></a></p>
+</footer></div>
+</div>
+</div>
+<div class="skewed-bg"> </div>
+</div>
+</section>
+<!--/IBM ServicePac-->
 <!-- IBM Service Suite Maintenance Contract -->
-<?php echo get_translation_content(array('en'=>218,'de'=>198)); ?>
-	<!--/IBM Service Suite Maintenance Contract-->
-
+<section class="section row  insets light-grey skewed above">
+<div class="section-inner">
+<div class="section-content">
+<div class="row">
+	<?php  $page = get_post(218);  ?>
+<div class="small-12 large-6 columns">
+<div class="nested-section white blue-sub-heads spacing">
+<div class="ribbon yellow"><span class="inner"><?php echo get_field('ribbon_label',$page->ID);?></span></div>
+<?php list($src,$w,$h) = wp_get_attachment_image_src(get_post_thumbnail_id($page->ID),'large-image'); ?>
+<figure><img class="alignnone size-full wp-image-184" src="<?php echo $src ?>" alt=""  /></figure>
+<div class="content-wrap angle">
+<div class="content">
+<h2><?php echo $page->post_title ?></h2>
+<?php echo $page->post_content ?>
+</div>
+</div>
+</div>
+</div>
+<?php  $page = get_post(543);  ?>
+<div class="small-12 large-6 columns">
+<div class="nested-section white">
+<header class="icon-header">
+<?php list($src,$w,$h) = wp_get_attachment_image_src(get_field('icon',$page->ID),'full'); ?>
+<div class="icon"><img class="alignnone size-full wp-image-104" src="<?php echo $src ?>" alt="" /></div>
+<h3><?php echo $page->post_title ?></h3>
+<?php echo $page->post_content ?>
+</header></div>
+</div>
+</div>
+<div class="row blue-btns">
+	<?php  $page = get_post(218);  ?>
+<div class="small-12 columns"><footer class="insets-footer">
+<?php echo get_field('footer',$page->ID) ?>
+<p><a class="read-more" href="<?php echo get_button_link($page->ID)?>"><span class="inner"><?php echo get_field('button_label',$page->ID) ?></span></a></p>
+</footer></div>
+</div>
+</div>
+<div class="skewed-bg"> </div>
+</div>
+</section>
+<!--/IBM Service Suite Maintenance Contract-->
 <!--two column split-->
-<?php echo get_translation_content(array('en'=>225,'de'=>198)); ?>
-
+<section class="section row two-box">
+<div class="section-content">
+<div class="row">
+	<!-- ibm software services -->
+		<?php  $page = get_post(225);  ?>
+<div class="small-12 large-6 columns blue-yellow-heading grey blue-sub-heads red-btns">
+<div class="nested-section-content section-content-inner">
+<?php include( locate_template( 'partials/content-block-heading.php' )); ?>
+<?php echo $page->post_content ?>
+<footer class="text-right yellow-btns"><a class="read-more" href="<?php echo get_button_link($page->ID)?>"><span class="inner"><?php echo get_field('button_label',$page->ID) ?></span></a></footer></div>
+</div>
+<!-- /ibm software services -->
+<!--multi manufacturer services-->
+<div class="small-12 large-6 columns black yellow-blue-heading red-btns white-sub-heads">
+<div class="nested-section-content section-content-inner second">
+<?php include( locate_template( 'partials/content-block-heading.php' )); ?>
+<?php echo $page->post_content ?>
+<footer class="text-right yellow-btns"><a class="read-more" href="<?php echo get_button_link($page->ID)?>"><span class="inner"><?php echo get_field('button_label',$page->ID) ?></span></a></footer></div>
+</div>
+</div>
+</div>
+</section>
+<!--/multi manufacturer services-->
 <!--/two column split-->
 
 <!--call back form-->
 <?php get_template_part('callback-form'); ?>
 <!--/call back form-->
-
-
-
-
 <?php endwhile ?>
 <?php endif ?>
 <?php get_footer() ?> 

@@ -59,6 +59,7 @@
 		nav#controls{
 			@include abs-pos(0,0,auto,auto);
 			@include inline-menu;
+			/*
 			li{
 				margin-left: 35px;
 			}
@@ -70,8 +71,56 @@
 				background:url('../images/chat-icon.png') center center no-repeat;
 				background-size:100% auto;
 			}
+			*/
 		}
 	}
+}
+#lang_sel_click{
+	ul{
+		ul{
+			width:auto;
+			display: inline-block;
+			left:-5px;
+			border:none;
+			a,a:visited{
+				height:24px;
+				line-height: 24px;
+				padding:0 25px;
+				background-color: darken($blue,10%);
+				color:white !important;
+				border:none;
+				img.iclflag{
+					left:5px;
+				}
+			}
+			a:hover,a:active{
+				color: $yellow !important;
+			}
+		}
+	}
+	li{
+		display: inline-block;
+		width:auto;
+	}
+	a.lang_sel_sel{
+		background-color: transparent !important;
+		border:none;
+		color: white;
+		@include font-size(11px);
+		height:24px;
+		line-height: 24px;
+		position: relative;
+		padding: 0 25px;
+		&:hover,&:active{
+			color: white;
+		}
+	}
+	img.iclflag{
+		margin: 6px 0;
+		@include abs-pos(0,auto,auto,0);
+
+	}
+
 }
 
 
@@ -79,8 +128,8 @@
 
 	#header{
 		#home-link{
-			width: ((229px / 100) * 65);
-			height: ((220px /100) * 65);
+			width: ((229px / 100) * 75);
+			height: ((220px /100) * 75);
 			margin:4px 0 0 ;
 		}
 		.top{
@@ -98,7 +147,6 @@
 		}
 	}
 }
-
 
 
 @media #{$large-up} { 

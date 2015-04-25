@@ -25,6 +25,12 @@ add_filter( 'excerpt_more', 'new_excerpt_more' );
 add_filter("gform_confirmation_anchor", create_function("","return false;"));
 
 
+function get_button_link($page_id){
+  $url = get_field('button_url',$page_id);
+  $link = !empty($url) ? $url : get_field('button_link',$page_id);
+  return $link;
+}
+
 
 function get_excerpt($post,$count){
 
