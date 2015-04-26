@@ -32,6 +32,40 @@ var _handleShown = true,
 	_scrollDirection,
 	_currentPathName;
 
+$.each(Offices, function(office, geolocation) {
+     console.log(office);
+    if($('#'+office).length){
+      $('#'+office).gmap({
+
+       markers: [{'latitude': geolocation.lat,'longitude': geolocation.lng}],
+        markerFile: Marker,
+       markerWidth:82,
+        markerHeight:94,
+        markerAnchorX:41,
+        markerAnchorY:94,
+        zoom:14
+     });
+    }
+    /*   $($('#'+office).gmap({
+
+       markers: [{'latitude': geolocation.lat,'longitude': geolocation.lng}],
+    //    markerFile: _marker,
+        markerWidth:44,
+        markerHeight:67,
+        markerAnchorX:22,
+        markerAnchorY:67,
+        zoom:2
+    */  
+
+  });
+  
+
+
+
+ 
+//  console.log(Offices['australia'].lat);
+
+
 
 //Map
 

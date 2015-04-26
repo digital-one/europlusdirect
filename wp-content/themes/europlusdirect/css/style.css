@@ -6899,32 +6899,53 @@ ul.slick-dots li.slick-active button {
 }
 
 /* line 1, ../scss/templates/_contact.scss */
-.map {
+.map-box {
   display: block;
   width: 100%;
   background-color: #d6d9dd;
+  overflow: hidden;
+  position: relative;
 }
-/* line 5, ../scss/templates/_contact.scss */
-.map:before {
+/* line 7, ../scss/templates/_contact.scss */
+.map-box:before {
   content: "";
   padding-top: 60%;
   display: inline-block;
 }
+/* line 12, ../scss/templates/_contact.scss */
+.map-box .map {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
 
-/* line 11, ../scss/templates/_contact.scss */
+/* line 16, ../scss/templates/_contact.scss */
+.gm-style img {
+  max-width: none;
+}
+
+/* line 17, ../scss/templates/_contact.scss */
+.gm-style label {
+  width: auto;
+  display: inline;
+}
+
+/* line 18, ../scss/templates/_contact.scss */
 .location {
   margin-bottom: 1.25rem;
 }
 
 @media only screen and (min-width: 48rem) {
-  /* line 18, ../scss/templates/_contact.scss */
-  .map:before {
+  /* line 25, ../scss/templates/_contact.scss */
+  .map-box:before {
     padding-top: 80%;
   }
 }
 @media only screen and (min-width: 64rem) {
-  /* line 28, ../scss/templates/_contact.scss */
-  .map:before {
+  /* line 35, ../scss/templates/_contact.scss */
+  .map-box:before {
     padding-top: 60%;
   }
 }

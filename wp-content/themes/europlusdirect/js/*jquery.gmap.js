@@ -12,7 +12,7 @@
 $.fn.gmap = function(options){
 	
 	var defaults = {
-		markers: [{'latitude': 0,'longitude': 0,'name': 'London','content': 'Argentum<br />2 Queen Caroline Street<br />Hammersmith<br />London<br />W6 9DX'}],
+		markers: [{'latitude': 51.490405,'longitude': -0.232193,'name': 'London','content': 'Argentum<br />2 Queen Caroline Street<br />Hammersmith<br />London<br />W6 9DX'}],
 		markerFile:  'marker.png',
 		markerWidth:97,
 		markerHeight:95,
@@ -20,22 +20,15 @@ $.fn.gmap = function(options){
 		markerAnchorY:86,
 		centerLat:0,
 		centerLng:0,
-		zoom: 7,
+		zoom: 15,
 		mapType: 'ROADMAP',
 		travelMode: 'DRIVING',
 		route: false,
 		scrollwheel: false,
-		draggable: true,
+		draggable: false,
 		routeWayPoints: [],
 		routeOrigin: [],
-		routeDestination: [],
-		panControl:true,
-         zoomControl:true,
-         mapTypeControl:true,
-         scaleControl:true,
-         streetViewControl:true,
-         overviewMapControl:true,
-         rotateControl:true
+		routeDestination: []
 		};
 	
 	var options = $.extend(defaults,options);
@@ -66,18 +59,11 @@ $.fn.gmap = function(options){
 		var mapOptions = {
 				zoom: options.zoom, // This number can be set to define the initial zoom level of the map
 				center: latlng,
-				scrollwheel: options.scrollwheel,
-				draggable: options.draggable,
-				panControl:true,
-         zoomControl:true,
-         mapTypeControl:true,
-         scaleControl:true,
-         streetViewControl:true,
-         overviewMapControl:true,
-         rotateControl:true,
+				scrollwheel: false,
+				draggable: false,
 				mapTypeId: eval('google.maps.MapTypeId.'+ options.mapType),// This value can be set to define the map type ROADMAP/SATELLITE/HYBRID/TERRAIN
 				//styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"},{"saturation":-100},{"lightness":20}]},{"featureType":"road","elementType":"all","stylers":[{"visibility":"on"},{"saturation":-100},{"lightness":40}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"saturation":-10},{"lightness":30}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":-60},{"lightness":10}]},{"featureType":"landscape.natural","elementType":"all","stylers":[{"visibility":"simplified"},{"saturation":-60},{"lightness":60}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"},{"saturation":-100},{"lightness":60}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"},{"saturation":-100},{"lightness":60}]}]
-				//styles: [{"stylers":[{"saturation":-100},{"gamma":1}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"saturation":50},{"gamma":0},{"hue":"#50a5d1"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#333333"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"weight":0.5},{"color":"#333333"}]},{"featureType":"transit.station","elementType":"labels.icon","stylers":[{"gamma":1},{"saturation":50}]}]
+				styles: [{"stylers":[{"saturation":-100},{"gamma":1}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.text","stylers":[{"visibility":"off"}]},{"featureType":"poi.place_of_worship","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"water","stylers":[{"visibility":"on"},{"saturation":50},{"gamma":0},{"hue":"#50a5d1"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#333333"}]},{"featureType":"road.local","elementType":"labels.text","stylers":[{"weight":0.5},{"color":"#333333"}]},{"featureType":"transit.station","elementType":"labels.icon","stylers":[{"gamma":1},{"saturation":50}]}]
 			};
 		var map = new google.maps.Map(document.getElementById($id),mapOptions);
 		

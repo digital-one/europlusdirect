@@ -1,20 +1,27 @@
-.map{
+.map-box{
 	display:block;
 	width:100%;
 	background-color: $light-grey;
+	overflow:hidden;
+	position:relative;
 	&:before{
 		content:"";
 		padding-top:60%;
 		display: inline-block;
 	}
+	.map{
+		@include abs-pos(0,0,0,0);
+	}
 }
+ .gm-style img { max-width: none; }
+      .gm-style label { width: auto; display: inline; }
 .location{
 	margin-bottom:1.25rem;
 }
 
 @media #{$medium-up} { 
 
-	.map{
+	.map-box{
 		&:before{
 			padding-top:80%;
 		}
@@ -24,7 +31,7 @@
 
 @media #{$large-up} { 
 
-	.map{
+	.map-box{
 		&:before{
 			padding-top:60%;
 		}

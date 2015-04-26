@@ -65,7 +65,31 @@ function scripts_and_styles() {
 		wp_register_script( 'allscripts', get_stylesheet_directory_uri() . '/js/scripts.js', array(), null, true );
 		wp_enqueue_script( 'allscripts' );	
 		
+
 		
+
+
+		$args =  array(
+			'post_type' => 'cpt_office',
+			'post_status' => 'publish',
+			'order_by' => 'menu_order',
+			'order' => 'ASC'
+			);
+		$geolocations = array();
+
+		if($offices = get_posts($args)):
+			foreach($offices as $office):
+				$location = get_field('office_location',$office->ID);
+				$lat = $location['lat'];
+				$lng = $location['lng'];
+				$geolocations[$office->post_name] = array('lat' => $lat, 'lng' => $lng );
+				endforeach;
+			endif;
+		
+		//wp_localize_script( 'allscripts', 'Offices', array('lat' => 53.96036,'lng' =>-1.0816329,'marker'=> get_template_directory_uri().'/images/marker.png'));
+
+		wp_localize_script( 'allscripts', 'Offices', $geolocations);
+		wp_localize_script( 'allscripts', 'Marker', get_template_directory_uri().'/images/marker.png');
 	}
 }
 

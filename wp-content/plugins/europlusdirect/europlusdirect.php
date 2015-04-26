@@ -21,6 +21,7 @@
              add_action( 'init', array($this,'register_cpt_team'), 0 );
              add_action( 'init', array($this,'register_cpt_question'), 0 );
              add_action( 'init', array($this,'register_cpt_career'), 0 );
+             add_action( 'init', array($this,'register_cpt_office'), 0 );
              add_action( 'init', array($this,'register_cpt_download'), 0 );
             //register custom taxonomies
              add_action('init',array($this,'register_cptax_question_category'),0);
@@ -104,6 +105,48 @@
         );
         register_post_type( 'cpt_career', $args );
     }
+
+    function register_cpt_office() {
+
+        $labels = array(
+            'name'                => _x( 'Offices', 'Post Type General Name', 'text_domain' ),
+            'singular_name'       => _x( 'Office', 'Post Type Singular Name', 'text_domain' ),
+            'menu_name'           => __( 'Offices', 'text_domain' ),
+            'parent_item_colon'   => __( 'Parent Office:', 'text_domain' ),
+            'all_items'           => __( 'All Offices', 'text_domain' ),
+            'view_item'           => __( 'View Office', 'text_domain' ),
+            'add_new_item'        => __( 'Add New Office', 'text_domain' ),
+            'add_new'             => __( 'Add New Office', 'text_domain' ),
+            'edit_item'           => __( 'Edit Office', 'text_domain' ),
+            'update_item'         => __( 'Update Office', 'text_domain' ),
+            'search_items'        => __( 'Search Offices', 'text_domain' ),
+            'not_found'           => __( 'Not found', 'text_domain' ),
+            'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+        );
+        $args = array(
+            'label'               => __( 'cpt_office', 'text_domain' ),
+            'description'         => __( 'Offices', 'text_domain' ),
+            'labels'              => $labels,
+            'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail','page-attributes' ),
+            //'taxonomies'          => array( 'ciet_cuisine','ciet_allergen','ciet_diet' ),
+            'hierarchical'        => true,
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'show_in_nav_menus'   => true,
+            'show_in_admin_bar'   => true,
+            'menu_position'       => 5,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'rewrite'             => array('slug' => 'offices/archive'),
+            'exclude_from_search' => false,
+            'publicly_queryable'  => true,
+            'capability_type'     => 'page',
+        );
+        register_post_type( 'cpt_office', $args );
+    }
+
+
 
       function register_cpt_download() {
 
