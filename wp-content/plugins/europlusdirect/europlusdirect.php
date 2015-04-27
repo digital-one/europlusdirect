@@ -98,18 +98,18 @@ array(
             $map_locations = array();
             foreach($locations as $location):
                 $geocodes = get_field('location_geocodes',$location->ID);
-                $quotation_delivery_times = get_field('quotation_and_delivery_times',$location->ID);
-                $rssa = get_field('rssa',$location->ID);
+                $quotation_delivery_times = get_field('location_quotation_and_delivery_times',$location->ID);
+                $rssa = get_field('location_rssa',$location->ID);
+
+               // markers: [{'latitude': 0,'longitude': 0,'name': 'London','content': 'Argentum<br />2 Queen Caroline Street<br />Hammersmith<br />London<br />W6 9DX'}],
 
                 $map_locations[] = array(
-                    'location'=>$location->post_name,
-                    'lat' => $geocodes['lat'],
-                    'lng' => $geocodes['lng'],
-                    'quotation_delivery_times' => $quotation_delivery_times,
-                    'rssa' => $rssa
+                    'latitude' => $geocodes['lat'],
+                    'longitude' => $geocodes['lng'],
+                    'name'=>$location->post_name,
+                    'content' => $quotation_delivery_times
                     );
                 endforeach;
-                //echo 'ddddd';
                   echo json_encode($map_locations);
             endif;
             endif;

@@ -85,10 +85,30 @@ _menus.on('change',function(e){
                     $.ajax( {
                                   type: "POST",
                                   url: ajaxurl,
+                                  dataType: "json",
                                   data: dat,
-                                  success: function( response ) {
-                                    if (response) {
-                                      console.log(response);
+                                  success: function( data ) {
+                                    if (data) {
+                                      console.log(data.length);
+                                      _markers = [];
+                                     for(i=0;i<data.length;i++){
+                                     _markers[i] = {'latitude':data[i].latitude,'longitude':data[i].longitude,'name':data[i].name,'content':data[i].content};
+                                  //      markers: [{'latitude': 0,'longitude': 0,'name': 'London','content': 'Argentum<br />2 Queen Caroline Street<br />Hammersmith<br />London<br />W6 9DX'}],
+                                     }
+                                    console.log(_markers);
+                                     // console.log(response);
+                                     // console.log(response[0].location);
+
+                                     $('#location-map').gmap({
+       markers: _markers,
+       markerFile: Marker,
+       markerWidth:82,
+        markerHeight:94,
+        markerAnchorX:41,
+        markerAnchorY:94,
+        zoom:2
+    });
+
                                        _menus.removeAttr('disabled');
                                         //reload_menu();
                                     }
