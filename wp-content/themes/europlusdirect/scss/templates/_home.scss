@@ -174,6 +174,10 @@
 		width:100%;
 		display: block;
 		@extend %clearfix;
+		p{
+			color: white;
+			text-align: left;
+		}
 	}
 	.gfield_label{
 		display: none;
@@ -189,6 +193,7 @@
 	}
 	li{
 		margin-bottom: 8px;
+		@extend %clearfix;
 		&.right{
 			float:left !important;
 			width: 100%;
@@ -199,13 +204,17 @@
 		float:none;
 		margin:0;
 	}
-	input.medium{
+	input.medium,textarea{
 		width: 100%;
 		height: 40px;
-		background-color: rgba(255,255,255,.3);
+		background-color: rgba(112,112,112,.8);
 		border: none;
 		padding:0 10px;
 		color: white;
+	}
+	textarea{
+		resize: none;
+		height:264px;
 	}
 	.gform_ajax_spinner{
 		@include abs-pos(60px,auto,auto,0);
@@ -368,6 +377,11 @@
 		.gform_column{
 			width:50%;
 			float:left;
+			&.right{
+				.ginput_container{
+					float: right;
+				}
+			}
 		}
 		.ginput_container{
 			width: 98%;
@@ -385,10 +399,11 @@
 		input.medium{
 			height: 60px;
 		}
+
 		.gform_footer{
 			text-align: right;
 			padding-top:60px;
-			margin-top: -40px;
+			margin-top: -50px;
 			position: relative;
 			&:before{
 				content:"";

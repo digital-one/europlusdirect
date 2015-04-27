@@ -36,6 +36,10 @@
 				background-color: white;
 				color: $blue;
 			}
+			.grey-yellow-heading &{
+				background-color: $light-grey;
+				color: $blue;
+			}
 			.yellow-white-heading &{
 				background-color: $yellow;
 				color: $blue;
@@ -83,6 +87,12 @@ img{
 	&.aligncenter{
 		margin:0 auto;
 		display: block;
+		margin-bottom: 20px;
+	}
+	&.alignright{
+		float:none;
+		width:100%;
+		margin-bottom: 10px;
 	}
 }
 .icon-header{
@@ -368,6 +378,18 @@ figure{
 
 @media #{$medium-up} { 
 
+	img{
+		&.aligncenter{
+			margin:0 auto;
+			display: block;
+			margin-bottom: 20px;
+		}
+		&.alignright{
+			float: right;
+			width:auto;
+			margin-left:10px;
+		}
+	}
 	.spaced{
 		margin-bottom: 1.8752em;
 	}

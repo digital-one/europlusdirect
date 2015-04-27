@@ -2,6 +2,8 @@
 <div class="section-inner">
 <div class="section-content">
 <h3 class="centered-text"><?php echo $page->post_title ?></h3>
+<?php list($src,$w,$h) = wp_get_attachment_image_src(get_post_thumbnail_id($page->ID),'small-image'); ?>
+<img class="aligncenter" src="<?php echo $src ?>" />
 <?php echo $page->post_content ?>
 
 <footer class="clearfix">

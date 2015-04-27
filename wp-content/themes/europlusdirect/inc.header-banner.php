@@ -12,11 +12,11 @@
 	<div class="section-inner"<?php echo $style; ?>>
 		<div class="section-content">
 			<div class="row">
-<div class="small-12 large-6 columns">
+<?php /* <div class="small-12 large-6 columns">
 		
 
-</div>
-<div class="small-12 large-6 columns heading-right">
+</div> */ ?>
+<div class="small-12 large-12 columns heading-right">
 	<?php
 	if(get_field('header_caption')):
 		?>

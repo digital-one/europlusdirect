@@ -92,7 +92,7 @@ endif;
 <!--/service pack options-->
 <!-- IBM ServicePac -->
 <?php  $page = get_post(214);  ?>
-<section class="section row grey insets skewed straight-top spaced anchor"><a class="anchor-up">Top</a>
+<section id="<?php echo get_field('anchor_link',$page->ID); ?>" class="section row grey insets skewed straight-top spaced anchor"><a class="anchor-up">Top</a>
 <div class="section-inner">
 <div class="section-content">
 <div class="row">
@@ -132,7 +132,7 @@ endif;
 </section>
 <!--/IBM ServicePac-->
 <!-- IBM Service Suite Maintenance Contract -->
-<section class="section row  insets light-grey skewed above">
+<section id="<?php echo get_field('anchor_link',$page->ID); ?>" class="section row  insets light-grey skewed above">
 <div class="section-inner">
 <div class="section-content">
 <div class="row">
@@ -180,15 +180,16 @@ endif;
 	<!-- ibm software services -->
 		<?php  $page = get_post(225);  ?>
 <div class="small-12 large-6 columns blue-yellow-heading grey blue-sub-heads red-btns">
-<div class="nested-section-content section-content-inner">
+<div id="<?php echo get_field('anchor_link',$page->ID); ?>" class="nested-section-content section-content-inner">
 <?php include( locate_template( 'partials/content-block-heading.php' )); ?>
 <?php echo $page->post_content ?>
 <footer class="text-right yellow-btns"><a class="read-more" href="<?php echo get_button_link($page->ID)?>"><span class="inner"><?php echo get_field('button_label',$page->ID) ?></span></a></footer></div>
 </div>
 <!-- /ibm software services -->
 <!--multi manufacturer services-->
-<div class="small-12 large-6 columns black yellow-blue-heading red-btns white-sub-heads">
-<div class="nested-section-content section-content-inner second">
+<?php  $page = get_post(554);  ?>
+<div class="small-12 large-6 columns blue grey-yellow-heading red-btns white-sub-heads">
+<div id="<?php echo get_field('anchor_link',$page->ID); ?>" class="nested-section-content section-content-inner second">
 <?php include( locate_template( 'partials/content-block-heading.php' )); ?>
 <?php echo $page->post_content ?>
 <footer class="text-right yellow-btns"><a class="read-more" href="<?php echo get_button_link($page->ID)?>"><span class="inner"><?php echo get_field('button_label',$page->ID) ?></span></a></footer></div>

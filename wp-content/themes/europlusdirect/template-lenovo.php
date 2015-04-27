@@ -64,6 +64,7 @@ endif;
 </section>
 <!--/intro-->
 <!--Service pack options-->
+<?php $page = get_post(77); ?>
 <section id="lenovo" class="section row red-blue-heading red-sub-heads red-btns pac skewed centered-text grey top offset-down">
 <div class="section-inner">
 <div class="section-content"><header class="row">
@@ -72,10 +73,7 @@ endif;
 </div>
 </header>
 <div class="pac-intro">
-<?php
-	$page = get_post(77);
-	echo $page->post_content;
-?>
+<?php echo $page->post_content; ?>
 </div>
 </div>
 <div class="skewed-bg"> </div>
@@ -138,8 +136,8 @@ $page = get_post(77);
 </section>
 <!-- /servicepac options 1 & 2 -->
 <!-- maintenance contract -->
-<?php $page = get_post(497) ?>
-<section class="section row  insets red skewed above">
+<?php $page = get_post(83) ?>
+<section id="<?php echo get_field('anchor_link',$page->ID);?>" class="section row insets red skewed above">
 <div class="section-inner">
 <div class="section-content">
 <div class="row">
@@ -147,6 +145,7 @@ $page = get_post(77);
 <div class="nested-section white red-sub-heads spacing "><header class="ribbon-header">
 <div class="ribbon yellow"><span class="inner"><?php echo get_field('ribbon_label',$page->ID); ?></span></div>
 </header>
+<?php $page = get_post(497) ?>
 <?php list($src,$w,$h) = wp_get_attachment_image_src(get_post_thumbnail_id($page->ID),'large-image'); ?>
 <figure><img class="alignnone size-full wp-image-184" src="<?php echo $src ?>" alt=""  /></figure>
 <div class="content-wrap angle">
@@ -190,7 +189,7 @@ $alt = get_post_meta(get_field('icon',$page->ID),'_wp_attachment_image_alt', tru
 	<!-- multi country support -->
 <?php $page = get_post(186) ?>
 <div class="small-12 large-6 columns black blue-red-heading red-btns white-sub-heads">
-<div class="nested-section-content section-content-inner">
+<div id="<?php echo get_field('anchor_link',$page->ID);?>" class="nested-section-content section-content-inner" style="background-image:url('<?php echo get_template_directory_uri(); ?>/images/form-bg.jpg');">
 <?php include( locate_template( 'partials/content-block-heading.php' )); ?>
 <?php echo $page->post_content ?>
 <footer class="text-right"><a href="<?php echo get_button_link($page->ID)?>" class="read-more"><span class="inner"><?php echo get_field('button_label',$page->ID) ?></span></a></footer></div>
@@ -199,7 +198,7 @@ $alt = get_post_meta(get_field('icon',$page->ID),'_wp_attachment_image_alt', tru
 <!-- lenovo software services -->
 <?php $page = get_post(520) ?>
 <div class="small-12 large-6 columns red-blue-heading grey red-sub-heads red-btns">
-<div class="nested-section-content section-content-inner second">
+<div id="<?php echo get_field('anchor_link',$page->ID);?>" class="nested-section-content section-content-inner second">
 <?php include( locate_template( 'partials/content-block-heading.php' )); ?>
 <?php echo $page->post_content ?>
 <footer class="text-right"><a href="<?php echo get_button_link($page->ID)?>" class="read-more"><span class="inner"><?php echo get_field('button_label',$page->ID) ?></span></a></footer></div>

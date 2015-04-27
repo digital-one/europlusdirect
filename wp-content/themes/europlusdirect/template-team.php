@@ -36,7 +36,8 @@ wp_reset_query();
 </div>
 </section>
 <?php
-echo get_translation_content(array('en'=>336,'de'=>200));
+$page = get_post(336);
+include( locate_template( 'partials/content-culture.php' ));
 ?>
 <section id="careers" class="section row  light-grey above offset-up gutters">
 	<div class="section-inner">
@@ -66,6 +67,9 @@ echo get_translation_content(array('en'=>336,'de'=>200));
 </div>
 </section>
 <?php get_template_part('inc.awards'); ?>
+<!--call back form-->
+<?php get_template_part('callback-form'); ?>
+<!--/call back form-->
 <?php endwhile ?>
 <?php endif ?>
 <?php get_footer() ?> 

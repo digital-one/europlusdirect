@@ -33,7 +33,7 @@ var _handleShown = true,
 	_currentPathName;
 
 $.each(Offices, function(office, geolocation) {
-     console.log(office);
+
     if($('#'+office).length){
       $('#'+office).gmap({
 
@@ -60,23 +60,58 @@ $.each(Offices, function(office, geolocation) {
   });
   
 
+var _menus = $('#location-filter select');
+//console.log(_menus);
+_menus.on('change',function(e){
 
 
- 
-//  console.log(Offices['australia'].lat);
+//$(document).on('change',_menus,function(e) {
+
+       e.preventDefault();
+       var _menu = e.currentTarget;
+       
+        _menus.each(function(){
+          _hidden = $(this).attr('rel');
+          $('input[name='+_hidden+']').val($(this).val());
+        })
+     //   $('input[name='+_hidden+']').val($(_menu).val());
+        _menus.attr('disabled','disabled');
+      //  button.html('Saving');
+
+         var dat = $('#location-filter').find(':input').serialize();
+         // var dat = $('#location-filter').find("input").serialize();
+          console.log(dat);
+
+                    $.ajax( {
+                                  type: "POST",
+                                  url: ajaxurl,
+                                  data: dat,
+                                  success: function( response ) {
+                                    if (response) {
+                                      console.log(response);
+                                       _menus.removeAttr('disabled');
+                                        //reload_menu();
+                                    }
+                                    else {
+                                      // 
+                                        
+                                    }
+                                  }
+                                } );
+                });
 
 
-
+//$('#country_select').trigger('change');
 //Map
 
 redraw_location_map = function(){
 
-if($('#map').length){
- $('#map').html('');
+if($('#location-map').length){
+ $('#location-map').html('');
    // var _lat = Map.lat,
    //   _lng = Map.lng,
    //   _marker = Map.marker;
-$('#map').gmap({
+$('#location-map').gmap({
      //   markers: [{'latitude': _lat,'longitude': _lng}],
     //    markerFile: _marker,
         markerWidth:44,
@@ -165,7 +200,6 @@ _elms.each(function(){
    _maxHeight =  $(this).height();
   }
 })
-console.log(_maxHeight);
 _elms.css({ height: _maxHeight+'px'});
 _nestedElms.css({ height: _maxHeight+'px'});
 
@@ -262,11 +296,10 @@ $('a.load-posts').on('click',load_posts_click);
 $(window).on('scroll',load_posts);
 //$(window).on('scroll',sticky_nav);
 
-$('.anchor-up').on('click',function(e){
-
+$('.anchor-up,#anchor-nav a').on('click',function(e){
+ console.log('click');
 	e.preventDefault();
 	var _animationSpeed = 500,
-		_target = $(this).attr('href');
 		_target = '0';
 	 $.scrollTo( _target, _animationSpeed, {
           easing: 'easeInOutExpo',
@@ -275,6 +308,16 @@ $('.anchor-up').on('click',function(e){
 })
   
  
+$('#anchor-nav a').on('click',function(e){
+ console.log('click');
+  e.preventDefault();
+  var _animationSpeed = 500,
+    _target = $(this).attr('href');
+   $.scrollTo( _target, _animationSpeed, {
+          easing: 'easeInOutExpo',
+          offset: -180
+        });
+})
        
 
 

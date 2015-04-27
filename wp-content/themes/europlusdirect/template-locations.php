@@ -4,35 +4,54 @@
 
 	
 <main id="main">
-<section id="intro" class="section row first grey overlap-bottom gutters">
-	<div class="section-inner">
-		<div class="section-content">
-			<div class="row">
-
-<div class="small-12  columns heading-right">
-<h2 class="block-heading"><span><em>Wherever your</em></span><span><em>business is located...</em></span><span class="secondary"><em>were worldwide.</em></span></h2>
-	</div>
-</div>
-</div>
-
-</div>
-</div>
-</section>
+<?php get_template_part('inc.header-banner') ?>
 <section  id="locations" class="section row light-grey above skewed offset-up gutters overlap-bottom">
 	<div class="section-inner">
 <div class="section-content">
 
 <div class="row">
 <div class="small-12 columns">
-<form id="filter" method="post" action="/">
+<form id="location-filter" method="post" action="/">
 	<div class="row">
 	<div class="small-12 medium-6 large-4 large-offset-2 columns">
-<select name="service" id="service"><option value="">All Services</option><option value="">Hardware maintenance agreements</option></select>
+<select name="service_select" id="service_select" rel="service"><option value="0">All Services</option>
+<?php
+
+	$args=array(
+		'parent' => 0,
+		'hide_empty' => 0
+		);
+	if($services  = get_terms( 'cptax_location_service', $args )):
+		foreach($services as $service):
+?>
+<option value="<?php echo $service->term_id ?>"><?php echo $service->name ?></option>
+<?php endforeach ?>
+<?php endif ?>
+</select>
 </div>
 <div class="small-12 medium-6 large-4 columns end">
-<select name="country" id="country"><option value="">All Countries</option><option value="">United Kingdom</option></select>
+<select name="country_select" id="country_select" rel="country"><option value="0">All Countries</option>
+
+<?php
+$args = array(
+	'post_type' => 'cpt_location',
+	'post_status' => 'publish',
+	'numberposts' => -1,
+	'orderby' => 'name',
+	'order' => 'ASC'
+	);
+if($locations = get_posts($args)):
+	foreach($locations as $location):
+		?>
+	<option value="<?php echo $location->ID ?>"><?php echo $location->post_title ?></option>
+<?php endforeach ?>
+<?php endif ?>
+</select>
 </div>
 </div>
+<input type="hidden" name="action" value="get_locations" />
+<input type="hidden" name="service" value="" />
+<input type="hidden" name="country" value="" />
 </form>
 </div>
 </div>
@@ -51,7 +70,7 @@
 
 <div class="row">
 	<div class="small-12 columns">
-		<div id="map" class="map">map</div>
+		<div id="location-map-wrap"><div id="location-map">map</div></div>
 	</div>
 </div>
 
@@ -74,56 +93,8 @@
 </section>
 <!--/testimonials-->
 <!--call back form-->
-<section id="callback" class="section row white-sub-heads skewed centered-text black">
-	<div class="section-inner">
-	<div class="section-content">
-<h2 class="block-heading"><span><em>Not sure what you need?</em></span></h2>
-<h3>We'll be in touch to help</h3>
-<?php //gravity_form(1, false, false, false, '', true, 1);  ?>
-<div class="gf_browser_chrome gform_wrapper two-column_wrapper" id="gform_wrapper_2"><a id="gf_2" name="gf_2" class="gform_anchor"></a><form method="post" enctype="multipart/form-data" target="gform_ajax_frame_2" id="gform_2" class="two-column" action="/contact-us/#gf_2">
-                        
-                        <div class="gform_body">
-                            <ul id="gform_fields_2" class="gform_fields top_label description_below">
-                            	<li id="field_2_6" class="gfield gsection gform_column"></li></ul><ul class="gform_fields top_label description_below gform_column">
-                            	<li class="gfield gsection empty"></li>
-                            	<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
-                            	<li id="field_2_3" class="gfield gfield_label_hidden"><label class="gfield_label" for="input_2_3" style="display:none;">Company</label><div class="ginput_container"><input name="input_3" id="input_2_3" type="text" value="" class="medium" tabindex="3" placeholder="Company"></div></li>
-                            	<li id="field_2_4" class="gfield gfield_label_hidden"><label class="gfield_label" for="input_2_4" style="display:none;">Telephone</label><div class="ginput_container"><input name="input_4" id="input_2_4" type="text" value="" class="medium" tabindex="4" placeholder="Telephone"></div></li>
-                            	<li id="field_2_5" class="gfield gfield_label_hidden"><label class="gfield_label" for="input_2_5" style="display:none;">Email Address</label><div class="ginput_container"><input name="input_5" id="input_2_5" type="email" value="" class="medium" tabindex="5" placeholder="Email Address"></div></li><li id="field_2_11" class="gfield gsection gform_column"></li></ul>
-                            	<ul class="gform_fields top_label description_below gform_column"><li class="gfield gsection empty"></li>
-<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden right"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
-<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden right"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
-<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden right"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
-<li id="field_2_1" class="gfield gfield_contains_required gfield_label_hidden right"><label class="gfield_label" for="input_2_1" style="display:none;">Your name<span class="gfield_required">*</span></label><div class="ginput_container"><input name="input_1" id="input_2_1" type="text" value="" class="medium" tabindex="1" placeholder="Your name"></div></li>
-</ul></div>
-        <div class="gform_footer top_label">
-
-        	<input type="submit" id="gform_submit_button_2" class="gform_button button" value="Submit" tabindex="8" onclick="if(window[&quot;gf_submitting_2&quot;]){return false;}  if( !jQuery(&quot;#gform_2&quot;)[0].checkValidity || jQuery(&quot;#gform_2&quot;)[0].checkValidity()){window[&quot;gf_submitting_2&quot;]=true;} "><input type="hidden" name="gform_ajax" value="form_id=2&amp;title=1&amp;description=1&amp;tabindex=1">
-         
-            
-        </div>
-                        </form>
-                    </div>
-             </div>
-                    <div class="skewed-bg"></div>
-                  </div>
-</section>
+<?php get_template_part('callback-form'); ?>
 <!--/call back form-->
-
-
-
-
-<section id="contact" class="section yellow-white-heading yellow-btns centered-text">
-	<div class="section-inner">
-		<div class="section-content">
-<h2 class="block-heading"><span><em>Call us today on</em></span></h2>
-<p class="big">UK: <a href="tel:">+44 (0)113 887 8650</a><br />USA: <a href="tel:">+1 727 2164 309</a></p>
-<a href="" class="read-more"><span>Contact us</span></a>
-</div>
-</div>
-	</section>
-	</main>
-
 <?php endwhile ?>
 <?php endif ?>
 <?php get_footer() ?> 

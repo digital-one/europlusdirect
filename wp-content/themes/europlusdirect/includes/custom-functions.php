@@ -90,6 +90,8 @@ function scripts_and_styles() {
 
 		wp_localize_script( 'allscripts', 'Offices', $geolocations);
 		wp_localize_script( 'allscripts', 'Marker', get_template_directory_uri().'/images/marker.png');
+		wp_localize_script('allscripts','ajaxurl',admin_url('admin-ajax.php'));
+		
 	}
 }
 

@@ -2,6 +2,16 @@
 	
 
 }
-#map{
+#location-map-wrap{
 	border-bottom: 1.8752em solid white;
+	position: relative;
+	&:before{
+		content:"";
+		padding-top:66%;
+		display: block;
+		background-color: $grey;
+	}
+	#location-map{
+		@include abs-pos(0,0,0,0);
+	}
 }

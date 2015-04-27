@@ -51,8 +51,22 @@
 	display: block;
 	@include bg-cover;
 	@include abs-pos(0,0,0,0);
+	overflow:hidden;
+	#callback &{
+		&:before{
+			content:"";
+			@include abs-pos(-80px,0,-80px,0);
+			display: block;
+			background-image:url('../images/form-bg.jpg');
+			.csstransforms &{
+				@include transform(skewY(-3.5deg));
+
+			}
+		}
+	}
 	.csstransforms &{
 		@include transform(skewY(3.5deg));
+
 	}
 	.red &{
 		background-color: $red;
@@ -178,6 +192,7 @@
 	}
 }
 .nested-section-content{
+	@include bg-cover;
 	.blue &{
 		background-color: $blue;
 		color: white;
@@ -417,6 +432,9 @@
 		}
 		.skewed &{
 			padding-top:50px;
+		}
+		#callback.skewed &{
+			padding-bottom:40px;
 		}
 		.skewed.behind &{
 			padding-top: 110px;

@@ -5,6 +5,7 @@
 	<section id="slider">
 		<?php
 		if(have_rows('slider')):
+		
 	$slide_total = count(get_field('slider')); //number of rows in parent field
 while(have_rows('slider')): //parent repeater field
 the_row();

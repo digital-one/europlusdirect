@@ -12,7 +12,7 @@
 	<div class="row">
 		<div class="small-12 columns">
 <p class="address"><?php _e('Head Office','epd_theme'); ?>: 2 Airport West, Lancaster Way, Leeds, West Yorkshire LS19 7ZA, United Kingdom<br />
-<span><strong>Tel UK:</strong> <a href="tel:">+44 (0) 845 076 0061</a></span></p>
+<span><strong>Tel:</strong> <a href="tel:">+44 (0) 845 076 0061</a></span></p>
 <nav id="footer-menu"><?php
   wp_nav_menu( array(
         'menu'=>'Footer Menu',

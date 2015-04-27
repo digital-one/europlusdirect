@@ -23,8 +23,10 @@
              add_action( 'init', array($this,'register_cpt_career'), 0 );
              add_action( 'init', array($this,'register_cpt_office'), 0 );
              add_action( 'init', array($this,'register_cpt_download'), 0 );
+             add_action( 'init', array($this,'register_cpt_location'), 0 );
             //register custom taxonomies
              add_action('init',array($this,'register_cptax_question_category'),0);
+             add_action('init',array($this,'register_cptax_location_service'),0);
             //columns
             add_filter('manage_edit-cpt_team_columns', array($this,'add_cpt_team_columns'));   
             add_action('manage_cpt_team_posts_custom_column',  array($this,'add_cpt_team_custom_columns'),10,2); 
@@ -40,7 +42,7 @@
 
             //add_filter( 'admin_post_thumbnail_html', array($this,'add_featured_image_instruction'));
 
-
+            add_action('wp_ajax_get_locations', array($this, 'ajax_get_locations'));
 
             //rewrites
             add_action('init', array($this,'add_cpt_news_rewrite_rules'),0);
@@ -63,7 +65,99 @@
 
     }
 
+    function ajax_get_locations(){
+          if (isset($_POST['service'])):
+
+            $service = (int)$_POST['service'];
+            $country = (int)$_POST['country'];
+
+            $args = array(
+                'post_type' => 'cpt_location',
+                'post_status' => 'publish',
+                'numberposts' => -1,
+                'orderby' => 'name',
+                'order' => 'ASC'
+                );
+            if(!empty($country)):
+                $args['include'] = $country;
+            endif;
+            if(!empty($service)):
+            $args['tax_query'] = array(array('taxonomy'=>'cptax_location_service','field' => 'id','terms' => $service));
+             endif;
+        /*
+                'tax_query' => array(
+array(
+'taxonomy' =>'category',
+'field' => 'slug',
+'terms' => 'evil-diaries'
+)
+),
+*/      
+
+        if($locations = get_posts($args)):
+            $map_locations = array();
+            foreach($locations as $location):
+                $geocodes = get_field('location_geocodes',$location->ID);
+                $quotation_delivery_times = get_field('quotation_and_delivery_times',$location->ID);
+                $rssa = get_field('rssa',$location->ID);
+
+                $map_locations[] = array(
+                    'location'=>$location->post_name,
+                    'lat' => $geocodes['lat'],
+                    'lng' => $geocodes['lng'],
+                    'quotation_delivery_times' => $quotation_delivery_times,
+                    'rssa' => $rssa
+                    );
+                endforeach;
+                //echo 'ddddd';
+                  echo json_encode($map_locations);
+            endif;
+            endif;
+         
+        exit();
+    }
+
      // Register Custom Post Type
+
+    function register_cpt_location() {
+
+        $labels = array(
+            'name'                => _x( 'Locations', 'Post Type General Name', 'text_domain' ),
+            'singular_name'       => _x( 'Location', 'Post Type Singular Name', 'text_domain' ),
+            'menu_name'           => __( 'Locations', 'text_domain' ),
+            'parent_item_colon'   => __( 'Parent Location:', 'text_domain' ),
+            'all_items'           => __( 'All Locations', 'text_domain' ),
+            'view_item'           => __( 'View Location', 'text_domain' ),
+            'add_new_item'        => __( 'Add New Location', 'text_domain' ),
+            'add_new'             => __( 'Add New Location', 'text_domain' ),
+            'edit_item'           => __( 'Edit Location', 'text_domain' ),
+            'update_item'         => __( 'Update Location', 'text_domain' ),
+            'search_items'        => __( 'Search Locations', 'text_domain' ),
+            'not_found'           => __( 'Not found', 'text_domain' ),
+            'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+        );
+        $args = array(
+            'label'               => __( 'cpt_location', 'text_domain' ),
+            'description'         => __( 'Locations', 'text_domain' ),
+            'labels'              => $labels,
+            'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail','page-attributes' ),
+            //'taxonomies'          => array( 'ciet_cuisine','ciet_allergen','ciet_diet' ),
+            'hierarchical'        => true,
+            'public'              => true,
+            'show_ui'             => true,
+            'show_in_menu'        => true,
+            'show_in_nav_menus'   => true,
+            'show_in_admin_bar'   => true,
+            'menu_position'       => 5,
+            'can_export'          => true,
+            'has_archive'         => true,
+            'rewrite'             => array('slug' => 'locations/archive'),
+            'exclude_from_search' => false,
+            'publicly_queryable'  => true,
+            'capability_type'     => 'page',
+        );
+        register_post_type( 'cpt_location', $args );
+    }
 
 
     function register_cpt_career() {
@@ -397,6 +491,44 @@
 
 // Register Custom Taxonomies
 
+         function register_cptax_location_service() {
+
+            $labels = array(
+                'name'                       => _x( 'Location Services', 'Taxonomy General Name', 'text_domain' ),
+                'singular_name'              => _x( 'Location Service', 'Taxonomy Singular Name', 'text_domain' ),
+                'menu_name'                  => __( 'Location Service', 'text_domain' ),
+                'all_items'                  => __( 'All Services', 'text_domain' ),
+                'parent_item'                => __( 'Parent Service', 'text_domain' ),
+                'parent_item_colon'          => __( 'Parent Service:', 'text_domain' ),
+                'new_item_name'              => __( 'New Service', 'text_domain' ),
+                'add_new_item'               => __( 'Add Service', 'text_domain' ),
+                'edit_item'                  => __( 'Edit Service', 'text_domain' ),
+                'update_item'                => __( 'Update Service', 'text_domain' ),
+                'separate_items_with_commas' => __( 'Separate Services with commas', 'text_domain' ),
+                'search_items'               => __( 'Search Services', 'text_domain' ),
+                'add_or_remove_items'        => __( 'Add or remove Services', 'text_domain' ),
+                'choose_from_most_used'      => __( 'Choose from the most used services', 'text_domain' ),
+                'not_found'                  => __( 'Not Found', 'text_domain' ),
+            );
+            $rewrite = array(
+                'slug'                       => '',
+                'with_front'                 => true,
+                'hierarchical'               => true,
+            );
+            $args = array(
+                'labels'                     => $labels,
+                'hierarchical'               => true,
+                'public'                     => true,
+                'show_ui'                    => true,
+                'show_admin_column'          => true,
+                'show_in_nav_menus'          => true,
+                'show_tagcloud'              => true,
+                'rewrite'                    => $rewrite
+            );
+            register_taxonomy( 'cptax_location_service', array( 'cpt_location' ), $args );
+
+        }
+
 
         function register_cptax_question_category() {
 
@@ -540,6 +672,7 @@ function image_sizes(){
     add_image_size( 'slide', 1920, 1200, true );
     add_image_size( 'large-image', 620, 370, true );
     add_image_size( 'medium-image', 410, 246, true );
+    add_image_size( 'small-image', 210, 126, true );
     add_image_size( 'award-logo', 497, 324, true );
     set_post_thumbnail_size( 150, 150,false); 
 }

@@ -100,19 +100,27 @@
 			border-bottom:2px solid $yellow;
 			li{
 				right:auto;
-				width:auto;
+				width:100%;
+				@include transition(background-color .3s ease);
 				padding:0 !important;
-				display: inline-block;
+				display: block;
+				border-top:1px solid darken($blue,5%);
+				&:hover,&:active{
+					background-color: darken($blue,5%) !important;
+					a{
+						color: $yellow !important;
+					}
+				}
 			}
 			a{
 				height:auto !important;
-				border-top:1px solid darken($blue,5%);
+				//border-top:1px solid darken($blue,5%);
 				line-height: 100% !important;
 				background-color: transparent !important;
 				color: white !important;
 				display: block;
 				@include font-size(16px);
-				width:240px;
+				width:auto;
 				text-align: left;
 				padding: 15px 20px; padding:15px 2.2vw;
 				white-space: nowrap;
@@ -121,10 +129,10 @@
 					color: $yellow;
 					@include abs-pos(15px,auto,auto,12px);
 				}
-				&:hover,&:active{
+				/*&:hover,&:active{
 					background-color: darken($blue,5%) !important;
 					color: $yellow !important;
-				}
+				}*/
 			}
 		}
 		.menu-toggle{
