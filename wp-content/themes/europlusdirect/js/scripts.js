@@ -37,37 +37,48 @@ $.each(Offices, function(office, geolocation) {
     if($('#'+office).length){
       $('#'+office).gmap({
 
-       markers: [{'latitude': geolocation.lat,'longitude': geolocation.lng}],
-        markerFile: Marker,
-       markerWidth:82,
-        markerHeight:94,
-        markerAnchorX:41,
-        markerAnchorY:94,
-        zoom:14
+      markers: [{'latitude': geolocation.lat,'longitude': geolocation.lng}],
+      markerFile: Marker,
+      markerWidth:82,
+      markerHeight:94,
+      markerAnchorX:41,
+      markerAnchorY:94,
+      centerLat: geolocation.lat,
+      centerLng: geolocation.lng,
+      zoom:14
      });
     }
-    /*   $($('#'+office).gmap({
-
-       markers: [{'latitude': geolocation.lat,'longitude': geolocation.lng}],
-    //    markerFile: _marker,
-        markerWidth:44,
-        markerHeight:67,
-        markerAnchorX:22,
-        markerAnchorY:67,
-        zoom:2
-    */  
+  
 
   });
   
+  $(document).on('click', '.video-btn', function(e) {
+  e.preventDefault();
+  $.fancybox({
+
+      'padding'   : 0,
+      'autoScale'   : false,
+      'transitionIn'  : 'none',
+      'transitionOut' : 'none',
+      'title'     : this.title,
+      'width'     : 640,
+      'height'    : 385,
+      'href'      : this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+      'type'      : 'swf',
+      'swf'     : {
+      'wmode'       : 'transparent',
+      'allowfullscreen' : 'true'
+      }
+    });
+
+  });
+
+  
+
 
 var _menus = $('#location-filter select');
-//console.log(_menus);
-_menus.on('change',function(e){
-
-
-//$(document).on('change',_menus,function(e) {
-
-       e.preventDefault();
+$(document).on('change',_menus,function(e){
+e.preventDefault();
        var _menu = e.currentTarget;
        
         _menus.each(function(){
@@ -76,40 +87,63 @@ _menus.on('change',function(e){
         })
      //   $('input[name='+_hidden+']').val($(_menu).val());
         _menus.attr('disabled','disabled');
+         $('.selectBox').addClass('selectBox-disabled');
       //  button.html('Saving');
 
          var dat = $('#location-filter').find(':input').serialize();
          // var dat = $('#location-filter').find("input").serialize();
-          console.log(dat);
-
                     $.ajax( {
                                   type: "POST",
                                   url: ajaxurl,
                                   dataType: "json",
                                   data: dat,
                                   success: function( data ) {
+                                     _menus.removeAttr('disabled');
+                                     $('.selectBox').removeClass('selectBox-disabled');
                                     if (data) {
-                                      console.log(data.length);
+                                      
                                       _markers = [];
                                      for(i=0;i<data.length;i++){
                                      _markers[i] = {'latitude':data[i].latitude,'longitude':data[i].longitude,'name':data[i].name,'content':data[i].content};
-                                  //      markers: [{'latitude': 0,'longitude': 0,'name': 'London','content': 'Argentum<br />2 Queen Caroline Street<br />Hammersmith<br />London<br />W6 9DX'}],
                                      }
-                                    console.log(_markers);
-                                     // console.log(response);
-                                     // console.log(response[0].location);
+                                     var _centerLat=0,
+                                         _centerLng=0,
+                                         _zoom=3;
 
+                                     if(_markers.length==1){
+                                        _centerLat = data[0].latitude;
+                                        _centerLng = data[0].longitude;
+                                        _zoom=6
+                                     } 
+
+                                     //if all countries selected, filter menu
+                                     if(data.length>1){
+                                        $('#country_select').html('').append('<option value="0">All Countries</option>');
+                                        for(i=0;i<data.length;i++){
+                                          $('#country_select').append('<option value="'+data[i].id+'">'+data[i].name+'</option>');
+                                         }
+                                          $('#country_select').selectBox('refresh');
+                                        }
+
+                                 //    console.log(_centerLat+','+_centerLng);
                                      $('#location-map').gmap({
-       markers: _markers,
-       markerFile: Marker,
-       markerWidth:82,
-        markerHeight:94,
-        markerAnchorX:41,
-        markerAnchorY:94,
-        zoom:2
-    });
+                                      markers: _markers,
+                                      markerFile: Marker,
+                                      markerFileSmall: MarkerSmall,
+                                      markerSmallWidth:12,
+                                      markerSmallHeight:24,
+                                      markerSmallAnchorX:6,
+                                      markerSmallAnchorY:24,
+                                      markerWidth:82,
+                                      markerHeight:94,
+                                      markerAnchorX:36,
+                                      markerAnchorY:90,
+                                      zoom:_zoom,
+                                      centerLat: _centerLat,
+                                      centerLng: _centerLng
+                                    });
 
-                                       _menus.removeAttr('disabled');
+                                     
                                         //reload_menu();
                                     }
                                     else {
@@ -121,30 +155,10 @@ _menus.on('change',function(e){
                 });
 
 
-//$('#country_select').trigger('change');
+$('#country_select').trigger('change');
 //Map
 
-redraw_location_map = function(){
 
-if($('#location-map').length){
- $('#location-map').html('');
-   // var _lat = Map.lat,
-   //   _lng = Map.lng,
-   //   _marker = Map.marker;
-$('#location-map').gmap({
-     //   markers: [{'latitude': _lat,'longitude': _lng}],
-    //    markerFile: _marker,
-        markerWidth:44,
-        markerHeight:67,
-        markerAnchorX:22,
-        markerAnchorY:67,
-        zoom:2
-    });
-}
-
-}
-redraw_location_map();
-$(window).on('resize',redraw_location_map);
 
 
 //Selectbox
@@ -182,7 +196,11 @@ $('#faqs .slider').slick({
 
 // Menu dropdown
 
-if(!isTouchDevice.any()){
+activateDropdown = function(){
+  var _width = $(window).width();
+
+  if( _width > 1024){
+  if(!isTouchDevice.any()){
 
 $('li.menu-item-has-children').on('mouseenter',function(){
   $(this).addClass('rollover');
@@ -207,8 +225,15 @@ $('li.menu-item-has-children').on('click',function(e){
   $('.sub-menu',$(this)).show();
 }
 })
+}
+
+} else {
+  $('li.menu-item-has-children').off('mouseenter');
+  $('li.menu-item-has-children').off('mouseleave');
+}
 
 }
+$(window).on('resize',activateDropdown);
 
 // match heights of side by side skewed boxes
 
@@ -316,14 +341,15 @@ $('a.load-posts').on('click',load_posts_click);
 $(window).on('scroll',load_posts);
 //$(window).on('scroll',sticky_nav);
 
-$('.anchor-up,#anchor-nav a').on('click',function(e){
- console.log('click');
+$('.anchor-up').on('click',function(e){
+
 	e.preventDefault();
 	var _animationSpeed = 500,
 		_target = '0';
 	 $.scrollTo( _target, _animationSpeed, {
-          easing: 'easeInOutExpo',
-          offset: 0
+          easing: 'easeOutExpo',
+          offset: 0,
+          axis: 'y'
         });
 })
   
@@ -334,8 +360,9 @@ $('#anchor-nav a').on('click',function(e){
   var _animationSpeed = 500,
     _target = $(this).attr('href');
    $.scrollTo( _target, _animationSpeed, {
-          easing: 'easeInOutExpo',
-          offset: -180
+          easing: 'easeOutExpo',
+          offset: -180,
+          axis: 'y'
         });
 })
        

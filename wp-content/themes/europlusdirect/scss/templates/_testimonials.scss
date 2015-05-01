@@ -13,13 +13,13 @@
 			background-image:url('../images/open-quote-blue.png');
 		}
 		&:after{
-			background-image:url('../images/close-quote-blue.png');
+			background-image:url('../images/close-quote-blue.png' );
 		}
 		p{
 			color: $dark-grey;
 		}
 		footer{
-			color: $blue;
+			color: $blue;    
 		}
 	}
 }

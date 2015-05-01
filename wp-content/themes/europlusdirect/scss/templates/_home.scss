@@ -167,6 +167,7 @@
 	}
 }
 #callback{
+	color: white;
 	header{
 		padding: 0 10%;
 	}
@@ -211,6 +212,9 @@
 		border: none;
 		padding:0 10px;
 		color: white;
+		&:focus{
+			outline: none;
+		}
 	}
 	textarea{
 		resize: none;
@@ -262,6 +266,7 @@
 	}
 	.slider{ 
 		padding: 0 35px;
+		margin-bottom: 30px;
 		.slide{
 			p{
 				@include font-size(20px);
@@ -524,6 +529,7 @@
 		
 		.slider{ 
 			padding: 0 100px;
+			margin-bottom: 40px;
 			.slide{
 				p{
 					@include font-size(28px);

@@ -3818,45 +3818,30 @@ body {
 #nav {
   position: relative;
   z-index: 2;
-  width: 100%;
   background-color: #054990;
-  height: 60px;
-}
-/* line 6, ../scss/helpers/mixins/_centered-menu.scss */
-#nav ul {
-  clear: left;
-  float: left;
-  position: relative;
-  left: 50%;
-  text-align: center;
-}
-/* line 12, ../scss/helpers/mixins/_centered-menu.scss */
-#nav ul li {
-  display: block;
-  float: left;
-  position: relative;
-  right: 50%;
+  height: auto;
 }
 /* line 5, ../scss/helpers/mixins/_wp-current-page-links.scss */
 #nav li.current-menu-item a:link, #nav li.current-menu-item a:visited, #nav li.current-page-ancestor a:link, #nav li.current-page-ancestor a:visited, #nav li.hover a:link, #nav li.hover a:visited {
   color: #fff000;
   background-color: #03305f;
 }
-/* line 11, ../scss/components/_navigation.scss */
+/* line 10, ../scss/components/_navigation.scss */
 #nav ul {
-  display: none;
+  display: block;
 }
-/* line 14, ../scss/components/_navigation.scss */
+/* line 13, ../scss/components/_navigation.scss */
 #nav li {
   position: relative;
+  display: block;
+  width: 100%;
+  float: none;
 }
-/* line 18, ../scss/components/_navigation.scss */
+/* line 20, ../scss/components/_navigation.scss */
 #nav a {
   color: white;
   font-size: 18px;
   font-size: 1.125rem;
-  height: 80px;
-  line-height: 80px;
 }
 /* line 23, ../scss/components/_navigation.scss */
 #nav a:hover, #nav a:active {
@@ -3916,26 +3901,50 @@ body {
 }
 
 @media only screen and (min-width: 64rem) {
-  /* line 60, ../scss/components/_navigation.scss */
+  /* line 63, ../scss/components/_navigation.scss */
   #nav {
     height: 70px;
+    background-color: #054990;
+    position: relative;
+    z-index: 2;
     padding-left: 0;
+    width: 100%;
   }
-  /* line 64, ../scss/components/_navigation.scss */
+  /* line 6, ../scss/helpers/mixins/_centered-menu.scss */
+  #nav ul {
+    clear: left;
+    float: left;
+    position: relative;
+    left: 50%;
+    text-align: center;
+  }
+  /* line 12, ../scss/helpers/mixins/_centered-menu.scss */
+  #nav ul li {
+    display: block;
+    float: left;
+    position: relative;
+    right: 50%;
+  }
+  /* line 71, ../scss/components/_navigation.scss */
   .minimise #nav {
     height: 50px;
     padding-left: 0;
   }
-  /* line 68, ../scss/components/_navigation.scss */
+  /* line 75, ../scss/components/_navigation.scss */
   #nav ul {
     display: block;
   }
-  /* line 74, ../scss/components/_navigation.scss */
+  /* line 78, ../scss/components/_navigation.scss */
+  #nav li {
+    position: relative;
+    width: auto;
+  }
+  /* line 84, ../scss/components/_navigation.scss */
   #nav li.rollover a {
     background-color: #043d77;
     color: #fff000;
   }
-  /* line 80, ../scss/components/_navigation.scss */
+  /* line 90, ../scss/components/_navigation.scss */
   #nav a {
     height: 70px;
     line-height: 70px;
@@ -3945,14 +3954,14 @@ body {
     padding: 0 10px;
     padding: 0 1.5vw;
   }
-  /* line 86, ../scss/components/_navigation.scss */
+  /* line 96, ../scss/components/_navigation.scss */
   .minimise #nav a {
     height: 50px;
     line-height: 50px;
     font-size: 16px;
     font-size: 1rem;
   }
-  /* line 92, ../scss/components/_navigation.scss */
+  /* line 102, ../scss/components/_navigation.scss */
   #nav .sub-menu {
     top: 70px;
     right: auto;
@@ -3964,11 +3973,11 @@ body {
     width: auto;
     border-bottom: 2px solid #fff000;
   }
-  /* line 95, ../scss/components/_navigation.scss */
+  /* line 105, ../scss/components/_navigation.scss */
   .minimise #nav .sub-menu {
     top: 50px;
   }
-  /* line 101, ../scss/components/_navigation.scss */
+  /* line 111, ../scss/components/_navigation.scss */
   #nav .sub-menu li {
     right: auto;
     width: 100%;
@@ -3979,15 +3988,15 @@ body {
     display: block;
     border-top: 1px solid #043d77;
   }
-  /* line 108, ../scss/components/_navigation.scss */
+  /* line 118, ../scss/components/_navigation.scss */
   #nav .sub-menu li:hover, #nav .sub-menu li:active {
     background-color: #043d77 !important;
   }
-  /* line 110, ../scss/components/_navigation.scss */
+  /* line 120, ../scss/components/_navigation.scss */
   #nav .sub-menu li:hover a, #nav .sub-menu li:active a {
     color: #fff000 !important;
   }
-  /* line 115, ../scss/components/_navigation.scss */
+  /* line 125, ../scss/components/_navigation.scss */
   #nav .sub-menu a {
     height: auto !important;
     line-height: 100% !important;
@@ -4006,7 +4015,7 @@ body {
     	color: $yellow !important;
     }*/
   }
-  /* line 127, ../scss/components/_navigation.scss */
+  /* line 137, ../scss/components/_navigation.scss */
   #nav .sub-menu a:before {
     content: "+";
     color: #fff000;
@@ -4016,16 +4025,16 @@ body {
     left: 12px;
     position: absolute;
   }
-  /* line 138, ../scss/components/_navigation.scss */
+  /* line 148, ../scss/components/_navigation.scss */
   #nav .menu-toggle {
     display: none;
   }
 
-  /* line 142, ../scss/components/_navigation.scss */
+  /* line 152, ../scss/components/_navigation.scss */
   #anchor-nav {
     display: block;
   }
-  /* line 144, ../scss/components/_navigation.scss */
+  /* line 154, ../scss/components/_navigation.scss */
   .minimise #anchor-nav {
     position: fixed;
     z-index: 999;
@@ -4036,19 +4045,19 @@ body {
     right: auto;
     background-color: #d6d9dd;
   }
-  /* line 153, ../scss/components/_navigation.scss */
+  /* line 163, ../scss/components/_navigation.scss */
   .minimise #anchor-nav a {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 125rem) {
-  /* line 163, ../scss/components/_navigation.scss */
+  /* line 173, ../scss/components/_navigation.scss */
   #nav {
     height: 120px;
     padding-left: 230px;
   }
-  /* line 170, ../scss/components/_navigation.scss */
+  /* line 180, ../scss/components/_navigation.scss */
   #nav a {
     height: 120px;
     line-height: 120px;
@@ -6019,6 +6028,46 @@ ul.slick-dots li.slick-active button {
   overflow: auto;
 }
 
+/* line 2, ../scss/components/_gravity-forms.scss */
+.gform_body ul {
+  margin: 0;
+}
+/* line 4, ../scss/components/_gravity-forms.scss */
+.gform_body ul li {
+  margin-bottom: 10px;
+}
+
+/* line 11, ../scss/components/_gravity-forms.scss */
+.gform_wrapper .gform_column {
+  width: 40%;
+}
+
+/* line 15, ../scss/components/_gravity-forms.scss */
+.gform_confirmation_message {
+  color: #054990;
+  display: inline-block;
+  background-color: #fff000;
+  font-size: 20px;
+  font-size: 1.25rem;
+  padding: 15px 15px 15px 70px;
+  position: relative;
+  margin-bottom: 20px;
+}
+/* line 22, ../scss/components/_gravity-forms.scss */
+.gform_confirmation_message:before {
+  content: "";
+  width: 48px;
+  height: 48px;
+  display: block;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 15px;
+  position: absolute;
+  background: url("../images/tick.png") left top no-repeat;
+  margin-top: -24px;
+}
+
 /* line 1, ../scss/templates/_home.scss */
 #slider-wrap {
   display: block;
@@ -6228,51 +6277,55 @@ ul.slick-dots li.slick-active button {
   margin-bottom: 0;
 }
 
-/* line 170, ../scss/templates/_home.scss */
+/* line 169, ../scss/templates/_home.scss */
+#callback {
+  color: white;
+}
+/* line 171, ../scss/templates/_home.scss */
 #callback header {
   padding: 0 10%;
 }
-/* line 173, ../scss/templates/_home.scss */
+/* line 174, ../scss/templates/_home.scss */
 #callback .gform_body {
   width: 100%;
   display: block;
 }
-/* line 177, ../scss/templates/_home.scss */
+/* line 178, ../scss/templates/_home.scss */
 #callback .gform_body p {
   color: white;
   text-align: left;
 }
-/* line 182, ../scss/templates/_home.scss */
+/* line 183, ../scss/templates/_home.scss */
 #callback .gfield_label {
   display: none;
 }
-/* line 185, ../scss/templates/_home.scss */
+/* line 186, ../scss/templates/_home.scss */
 #callback .validation_error {
   background-color: #fff000;
   color: #1d1d1d;
   padding: 10px;
   display: block;
 }
-/* line 191, ../scss/templates/_home.scss */
+/* line 192, ../scss/templates/_home.scss */
 #callback .validation_message {
   display: none;
 }
-/* line 194, ../scss/templates/_home.scss */
+/* line 195, ../scss/templates/_home.scss */
 #callback li {
   margin-bottom: 8px;
 }
-/* line 197, ../scss/templates/_home.scss */
+/* line 198, ../scss/templates/_home.scss */
 #callback li.right {
   float: left !important;
   width: 100%;
 }
-/* line 202, ../scss/templates/_home.scss */
+/* line 203, ../scss/templates/_home.scss */
 #callback .gform_column {
   width: 100%;
   float: none;
   margin: 0;
 }
-/* line 207, ../scss/templates/_home.scss */
+/* line 208, ../scss/templates/_home.scss */
 #callback input.medium, #callback textarea {
   width: 100%;
   height: 40px;
@@ -6282,11 +6335,15 @@ ul.slick-dots li.slick-active button {
   color: white;
 }
 /* line 215, ../scss/templates/_home.scss */
+#callback input.medium:focus, #callback textarea:focus {
+  outline: none;
+}
+/* line 219, ../scss/templates/_home.scss */
 #callback textarea {
   resize: none;
   height: 264px;
 }
-/* line 219, ../scss/templates/_home.scss */
+/* line 223, ../scss/templates/_home.scss */
 #callback .gform_ajax_spinner {
   top: 60px;
   right: auto;
@@ -6294,17 +6351,17 @@ ul.slick-dots li.slick-active button {
   left: 0;
   position: absolute;
 }
-/* line 222, ../scss/templates/_home.scss */
+/* line 226, ../scss/templates/_home.scss */
 #callback .gfield_error input.medium {
   border-bottom: 1px solid #fff000;
 }
-/* line 225, ../scss/templates/_home.scss */
+/* line 229, ../scss/templates/_home.scss */
 #callback .gform_footer {
   text-align: center;
   padding-top: 20px;
   position: relative;
 }
-/* line 229, ../scss/templates/_home.scss */
+/* line 233, ../scss/templates/_home.scss */
 #callback .gform_footer .gform_button {
   display: inline-block;
   height: 38px;
@@ -6325,30 +6382,31 @@ ul.slick-dots li.slick-active button {
   -moz-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
 }
-/* line 245, ../scss/templates/_home.scss */
+/* line 249, ../scss/templates/_home.scss */
 #callback .gform_footer .gform_button:hover, #callback .gform_footer .gform_button:active {
   background-color: #fcf9d4;
 }
-/* line 248, ../scss/templates/_home.scss */
+/* line 252, ../scss/templates/_home.scss */
 #callback .gform_footer .gform_button:focus {
   outline: none;
 }
 
-/* line 255, ../scss/templates/_home.scss */
+/* line 259, ../scss/templates/_home.scss */
 #support .ribbon {
   margin-top: 20px;
 }
 
-/* line 260, ../scss/templates/_home.scss */
+/* line 264, ../scss/templates/_home.scss */
 #faqs p {
   font-size: 18px;
   font-size: 1.125rem;
 }
-/* line 263, ../scss/templates/_home.scss */
+/* line 267, ../scss/templates/_home.scss */
 #faqs .slider {
   padding: 0 35px;
+  margin-bottom: 30px;
 }
-/* line 266, ../scss/templates/_home.scss */
+/* line 271, ../scss/templates/_home.scss */
 #faqs .slider .slide p {
   font-size: 20px;
   font-size: 1.25rem;
@@ -6356,7 +6414,7 @@ ul.slick-dots li.slick-active button {
   color: #054990;
   margin: 0;
 }
-/* line 273, ../scss/templates/_home.scss */
+/* line 278, ../scss/templates/_home.scss */
 #faqs .slider .slick-prev, #faqs .slider .slick-next {
   display: block;
   width: 30px;
@@ -6380,7 +6438,7 @@ ul.slick-dots li.slick-active button {
   background-size: 10px auto;
   z-index: 999;
 }
-/* line 287, ../scss/templates/_home.scss */
+/* line 292, ../scss/templates/_home.scss */
 #faqs .slider .slick-next {
   top: 50%;
   right: 0;
@@ -6390,64 +6448,64 @@ ul.slick-dots li.slick-active button {
   background-image: url("../images/slider-next-arrow.png");
 }
 
-/* line 294, ../scss/templates/_home.scss */
+/* line 299, ../scss/templates/_home.scss */
 #video-link .block-heading {
   margin-bottom: 4px;
 }
 
 /* Medium Breakpoint */
 @media only screen and (min-width: 48rem) {
-  /* line 304, ../scss/templates/_home.scss */
+  /* line 309, ../scss/templates/_home.scss */
   #slider-wrap {
     padding: 115px 0 0;
   }
 
-  /* line 310, ../scss/templates/_home.scss */
+  /* line 315, ../scss/templates/_home.scss */
   #slider .slide .content .block-heading {
     font-size: 34px;
     font-size: 2.125rem;
   }
-  /* line 313, ../scss/templates/_home.scss */
+  /* line 318, ../scss/templates/_home.scss */
   #slider .slide .content .secondary {
     font-size: 34px;
     font-size: 2.125rem;
   }
-  /* line 315, ../scss/templates/_home.scss */
+  /* line 320, ../scss/templates/_home.scss */
   #slider .slide .content .secondary.small {
     font-size: 22px;
     font-size: 1.375rem;
   }
 
-  /* line 323, ../scss/templates/_home.scss */
+  /* line 328, ../scss/templates/_home.scss */
   .pac-intro {
     padding: 0 10%;
   }
 
-  /* line 328, ../scss/templates/_home.scss */
+  /* line 333, ../scss/templates/_home.scss */
   .pac-features .feature .icon {
     width: 126px;
     height: 115px;
   }
-  /* line 332, ../scss/templates/_home.scss */
+  /* line 337, ../scss/templates/_home.scss */
   .pac-features .feature h3, .pac-features .feature h4 {
     font-size: 24px;
     font-size: 1.5rem;
   }
 
-  /* line 339, ../scss/templates/_home.scss */
+  /* line 344, ../scss/templates/_home.scss */
   #lenovo header .gold-partner {
     width: 20%;
   }
-  /* line 342, ../scss/templates/_home.scss */
+  /* line 347, ../scss/templates/_home.scss */
   #lenovo header h2 {
     position: relative;
     margin: 0;
   }
-  /* line 345, ../scss/templates/_home.scss */
+  /* line 350, ../scss/templates/_home.scss */
   #lenovo header h2 i {
     display: none;
   }
-  /* line 348, ../scss/templates/_home.scss */
+  /* line 353, ../scss/templates/_home.scss */
   #lenovo header h2 div {
     display: inline-block;
     width: auto;
@@ -6455,7 +6513,7 @@ ul.slick-dots li.slick-active button {
     background-color: #eb222f;
     padding: 0 10px;
   }
-  /* line 355, ../scss/templates/_home.scss */
+  /* line 360, ../scss/templates/_home.scss */
   #lenovo header h2 span {
     display: inline-block;
     height: 58px;
@@ -6469,7 +6527,7 @@ ul.slick-dots li.slick-active button {
     padding: 0 8px;
     color: white;
   }
-  /* line 366, ../scss/templates/_home.scss */
+  /* line 371, ../scss/templates/_home.scss */
   #lenovo header h2 span.logo {
     width: 200px;
     margin: 0;
@@ -6477,41 +6535,41 @@ ul.slick-dots li.slick-active button {
     background-size: 100% auto;
   }
 
-  /* line 377, ../scss/templates/_home.scss */
+  /* line 382, ../scss/templates/_home.scss */
   #callback .gform_column {
     width: 50%;
     float: left;
   }
-  /* line 381, ../scss/templates/_home.scss */
+  /* line 386, ../scss/templates/_home.scss */
   #callback .gform_column.right .ginput_container {
     float: right;
   }
-  /* line 386, ../scss/templates/_home.scss */
+  /* line 391, ../scss/templates/_home.scss */
   #callback .ginput_container {
     width: 98%;
   }
-  /* line 389, ../scss/templates/_home.scss */
+  /* line 394, ../scss/templates/_home.scss */
   #callback li {
     width: 100%;
     margin-bottom: 8px;
     display: block;
   }
-  /* line 394, ../scss/templates/_home.scss */
+  /* line 399, ../scss/templates/_home.scss */
   #callback li.right .ginput_container {
     float: right;
   }
-  /* line 399, ../scss/templates/_home.scss */
+  /* line 404, ../scss/templates/_home.scss */
   #callback input.medium {
     height: 60px;
   }
-  /* line 403, ../scss/templates/_home.scss */
+  /* line 408, ../scss/templates/_home.scss */
   #callback .gform_footer {
     text-align: right;
     padding-top: 60px;
     margin-top: -50px;
     position: relative;
   }
-  /* line 408, ../scss/templates/_home.scss */
+  /* line 413, ../scss/templates/_home.scss */
   #callback .gform_footer:before {
     content: "";
     z-index: 1;
@@ -6534,7 +6592,7 @@ ul.slick-dots li.slick-active button {
     background-image: -webkit-linear-gradient(-225deg, gray 0%, #fff000 100%);
     background-image: linear-gradient(-45deg,gray 0%, #fff000 100%);
   }
-  /* line 420, ../scss/templates/_home.scss */
+  /* line 425, ../scss/templates/_home.scss */
   #callback .gform_footer .gform_button {
     display: inline-block;
     height: 48px;
@@ -6555,11 +6613,11 @@ ul.slick-dots li.slick-active button {
     -moz-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
   }
-  /* line 436, ../scss/templates/_home.scss */
+  /* line 441, ../scss/templates/_home.scss */
   #callback .gform_footer .gform_button:hover, #callback .gform_footer .gform_button:active {
     background-color: #fcf9d4;
   }
-  /* line 439, ../scss/templates/_home.scss */
+  /* line 444, ../scss/templates/_home.scss */
   #callback .gform_footer .gform_button:before {
     content: "";
     z-index: 1;
@@ -6583,29 +6641,29 @@ ul.slick-dots li.slick-active button {
     background-image: linear-gradient(45deg,black 0%, #054990 100%);
   }
 
-  /* line 456, ../scss/templates/_home.scss */
+  /* line 461, ../scss/templates/_home.scss */
   #video-link .block-heading {
     margin-bottom: 8px;
   }
 }
 /* Large Breakpoint */
 @media only screen and (min-width: 64rem) {
-  /* line 469, ../scss/templates/_home.scss */
+  /* line 474, ../scss/templates/_home.scss */
   #slider .slide .content .block-heading {
     font-size: 40px;
     font-size: 2.5rem;
   }
-  /* line 472, ../scss/templates/_home.scss */
+  /* line 477, ../scss/templates/_home.scss */
   #slider .slide .content .secondary {
     font-size: 40px;
     font-size: 2.5rem;
   }
-  /* line 474, ../scss/templates/_home.scss */
+  /* line 479, ../scss/templates/_home.scss */
   #slider .slide .content .secondary.small {
     font-size: 26px;
     font-size: 1.625rem;
   }
-  /* line 480, ../scss/templates/_home.scss */
+  /* line 485, ../scss/templates/_home.scss */
   #slider .slick-dots {
     top: auto;
     right: 0;
@@ -6614,38 +6672,38 @@ ul.slick-dots li.slick-active button {
     position: absolute;
   }
 
-  /* line 484, ../scss/templates/_home.scss */
+  /* line 489, ../scss/templates/_home.scss */
   .section-content-inner {
     padding: 0 30px;
   }
 
-  /* line 489, ../scss/templates/_home.scss */
+  /* line 494, ../scss/templates/_home.scss */
   #lenovo header.gold-logo {
     height: 155px;
   }
-  /* line 492, ../scss/templates/_home.scss */
+  /* line 497, ../scss/templates/_home.scss */
   #lenovo header .columns {
     height: 100%;
     position: relative;
   }
-  /* line 496, ../scss/templates/_home.scss */
+  /* line 501, ../scss/templates/_home.scss */
   #lenovo header .inner {
     height: 100%;
   }
-  /* line 498, ../scss/templates/_home.scss */
+  /* line 503, ../scss/templates/_home.scss */
   #lenovo header .inner:before {
     content: "";
     display: inline-block;
     height: 155px;
     vertical-align: middle;
   }
-  /* line 504, ../scss/templates/_home.scss */
+  /* line 509, ../scss/templates/_home.scss */
   #lenovo header .inner .vcenter {
     display: inline-block;
     width: 98%;
     vertical-align: middle;
   }
-  /* line 510, ../scss/templates/_home.scss */
+  /* line 515, ../scss/templates/_home.scss */
   #lenovo header .gold-partner {
     top: 0;
     right: auto;
@@ -6656,22 +6714,23 @@ ul.slick-dots li.slick-active button {
     height: auto;
   }
 
-  /* line 518, ../scss/templates/_home.scss */
+  /* line 523, ../scss/templates/_home.scss */
   .pac-features .feature {
     padding: 0 10px;
     margin-bottom: 0;
   }
 
-  /* line 525, ../scss/templates/_home.scss */
+  /* line 530, ../scss/templates/_home.scss */
   #faqs .slider {
     padding: 0 100px;
+    margin-bottom: 40px;
   }
-  /* line 528, ../scss/templates/_home.scss */
+  /* line 534, ../scss/templates/_home.scss */
   #faqs .slider .slide p {
     font-size: 28px;
     font-size: 1.75rem;
   }
-  /* line 532, ../scss/templates/_home.scss */
+  /* line 538, ../scss/templates/_home.scss */
   #faqs .slider .slick-prev, #faqs .slider .slick-next {
     width: 68px;
     height: 68px;
@@ -6679,11 +6738,11 @@ ul.slick-dots li.slick-active button {
     background-size: 20px auto;
   }
 
-  /* line 541, ../scss/templates/_home.scss */
+  /* line 547, ../scss/templates/_home.scss */
   #intro .inner-pad {
     padding: 0 70px 30px;
   }
-  /* line 544, ../scss/templates/_home.scss */
+  /* line 550, ../scss/templates/_home.scss */
   #intro p {
     font-size: 16px;
     font-size: 1rem;
@@ -6691,38 +6750,38 @@ ul.slick-dots li.slick-active button {
 }
 /* XLarge Breakpoint */
 @media only screen and (min-width: 125rem) {
-  /* line 556, ../scss/templates/_home.scss */
+  /* line 562, ../scss/templates/_home.scss */
   #slider-wrap {
     padding-top: 195px;
   }
 
-  /* line 562, ../scss/templates/_home.scss */
+  /* line 568, ../scss/templates/_home.scss */
   #slider .slide .content .block-heading {
     font-size: 48px;
     font-size: 3rem;
   }
-  /* line 565, ../scss/templates/_home.scss */
+  /* line 571, ../scss/templates/_home.scss */
   #slider .slide .content .secondary {
     font-size: 48px;
     font-size: 3rem;
   }
-  /* line 567, ../scss/templates/_home.scss */
+  /* line 573, ../scss/templates/_home.scss */
   #slider .slide .content .secondary.small {
     font-size: 30px;
     font-size: 1.875rem;
   }
 
-  /* line 575, ../scss/templates/_home.scss */
+  /* line 581, ../scss/templates/_home.scss */
   #support .ribbon {
     margin-top: 100px;
   }
 
-  /* line 580, ../scss/templates/_home.scss */
+  /* line 586, ../scss/templates/_home.scss */
   #callback .gform_footer {
     text-align: right;
     position: relative;
   }
-  /* line 583, ../scss/templates/_home.scss */
+  /* line 589, ../scss/templates/_home.scss */
   #callback .gform_footer:before {
     content: "";
     z-index: 1;
@@ -6745,7 +6804,7 @@ ul.slick-dots li.slick-active button {
     background-image: -webkit-linear-gradient(-225deg, gray 0%, #fff000 100%);
     background-image: linear-gradient(-45deg,gray 0%, #fff000 100%);
   }
-  /* line 595, ../scss/templates/_home.scss */
+  /* line 601, ../scss/templates/_home.scss */
   #callback .gform_footer .gform_button {
     display: inline-block;
     height: 58px;
@@ -6766,11 +6825,11 @@ ul.slick-dots li.slick-active button {
     -moz-transition: background-color 0.3s ease;
     transition: background-color 0.3s ease;
   }
-  /* line 611, ../scss/templates/_home.scss */
+  /* line 617, ../scss/templates/_home.scss */
   #callback .gform_footer .gform_button:hover, #callback .gform_footer .gform_button:active {
     background-color: #fcf9d4;
   }
-  /* line 614, ../scss/templates/_home.scss */
+  /* line 620, ../scss/templates/_home.scss */
   #callback .gform_footer .gform_button:before {
     content: "";
     z-index: 1;
@@ -7163,7 +7222,7 @@ dd p {
 /* line 8, ../scss/templates/_locations.scss */
 #location-map-wrap:before {
   content: "";
-  padding-top: 66%;
+  padding-top: 66.66%;
   display: block;
   background-color: #8d8d8d;
 }

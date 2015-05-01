@@ -1,25 +1,25 @@
 #nav{
 	position: relative;
 	z-index:2;
-	@include centered-menu;
 	background-color: $blue;
-	height: 60px;
+	height: auto;
 	@include wp-current-page-links{
 		color: $yellow;
 		background-color: darken($blue,10%);
 	}
 	ul{
-		display: none;
+		display: block; 
 	}
 	li{
 		//padding:0 30px;
 		position: relative;
+		display: block;
+		width:100%;
+		float: none;
 	}
 	a{
 		color: white;
 		@include font-size(18px);
-		height:80px;
-		line-height: 80px;
 		&:hover,&:active{
 			color: $yellow;
 			background-color:darken($blue,5%);
@@ -52,6 +52,9 @@
 
 @media #{$medium-up} { 
 
+	
+		
+		
 
 }
 
@@ -59,8 +62,12 @@
 
 	#nav{
 		height: 70px;
+		background-color: $blue;
+		position: relative;
+		z-index:2;
 		//padding-left: (200px/100)*85;
 		padding-left:0;
+		@include centered-menu;
 		.minimise &{
 			height: 50px;
 			padding-left:0;
@@ -70,6 +77,9 @@
 		}
 		li{
 			//padding: 0 20px; padding:0 2.2vw;
+			//padding:0 30px;
+			position: relative;
+			width:auto;
 			&.rollover{
 				a{
 					background-color: darken($blue,5%);

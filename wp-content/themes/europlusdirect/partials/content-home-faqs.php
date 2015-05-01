@@ -25,6 +25,7 @@ endif;
 wp_reset_query();
  ?>
 </div>
+<a href="<?php echo get_permalink(75) ?>" class="ribbon right yellow"><span>View all</span></a>
 </div>
 <div class="skewed-bg"></div>
 </div>

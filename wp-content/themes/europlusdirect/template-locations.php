@@ -78,20 +78,12 @@ if($locations = get_posts($args)):
 </div>
 </section>
 
-<!--testimonials-->
-<section  class="section row red-blue-heading blue-sub-heads blue-btns pac skewed centered-text yellow offset-up spaced behind straight-top">
-	<div class="section-inner">
-	<div class="section-content">
-<h3 class="centered-text">Global Offices</h3>
-<p>Besides our Head Office in United Kingdom, we have offices in Australia, Spain, Senegal, Nambia, Mozambique and Las Vegas. </p>
-<footer class="clearfix"><a href="" class="read-more"><span>View all our locations</span></a></footer>
-
-
-</div>
-<div class="skewed-bg"></div>
-</div>
-</section>
-<!--/testimonials-->
+<!-- Global Offices -->
+<?php 
+$page = get_post(239);
+include( locate_template( 'partials/content-global-offices-locations.php' ));
+?>
+<!-- /Global Offices -->
 <!--call back form-->
 <?php get_template_part('callback-form'); ?>
 <!--/call back form-->

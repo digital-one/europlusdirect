@@ -84,6 +84,9 @@
             if(!empty($service)):
             $args['tax_query'] = array(array('taxonomy'=>'cptax_location_service','field' => 'id','terms' => $service));
              endif;
+
+
+
         /*
                 'tax_query' => array(
 array(
@@ -99,19 +102,32 @@ array(
             foreach($locations as $location):
                 $geocodes = get_field('location_geocodes',$location->ID);
                 $quotation_delivery_times = get_field('location_quotation_and_delivery_times',$location->ID);
+                $services = wp_get_post_terms($location->ID, 'cptax_location_service', array("fields" => "all"));
+                $service_list="<ul>";
+                foreach($services as $service):
+                    $service_list.='<li>'.$service->name.'</li>';
+                endforeach;
+                $service_list.="</ul>";
                 $rssa = get_field('location_rssa',$location->ID);
-
+                $content = '<div class="infowindow" style="width:300px; height:auto;"><h4>'.$location->post_title.'</h4>'.$service_list.'<p>'.$quotation_delivery_times.'</p></div>';
                // markers: [{'latitude': 0,'longitude': 0,'name': 'London','content': 'Argentum<br />2 Queen Caroline Street<br />Hammersmith<br />London<br />W6 9DX'}],
 
                 $map_locations[] = array(
                     'latitude' => $geocodes['lat'],
                     'longitude' => $geocodes['lng'],
-                    'name'=>$location->post_name,
-                    'content' => $quotation_delivery_times
+                    'name'=>$location->post_title,
+                    'content' => $content,
+                    'id' => $location->ID
                     );
                 endforeach;
                   echo json_encode($map_locations);
             endif;
+
+//get countries with current service
+
+
+
+
             endif;
          
         exit();

@@ -45,7 +45,15 @@ function scripts_and_styles() {
 		wp_register_style( 'stylesheet', get_stylesheet_directory_uri() . '/css/style.css', array(), '', 'all' );
 		wp_enqueue_style( 'stylesheet' );
 		
+		// fancybox
+		wp_register_script( 'fancybox', get_stylesheet_directory_uri() . '/js/fancybox/jquery.fancybox.pack.js', array(), null, false );
+  		wp_enqueue_script( 'fancybox' );
+		wp_register_style( 'fancybox_css', get_stylesheet_directory_uri() . '/js/fancybox/jquery.fancybox.css', array(), '', 'all' );
+		wp_enqueue_style( 'fancybox_css' );
 		
+
+
+
 		//register styles for our theme
 		//wp_register_style( 'respgrid', get_template_directory_uri() . '/css/foundation-grid.css', array(), 'all' );
 		//wp_enqueue_style( 'respgrid' );
@@ -90,6 +98,7 @@ function scripts_and_styles() {
 
 		wp_localize_script( 'allscripts', 'Offices', $geolocations);
 		wp_localize_script( 'allscripts', 'Marker', get_template_directory_uri().'/images/marker.png');
+		wp_localize_script( 'allscripts', 'MarkerSmall', get_template_directory_uri().'/images/marker-small.png');
 		wp_localize_script('allscripts','ajaxurl',admin_url('admin-ajax.php'));
 		
 	}
