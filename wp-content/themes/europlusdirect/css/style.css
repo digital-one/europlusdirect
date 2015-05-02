@@ -31,14 +31,14 @@ meta.foundation-mq-small-only {
 
 /* line 362, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-medium {
-  font-family: "/only screen and (min-width:48rem)/";
-  width: 48rem;
+  font-family: "/only screen and (min-width:58.1875rem)/";
+  width: 58.1875rem;
 }
 
 /* line 367, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-mq-medium-only {
-  font-family: "/only screen and (min-width:48rem) and (max-width:63.9375rem)/";
-  width: 48rem;
+  font-family: "/only screen and (min-width:58.1875rem) and (max-width:63.9375rem)/";
+  width: 58.1875rem;
 }
 
 /* line 372, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -633,7 +633,7 @@ select {
     float: left;
   }
 }
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 58.1875rem) {
   /* line 155, ../bower_components/foundation/scss/foundation/components/_grid.scss */
   .medium-push-0 {
     position: relative;
@@ -1881,7 +1881,7 @@ select {
     clear: both;
   }
 }
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 58.1875rem) {
   /* line 62, ../bower_components/foundation/scss/foundation/components/_block-grid.scss */
   .medium-block-grid-1 > li {
     list-style: none;
@@ -2275,7 +2275,7 @@ select {
   }
 }
 /* medium displays */
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 58.1875rem) {
   /* line 244, ../bower_components/foundation/scss/foundation/components/_visibility.scss */
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important;
@@ -3607,34 +3607,44 @@ body {
   position: absolute;
 }
 
-@media only screen and (min-width: 48rem) {
-  /* line 130, ../scss/components/_header.scss */
-  #header #home-link {
-    width: 171.75px;
-    height: 165px;
-    margin: 4px 0 0;
+@media only screen and (min-width: 58.1875rem) {
+  /* line 129, ../scss/components/_header.scss */
+  #header {
+    /*
+    #home-link{
+    	width: ((229px / 100) * 75);
+    	height: ((220px /100) * 75);
+    	margin:4px 0 0 ;
+    }
+    */
   }
-  /* line 136, ../scss/components/_header.scss */
+  /* line 138, ../scss/components/_header.scss */
   #header .top nav#contacts {
     width: 50%;
     margin: 0 auto;
   }
-  /* line 141, ../scss/components/_header.scss */
+  /* line 143, ../scss/components/_header.scss */
   #header .top nav#contacts ul li a {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 64rem) {
-  /* line 156, ../scss/components/_header.scss */
+  /* line 158, ../scss/components/_header.scss */
   .minimise #header #home-link {
     width: 120px;
   }
-  /* line 160, ../scss/components/_header.scss */
+  /* line 162, ../scss/components/_header.scss */
+  #header #home-link {
+    width: 171.75px;
+    height: 165px;
+    margin: 4px 0 0;
+  }
+  /* line 167, ../scss/components/_header.scss */
   #header .top {
     padding: 10px 50px;
   }
-  /* line 162, ../scss/components/_header.scss */
+  /* line 169, ../scss/components/_header.scss */
   #header .top nav#contacts {
     width: 100%;
     width: 100%;
@@ -3654,7 +3664,7 @@ body {
     position: relative;
     right: 50%;
   }
-  /* line 167, ../scss/components/_header.scss */
+  /* line 174, ../scss/components/_header.scss */
   #header .top nav#contacts ul li:after {
     content: "";
     width: 1px;
@@ -3668,28 +3678,28 @@ body {
     margin-top: -7px;
     background-color: white;
   }
-  /* line 177, ../scss/components/_header.scss */
+  /* line 184, ../scss/components/_header.scss */
   #header .top nav#contacts ul li:last-child:after {
     background-color: transparent;
   }
-  /* line 181, ../scss/components/_header.scss */
+  /* line 188, ../scss/components/_header.scss */
   #header .top nav#contacts ul li a {
     line-height: 25px;
     height: 25px;
   }
-  /* line 184, ../scss/components/_header.scss */
+  /* line 191, ../scss/components/_header.scss */
   .minimise #header .top nav#contacts ul li a {
     font-size: 12px;
     font-size: 0.75rem;
   }
 }
 @media only screen and (min-width: 125rem) {
-  /* line 198, ../scss/components/_header.scss */
+  /* line 205, ../scss/components/_header.scss */
   #header #home-link {
     width: 229px;
     height: 220px;
   }
-  /* line 205, ../scss/components/_header.scss */
+  /* line 212, ../scss/components/_header.scss */
   #header .top nav#contacts ul a {
     font-size: 18px;
     font-size: 1.125rem;
@@ -3756,7 +3766,7 @@ body {
   position: relative;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 58.1875rem) {
   /* line 56, ../scss/components/_footer.scss */
   #footer nav#footer-menu {
     width: 100%;
@@ -3840,15 +3850,16 @@ body {
 /* line 20, ../scss/components/_navigation.scss */
 #nav a {
   color: white;
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 16px;
+  font-size: 1rem;
+  display: block;
 }
-/* line 23, ../scss/components/_navigation.scss */
+/* line 24, ../scss/components/_navigation.scss */
 #nav a:hover, #nav a:active {
   color: #fff000;
   background-color: #043d77;
 }
-/* line 28, ../scss/components/_navigation.scss */
+/* line 29, ../scss/components/_navigation.scss */
 #nav .menu-toggle {
   top: 18px;
   right: 30px;
@@ -3862,7 +3873,7 @@ body {
   display: block;
 }
 
-/* line 38, ../scss/components/_navigation.scss */
+/* line 39, ../scss/components/_navigation.scss */
 #anchor-nav {
   top: auto;
   right: 0;
@@ -3871,7 +3882,7 @@ body {
   position: absolute;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 20px 0;
+  padding: 10px 0;
   width: 100%;
   display: none;
 }
@@ -3890,20 +3901,20 @@ body {
   position: relative;
   right: 50%;
 }
-/* line 44, ../scss/components/_navigation.scss */
+/* line 45, ../scss/components/_navigation.scss */
 #anchor-nav li {
   padding: 0 20px;
 }
-/* line 47, ../scss/components/_navigation.scss */
+/* line 48, ../scss/components/_navigation.scss */
 #anchor-nav a {
-  font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 14px;
+  font-size: 0.875rem;
 }
 
-@media only screen and (min-width: 64rem) {
-  /* line 63, ../scss/components/_navigation.scss */
+@media only screen and (min-width: 48rem) {
+  /* line 57, ../scss/components/_navigation.scss */
   #nav {
-    height: 70px;
+    height: 58px;
     background-color: #054990;
     position: relative;
     z-index: 2;
@@ -3925,43 +3936,47 @@ body {
     position: relative;
     right: 50%;
   }
-  /* line 71, ../scss/components/_navigation.scss */
+  /* line 65, ../scss/components/_navigation.scss */
   .minimise #nav {
     height: 50px;
     padding-left: 0;
   }
-  /* line 75, ../scss/components/_navigation.scss */
+  /* line 69, ../scss/components/_navigation.scss */
   #nav ul {
     display: block;
   }
-  /* line 78, ../scss/components/_navigation.scss */
+  /* line 73, ../scss/components/_navigation.scss */
   #nav li {
     position: relative;
     width: auto;
   }
-  /* line 84, ../scss/components/_navigation.scss */
+  /* line 77, ../scss/components/_navigation.scss */
+  #nav li:first-child {
+    padding-left: 40px;
+  }
+  /* line 83, ../scss/components/_navigation.scss */
   #nav li.rollover a {
     background-color: #043d77;
     color: #fff000;
   }
-  /* line 90, ../scss/components/_navigation.scss */
+  /* line 89, ../scss/components/_navigation.scss */
   #nav a {
-    height: 70px;
-    line-height: 70px;
+    height: 58px;
+    line-height: 58px;
+    font-size: 14px;
+    font-size: 0.875rem;
     display: block;
-    font-size: 16px;
-    font-size: 1rem;
-    padding: 0 10px;
-    padding: 0 1.5vw;
+    padding: 0 14px;
+    padding: 0 1.2vw;
   }
-  /* line 96, ../scss/components/_navigation.scss */
+  /* line 95, ../scss/components/_navigation.scss */
   .minimise #nav a {
     height: 50px;
     line-height: 50px;
     font-size: 16px;
     font-size: 1rem;
   }
-  /* line 102, ../scss/components/_navigation.scss */
+  /* line 101, ../scss/components/_navigation.scss */
   #nav .sub-menu {
     top: 70px;
     right: auto;
@@ -3973,11 +3988,11 @@ body {
     width: auto;
     border-bottom: 2px solid #fff000;
   }
-  /* line 105, ../scss/components/_navigation.scss */
+  /* line 104, ../scss/components/_navigation.scss */
   .minimise #nav .sub-menu {
     top: 50px;
   }
-  /* line 111, ../scss/components/_navigation.scss */
+  /* line 110, ../scss/components/_navigation.scss */
   #nav .sub-menu li {
     right: auto;
     width: 100%;
@@ -3988,15 +4003,15 @@ body {
     display: block;
     border-top: 1px solid #043d77;
   }
-  /* line 118, ../scss/components/_navigation.scss */
+  /* line 117, ../scss/components/_navigation.scss */
   #nav .sub-menu li:hover, #nav .sub-menu li:active {
     background-color: #043d77 !important;
   }
-  /* line 120, ../scss/components/_navigation.scss */
+  /* line 119, ../scss/components/_navigation.scss */
   #nav .sub-menu li:hover a, #nav .sub-menu li:active a {
     color: #fff000 !important;
   }
-  /* line 125, ../scss/components/_navigation.scss */
+  /* line 124, ../scss/components/_navigation.scss */
   #nav .sub-menu a {
     height: auto !important;
     line-height: 100% !important;
@@ -4015,7 +4030,7 @@ body {
     	color: $yellow !important;
     }*/
   }
-  /* line 137, ../scss/components/_navigation.scss */
+  /* line 136, ../scss/components/_navigation.scss */
   #nav .sub-menu a:before {
     content: "+";
     color: #fff000;
@@ -4025,16 +4040,29 @@ body {
     left: 12px;
     position: absolute;
   }
-  /* line 148, ../scss/components/_navigation.scss */
+  /* line 147, ../scss/components/_navigation.scss */
   #nav .menu-toggle {
     display: none;
   }
+}
+@media only screen and (min-width: 58.1875rem) {
+  /* line 159, ../scss/components/_navigation.scss */
+  #nav li:first-child {
+    padding-left: 40px;
+  }
+  /* line 163, ../scss/components/_navigation.scss */
+  #nav a {
+    padding: 0 15px;
+    padding: 0 1.8vw;
+    font-size: 16px;
+    font-size: 1rem;
+  }
 
-  /* line 152, ../scss/components/_navigation.scss */
+  /* line 169, ../scss/components/_navigation.scss */
   #anchor-nav {
     display: block;
   }
-  /* line 154, ../scss/components/_navigation.scss */
+  /* line 171, ../scss/components/_navigation.scss */
   .minimise #anchor-nav {
     position: fixed;
     z-index: 999;
@@ -4045,24 +4073,60 @@ body {
     right: auto;
     background-color: #d6d9dd;
   }
-  /* line 163, ../scss/components/_navigation.scss */
+  /* line 180, ../scss/components/_navigation.scss */
   .minimise #anchor-nav a {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
+@media only screen and (min-width: 64rem) {
+  /* line 190, ../scss/components/_navigation.scss */
+  #nav {
+    width: 100%;
+    height: 70px;
+  }
+  /* line 6, ../scss/helpers/mixins/_centered-menu.scss */
+  #nav ul {
+    clear: left;
+    float: left;
+    position: relative;
+    left: 50%;
+    text-align: center;
+  }
+  /* line 12, ../scss/helpers/mixins/_centered-menu.scss */
+  #nav ul li {
+    display: block;
+    float: left;
+    position: relative;
+    right: 50%;
+  }
+  /* line 193, ../scss/components/_navigation.scss */
+  #nav a {
+    font-size: 18px;
+    font-size: 1.125rem;
+    height: 70px;
+    line-height: 70px;
+    padding: 0 10px;
+    padding: 0 1.2vw;
+  }
+}
 @media only screen and (min-width: 125rem) {
-  /* line 173, ../scss/components/_navigation.scss */
+  /* line 207, ../scss/components/_navigation.scss */
   #nav {
     height: 120px;
     padding-left: 230px;
   }
-  /* line 180, ../scss/components/_navigation.scss */
+  /* line 214, ../scss/components/_navigation.scss */
   #nav a {
     height: 120px;
     line-height: 120px;
     font-size: 24px;
     font-size: 1.5rem;
+  }
+
+  /* line 223, ../scss/components/_navigation.scss */
+  #anchor-nav {
+    display: block;
   }
 }
 /* line 1, ../scss/components/_container.scss */
@@ -4157,7 +4221,7 @@ p:last-child {
   margin-bottom: 0;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 58.1875rem) {
   /* line 49, ../scss/components/_typography.scss */
   h1, h2 {
     font-size: 34px;
@@ -4705,7 +4769,7 @@ figure img {
   position: absolute;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 58.1875rem) {
   /* line 382, ../scss/components/_global.scss */
   img.aligncenter {
     margin: 0 auto;
@@ -5205,7 +5269,7 @@ ul.slick-dots li.slick-active button {
   background-color: #fff000;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 58.1875rem) {
   /* line 101, ../scss/components/_slick-slider.scss */
   ul.slick-dots {
     padding: 15px 0;
@@ -5768,7 +5832,7 @@ ul.slick-dots li.slick-active button {
 }
 
 /* Medium Breakpoint */
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 58.1875rem) {
   /* line 407, ../scss/components/_sections.scss */
   .section {
     padding: 0 50px;
@@ -6454,7 +6518,7 @@ ul.slick-dots li.slick-active button {
 }
 
 /* Medium Breakpoint */
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 58.1875rem) {
   /* line 309, ../scss/templates/_home.scss */
   #slider-wrap {
     padding: 115px 0 0;
@@ -6976,7 +7040,7 @@ ul.slick-dots li.slick-active button {
   background-color: #054990;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 58.1875rem) {
   /* line 115, ../scss/templates/_about.scss */
   #awards .columns {
     margin-bottom: 0;
@@ -7078,7 +7142,7 @@ ul.slick-dots li.slick-active button {
   margin-bottom: 1.25rem;
 }
 
-@media only screen and (min-width: 48rem) {
+@media only screen and (min-width: 58.1875rem) {
   /* line 25, ../scss/templates/_contact.scss */
   .map-box:before {
     padding-top: 80%;

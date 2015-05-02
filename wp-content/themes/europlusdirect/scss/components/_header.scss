@@ -127,11 +127,13 @@
 @media #{$medium-up} { 
 
 	#header{
+		/*
 		#home-link{
 			width: ((229px / 100) * 75);
 			height: ((220px /100) * 75);
 			margin:4px 0 0 ;
 		}
+		*/
 		.top{
 			nav#contacts{
 				width:50%;
@@ -156,6 +158,11 @@
 			#home-link{
 				width:120px;
 			}
+		}
+		#home-link{
+			width: ((229px / 100) * 75);
+			height: ((220px /100) * 75);
+			margin:4px 0 0 ;
 		}
 		.top{
 			padding:10px 50px;	

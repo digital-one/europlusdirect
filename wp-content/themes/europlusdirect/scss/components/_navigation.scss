@@ -19,7 +19,8 @@
 	}
 	a{
 		color: white;
-		@include font-size(18px);
+		@include font-size(16px);
+		display: block;
 		&:hover,&:active{
 			color: $yellow;
 			background-color:darken($blue,5%);
@@ -39,29 +40,22 @@
 	@include abs-pos(auto,0,0,0);
 	@include centered-menu;
 	background-color: rgba(255,255,255,.7);
-	padding: 20px 0;
+	padding: 10px 0;
 	width: 100%;
 	li{
 		padding: 0 20px; 
 	}
 	a{
-		@include font-size(18px);
+		@include font-size(14px);
 	}
 	display: none;
 }
 
-@media #{$medium-up} { 
 
-	
-		
-		
-
-}
-
-@media #{$large-up} { 
+@media #{$small-medium-up} { 
 
 	#nav{
-		height: 70px;
+		height: 58px;
 		background-color: $blue;
 		position: relative;
 		z-index:2;
@@ -74,10 +68,15 @@
 		}
 		ul{
 			display: block;
+			//float: right;
 		}
 		li{
 			//padding: 0 20px; padding:0 2.2vw;
 			//padding:0 30px;
+			//float: left;
+			&:first-child{
+				padding-left:40px;
+			}
 			position: relative;
 			width:auto;
 			&.rollover{
@@ -88,11 +87,11 @@
 			}
 		}
 		a{
-			height:70px;
-			line-height: 70px;
+			height:58px;
+			line-height: 58px;
+			@include font-size(14px);
 			display: block;
-			@include font-size(16px);
-			padding: 0 10px; padding:0 1.5vw;
+			padding: 0 14px; padding:0 1.2vw;
 			.minimise &{
 				height: 50px;
 				line-height: 50px;
@@ -149,6 +148,24 @@
 			display: none;
 		}
 	}
+
+}
+
+@media #{$medium-up} { 
+
+	#nav{
+		
+		li{
+			&:first-child{
+				padding-left:40px;
+			}
+		}
+		a{
+			padding: 0 15px; padding:0 1.8vw;
+			@include font-size(16px);
+		}
+
+	}
 	#anchor-nav{
 		display: block;
 		.minimise &{
@@ -165,6 +182,23 @@
 			}
 		}
 	}
+
+}
+
+@media #{$large-up} { 
+
+	#nav{
+		@include centered-menu;
+		height: 70px;
+		a{
+			@include font-size(18px);
+			height: 70px;
+			line-height: 70px;
+			padding: 0 10px; padding:0 1.2vw;
+		}
+	}
+		
+		
 
 }
 
@@ -186,5 +220,7 @@
 			//display: none;
 		}
 	}
-
+	#anchor-nav{
+		display: block;
+	}
 }
