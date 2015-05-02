@@ -32,6 +32,8 @@ $.fn.gmap = function(options){
 		route: false,
 		scrollwheel: false,
 		draggable: true,
+		showInfoBoxOnLoad: false,
+		zoomMapOnMarkerClick: false,
 		routeWayPoints: [],
 		routeOrigin: [],
 		routeDestination: [],
@@ -166,22 +168,30 @@ $.fn.gmap = function(options){
     		if(options.fitBounds) map.fitBounds(bounds);
 
     	}
-    	if(options.markers.length==1){
+    	if(options.markers.length==1 && options.showInfoBoxOnLoad){
     		 infowindow.setContent(marker.html);
 			infowindow.open(map,marker);
     	}
     	
 });
+		if(options.zoomMapOnMarkerClick){
 		// Zoom to 9 when clicking on marker
 		google.maps.event.addListener(marker,'click',function() {
-			console.log('click')
 		map.setZoom(6);
 		map.setCenter(this.getPosition());
 		  infowindow.setContent(this.html);
 		infowindow.open(map,this);
   		//makeInfoWindowEvent(map, infowindow, marker);
   		});
+		} else {
 
+			google.maps.event.addListener(marker,'click',function() {
+
+				map.setCenter(this.getPosition());
+		 		 infowindow.setContent(this.html);
+				infowindow.open(map,this);
+			});
+		}
 		
 
 

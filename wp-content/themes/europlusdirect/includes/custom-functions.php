@@ -90,7 +90,8 @@ function scripts_and_styles() {
 				$location = get_field('office_location',$office->ID);
 				$lat = $location['lat'];
 				$lng = $location['lng'];
-				$geolocations[$office->post_name] = array('lat' => $lat, 'lng' => $lng );
+				$content = '<h4>'.$office->post_title.'</h4><p>'.get_field('office_address',$office->ID).'</p>';
+				$geolocations[$office->post_name] = array('lat' => $lat, 'lng' => $lng,'content' => $content);
 				endforeach;
 			endif;
 		

@@ -7,11 +7,20 @@
 	position: relative;
 	&:before{
 		content:"";
-		padding-top:66.66%;
+		padding-top:100%;
 		display: block;
 		background-color: $grey;
 	}
 	#location-map{
 		@include abs-pos(0,0,0,0);
+	}
+}
+
+@media #{$small-medium-up} { 
+
+	#location-map-wrap{
+		&:before{
+			padding-top:66.66%;
+		}
 	}
 }

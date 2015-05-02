@@ -2,7 +2,7 @@
 	display: block;
 	width:100%;
 	height:100%;
-	padding: 105px 0 0;
+	padding: 100px 0 0;
 }
 #slider{
 	width:100%;
@@ -100,12 +100,12 @@
 				display: inline-block;
 				height:38px;
 				line-height: 38px;
-				margin:0 8px;
+				//margin:0 8px;
 				width: 100%;
-				@include font-size(34px);
+				@include font-size(24px);
 				white-space: nowrap;
 				float:left;
-				//padding:0 8px;
+				padding:0 8px;
 				color: white;
 				&.outer{
 					width: auto;
@@ -113,7 +113,7 @@
 					line-height:auto;
 					margin: 0 auto;
 					background-color: $red;
-					padding:0 10px;
+					padding:10px;
 					display: inline-block;
 					float: none;
 				}
@@ -121,8 +121,8 @@
 					@extend %ir;
 					margin:0 auto;
 					background: $red url('../images/lenovo.png') center center no-repeat;
-					background-size: auto 90%;
-					margin-top:-8px;
+					background-size: auto 75%;
+					//margin-top:-8px;
 				}
 			}
 		}
@@ -141,7 +141,7 @@
 }
 .pac-features{
 	.feature{
-		margin-bottom: 80px;
+		margin-bottom: 60px;
 		padding: 0 20px;
 		.icon{
 			width: 100px;
@@ -166,6 +166,11 @@
 		}
 	}
 }
+#support{
+	figure{
+		margin: 25px 0 0;
+	}
+}
 #callback{
 	color: white;
 	header{
@@ -174,11 +179,16 @@
 	.gform_body{
 		width:100%;
 		display: block;
+		position: relative;
+		padding-bottom: 30px;
 		@extend %clearfix;
 		p{
 			color: white;
 			text-align: left;
 		}
+	}
+	.gfield_html{
+		@include abs-pos(auto,auto,0,0);
 	}
 	.gfield_label{
 		display: none;
@@ -198,6 +208,9 @@
 		&.right{
 			float:left !important;
 			width: 100%;
+		}
+		&.empty{
+			display: none;
 		}
 	}
 	.gform_column{
@@ -303,11 +316,11 @@
 
 /* Medium Breakpoint */
 
-@media #{$medium-up} { 
+@media #{$small-medium-up} { 
 
 
 	#slider-wrap{
-		padding: 115px 0 0;
+		padding: 100px 0 0;
 	}
 	#slider{
 		.slide{
@@ -366,18 +379,24 @@
 					@include font-size(34px);
 					white-space: nowrap;
 					float:left;
-					padding:0 8px;
+					padding:0;
+					margin: 0 8px;
 					color: white;
+					&.outer{
+						padding: 0 10px;
+					}
 					&.logo{
 						width:200px;
 						margin:0;
 						background: $red url('../images/lenovo.png') left center no-repeat;
 						background-size: 100% auto;
+						//margin-top:-8px;
 					}
 				}
 			}
 		}
 	}
+
 	#callback{
 		.gform_column{
 			width:50%;
@@ -464,10 +483,7 @@
 	}
 }
 
-/* Large Breakpoint */
-
-@media #{$large-up} { 
-
+@media #{$medium-up} {
 	#slider{
 		.slide{
 			.content{
@@ -486,6 +502,12 @@
 			@include abs-pos(auto,0,80px,0);
 		}
 	}
+}
+/* Large Breakpoint */
+
+@media #{$large-up} { 
+
+	
 	.section-content-inner{
 		padding:0 30px;
 	}

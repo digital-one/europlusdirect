@@ -16,7 +16,7 @@
 		margin-bottom: -16px;
 	}
 	&.offset-up{
-		margin-top: -50px;
+		margin-top: -30px;
 	}
 	&.offset-down{
 		margin-bottom: -50px;
@@ -44,6 +44,18 @@
 		}
 		a:hover,a:active{
 			color: white;
+		}
+	}
+	.logo-footer{
+		text-align: center;
+		margin: 20px 0 0;
+		display: block;
+		width: 100%;
+		img{
+			position: relative;
+			margin: 0 auto;
+			display: inline-block;
+			//@include abs-pos(auto,0,0,auto);
 		}
 	}
 }
@@ -115,16 +127,17 @@
 		background-color: transparent;
 	}
 	.header-banner &{
-		@include bg-cover;
+		@include bg-cover(left top);
 	}
 }
 .section-content{
-	padding:30px 30px 40px;
+	position: relative;
+	padding:30px 15px 40px;
 	.overlap-top &{
 		padding:80px 30px 30px;
 	}
 	.overlap-bottom &{
-		padding:30px 30px 120px;
+		padding:30px 30px 70px;
 	}
 	.skewed &{
 		padding-top:30px;
@@ -145,7 +158,7 @@
 		padding-right:15px;
 	}
 	.anchor-bottom &{
-		padding-bottom: 90px;
+		padding-bottom: 70px;
 	}
 	.video-link &{
 		padding-top:150px;
@@ -160,7 +173,7 @@
 	z-index: 2;
 	position: relative;
 	.straight-top &{
-		padding-top:90px;
+		padding-top:80px;
 	}
 	.straight-top.anchor &{
 		padding-top: 140px;
@@ -319,7 +332,7 @@
 		.content{
 			width:100%;
 			display: block;
-			padding: 10px 15px 20px;
+			padding: 15px 15px 20px;
 			position: relative;
 			z-index: 3;
 
@@ -402,13 +415,24 @@
 
 /* Medium Breakpoint */
 
-@media #{$medium-up} { 
+@media #{$small-medium-up} { 
 
 	.section{
 		padding: 0 50px;
 		&.offset-up{
 			margin-top: -50px;
 		}
+		.logo-footer{
+			margin:0;
+			@include abs-pos(auto,10%,10%,auto);
+			width: auto;
+			img{
+				position: relative;
+				margin: 0;
+				display: inline-block;
+			//@include abs-pos(auto,0,0,auto);
+		}
+	}
 	}
 	.section-content{
 		padding:50px 30px 70px;
@@ -429,6 +453,9 @@
 		}
 		.insets &{
 			padding: 50px 30px;
+		}
+		&.offset-up{
+			margin-top: -50px;
 		}
 		.skewed &{
 			padding-top:50px;

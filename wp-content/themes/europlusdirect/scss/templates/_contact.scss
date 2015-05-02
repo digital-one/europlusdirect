@@ -4,9 +4,10 @@
 	background-color: $light-grey;
 	overflow:hidden;
 	position:relative;
+	margin-top:20px;
 	&:before{
 		content:"";
-		padding-top:60%;
+		padding-top:100%;
 		display: inline-block;
 	}
 	.map{
@@ -22,6 +23,7 @@
 @media #{$medium-up} { 
 
 	.map-box{
+		margin-top:0;
 		&:before{
 			padding-top:80%;
 		}

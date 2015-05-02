@@ -29,16 +29,21 @@
 		background-size:100% auto;
 		@extend %ir;
 		z-index: 999;
-		margin:18px 0 0 ;
+		margin:2px 0 0;
 	}
 	.top{
 		@include linear-gradient(-180deg, $dark-grey 0%, $grey 100%);
+		@extend .clearfix;
+		height:45px;
 		padding: 10px 10px;
 		color: white;
 		position: relative;
 		z-index: 996;
 		nav#contacts{
+			@extend .clearfix;
 			width: 100%;
+			@include centered-menu;
+			display:none;
 			//@include centered-menu;
 			ul{
 				li{
@@ -46,11 +51,26 @@
 					padding:0 25px;
 					display: block;
 					text-align:center;
+					&:after{
+							content:"";
+							width:1px;
+							height:14px;
+							display: block;
+							@include abs-pos(50%,0,auto,auto);
+							margin-top:-7px;
+							background-color:white;
+						}
+						&:last-child{
+							&:after{
+								background-color: transparent;
+							}
+						}
 				}
 				a{
 					@include font-size(12px);
 					color: white;
-					line-height: 140%;
+					line-height: 24px;
+					height: 24px;
 					display: block;
 				}
 			}	
@@ -123,18 +143,29 @@
 
 }
 
+@media #{$small-medium-up} { 
+
+	#header{
+		.top{
+			nav#contacts{
+				display: block;
+			}
+		}
+		#home-link{
+			margin:16px 0 0;
+		}
+	}
+
+}
 
 @media #{$medium-up} { 
 
 	#header{
-		/*
 		#home-link{
-			width: ((229px / 100) * 75);
-			height: ((220px /100) * 75);
-			margin:4px 0 0 ;
+			margin:16px 0 0 ;
 		}
-		*/
 		.top{
+			height:auto;
 			nav#contacts{
 				width:50%;
 				margin:0 auto;

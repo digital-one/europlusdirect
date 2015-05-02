@@ -23,7 +23,7 @@
 <section class="section row light-grey insets above offset-up">
 <div class="section-inner">
 <div class="section-content">
-<div class="row">
+
 <ul class="small-block-grid-1 medium-block-grid-2">
 	<?php
 	$args = array(
@@ -42,7 +42,7 @@ endif;
 wp_reset_query();
 ?>
 </ul>
-</div>
+
 </div>
 </section>
 

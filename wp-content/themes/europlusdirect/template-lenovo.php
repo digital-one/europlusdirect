@@ -96,8 +96,10 @@ if(has_post_thumbnail($page->ID)):
 list($src,$w,$h) = wp_get_attachment_image_src(get_post_thumbnail_id($page->ID),'full');
     $alt = get_post_meta(get_post_thumbnail_id($page->ID),'_wp_attachment_image_alt', true);
 ?>
-<p><img src="<?php echo $src ?>" alt="<?php echo $alt ?>" /></p>
+</div>
+<footer class="logo-footer"><img src="<?php echo $src ?>" alt="<?php echo $alt ?>" /></footer>
 <?php endif ?>
+
 </div>
 </div>
 </div>

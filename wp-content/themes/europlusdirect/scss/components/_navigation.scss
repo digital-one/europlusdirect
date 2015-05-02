@@ -19,7 +19,8 @@
 	}
 	a{
 		color: white;
-		@include font-size(16px);
+		@include font-size(14px);
+		padding:5px 10px;
 		display: block;
 		&:hover,&:active{
 			color: $yellow;
@@ -27,7 +28,7 @@
 		}
 	}
 	.menu-toggle{
-		@include abs-pos(18px,30px,auto,auto);
+		@include abs-pos(15px,15px,auto,auto);
 		@extend %ir;
 		width:38px;
 		height:32px;
@@ -51,6 +52,52 @@
 	display: none;
 }
 
+@media #{$small-only}{
+
+	#nav{
+		padding-bottom: 0;
+		ul{
+			display: block;
+			&#menu-main-menu{
+				padding: 25px 0 10px;
+				display: none;
+			}
+		}
+		li{
+			&.current-menu-item, &.current-page-parent{
+				.sub-menu{
+					li{
+						a:link,a:visited{
+							background-color: darken($blue,5%);
+							color: white;
+						}
+					}
+				}
+			}
+		}
+
+		.columns{
+			padding: 55px 0 0;
+		}
+		.sub-menu{
+			//display: none;
+			li.anchor{
+				display: none;
+			}
+		}
+	}
+}
+
+@media #{$small-medium-only}{
+
+	#nav{
+		ul{
+			&#menu-main-menu{
+				padding-left:40px;
+			}
+		}
+	}
+}
 
 @media #{$small-medium-up} { 
 
@@ -66,17 +113,12 @@
 			height: 50px;
 			padding-left:0;
 		}
-		ul{
-			display: block;
-			//float: right;
-		}
+		
 		li{
 			//padding: 0 20px; padding:0 2.2vw;
 			//padding:0 30px;
 			//float: left;
-			&:first-child{
-				padding-left:40px;
-			}
+			
 			position: relative;
 			width:auto;
 			&.rollover{
@@ -99,7 +141,7 @@
 			}
 		}
 		.sub-menu{
-			@include abs-pos(70px,auto,auto,0);
+			@include abs-pos(58px,auto,auto,0);
 			display:none;
 			.minimise &{
 				top:50px;
@@ -128,15 +170,15 @@
 				background-color: transparent !important;
 				color: white !important;
 				display: block;
-				@include font-size(16px);
+				@include font-size(14px);
 				width:auto;
 				text-align: left;
-				padding: 15px 20px; padding:15px 2.2vw;
+				padding: 15px 15px 15px 10px;
 				white-space: nowrap;
 				&:before{
-					content:"+";
+					content:"+ ";
 					color: $yellow;
-					@include abs-pos(15px,auto,auto,12px);
+					//@include abs-pos(15px,auto,auto,12px);
 				}
 				/*&:hover,&:active{
 					background-color: darken($blue,5%) !important;
@@ -164,6 +206,11 @@
 			padding: 0 15px; padding:0 1.8vw;
 			@include font-size(16px);
 		}
+		.sub-menu{
+			a{
+				@include font-size(16px);
+			}
+		}
 
 	}
 	#anchor-nav{
@@ -178,8 +225,11 @@
 			right:auto;
 			background-color: $light-grey;
 			a{
-				@include font-size(14px);
+				@include font-size(16px);
 			}
+		}
+		a{
+			@include font-size(16px);
 		}
 	}
 
@@ -195,6 +245,10 @@
 			height: 70px;
 			line-height: 70px;
 			padding: 0 10px; padding:0 1.2vw;
+		}
+
+		.sub-menu{
+			@include abs-pos(70px,auto,auto,0);
 		}
 	}
 		

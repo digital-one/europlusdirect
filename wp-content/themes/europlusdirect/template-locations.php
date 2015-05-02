@@ -70,7 +70,7 @@ if($locations = get_posts($args)):
 
 <div class="row">
 	<div class="small-12 columns">
-		<div id="location-map-wrap"><div id="location-map">map</div></div>
+		<div id="location-map-wrap"><div id="location-map"></div></div>
 	</div>
 </div>
 
